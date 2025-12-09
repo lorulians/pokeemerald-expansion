@@ -15,8 +15,8 @@
   "connections": [
     {
       "map": "MAP_ROUTE101",
-      "offset": 0,
-      "direction": "up"
+      "offset": 2,
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -238,8 +238,8 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 12,
-      "y": 4,
+      "x": 9,
+      "y": 18,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "LittlerootTown_EventScript_TownSign"
