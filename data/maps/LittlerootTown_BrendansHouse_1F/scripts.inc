@@ -1,20 +1,15 @@
 LittlerootTown_BrendansHouse_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, LittlerootTown_BrendansHouse_1F_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, LittlerootTown_BrendansHouse_1F_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, LittlerootTown_BrendansHouse_1F_OnFrame
 	.byte 0
 
 LittlerootTown_BrendansHouse_1F_OnLoad:
 	call_if_set FLAG_RECEIVED_RUNNING_SHOES, LittlerootTown_BrendansHouse_1F_EventScript_CheckShowShoesManual
 	end
 
-LittlerootTown_BrendansHouse_1F_EventScript_SetMovingBoxes::
-	setmetatile 5, 4, METATILE_BrendansMaysHouse_MovingBox_Open, TRUE
-	setmetatile 5, 2, METATILE_BrendansMaysHouse_MovingBox_Closed, TRUE
-	return
-
 LittlerootTown_BrendansHouse_1F_EventScript_CheckShowShoesManual::
-	checkplayergender
-	goto_if_eq VAR_RESULT, MALE, LittlerootTown_BrendansHouse_1F_EventScript_ShowRunningShoesManual
+	goto LittlerootTown_BrendansHouse_1F_EventScript_ShowRunningShoesManual
 	return
 
 LittlerootTown_BrendansHouse_1F_EventScript_ShowRunningShoesManual::
@@ -22,35 +17,47 @@ LittlerootTown_BrendansHouse_1F_EventScript_ShowRunningShoesManual::
 	return
 
 LittlerootTown_BrendansHouse_1F_OnTransition:
+	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 6, LittlerootTown_BrendansHouse_1F_EventScript_MoveMomToSink
+	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 4, LittlerootTown_BrendansHouse_1F_EventScript_MoveMomToStairs
 	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 7, LittlerootTown_BrendansHouse_1F_EventScript_MoveMomToTV
+	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 4, PlayersHouse_2F_EventScript_BlockStairsUntilClockIsSet
 	end
+
+LittlerootTown_BrendansHouse_1F_EventScript_MoveMomToSink::
+	setobjectxyperm LOCALID_PLAYERS_HOUSE_1F_MOM, 2, 3
+	setobjectmovementtype LOCALID_PLAYERS_HOUSE_1F_MOM, MOVEMENT_TYPE_FACE_UP
+	return
+
+LittlerootTown_BrendansHouse_1F_EventScript_MoveMomToStairs::
+	setobjectxyperm LOCALID_PLAYERS_HOUSE_1F_MOM, 8, 4
+	setobjectmovementtype LOCALID_PLAYERS_HOUSE_1F_MOM, MOVEMENT_TYPE_FACE_UP
+	return
 
 LittlerootTown_BrendansHouse_1F_EventScript_MoveMomToTV::
 	setobjectxyperm LOCALID_PLAYERS_HOUSE_1F_MOM, 5, 6
 	setobjectmovementtype LOCALID_PLAYERS_HOUSE_1F_MOM, MOVEMENT_TYPE_FACE_UP
 	return
 
-LittlerootTown_BrendansHouse_1F_EventScript_Yampy::
-	lock
-	faceplayer
-	waitse
-	playmoncry SPECIES_YAMPER, CRY_MODE_NORMAL
-	msgbox LittlerootTown_BrendansHouse_1F_Text_Yampy, MSGBOX_DEFAULT
-	waitmoncry
-	release
-	end
-
-LittlerootTown_BrendansHouse_1F_Text_Yampy:
-	.string "YAMPY: Yip yip!$"
-
-
 @ Many of the below scripts have no gender check because they assume youre in the correct house
 @ The below SS Ticket script uses Mays house state by accident(?), but theyre both set identically after the intro
-@ LittlerootTown_BrendansHouse_1F_OnFrame:
-	@ .2byte 0
+LittlerootTown_BrendansHouse_1F_OnFrame:
+	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 5, LittlerootTown_BrendansHouse_1F_EventScript_GoUpstairsToSetClock
+	.2byte 0
 
-LittlerootTown_BrendansHouse_1F_Movement_LookMom:
-	walk_in_place_left
+LittlerootTown_BrendansHouse_1F_EventScript_GoUpstairsToSetClock::
+	lockall
+	msgbox PlayersHouse_1F_Text_GoSetTheClock, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_PLAYER, LittlerootTown_BrendansHouse_1F_Movement_PushTowardStairs
+	applymovement LOCALID_PLAYERS_HOUSE_1F_MOM, LittlerootTown_BrendansHouse_1F_Movement_PushTowardStairs
+	waitmovement 0
+	warp MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F, 7, 1
+	waitstate
+	releaseall
+	end
+
+LittlerootTown_BrendansHouse_1F_Movement_PushTowardStairs:
+	walk_up
 	step_end
 
 LittlerootTown_BrendansHouse_1F_Movement_LookPlayer:
@@ -76,7 +83,8 @@ LittlerootTown_BrendansHouse_1F_EventScript_SeeCedar0::
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, PlayersHouse_1F_Event_CallFromCedarMale
 	call_if_eq VAR_RESULT, FEMALE, PlayersHouse_1F_Event_CallFromCedarFemale
-	delay 2
+	waitmessage
+	applymovement LOCALID_PLAYERS_HOUSE_1F_MOM, LittlerootTown_BrendansHouse_1F_Movement_LookPlayer
 	msgbox PlayersHouse_1F_Text_ComeHerePlayer
 	waitmessage
 	applymovement LOCALID_PLAYER, LittlerootTown_BrendansHouse_1F_Movement_MoveToMom0
@@ -91,12 +99,12 @@ LittlerootTown_BrendansHouse_1F_EventScript_SeeCedar1::
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, PlayersHouse_1F_Event_CallFromCedarMale
 	call_if_eq VAR_RESULT, FEMALE, PlayersHouse_1F_Event_CallFromCedarFemale
+	waitmessage
+	applymovement LOCALID_PLAYERS_HOUSE_1F_MOM, LittlerootTown_BrendansHouse_1F_Movement_LookPlayer
 	msgbox PlayersHouse_1F_Text_ComeHerePlayer
 	waitmessage
-	applymovement LOCALID_PLAYER, LittlerootTown_BrendansHouse_1F_Movement_LookMom
-	waitmovement
 	applymovement LOCALID_PLAYER, LittlerootTown_BrendansHouse_1F_Movement_MoveToMom1
-	waitmovement
+	waitmovement 0
 	goto LittlerootTown_BrendansHouse_1F_EventScript_SeeCedar
 	end
 
@@ -107,17 +115,29 @@ LittlerootTown_BrendansHouse_1F_EventScript_SeeCedar2::
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, PlayersHouse_1F_Event_CallFromCedarMale
 	call_if_eq VAR_RESULT, FEMALE, PlayersHouse_1F_Event_CallFromCedarFemale
+	waitmessage
+	applymovement LOCALID_PLAYERS_HOUSE_1F_MOM, LittlerootTown_BrendansHouse_1F_Movement_LookPlayer
 	msgbox PlayersHouse_1F_Text_ComeHerePlayer
 	waitmessage
-	applymovement LOCALID_PLAYER, LittlerootTown_BrendansHouse_1F_Movement_LookMom
-	waitmovement
 	applymovement LOCALID_PLAYER, LittlerootTown_BrendansHouse_1F_Movement_MoveToMom2
-	waitmovement
+	waitmovement 0
 	goto LittlerootTown_BrendansHouse_1F_EventScript_SeeCedar
 	end
 
+PlayersHouse_1F_Event_Lili::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_LILLIPUP, CRY_MODE_NORMAL
+	msgbox PlayersHouse_1F_Text_Lili, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+PlayersHouse_1F_Text_Lili:
+	.string "LILI: Ruff, rrruff!$"
+
 LittlerootTown_BrendansHouse_1F_Movement_MoveToMom0:
-	walk_left
 	walk_left
 	walk_left
 	walk_left
@@ -126,7 +146,6 @@ LittlerootTown_BrendansHouse_1F_Movement_MoveToMom0:
 
 LittlerootTown_BrendansHouse_1F_Movement_MoveToMom1:
 	walk_up
-	walk_left
 	walk_left
 	walk_left
 	walk_left
@@ -141,24 +160,23 @@ LittlerootTown_BrendansHouse_1F_Movement_MoveToMom2:
 	walk_left
 	walk_left
 	walk_left
-	walk_left
 	step_end
 
 LittlerootTown_BrendansHouse_1F_EventScript_SeeCedar::
-	applymovement LOCALID_PLAYERS_HOUSE_1F_MOM, LittlerootTown_BrendansHouse_1F_Movement_LookPlayer
 	msgbox PlayersHouse_1F_Text_CedarCalled
 	setvar VAR_LITTLEROOT_INTRO_STATE, 7
+	setvar VAR_BIRCH_LAB_STATE, 1
 	releaseall
 	end
 
 PlayersHouse_1F_Text_CallFromCedarMale:
-	.string "MOM: ...Uh huh...\n"
-	.string "...Yep, okay! I'll send him on over!\p"
+	.string "MOM: …Uh huh…\n"
+	.string "…Yep, okay! I'll send him on over!\p"
 	.string "Alright, goodbye, FOSTER.$"
 
 PlayersHouse_1F_Text_CallFromCedarFemale:
-	.string "MOM: ...Uh huh...\n"
-	.string "...Yep, okay! I'll send her on over!\p"
+	.string "MOM: …Uh huh…\n"
+	.string "…Yep, okay! I'll send her on over!\p"
 	.string "Alright, goodbye, FOSTER.$"
 
 PlayersHouse_1F_Text_ComeHerePlayer:
@@ -226,26 +244,3 @@ PlayersHouse_1F_Text_TicketFromBrineyCameForYou:
 	.string "Oh, yes, I have something for you.\n"
 	.string "This came to you from someone named\l"
 	.string "MR. BRINEY.$"
-
-PlayersHouse_1F_Text_IsThatABreakingStory:
-	.string "MOM: Is that a breaking news story?$"
-
-PlayersHouse_1F_Text_LatiEmergencyNewsFlash:
-	.string "We bring you this emergency\n"
-	.string "news flash!\p"
-	.string "In various HOENN locales, there have\n"
-	.string "been reports of a BZZT…colored\l"
-	.string "POKéMON in flight.\p"
-	.string "The identity of this POKéMON is\n"
-	.string "currently unknown.\p"
-	.string "We now return you to the regular\n"
-	.string "movie program.$"
-
-PlayersHouse_1F_Text_WhatColorDidTheySay:
-	.string "MOM: {PLAYER}, did you catch that?\p"
-	.string "What color did the announcer say\n"
-	.string "that POKéMON was?$"
-
-PlayersHouse_1F_Text_StillUnknownPokemon:
-	.string "MOM: Well, isn't that something!\n"
-	.string "There are still unknown POKéMON.$"

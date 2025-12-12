@@ -2357,8 +2357,8 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_Growlithe[] = INCBIN_COMP("graphics/pokemon/growlithe/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Growlithe[] = INCBIN_U16("graphics/pokemon/growlithe/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Growlithe[] = INCBIN_U16("graphics/pokemon/growlithe/overworld_shiny.gbapal");
+    const u32 gOverworldPalette_Growlithe[] = INCBIN_U32("graphics/pokemon/growlithe/overworld_normal.gbapal");
+    const u32 gShinyOverworldPalette_Growlithe[] = INCBIN_U32("graphics/pokemon/growlithe/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -2912,8 +2912,8 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_Geodude[] = INCBIN_COMP("graphics/pokemon/geodude/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Geodude[] = INCBIN_U16("graphics/pokemon/geodude/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Geodude[] = INCBIN_U16("graphics/pokemon/geodude/overworld_shiny.gbapal");
+    const u32 gOverworldPalette_Geodude[] = INCBIN_U32("graphics/pokemon/geodude/overworld_normal.gbapal");
+    const u32 gShinyOverworldPalette_Geodude[] = INCBIN_U32("graphics/pokemon/geodude/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -5817,8 +5817,8 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_Sylveon[] = INCBIN_COMP("graphics/pokemon/sylveon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Sylveon[] = INCBIN_U16("graphics/pokemon/sylveon/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Sylveon[] = INCBIN_U16("graphics/pokemon/sylveon/overworld_shiny.gbapal");
+    const u32 gOverworldPalette_Sylveon[] = INCBIN_U32("graphics/pokemon/sylveon/overworld_normal.gbapal");
+    const u32 gShinyOverworldPalette_Sylveon[] = INCBIN_U32("graphics/pokemon/sylveon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GEN_6_CROSS_EVOS
@@ -11102,8 +11102,8 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_Skitty[] = INCBIN_COMP("graphics/pokemon/skitty/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Skitty[] = INCBIN_U16("graphics/pokemon/skitty/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Skitty[] = INCBIN_U16("graphics/pokemon/skitty/overworld_shiny.gbapal");
+    const u32 gOverworldPalette_Skitty[] = INCBIN_U32("graphics/pokemon/skitty/overworld_normal.gbapal");
+    const u32 gShinyOverworldPalette_Skitty[] = INCBIN_U32("graphics/pokemon/skitty/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -14955,8 +14955,8 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_Chatot[] = INCBIN_COMP("graphics/pokemon/chatot/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Chatot[] = INCBIN_U16("graphics/pokemon/chatot/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Chatot[] = INCBIN_U16("graphics/pokemon/chatot/overworld_shiny.gbapal");
+    const u32 gOverworldPalette_Chatot[] = INCBIN_U32("graphics/pokemon/chatot/overworld_normal.gbapal");
+    const u32 gShinyOverworldPalette_Chatot[] = INCBIN_U32("graphics/pokemon/chatot/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_CHATOT
@@ -16112,8 +16112,8 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_Lillipup[] = INCBIN_COMP("graphics/pokemon/lillipup/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Lillipup[] = INCBIN_U16("graphics/pokemon/lillipup/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Lillipup[] = INCBIN_U16("graphics/pokemon/lillipup/overworld_shiny.gbapal");
+    const u32 gOverworldPalette_Lillipup[] = INCBIN_U32("graphics/pokemon/lillipup/overworld_normal.gbapal");
+    const u32 gShinyOverworldPalette_Lillipup[] = INCBIN_U32("graphics/pokemon/lillipup/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -23097,8 +23097,8 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_Yamper[] = INCBIN_COMP("graphics/pokemon/yamper/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Yamper[] = INCBIN_U16("graphics/pokemon/yamper/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Yamper[] = INCBIN_U16("graphics/pokemon/yamper/overworld_shiny.gbapal");
+    const u32 gOverworldPalette_Yamper[] = INCBIN_U32("graphics/pokemon/yamper/overworld_normal.gbapal");
+    const u32 gShinyOverworldPalette_Yamper[] = INCBIN_U32("graphics/pokemon/yamper/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 

@@ -50,6 +50,7 @@ PlayersHouse_2F_EventScript_MomComesUpstairs::
 	waitmovement 0
 	playse SE_EXIT
 	removeobject VAR_0x8008
+	setvar VAR_LITTLEROOT_INTRO_STATE, 4
 	releaseall
 	end
 
