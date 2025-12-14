@@ -440,6 +440,11 @@ LittlerootTown_EventScript_SetReceivedRunningShoes::
 	end
 
 LittlerootTown_EventScript_GiveRunningShoes::
+	msgbox LittlerootTown_Text_DidYouSeeCedar, MSGBOX_DEFAULT
+	waitmessage
+	goto_if_eq VAR_0x8008, 0, LittlerootTown_EventScript_StarterMovement0
+	goto_if_eq VAR_0x8008, 1, LittlerootTown_EventScript_StarterMovement1
+	goto_if_eq VAR_0x8008, 2, LittlerootTown_EventScript_StarterMovement2
 	msgbox LittlerootTown_Text_WearTheseRunningShoes, MSGBOX_DEFAULT
 	playfanfare MUS_OBTAIN_ITEM
 	message LittlerootTown_Text_SwitchShoesWithRunningShoes
@@ -450,6 +455,129 @@ LittlerootTown_EventScript_GiveRunningShoes::
 	closemessage
 	delay 30
 	return
+
+LittlerootTown_EventScript_StarterMovement0::
+	applymovement LOCALID_FOLLOWING_POKEMON, LittlerootTown_Movement_StarterApproachMom0
+	waitmovement
+	applymovement LOCALID_LITTLEROOT_MOM, Common_Movement_FaceDown
+	waitmovement
+	specialvar VAR_RESULT, IsStarterInParty
+	goto_if_eq VAR_RESULT, TRUE, LittlerootTown_EventScript_StarterCry
+	special ChoosePartyMon
+    waitstate
+	msgbox LittlerootTown_Text_CutePokemon, MSGBOX_DEFAULT
+	waitmessage
+	applymovement LOCALID_LITTLEROOT_MOM, Common_Movement_FaceRight
+	waitmovement
+	applymovement LOCALID_FOLLOWING_POKEMON, LittlerootTown_Movement_StarterReturnToPlayer0
+	waitmovement
+	return
+
+LittlerootTown_EventScript_StarterMovement1::
+	applymovement LOCALID_FOLLOWING_POKEMON, LittlerootTown_Movement_StarterApproachMom1
+	waitmovement
+	applymovement LOCALID_LITTLEROOT_MOM, Common_Movement_FaceUp
+	waitmovement
+	specialvar VAR_RESULT, IsStarterInParty
+	goto_if_eq VAR_RESULT, TRUE, LittlerootTown_EventScript_StarterCry
+	special ChoosePartyMon
+    waitstate
+	msgbox LittlerootTown_Text_CutePokemon, MSGBOX_DEFAULT
+	waitmessage
+	applymovement LOCALID_LITTLEROOT_MOM, Common_Movement_FaceRight
+	waitmovement
+	applymovement LOCALID_FOLLOWING_POKEMON, LittlerootTown_Movement_StarterReturnToPlayer1
+	waitmovement
+	return
+
+LittlerootTown_EventScript_StarterMovement2::
+	applymovement LOCALID_FOLLOWING_POKEMON, LittlerootTown_Movement_StarterApproachMom2
+	waitmovement
+	applymovement LOCALID_LITTLEROOT_MOM, Common_Movement_FaceUp
+	waitmovement
+	specialvar VAR_RESULT, IsStarterInParty
+	goto_if_eq VAR_RESULT, TRUE, LittlerootTown_EventScript_StarterCry
+	special ChoosePartyMon
+    waitstate
+	msgbox LittlerootTown_Text_CutePokemon, MSGBOX_DEFAULT
+	waitmessage
+	applymovement LOCALID_LITTLEROOT_MOM, Common_Movement_FaceRight
+	waitmovement
+	applymovement LOCALID_FOLLOWING_POKEMON, LittlerootTown_Movement_StarterReturnToPlayer2
+	waitmovement
+	return
+
+LittlerootTown_EventScript_StarterCry::
+	call_if_eq VAR_STARTER_MON, 0, LittlerootTown_EventScript_SnivyCry
+	call_if_eq VAR_STARTER_MON, 1, LittlerootTown_EventScript_ScorbunnyCry
+	call_if_eq VAR_STARTER_MON, 2, LittlerootTown_EventScript_SquirtleCry
+	return
+
+LittlerootTown_EventScript_SnivyCry::
+	waitse
+	playmoncry SPECIES_SNIVY, CRY_MODE_NORMAL
+	return
+
+LittlerootTown_EventScript_ScorbunnyCry::
+	waitse
+	playmoncry SPECIES_SCORBUNNY, CRY_MODE_NORMAL
+	return
+
+LittlerootTown_EventScript_SquirtleCry::
+	waitse
+	playmoncry SPECIES_SQUIRTLE, CRY_MODE_NORMAL
+	return
+
+LittlerootTown_Movement_StarterApproachMom0:
+	jump_in_place_left
+	delay_8
+	walk_fast_down
+	walk_fast_left
+	walk_fast_left
+	jump_in_place_up
+	jump_in_place_up
+	step_end
+
+LittlerootTown_Movement_StarterApproachMom1:
+	jump_in_place_left
+	delay_8
+	walk_fast_up
+	walk_fast_left
+	walk_fast_left
+	jump_in_place_down
+	jump_in_place_down
+	step_end
+
+LittlerootTown_Movement_StarterApproachMom2:
+	jump_in_place_left
+	delay_8
+	walk_fast_up
+	walk_fast_left
+	walk_fast_left
+	jump_in_place_down
+	jump_in_place_down
+	step_end
+
+LittlerootTown_Movement_StarterReturnToPlayer0:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_up
+	face_left
+	step_end
+
+LittlerootTown_Movement_StarterReturnToPlayer1:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_down
+	face_left
+	step_end
+
+LittlerootTown_Movement_StarterReturnToPlayer2:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_down
+	face_left
+	step_end
 
 LittlerootTown_Text_Sylveon:
 	.string "SILLY: Zzz… zzz…$"
@@ -469,11 +597,17 @@ LittlerootTown_Text_OurNewHomeLetsGoInside:
 LittlerootTown_Text_WaitPlayer:
 	.string "MOM: Wait, {PLAYER}!$"
 
-LittlerootTown_Text_WearTheseRunningShoes:
+LittlerootTown_Text_DidYouSeeCedar:
 	.string "MOM: {PLAYER}! {PLAYER}! Did you\n"
-	.string "see what PROF. CEDAR had to say?\p"
-	.string "Oh! What an adorable POKéMON!\n"
-	.string "You got it from PROF. CEDAR? How nice!\p"
+	.string "see what PROF. CEDAR had to say?$"
+
+LittlerootTown_Text_CutePokemon:
+	.string "MOM: Oh, what a cute POKéMON!\n"
+	.string "Oh, PROF. CEDAR gave it to you?\p"
+	.string "Well, {CHOSEN_MON_NAME} is adorable!$"
+
+LittlerootTown_Text_WearTheseRunningShoes:
+	.string "MOM: What's wrong honey?\p"
 	.string "…He wants you to deliver something to\n"
 	.string "TEPEK CITY? Alright, honey, be careful.\p"
 	.string "I know! Here If you're going out on an\n"
