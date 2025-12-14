@@ -112,9 +112,9 @@ LittlerootTown_ProfessorBirchsLab_EventScript_NoMoreSansubaStarters::
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_HidePokeballs::
-	call_if_eq VAR_STARTER_MON, 0, LittlerootTown_ProfessorBirchsLab_EventScript_HideSnivy
-	call_if_eq VAR_STARTER_MON, 1, LittlerootTown_ProfessorBirchsLab_EventScript_HideScorbunny
-	call_if_eq VAR_STARTER_MON, 2, LittlerootTown_ProfessorBirchsLab_EventScript_HideSquirtle
+	call_if_eq VAR_STARTER_MON, 0, PetalburgCity_PokemonCenter_1F_EventScript_HideSnivy
+	call_if_eq VAR_STARTER_MON, 1, PetalburgCity_PokemonCenter_1F_EventScript_HideScorbunny
+	call_if_eq VAR_STARTER_MON, 2, PetalburgCity_PokemonCenter_1F_EventScript_HideMudkip
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_SetObjectPosForDexUpgrade::
@@ -154,15 +154,15 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterEvent::
 	goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_GoDeliverThat
 	end
 
-LittlerootTown_ProfessorBirchsLab_EventScript_HideSnivy::
+PetalburgCity_PokemonCenter_1F_EventScript_HideSnivy::
 	setflag FLAG_HIDE_SNIVY_POKEBALL
 	return
 
-LittlerootTown_ProfessorBirchsLab_EventScript_HideScorbunny::
+PetalburgCity_PokemonCenter_1F_EventScript_HideScorbunny::
 	setflag FLAG_HIDE_SCORBUNNY_POKEBALL
 	return
 
-LittlerootTown_ProfessorBirchsLab_EventScript_HideSquirtle::
+PetalburgCity_PokemonCenter_1F_EventScript_HideMudkip::
 	setflag FLAG_HIDE_SQUIRTLE_POKEBALL
 	return
 
