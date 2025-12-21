@@ -3509,18 +3509,18 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_ENCOUNTER_INTENSE)        \
     X(MUS_ENCOUNTER_COOL)           \
     X(MUS_ROUTE113)                 \
-    X(MUS_ENCOUNTER_AQUA)           \
+    X(MUS_ENCOUNTER_TRI)            \
     X(MUS_FOLLOW_ME)                \
     X(MUS_ENCOUNTER_BRENDAN)        \
     X(MUS_EVER_GRANDE)              \
     X(MUS_ENCOUNTER_SUSPICIOUS)     \
-    X(MUS_VICTORY_AQUA_MAGMA)       \
+    X(MUS_VICTORY_TRI_MAGMA)        \
     X(MUS_CABLE_CAR)                \
     X(MUS_GAME_CORNER)              \
     X(MUS_DEWFORD)                  \
     X(MUS_SAFARI_ZONE)              \
     X(MUS_VICTORY_ROAD)             \
-    X(MUS_AQUA_MAGMA_HIDEOUT)       \
+    X(MUS_TRI_MAGMA_HIDEOUT)        \
     X(MUS_SAILING)                  \
     X(MUS_MT_PYRE)                  \
     X(MUS_SLATEPORT)                \
@@ -3565,7 +3565,7 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_VS_MEW)                   \
     X(MUS_B_DOME_LOBBY)             \
     X(MUS_VS_WILD)                  \
-    X(MUS_VS_AQUA_MAGMA)            \
+    X(MUS_VS_TRI_MAGMA)             \
     X(MUS_VS_TRAINER)               \
     X(MUS_VS_GYM_LEADER)            \
     X(MUS_VS_CHAMPION)              \
@@ -3573,7 +3573,7 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_VS_KYOGRE_GROUDON)        \
     X(MUS_VS_RIVAL)                 \
     X(MUS_VS_ELITE_FOUR)            \
-    X(MUS_VS_AQUA_MAGMA_LEADER)     \
+    X(MUS_VS_TRI_MAGMA_LEADER)      \
     X(MUS_RG_FOLLOW_ME)             \
     X(MUS_RG_GAME_CORNER)           \
     X(MUS_RG_ROCKET_HIDEOUT)        \

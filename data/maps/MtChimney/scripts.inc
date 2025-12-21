@@ -65,7 +65,7 @@ MtChimney_EventScript_Maxie::
 	call_if_eq VAR_FACING, DIR_EAST, MtChimney_EventScript_ArchieExitEast
 	call_if_eq VAR_FACING, DIR_NORTH, MtChimney_EventScript_ArchieExitNorth
 	removeobject LOCALID_MT_CHIMNEY_ARCHIE
-	setflag FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA
+	setflag FLAG_HIDE_MT_CHIMNEY_TEAM_TRI
 	setflag FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY
 	clearflag FLAG_HIDE_FALLARBOR_HOUSE_PROF_COZMO
 	setflag FLAG_HIDE_METEOR_FALLS_1F_1R_COZMO
@@ -393,15 +393,15 @@ MtChimney_Movement_Unused15:
 	delay_16
 	step_end
 
-MtChimney_EventScript_BusyAquaGrunt1::
+MtChimney_EventScript_BusyTriGrunt1::
 	msgbox MtChimney_Text_MagmaOutnumbersUs, MSGBOX_SIGN
 	end
 
-MtChimney_EventScript_BusyAquaGrunt2::
+MtChimney_EventScript_BusyTriGrunt2::
 	msgbox MtChimney_Text_LessHabitatForWaterPokemon, MSGBOX_SIGN
 	end
 
-MtChimney_EventScript_BusyAquaGrunt3::
+MtChimney_EventScript_BusyTriGrunt3::
 	msgbox MtChimney_Text_MagmasNameSimilar, MSGBOX_SIGN
 	end
 
@@ -416,7 +416,7 @@ MtChimney_EventScript_Grunt2::
 	end
 
 MtChimney_EventScript_BusyMagmaGrunt1::
-	msgbox MtChimney_Text_TeamAquaAlwaysMessingWithPlans, MSGBOX_SIGN
+	msgbox MtChimney_Text_TeamTriAlwaysMessingWithPlans, MSGBOX_SIGN
 	end
 
 MtChimney_EventScript_BusyMagmaGrunt2::
@@ -428,7 +428,7 @@ MtChimney_EventScript_BusyMagmaGrunt3::
 	end
 
 MtChimney_EventScript_BusyMagmaGrunt4::
-	msgbox MtChimney_Text_AquasNameSimilar, MSGBOX_SIGN
+	msgbox MtChimney_Text_TrisNameSimilar, MSGBOX_SIGN
 	end
 
 MtChimney_EventScript_BusyMagmaGrunt5::
@@ -443,7 +443,7 @@ MtChimney_EventScript_MagmaPoochyena::
 	msgbox MtChimney_Text_Bufoh, MSGBOX_SIGN
 	end
 
-MtChimney_EventScript_AquaPoochyena::
+MtChimney_EventScript_TriPoochyena::
 	msgbox MtChimney_Text_Bushaa, MSGBOX_SIGN
 	end
 
@@ -556,7 +556,7 @@ MtChimney_Text_MaxieIntro:
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "I'd heard ARCHIE bemoaning a child\n"
-	.string "who's been meddling in TEAM AQUA's\l"
+	.string "who's been meddling in TEAM TRI's\l"
 	.string "affairs.\p"
 	.string "It must be you he meant.\p"
 	.string "Humph! So you're thinking of\n"
@@ -637,8 +637,8 @@ MtChimney_Text_Grunt1PostBattle:
 	.string "A kid like you, you ought to be\n"
 	.string "splashing about in the waves!$"
 
-MtChimney_Text_TeamAquaAlwaysMessingWithPlans:
-	.string "That annoying TEAM AQUA…\n"
+MtChimney_Text_TeamTriAlwaysMessingWithPlans:
+	.string "That annoying TEAM TRI…\n"
 	.string "They always mess with our plans!$"
 
 MtChimney_Text_MeteoritesPackAmazingPower:
@@ -649,9 +649,9 @@ MtChimney_Text_YouBetterNotMessWithUs:
 	.string "We're trying to awaken that thing\n"
 	.string "for the benefit of everyone!$"
 
-MtChimney_Text_AquasNameSimilar:
+MtChimney_Text_TrisNameSimilar:
 	.string "We're TEAM MAGMA!\p"
-	.string "They're TEAM AQUA!\p"
+	.string "They're TEAM TRI!\p"
 	.string "It totally annoys me that they'd\n"
 	.string "use a name like ours!$"
 
@@ -703,7 +703,7 @@ MtChimney_Text_LessHabitatForWaterPokemon:
 	.string "less habitats for WATER POKéMON!$"
 
 MtChimney_Text_MagmasNameSimilar:
-	.string "We're TEAM AQUA!\p"
+	.string "We're TEAM TRI!\p"
 	.string "They're TEAM MAGMA!\p"
 	.string "It burns me up that they'd use such\n"
 	.string "a confusing name!$"

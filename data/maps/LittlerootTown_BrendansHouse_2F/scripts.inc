@@ -49,7 +49,7 @@ PlayersHouse_2F_Text_ClockIsStopped:
 	.string "Better set it and start it!$"
 
 PlayersHouse_2F_Text_SetYourClock:
-	.string "MOM: {PLAYER}?\n"
+	.string "Mom: {PLAYER}?\n"
 	.string "Oh, good, you're already dressed!\p"
 	.string "I got you new batteries for your\n"
 	.string "wall clock, don't forget to set it!\p"
@@ -59,14 +59,14 @@ PlayersHouse_2F_Text_SetYourClock:
 PlayersHouse_2F_Text_Notebook:
 	.string "{PLAYER} flipped open the notebook.\p"
 	.string "ADVENTURE RULE NO. 1\n"
-	.string "Open the MENU with START.\p"
+	.string "Talk to every NPC you meet.\p"
 	.string "ADVENTURE RULE NO. 2\n"
-	.string "Record your progress with SAVE.\p"
+	.string "Report bugs when you see them!\p"
 	.string "The remaining pages are blank…$"
 
 Common_Text_LookCloserAtMap:
 	.string "{PLAYER} took a closer look at the\n"
-	.string "SANSUBA region map.$"
+	.string "Sansuba region map.$"
 
 PlayersHouse_2F_Text_ItsAGameCube:
 	.string "It's a Nintendo GameCube.\p"

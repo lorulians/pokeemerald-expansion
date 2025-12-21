@@ -261,9 +261,9 @@ static const u8 gText_SaveFileErased[] = _("The save file has been erased\ndue t
 static const u8 gJPText_No1MSubCircuit[] = _("1Mサブきばんが ささっていません！");
 static const u8 gText_BatteryRunDry[] = _("The internal battery has run dry.\nThe game can be played.\pHowever, clock-based events will\nno longer occur.");
 
-static const u8 gText_MainMenuNewGame[] = _("NEW GAME");
-static const u8 gText_MainMenuContinue[] = _("CONTINUE");
-static const u8 gText_MainMenuOption[] = _("OPTION");
+static const u8 gText_MainMenuNewGame[] = _("New Game");
+static const u8 gText_MainMenuContinue[] = _("Continue");
+static const u8 gText_MainMenuOption[] = _("Options");
 static const u8 gText_MainMenuMysteryGift[] = _("MYSTERY GIFT");
 static const u8 gText_MainMenuMysteryGift2[] = _("MYSTERY GIFT");
 static const u8 gText_MainMenuMysteryEvents[] = _("MYSTERY EVENTS");
@@ -271,10 +271,10 @@ static const u8 gText_WirelessNotConnected[] = _("The Wireless Adapter is not\nc
 static const u8 gText_MysteryGiftCantUse[] = _("MYSTERY GIFT can't be used while\nthe Wireless Adapter is attached.");
 static const u8 gText_MysteryEventsCantUse[] = _("MYSTERY EVENTS can't be used while\nthe Wireless Adapter is attached.");
 
-static const u8 gText_ContinueMenuPlayer[] = _("PLAYER");
-static const u8 gText_ContinueMenuTime[] = _("TIME");
-static const u8 gText_ContinueMenuPokedex[] = _("POKéDEX");
-static const u8 gText_ContinueMenuBadges[] = _("BADGES");
+static const u8 gText_ContinueMenuPlayer[] = _("Player");
+static const u8 gText_ContinueMenuTime[] = _("Time");
+static const u8 gText_ContinueMenuPokedex[] = _("Pokédex");
+static const u8 gText_ContinueMenuBadges[] = _("Badges");
 
 #define MENU_LEFT 2
 #define MENU_TOP_WIN0 1
@@ -473,34 +473,34 @@ static const union AffineAnimCmd *const sSpriteAffineAnimTable_PlayerShrink[] =
 };
 
 static const struct MenuAction sMenuActions_Gender[] = {
-    {COMPOUND_STRING("BOY"), {NULL}},
-    {COMPOUND_STRING("GIRL"), {NULL}}
+    {COMPOUND_STRING("Boy"), {NULL}},
+    {COMPOUND_STRING("Girl"), {NULL}}
 };
 
 static const u8 *const sMalePresetNames[] = {
-    COMPOUND_STRING("ARCHIE"),
-    COMPOUND_STRING("KAZ"),
-    COMPOUND_STRING("ANTHONY"),
+    COMPOUND_STRING("Archie"),
+    COMPOUND_STRING("Kaz"),
+    COMPOUND_STRING("Anthony"),
     COMPOUND_STRING("DJ"),
-    COMPOUND_STRING("MILES"),
-    COMPOUND_STRING("CHRIS"),
-    COMPOUND_STRING("KEVIN"),
-    COMPOUND_STRING("NORWOOD"),
-    COMPOUND_STRING("JAMES"),
-    COMPOUND_STRING("ROMEO"),
+    COMPOUND_STRING("Miles"),
+    COMPOUND_STRING("Chris"),
+    COMPOUND_STRING("Kevin"),
+    COMPOUND_STRING("Norwood"),
+    COMPOUND_STRING("James"),
+    COMPOUND_STRING("Romeo"),
 };
 
 static const u8 *const sFemalePresetNames[] = {
-    COMPOUND_STRING("PETRA"),
-    COMPOUND_STRING("EMMY"),
-    COMPOUND_STRING("BELLA"),
-    COMPOUND_STRING("STELLA"),
-    COMPOUND_STRING("HOLLY"),
-    COMPOUND_STRING("VICKY"),
-    COMPOUND_STRING("SKYE"),
-    COMPOUND_STRING("RAINE"),
-    COMPOUND_STRING("KITTY"),
-    COMPOUND_STRING("JACKIE")
+    COMPOUND_STRING("Petra"),
+    COMPOUND_STRING("Emmy"),
+    COMPOUND_STRING("Bella"),
+    COMPOUND_STRING("Stella"),
+    COMPOUND_STRING("Holly"),
+    COMPOUND_STRING("Vicky"),
+    COMPOUND_STRING("Skye"),
+    COMPOUND_STRING("Raine"),
+    COMPOUND_STRING("Kitty"),
+    COMPOUND_STRING("Jackie")
 };
 
 // The number of male vs. female names is assumed to be the same.
@@ -1374,7 +1374,7 @@ static void Task_NewGameBirchSpeechSub_InitPokeBall(u8 taskId)
     gSprites[spriteId].invisible = FALSE;
     gSprites[spriteId].data[0] = 0;
 
-    CreatePokeballSpriteToReleaseMon(spriteId, gSprites[spriteId].oam.paletteNum, 112, 58, 0, 0, 32, PALETTES_BG, SPECIES_LOTAD);
+    CreatePokeballSpriteToReleaseMon(spriteId, gSprites[spriteId].oam.paletteNum, 112, 58, 0, 0, 32, PALETTES_BG, SPECIES_DUSKULL);
     gTasks[taskId].func = Task_NewGameBirchSpeechSub_WaitForLotad;
     gTasks[sBirchSpeechMainTaskId].tTimer = 0;
 }
@@ -1876,7 +1876,7 @@ static void SpriteCB_MovePlayerDownWhileShrinking(struct Sprite *sprite)
 
 static u8 NewGameBirchSpeech_CreateLotadSprite(u8 x, u8 y)
 {
-    return CreateMonPicSprite_Affine(SPECIES_LOTAD, FALSE, 0, MON_PIC_AFFINE_FRONT, x, y, 14, TAG_NONE);
+    return CreateMonPicSprite_Affine(SPECIES_DUSKULL, FALSE, 0, MON_PIC_AFFINE_FRONT, x, y, 14, TAG_NONE);
 }
 
 static void AddBirchSpeechObjects(u8 taskId)

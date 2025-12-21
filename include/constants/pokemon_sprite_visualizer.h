@@ -38,7 +38,7 @@
 #define MAP_BATTLE_SCENE_NORMAL       0
 #define MAP_BATTLE_SCENE_GYM          1
 #define MAP_BATTLE_SCENE_MAGMA        2
-#define MAP_BATTLE_SCENE_AQUA         3
+#define MAP_BATTLE_SCENE_TRI          3
 #define MAP_BATTLE_SCENE_SIDNEY       4
 #define MAP_BATTLE_SCENE_PHOEBE       5
 #define MAP_BATTLE_SCENE_GLACIA       6

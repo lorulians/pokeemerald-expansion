@@ -490,9 +490,9 @@ static const u8 *ExpandPlaceholder_Version(void)
     return gText_ExpandedPlaceholder_Emerald;
 }
 
-static const u8 *ExpandPlaceholder_Aqua(void)
+static const u8 *ExpandPlaceholder_Tri(void)
 {
-    return gText_ExpandedPlaceholder_Aqua;
+    return gText_ExpandedPlaceholder_Tri;
 }
 
 static const u8 *ExpandPlaceholder_Magma(void)
@@ -520,14 +520,6 @@ static const u8 *ExpandPlaceholder_Groudon(void)
     return gText_ExpandedPlaceholder_Groudon;
 }
 
-static const u8 *ExpandPlaceholder_ChosenMonNickname(void)
-{
-    u8 *dest;
-
-    GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_NICKNAME, dest);
-    return dest;
-}
-
 const u8 *GetExpandedPlaceholder(u32 id)
 {
     typedef const u8 *(*ExpandPlaceholderFunc)(void);
@@ -542,13 +534,12 @@ const u8 *GetExpandedPlaceholder(u32 id)
         [PLACEHOLDER_ID_KUN]                 = ExpandPlaceholder_KunChan,
         [PLACEHOLDER_ID_RIVAL]               = ExpandPlaceholder_RivalName,
         [PLACEHOLDER_ID_VERSION]             = ExpandPlaceholder_Version,
-        [PLACEHOLDER_ID_AQUA]                = ExpandPlaceholder_Aqua,
+        [PLACEHOLDER_ID_TRI]                 = ExpandPlaceholder_Tri,
         [PLACEHOLDER_ID_MAGMA]               = ExpandPlaceholder_Magma,
         [PLACEHOLDER_ID_ARCHIE]              = ExpandPlaceholder_Archie,
         [PLACEHOLDER_ID_MAXIE]               = ExpandPlaceholder_Maxie,
         [PLACEHOLDER_ID_KYOGRE]              = ExpandPlaceholder_Kyogre,
         [PLACEHOLDER_ID_GROUDON]             = ExpandPlaceholder_Groudon,
-        [PLACEHOLDER_ID_CHOSEN_MON_NICKNAME] = ExpandPlaceholder_ChosenMonNickname,
     };
 
     if (id >= ARRAY_COUNT(funcs))

@@ -4,8 +4,8 @@
 const u32 gTrainerFrontPic_Hiker[] = INCBIN_U32("graphics/trainers/front_pics/hiker.4bpp.smol");
 const u16 gTrainerPalette_Hiker[] = INCBIN_U16("graphics/trainers/front_pics/hiker.gbapal");
 
-const u32 gTrainerFrontPic_AquaGruntM[] = INCBIN_U32("graphics/trainers/front_pics/aqua_grunt_m.4bpp.smol");
-const u16 gTrainerPalette_AquaGruntM[] = INCBIN_U16("graphics/trainers/front_pics/aqua_grunt_m.gbapal");
+const u32 gTrainerFrontPic_TriGruntM[] = INCBIN_U32("graphics/trainers/front_pics/tri_grunt_m.4bpp.smol");
+const u16 gTrainerPalette_TriGruntM[] = INCBIN_U16("graphics/trainers/front_pics/tri_grunt_m.gbapal");
 
 const u32 gTrainerFrontPic_PokemonBreederF[] = INCBIN_U32("graphics/trainers/front_pics/pokemon_breeder_f.4bpp.smol");
 const u16 gTrainerPalette_PokemonBreederF[] = INCBIN_U16("graphics/trainers/front_pics/pokemon_breeder_f.gbapal");
@@ -19,8 +19,8 @@ const u16 gTrainerPalette_BirdKeeper[] = INCBIN_U16("graphics/trainers/front_pic
 const u32 gTrainerFrontPic_Collector[] = INCBIN_U32("graphics/trainers/front_pics/collector.4bpp.smol");
 const u16 gTrainerPalette_Collector[] = INCBIN_U16("graphics/trainers/front_pics/collector.gbapal");
 
-const u32 gTrainerFrontPic_AquaGruntF[] = INCBIN_U32("graphics/trainers/front_pics/aqua_grunt_f.4bpp.smol");
-const u16 gTrainerPalette_AquaGruntF[] = INCBIN_U16("graphics/trainers/front_pics/aqua_grunt_f.gbapal");
+const u32 gTrainerFrontPic_TriGruntF[] = INCBIN_U32("graphics/trainers/front_pics/tri_grunt_f.4bpp.smol");
+const u16 gTrainerPalette_TriGruntF[] = INCBIN_U16("graphics/trainers/front_pics/tri_grunt_f.gbapal");
 
 const u32 gTrainerFrontPic_SwimmerM[] = INCBIN_U32("graphics/trainers/front_pics/swimmer_m.4bpp.smol");
 const u16 gTrainerPalette_SwimmerM[] = INCBIN_U16("graphics/trainers/front_pics/swimmer_m.gbapal");
@@ -31,17 +31,17 @@ const u16 gTrainerPalette_MagmaGruntM[] = INCBIN_U16("graphics/trainers/front_pi
 const u32 gTrainerFrontPic_ExpertM[] = INCBIN_U32("graphics/trainers/front_pics/expert_m.4bpp.smol");
 const u16 gTrainerPalette_ExpertM[] = INCBIN_U16("graphics/trainers/front_pics/expert_m.gbapal");
 
-const u32 gTrainerFrontPic_AquaAdminM[] = INCBIN_U32("graphics/trainers/front_pics/aqua_admin_m.4bpp.smol");
-const u16 gTrainerPalette_AquaAdminM[] = INCBIN_U16("graphics/trainers/front_pics/aqua_admin_m.gbapal");
+const u32 gTrainerFrontPic_TriAdminM[] = INCBIN_U32("graphics/trainers/front_pics/tri_admin_m.4bpp.smol");
+const u16 gTrainerPalette_TriAdminM[] = INCBIN_U16("graphics/trainers/front_pics/tri_admin_m.gbapal");
 
 const u32 gTrainerFrontPic_BlackBelt[] = INCBIN_U32("graphics/trainers/front_pics/black_belt.4bpp.smol");
 const u16 gTrainerPalette_BlackBelt[] = INCBIN_U16("graphics/trainers/front_pics/black_belt.gbapal");
 
-const u32 gTrainerFrontPic_AquaAdminF[] = INCBIN_U32("graphics/trainers/front_pics/aqua_admin_f.4bpp.smol");
-const u16 gTrainerPalette_AquaAdminF[] = INCBIN_U16("graphics/trainers/front_pics/aqua_admin_f.gbapal");
+const u32 gTrainerFrontPic_TriAdminF[] = INCBIN_U32("graphics/trainers/front_pics/tri_admin_f.4bpp.smol");
+const u16 gTrainerPalette_TriAdminF[] = INCBIN_U16("graphics/trainers/front_pics/tri_admin_f.gbapal");
 
-const u32 gTrainerFrontPic_AquaLeaderArchie[] = INCBIN_U32("graphics/trainers/front_pics/aqua_leader_archie.4bpp.smol");
-const u16 gTrainerPalette_AquaLeaderArchie[] = INCBIN_U16("graphics/trainers/front_pics/aqua_leader_archie.gbapal");
+const u32 gTrainerFrontPic_TriLeaderArchie[] = INCBIN_U32("graphics/trainers/front_pics/tri_leader_archie.4bpp.smol");
+const u16 gTrainerPalette_TriLeaderArchie[] = INCBIN_U16("graphics/trainers/front_pics/tri_leader_archie.gbapal");
 
 const u32 gTrainerFrontPic_HexManiac[] = INCBIN_U32("graphics/trainers/front_pics/hex_maniac.4bpp.smol");
 const u16 gTrainerPalette_HexManiac[] = INCBIN_U16("graphics/trainers/front_pics/hex_maniac.gbapal");
@@ -280,6 +280,9 @@ const u16 gTrainerPalette_RubySapphireBrendan[] = INCBIN_U16("graphics/trainers/
 const u32 gTrainerFrontPic_RubySapphireMay[] = INCBIN_U32("graphics/trainers/front_pics/may_rs.4bpp.smol");
 const u16 gTrainerPalette_RubySapphireMay[] = INCBIN_U16("graphics/trainers/palettes/may_rs.gbapal");
 
+const u32 gTrainerFrontPic_Engineer[] = INCBIN_U32("graphics/trainers/front_pics/engineer.4bpp.smol");
+const u16 gTrainerPalette_Engineer[] = INCBIN_U16("graphics/trainers/front_pics/engineer.gbapal");
+
 const u8 gTrainerBackPic_Brendan[] = INCBIN_U8("graphics/trainers/back_pics/brendan.4bpp");
 const u8 gTrainerBackPic_May[] = INCBIN_U8("graphics/trainers/back_pics/may.4bpp");
 const u8 gTrainerBackPic_Red[] = INCBIN_U8("graphics/trainers/back_pics/red.4bpp");
@@ -309,19 +312,19 @@ const u16 gTrainerBackPicPalette_Leaf[] = INCBIN_U16("graphics/trainers/back_pic
 const struct TrainerSprite gTrainerSprites[] =
 {
     TRAINER_SPRITE(TRAINER_PIC_HIKER, gTrainerFrontPic_Hiker, gTrainerPalette_Hiker),
-    TRAINER_SPRITE(TRAINER_PIC_AQUA_GRUNT_M, gTrainerFrontPic_AquaGruntM, gTrainerPalette_AquaGruntM),
+    TRAINER_SPRITE(TRAINER_PIC_TRI_GRUNT_M, gTrainerFrontPic_TriGruntM, gTrainerPalette_TriGruntM),
     TRAINER_SPRITE(TRAINER_PIC_POKEMON_BREEDER_F, gTrainerFrontPic_PokemonBreederF, gTrainerPalette_PokemonBreederF),
     TRAINER_SPRITE(TRAINER_PIC_COOLTRAINER_M, gTrainerFrontPic_CoolTrainerM, gTrainerPalette_CoolTrainerM),
     TRAINER_SPRITE(TRAINER_PIC_BIRD_KEEPER, gTrainerFrontPic_BirdKeeper, gTrainerPalette_BirdKeeper),
     TRAINER_SPRITE(TRAINER_PIC_COLLECTOR, gTrainerFrontPic_Collector, gTrainerPalette_Collector),
-    TRAINER_SPRITE(TRAINER_PIC_AQUA_GRUNT_F, gTrainerFrontPic_AquaGruntF, gTrainerPalette_AquaGruntF),
+    TRAINER_SPRITE(TRAINER_PIC_TRI_GRUNT_F, gTrainerFrontPic_TriGruntF, gTrainerPalette_TriGruntF),
     TRAINER_SPRITE(TRAINER_PIC_SWIMMER_M, gTrainerFrontPic_SwimmerM, gTrainerPalette_SwimmerM),
     TRAINER_SPRITE(TRAINER_PIC_MAGMA_GRUNT_M, gTrainerFrontPic_MagmaGruntM, gTrainerPalette_MagmaGruntM),
     TRAINER_SPRITE(TRAINER_PIC_EXPERT_M, gTrainerFrontPic_ExpertM, gTrainerPalette_ExpertM),
-    TRAINER_SPRITE(TRAINER_PIC_AQUA_ADMIN_M, gTrainerFrontPic_AquaAdminM, gTrainerPalette_AquaAdminM),
+    TRAINER_SPRITE(TRAINER_PIC_TRI_ADMIN_M, gTrainerFrontPic_TriAdminM, gTrainerPalette_TriAdminM),
     TRAINER_SPRITE(TRAINER_PIC_BLACK_BELT, gTrainerFrontPic_BlackBelt, gTrainerPalette_BlackBelt),
-    TRAINER_SPRITE(TRAINER_PIC_AQUA_ADMIN_F, gTrainerFrontPic_AquaAdminF, gTrainerPalette_AquaAdminF),
-    TRAINER_SPRITE(TRAINER_PIC_AQUA_LEADER_ARCHIE, gTrainerFrontPic_AquaLeaderArchie, gTrainerPalette_AquaLeaderArchie),
+    TRAINER_SPRITE(TRAINER_PIC_TRI_ADMIN_F, gTrainerFrontPic_TriAdminF, gTrainerPalette_TriAdminF),
+    TRAINER_SPRITE(TRAINER_PIC_TRI_LEADER_ARCHIE, gTrainerFrontPic_TriLeaderArchie, gTrainerPalette_TriLeaderArchie),
     TRAINER_SPRITE(TRAINER_PIC_HEX_MANIAC, gTrainerFrontPic_HexManiac, gTrainerPalette_HexManiac),
     TRAINER_SPRITE(TRAINER_PIC_AROMA_LADY, gTrainerFrontPic_AromaLady, gTrainerPalette_AromaLady),
     TRAINER_SPRITE(TRAINER_PIC_RUIN_MANIAC, gTrainerFrontPic_RuinManiac, gTrainerPalette_RuinManiac),
@@ -401,6 +404,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_LEAF, gTrainerFrontPic_Leaf, gTrainerPalette_Leaf),
     TRAINER_SPRITE(TRAINER_PIC_RS_BRENDAN, gTrainerFrontPic_RubySapphireBrendan, gTrainerPalette_RubySapphireBrendan),
     TRAINER_SPRITE(TRAINER_PIC_RS_MAY, gTrainerFrontPic_RubySapphireMay, gTrainerPalette_RubySapphireMay),
+    TRAINER_SPRITE(TRAINER_PIC_ENGINEER, gTrainerFrontPic_Engineer, gTrainerPalette_Engineer)
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

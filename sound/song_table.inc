@@ -425,18 +425,18 @@ gSongTable::
 	song mus_encounter_intense, MUSIC_PLAYER_BGM, 0
 	song mus_encounter_cool, MUSIC_PLAYER_BGM, 0
 	song mus_route113, MUSIC_PLAYER_BGM, 0
-	song mus_encounter_aqua, MUSIC_PLAYER_BGM, 0
+	song mus_encounter_tri, MUSIC_PLAYER_BGM, 0
 	song mus_follow_me, MUSIC_PLAYER_BGM, 0
 	song mus_encounter_brendan, MUSIC_PLAYER_BGM, 0
 	song mus_ever_grande, MUSIC_PLAYER_BGM, 0
 	song mus_encounter_suspicious, MUSIC_PLAYER_BGM, 0
-	song mus_victory_aqua_magma, MUSIC_PLAYER_BGM, 0
+	song mus_victory_tri_magma, MUSIC_PLAYER_BGM, 0
 	song mus_cable_car, MUSIC_PLAYER_BGM, 0
 	song mus_game_corner, MUSIC_PLAYER_BGM, 0
 	song mus_dewford, MUSIC_PLAYER_BGM, 0
 	song mus_safari_zone, MUSIC_PLAYER_BGM, 0
 	song mus_victory_road, MUSIC_PLAYER_BGM, 0
-	song mus_aqua_magma_hideout, MUSIC_PLAYER_BGM, 0
+	song mus_tri_magma_hideout, MUSIC_PLAYER_BGM, 0
 	song mus_sailing, MUSIC_PLAYER_BGM, 0
 	song mus_mt_pyre, MUSIC_PLAYER_BGM, 0
 	song mus_slateport, MUSIC_PLAYER_BGM, 0
@@ -481,7 +481,7 @@ gSongTable::
 	song mus_vs_mew, MUSIC_PLAYER_BGM, 0
 	song mus_b_dome_lobby, MUSIC_PLAYER_BGM, 0
 	song mus_vs_wild, MUSIC_PLAYER_BGM, 0
-	song mus_vs_aqua_magma, MUSIC_PLAYER_BGM, 0
+	song mus_vs_tri_magma, MUSIC_PLAYER_BGM, 0
 	song mus_vs_trainer, MUSIC_PLAYER_BGM, 0
 	song mus_vs_gym_leader, MUSIC_PLAYER_BGM, 0
 	song mus_vs_champion, MUSIC_PLAYER_BGM, 0
@@ -489,7 +489,7 @@ gSongTable::
 	song mus_vs_kyogre_groudon, MUSIC_PLAYER_BGM, 0
 	song mus_vs_rival, MUSIC_PLAYER_BGM, 0
 	song mus_vs_elite_four, MUSIC_PLAYER_BGM, 0
-	song mus_vs_aqua_magma_leader, MUSIC_PLAYER_BGM, 0
+	song mus_vs_tri_magma_leader, MUSIC_PLAYER_BGM, 0
 	song mus_rg_follow_me, MUSIC_PLAYER_BGM, 0
 	song mus_rg_game_corner, MUSIC_PLAYER_BGM, 0
 	song mus_rg_rocket_hideout, MUSIC_PLAYER_BGM, 0

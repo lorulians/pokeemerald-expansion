@@ -135,7 +135,7 @@ PlayersHouse_1F_Event_Lili::
 	end
 
 PlayersHouse_1F_Text_Lili:
-	.string "LILI: Ruff, rrruff!$"
+	.string "Lili: Ruff, rrruff!$"
 
 LittlerootTown_BrendansHouse_1F_Movement_MoveToMom0:
 	walk_left
@@ -165,44 +165,44 @@ LittlerootTown_BrendansHouse_1F_Movement_MoveToMom2:
 LittlerootTown_BrendansHouse_1F_EventScript_SeeCedar::
 	msgbox PlayersHouse_1F_Text_CedarCalled
 	setvar VAR_LITTLEROOT_INTRO_STATE, 7
-	setvar VAR_BIRCH_LAB_STATE, 1
+	setvar VAR_CEDAR_LAB_STATE, 1
 	releaseall
 	end
 
 PlayersHouse_1F_Text_CallFromCedarMale:
-	.string "MOM: …Uh huh…\n"
+	.string "Mom: …Uh huh…\n"
 	.string "…Yep, okay! I'll send him on over!\p"
-	.string "Alright, goodbye, FOSTER.$"
+	.string "Alright, goodbye, Foster.$"
 
 PlayersHouse_1F_Text_CallFromCedarFemale:
-	.string "MOM: …Uh huh…\n"
+	.string "Mom: …Uh huh…\n"
 	.string "…Yep, okay! I'll send her on over!\p"
-	.string "Alright, goodbye, FOSTER.$"
+	.string "Alright, goodbye, Foster.$"
 
 PlayersHouse_1F_Text_ComeHerePlayer:
-	.string "MOM: {PLAYER}, can you come here?$"
+	.string "Mom: {PLAYER}, can you come here?$"
 
 PlayersHouse_1F_Text_CedarCalled:
-	.string "MOM: PROF. CEDAR just called, he'd\n"
-	.string "like to see you over at his LAB.$"
+	.string "Mom: Prof. Cedar just called, he'd\n"
+	.string "like to see you over at his Lab.$"
 
 PlayersHouse_1F_Text_GoSetTheClock:
-	.string "MOM: {PLAYER}.\p"
+	.string "Mom: {PLAYER}.\p"
 	.string "Go set the clock in your room, honey.$"
 
 PlayersHouse_1F_Text_SeeYouHoney:
-	.string "MOM: See you, honey!$"
+	.string "Mom: See you, honey!$"
 
 PlayersHouse_1F_Text_DidYouSeeCedar:
-	.string "MOM: PROF. CEDAR is waiting for you!$"
+	.string "Mom: Prof. Cedar is waiting for you!$"
 
 PlayersHouse_1F_Text_YouShouldRestABit:
-	.string "MOM: How are you doing, {PLAYER}?\n"
+	.string "Mom: How are you doing, {PLAYER}?\n"
 	.string "You look a little tired.\p"
 	.string "I think you should rest a bit.$"
 
 PlayersHouse_1F_Text_TakeCareHoney:
-	.string "MOM: Take care, honey!$"
+	.string "Mom: Take care, honey!$"
 
 PlayersHouse_1F_Text_DontPushYourselfTooHard:
 	.string "Don't push yourself too hard, dear.\n"
@@ -210,15 +210,15 @@ PlayersHouse_1F_Text_DontPushYourselfTooHard:
 	.string "Go for it, honey!$"
 
 PlayersHouse_1F_Text_IsThatAPokenav:
-	.string "MOM: What is that, honey? A POKéNAV?\n"
-	.string "Someone from DEVON gave it to you?\p"
+	.string "Mom: What is that, honey? A PokéNav?\n"
+	.string "Someone from Devon gave it to you?\p"
 	.string "Well, honey, how about registering\n"
 	.string "your mom?\p"
 	.string "… … …$"
 
 PlayersHouse_1F_Text_RegisteredMom:
-	.string "Registered MOM\n"
-	.string "in the POKéNAV.$"
+	.string "Registered Mom\n"
+	.string "in the PokéNav.$"
 
 PlayersHouse_1F_Text_TheresAMovieOnTV:
 	.string "There is a movie on TV.\p"
@@ -228,19 +228,8 @@ PlayersHouse_1F_Text_TheresAMovieOnTV:
 
 PlayersHouse_1F_Text_RunningShoesManual:
 	.string "It's the instruction booklet for the\n"
-	.string "RUNNING SHOES.\p"
+	.string "running shoes.\p"
 	.string "“Press the B Button to run while\n"
-	.string "wearing your RUNNING SHOES.\p"
-	.string "“Lace up your RUNNING SHOES and hit\n"
+	.string "wearing your running shoes.\p"
+	.string "“Lace up your running shoes and hit\n"
 	.string "the road running!”$"
-
-PlayersHouse_1F_Text_TicketFromBrineyCameForYou:
-	.string "DAD: Hm?\p"
-	.string "Hey, it's {PLAYER}!\p"
-	.string "It's been a while since I saw you,\n"
-	.string "but you look…stronger, somehow.\p"
-	.string "That's the impression I get.\n"
-	.string "But your old man hasn't given up yet!\p"
-	.string "Oh, yes, I have something for you.\n"
-	.string "This came to you from someone named\l"
-	.string "MR. BRINEY.$"

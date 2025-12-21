@@ -1,73 +1,72 @@
-Route102_Text_CalvinIntro:
-	.string "If you have POKéMON with you, then\n"
-	.string "you're an official POKéMON TRAINER!\l"
-	.string "You can't say no to my challenge!$"
+Route102_Text_ClarissaIntro:
+	.string "Rangers-in-Training should always be\n"
+	.string "prepared for anything!\l"
+	.string "And that includes battles!$"
 
-Route102_Text_CalvinDefeated:
-	.string "Arrgh, I lost…\n"
-	.string "I should have trained mine more…$"
+Route102_Text_ClarissaDefeated:
+	.string "Rangers-in-Training should also be\n"
+	.string "prepared to lose…$"
 
-Route102_Text_CalvinPostBattle:
-	.string "Listen, you. If you're strong,\n"
-	.string "you should have told me before!$"
+Route102_Text_ClarissaPostBattle:
+	.string "You're a tough trainer! You should\n"
+	.string "become a Ranger!$"
 
-Route102_Text_CalvinRegister:
-	.string "I've been working hard at this since\n"
-	.string "I saw you before.\p"
-	.string "I'd like to battle you again, so can\n"
-	.string "you register me in your POKéNAV?$"
+Route102_Text_ClarissaRegister:
+	.string "Say, would you like to exchange\n"
+	.string "PokéNav numbers?\p"
+	.string "That way we can battle each other"
+	.string "again!$"
 
-Route102_Text_CalvinRegisterShort:
-	.string "I'd like to battle you again, so can\n"
-	.string "you register me in your POKéNAV?$"
+Route102_Text_ClarissaRegisterShort:
+	.string "Say, would you like to exchange\n"
+	.string "PokéNav numbers?$"
 
-Route102_Text_CalvinRematchIntro:
-	.string "Ever since I lost to you, I desperately\n"
-	.string "trained my POKéMON.\l"
-	.string "You can't say no to my challenge!$"
+Route102_Text_ClarissaRematchIntro:
+	.string "I'm tougher than I was last time,\n"
+	.string "just you wait and see!$"
 
-Route102_Text_CalvinRematchDefeated:
-	.string "Arrgh, I lost…\n"
-	.string "Is my training method not right?$"
+Route102_Text_ClarissaRematchDefeated:
+	.string "I lost again! You really are\n"
+	.string "one tough trainer!"
 
-Route102_Text_CalvinRematchPostBattle:
-	.string "If you're going to get stronger,\n"
-	.string "I'll get stronger, too.$"
+Route102_Text_ClarissaRematchPostBattle:
+	.string "I'm going to keep on training so\n"
+	.string "one day I can beat you!$"
 
-Route102_Text_AllenIntro:
-	.string "Did you just become a TRAINER?\n"
-	.string "We're both beginners!$"
+Route102_Text_ShanaIntro:
+	.string "Think you can take me on? Let's\n"
+	.string "go! Pokémon, GO!$"
 
-Route102_Text_AllenDefeated:
-	.string "I called you because I thought\n"
-	.string "I could beat you…$"
+Route102_Text_ShanaDefeated:
+	.string "Pokémon, RETREAT!$"
 
-Route102_Text_AllenPostBattle:
-	.string "I haven't won once yet…\n"
-	.string "I wish I would win soon…$"
+Route102_Text_ShanaPostBattle:
+	.string "I'm not very good at this whole\n"
+	.string "battling thing…$"
 
-Route102_Text_RickIntro:
-	.string "Hahah! Our eyes met!\n"
-	.string "I'll take you on with my BUG POKéMON!$"
+Route102_Text_MickIntro:
+	.string "I'm trying to get my badge in\n"
+	.string "Pokémon battles!$"
 
-Route102_Text_RickDefeated:
-	.string "Ow! Down and out!$"
+Route102_Text_MickDefeated:
+	.string "It only counts if I win…$"
 
-Route102_Text_RickPostBattle:
-	.string "If you lock eyes with a TRAINER,\n"
-	.string "you have to challenge! It's a rule!$"
+Route102_Text_MickPostBattle:
+	.string "I wonder if there's a badge for\n"
+	.string "losing Pokémon battles…$"
 
-Route102_Text_TianaIntro:
-	.string "I'm going to keep winning and aim\n"
-	.string "to be the best TRAINER.\p"
-	.string "Help me further my career!$"
+Route102_Text_EricIntro:
+	.string "Huh? I'm on lunch. What do you\n"
+	.string "want, kid?$"
 
-Route102_Text_TianaDefeated:
-	.string "I ended up furthering your career…$"
+Route102_Text_EricDefeated:
+	.string "Grumble, grumble… Dropped my\n"
+	.string "sandwich…$"
 
-Route102_Text_TianaPostBattle:
-	.string "To keep winning my way up, I see that\n"
-	.string "I have to catch more POKéMON.$"
+Route102_Text_EricPostBattle:
+	.string "I always walk to the Mart on my\n"
+	.string "break and grab a bite to eat.\p"
+	.string "Engineering is hungry work!$"
 
 Route103_Text_DaisyIntro:
 	.string "Did you feel the tug of our\n"
@@ -3064,15 +3063,15 @@ Route120_Text_ChipPostBattle:
 	.string "believe it may indeed contain ancient\l"
 	.string "ruins. But I see no entrance.$"
 
-Route120_Text_ClarissaIntro:
+Route120_Text_HeatherIntro:
 	.string "Why am I carrying this parasol?\p"
 	.string "I'll tell you if you can win against me.$"
 
-Route120_Text_ClarissaDefeat:
+Route120_Text_HeatherDefeat:
 	.string "A parasol can't ward off POKéMON\n"
 	.string "attacks…$"
 
-Route120_Text_ClarissaPostBattle:
+Route120_Text_HeatherPostBattle:
 	.string "I don't think strong sunlight is good\n"
 	.string "for my POKéMON.\l"
 	.string "So I shield them with my parasol.$"
@@ -4794,3 +4793,15 @@ VSSeeker_Text_TrainersNotReady::
 	.string "The other Trainers don't appear\n"
 	.string "to be ready for battle.\p"
 	.string "Let's wait till later.{PAUSE_UNTIL_PRESS}$"
+
+Route232_Text_TriGruntFIntro::
+	.string "Halt! This area is under control of\n"
+	.string "Team Tri! I'm going to have to stop\p"
+	.string "you right here.$"
+
+Route232_Text_TriGruntFDefeated::
+	.string "Urgh… H-Halt…$"
+
+Route232_Text_TriGruntFPostBattle::
+	.string "Gunter isn't going to be happy I\n"
+	.string "let a kid slip by…$"

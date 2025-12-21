@@ -434,7 +434,7 @@ Route119_EventScript_Rachel::
 	msgbox Route119_Text_RachelPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route119_EventScript_BridgeAquaGrunt1::
+Route119_EventScript_BridgeTriGrunt1::
 	lock
 	faceplayer
 	msgbox Route119_Text_StayAwayFromWeatherInstitute, MSGBOX_DEFAULT
@@ -444,7 +444,7 @@ Route119_EventScript_BridgeAquaGrunt1::
 	release
 	end
 
-Route119_EventScript_BridgeAquaGrunt2::
+Route119_EventScript_BridgeTriGrunt2::
 	lock
 	faceplayer
 	msgbox Route119_Text_DontGoNearWeatherInstitute, MSGBOX_DEFAULT

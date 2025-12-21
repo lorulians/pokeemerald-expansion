@@ -111,7 +111,7 @@ static void Task_WhiteBarsFade(u8);
 static void Task_GridSquares(u8);
 static void Task_AngledWipes(u8);
 static void Task_Mugshot(u8);
-static void Task_Aqua(u8);
+static void Task_Tri(u8);
 static void Task_Magma(u8);
 static void Task_Regice(u8);
 static void Task_Registeel(u8);
@@ -155,8 +155,8 @@ static bool8 Swirl_Init(struct Task *);
 static bool8 Swirl_End(struct Task *);
 static bool8 Shuffle_Init(struct Task *);
 static bool8 Shuffle_End(struct Task *);
-static bool8 Aqua_Init(struct Task *);
-static bool8 Aqua_SetGfx(struct Task *);
+static bool8 Tri_Init(struct Task *);
+static bool8 Tri_SetGfx(struct Task *);
 static bool8 Magma_Init(struct Task *);
 static bool8 Magma_SetGfx(struct Task *);
 static bool8 FramesCountdown(struct Task *);
@@ -302,8 +302,8 @@ static const u8 sUnusedBrendan_Gfx[] = INCBIN_U8("graphics/battle_transitions/un
 static const u8 sUnusedLass_Gfx[] = INCBIN_U8("graphics/battle_transitions/unused_lass.4bpp");
 static const u32 sShrinkingBoxTileset[] = INCBIN_U32("graphics/battle_transitions/shrinking_box.4bpp");
 static const u16 sEvilTeam_Palette[] = INCBIN_U16("graphics/battle_transitions/evil_team.gbapal");
-static const u32 sTeamAqua_Tileset[] = INCBIN_U32("graphics/battle_transitions/team_aqua.4bpp.smol");
-static const u32 sTeamAqua_Tilemap[] = INCBIN_U32("graphics/battle_transitions/team_aqua.bin.smolTM");
+static const u32 sTeamTri_Tileset[] = INCBIN_U32("graphics/battle_transitions/team_tri.4bpp.smol");
+static const u32 sTeamTri_Tilemap[] = INCBIN_U32("graphics/battle_transitions/team_tri.bin.smolTM");
 static const u32 sTeamMagma_Tileset[] = INCBIN_U32("graphics/battle_transitions/team_magma.4bpp.smol");
 static const u32 sTeamMagma_Tilemap[] = INCBIN_U32("graphics/battle_transitions/team_magma.bin.smolTM");
 static const u32 sRegis_Tileset[] = INCBIN_U32("graphics/battle_transitions/regis.4bpp");
@@ -358,7 +358,7 @@ static const TaskFunc sTasks_Main[B_TRANSITION_COUNT] =
     [B_TRANSITION_GRID_SQUARES] = Task_GridSquares,
     [B_TRANSITION_ANGLED_WIPES] = Task_AngledWipes,
     [B_TRANSITION_MUGSHOT] = Task_Mugshot,
-    [B_TRANSITION_AQUA] = Task_Aqua,
+    [B_TRANSITION_TRI] = Task_Tri,
     [B_TRANSITION_MAGMA] = Task_Magma,
     [B_TRANSITION_REGICE] = Task_Regice,
     [B_TRANSITION_REGISTEEL] = Task_Registeel,
@@ -412,10 +412,10 @@ static const TransitionStateFunc sShuffle_Funcs[] =
     Shuffle_End,
 };
 
-static const TransitionStateFunc sAqua_Funcs[] =
+static const TransitionStateFunc sTri_Funcs[] =
 {
-    Aqua_Init,
-    Aqua_SetGfx,
+    Tri_Init,
+    Tri_SetGfx,
     PatternWeave_Blend1,
     PatternWeave_Blend2,
     PatternWeave_FinishAppear,
@@ -1298,7 +1298,7 @@ static void HBlankCB_Shuffle(void)
 #undef tAmplitude
 
 //------------------------------------------------------------------------
-// B_TRANSITION_BIG_POKEBALL, B_TRANSITION_AQUA, B_TRANSITION_MAGMA,
+// B_TRANSITION_BIG_POKEBALL, B_TRANSITION_TRI, B_TRANSITION_MAGMA,
 // B_TRANSITION_REGICE, B_TRANSITION_REGISTEEL, B_TRANSITION_REGIROCK
 // and B_TRANSITION_KYOGRE.
 //
@@ -1325,9 +1325,9 @@ static void Task_BigPokeball(u8 taskId)
     while (sBigPokeball_Funcs[gTasks[taskId].tState](&gTasks[taskId]));
 }
 
-static void Task_Aqua(u8 taskId)
+static void Task_Tri(u8 taskId)
 {
-    while (sAqua_Funcs[gTasks[taskId].tState](&gTasks[taskId]));
+    while (sTri_Funcs[gTasks[taskId].tState](&gTasks[taskId]));
 }
 
 static void Task_Magma(u8 taskId)
@@ -1380,7 +1380,7 @@ static void InitPatternWeaveTransition(struct Task *task)
     SetVBlankCallback(VBlankCB_PatternWeave);
 }
 
-static bool8 Aqua_Init(struct Task *task)
+static bool8 Tri_Init(struct Task *task)
 {
     u16 *tilemap, *tileset;
 
@@ -1388,7 +1388,7 @@ static bool8 Aqua_Init(struct Task *task)
     InitPatternWeaveTransition(task);
     GetBg0TilesDst(&tilemap, &tileset);
     CpuFill16(0, tilemap, BG_SCREEN_SIZE);
-    DecompressDataWithHeaderVram(sTeamAqua_Tileset, tileset);
+    DecompressDataWithHeaderVram(sTeamTri_Tileset, tileset);
     LoadPalette(sEvilTeam_Palette, BG_PLTT_ID(15), sizeof(sEvilTeam_Palette));
 
     task->tState++;
@@ -1458,12 +1458,12 @@ static bool8 BigPokeball_SetGfx(struct Task *task)
     return TRUE;
 }
 
-static bool8 Aqua_SetGfx(struct Task *task)
+static bool8 Tri_SetGfx(struct Task *task)
 {
     u16 *tilemap, *tileset;
 
     GetBg0TilesDst(&tilemap, &tileset);
-    DecompressDataWithHeaderVram(sTeamAqua_Tilemap, tilemap);
+    DecompressDataWithHeaderVram(sTeamTri_Tilemap, tilemap);
     SetSinWave((s16*)gScanlineEffectRegBuffers[0], 0, task->tSinIndex, 132, task->tAmplitude, DISPLAY_HEIGHT);
 
     task->tState++;

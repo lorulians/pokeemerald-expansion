@@ -577,7 +577,7 @@ void DoLavaridgeGym1FWarp(void)
 
 // DoSpinEnterWarp but with a fade out
 // Screen fades out to exit current map, player spins down from top to enter new map
-// Used by teleporting tiles, e.g. in Aqua Hideout (For the move Teleport see FldEff_TeleportWarpOut)
+// Used by teleporting tiles, e.g. in Tri Hideout (For the move Teleport see FldEff_TeleportWarpOut)
 void DoTeleportTileWarp(void)
 {
     LockPlayerFieldControls();

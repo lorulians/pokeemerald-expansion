@@ -143,7 +143,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_TRI_MEMBER_M",
       "x": 73,
       "y": 15,
       "elevation": 3,
@@ -153,7 +153,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "LilycoveCity_EventScript_WailmerTrainerGrunt",
-      "flag": "FLAG_HIDE_LILYCOVE_CITY_AQUA_GRUNTS"
+      "flag": "FLAG_HIDE_LILYCOVE_CITY_TRI_GRUNTS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -169,7 +169,7 @@
       "flag": "FLAG_ITEM_LILYCOVE_CITY_MAX_REPEL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_TRI_MEMBER_M",
       "x": 43,
       "y": 18,
       "elevation": 3,
@@ -178,11 +178,11 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LilycoveCity_EventScript_AquaGrunt4",
-      "flag": "FLAG_HIDE_LILYCOVE_CITY_AQUA_GRUNTS"
+      "script": "LilycoveCity_EventScript_TriGrunt4",
+      "flag": "FLAG_HIDE_LILYCOVE_CITY_TRI_GRUNTS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_TRI_MEMBER_M",
       "x": 46,
       "y": 12,
       "elevation": 3,
@@ -191,11 +191,11 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LilycoveCity_EventScript_AquaGrunt1",
-      "flag": "FLAG_HIDE_LILYCOVE_CITY_AQUA_GRUNTS"
+      "script": "LilycoveCity_EventScript_TriGrunt1",
+      "flag": "FLAG_HIDE_LILYCOVE_CITY_TRI_GRUNTS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_TRI_MEMBER_M",
       "x": 45,
       "y": 12,
       "elevation": 3,
@@ -204,11 +204,11 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LilycoveCity_EventScript_AquaGrunt2",
-      "flag": "FLAG_HIDE_LILYCOVE_CITY_AQUA_GRUNTS"
+      "script": "LilycoveCity_EventScript_TriGrunt2",
+      "flag": "FLAG_HIDE_LILYCOVE_CITY_TRI_GRUNTS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_TRI_MEMBER_M",
       "x": 38,
       "y": 9,
       "elevation": 5,
@@ -217,8 +217,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LilycoveCity_EventScript_AquaGrunt3",
-      "flag": "FLAG_HIDE_LILYCOVE_CITY_AQUA_GRUNTS"
+      "script": "LilycoveCity_EventScript_TriGrunt3",
+      "flag": "FLAG_HIDE_LILYCOVE_CITY_TRI_GRUNTS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
@@ -361,7 +361,7 @@
       "x": 70,
       "y": 5,
       "elevation": 1,
-      "dest_map": "MAP_AQUA_HIDEOUT_1F",
+      "dest_map": "MAP_TRI_HIDEOUT_1F",
       "dest_warp_id": "0"
     },
     {

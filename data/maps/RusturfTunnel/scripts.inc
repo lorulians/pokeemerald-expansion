@@ -9,10 +9,10 @@ RusturfTunnel_OnFrame:
 	.2byte 0
 
 RusturfTunnel_OnTransition:
-	call_if_eq VAR_RUSTURF_TUNNEL_STATE, 2, RusturfTunnel_EventScript_SetAquaGruntAndPeekoPos
+	call_if_eq VAR_RUSTURF_TUNNEL_STATE, 2, RusturfTunnel_EventScript_SetTriGruntAndPeekoPos
 	end
 
-RusturfTunnel_EventScript_SetAquaGruntAndPeekoPos::
+RusturfTunnel_EventScript_SetTriGruntAndPeekoPos::
 	setobjectxyperm LOCALID_RUSTURF_TUNNEL_PEEKO, 13, 4
 	setobjectxyperm LOCALID_RUSTURF_TUNNEL_GRUNT, 13, 5
 	return
@@ -266,7 +266,7 @@ RusturfTunnel_EventScript_TunnelBlockagePos3::
 	setvar VAR_TEMP_1, 3
 	end
 
-RusturfTunnel_EventScript_AquaGruntBackUp::
+RusturfTunnel_EventScript_TriGruntBackUp::
 	lockall
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 	msgbox RusturfTunnel_Text_ComeAndGetSome, MSGBOX_DEFAULT
@@ -299,7 +299,7 @@ RusturfTunnel_EventScript_Peeko::
 RusturfTunnel_EventScript_Grunt::
 	lock
 	faceplayer
-	playbgm MUS_ENCOUNTER_AQUA, FALSE
+	playbgm MUS_ENCOUNTER_TRI, FALSE
 	msgbox RusturfTunnel_Text_GruntIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_GRUNT_RUSTURF_TUNNEL, RusturfTunnel_Text_GruntDefeat
 	msgbox RusturfTunnel_Text_GruntTakePackage, MSGBOX_DEFAULT

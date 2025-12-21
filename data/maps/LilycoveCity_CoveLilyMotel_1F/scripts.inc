@@ -4,22 +4,22 @@ LilycoveCity_CoveLilyMotel_1F_MapScripts::
 LilycoveCity_CoveLilyMotel_1F_EventScript_MotelOwner::
 	lockall
 	goto_if_set FLAG_SYS_GAME_CLEAR, LilycoveCity_CoveLilyMotel_1F_EventScript_GameClear
-	goto_if_set FLAG_BADGE07_GET, LilycoveCity_CoveLilyMotel_1F_EventScript_AquaHideoutBusted
+	goto_if_set FLAG_BADGE07_GET, LilycoveCity_CoveLilyMotel_1F_EventScript_TriHideoutBusted
 	msgbox LilycoveCity_CoveLilyMotel_1F_Text_GuestsDoubledByMascot, MSGBOX_DEFAULT
 	applymovement LOCALID_MOTEL_OWNER, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox LilycoveCity_CoveLilyMotel_1F_Text_NoGuestsWithTeamAqua, MSGBOX_DEFAULT
+	msgbox LilycoveCity_CoveLilyMotel_1F_Text_NoGuestsWithTeamTri, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_MOTEL_OWNER, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	releaseall
 	end
 
-LilycoveCity_CoveLilyMotel_1F_EventScript_AquaHideoutBusted::
+LilycoveCity_CoveLilyMotel_1F_EventScript_TriHideoutBusted::
 	msgbox LilycoveCity_CoveLilyMotel_1F_Text_MonFoundLostItem, MSGBOX_DEFAULT
 	applymovement LOCALID_MOTEL_OWNER, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox LilycoveCity_CoveLilyMotel_1F_Text_HeardAquaHideoutBusted, MSGBOX_DEFAULT
+	msgbox LilycoveCity_CoveLilyMotel_1F_Text_HeardTriHideoutBusted, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_MOTEL_OWNER, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -81,10 +81,10 @@ LilycoveCity_CoveLilyMotel_1F_Text_GuestsDoubledByMascot:
 	.string "I wonder if that will attract more\n"
 	.string "guests to stay with us?$"
 
-LilycoveCity_CoveLilyMotel_1F_Text_NoGuestsWithTeamAqua:
+LilycoveCity_CoveLilyMotel_1F_Text_NoGuestsWithTeamTri:
 	.string "Oh, sorry, sorry!\n"
 	.string "I was too involved in watching TV!\p"
-	.string "Since that TEAM AQUA came to town,\n"
+	.string "Since that TEAM TRI came to town,\n"
 	.string "the tourists have been staying away.$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_CantSeeTheTV:
@@ -99,11 +99,11 @@ LilycoveCity_CoveLilyMotel_1F_Text_MonFoundLostItem:
 	.string "We could recover anything that our\n"
 	.string "guests mislaid…$"
 
-LilycoveCity_CoveLilyMotel_1F_Text_HeardAquaHideoutBusted:
+LilycoveCity_CoveLilyMotel_1F_Text_HeardTriHideoutBusted:
 	.string "Oh, sorry, sorry!\n"
 	.string "I was too involved in watching TV!\p"
 	.string "I heard that someone busted\n"
-	.string "the TEAM AQUA HIDEOUT.\p"
+	.string "the TEAM TRI HIDEOUT.\p"
 	.string "Thanks to that, we just booked\n"
 	.string "a reservation from a big group.\p"
 	.string "It was a company called… Uh…\n"

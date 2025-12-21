@@ -15,12 +15,12 @@ Route119_WeatherInstitute_1F_EventScript_LittleBoy::
 	lock
 	faceplayer
 	special GetPlayerBigGuyGirlString
-	goto_if_eq VAR_WEATHER_INSTITUTE_STATE, 0, Route119_WeatherInstitute_1F_EventScript_LittleBoyTeamAquaHere
+	goto_if_eq VAR_WEATHER_INSTITUTE_STATE, 0, Route119_WeatherInstitute_1F_EventScript_LittleBoyTeamTriHere
 	msgbox Route119_WeatherInstitute_1F_Text_WowYoureStrong, MSGBOX_DEFAULT
 	release
 	end
 
-Route119_WeatherInstitute_1F_EventScript_LittleBoyTeamAquaHere::
+Route119_WeatherInstitute_1F_EventScript_LittleBoyTeamTriHere::
 	msgbox Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs, MSGBOX_DEFAULT
 	release
 	end
@@ -47,7 +47,7 @@ Route119_WeatherInstitute_1F_EventScript_StudyingRain::
 	end
 
 Route119_WeatherInstitute_1F_EventScript_InstituteWorker2::
-	msgbox Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo, MSGBOX_NPC
+	msgbox Route119_WeatherInstitute_1F_Text_WhatWereTrisUpTo, MSGBOX_NPC
 	end
 
 Route119_WeatherInstitute_1F_EventScript_Bed::
@@ -121,11 +121,11 @@ Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather:
 	.string "isolated cases of droughts and\l"
 	.string "heavy rain lately…$"
 
-Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo:
+Route119_WeatherInstitute_1F_Text_WhatWereTrisUpTo:
 	.string "Hello!\n"
 	.string "We've been saved by your actions!\p"
 	.string "What I don't understand is what on\n"
-	.string "earth the AQUAS were up to.$"
+	.string "earth the TRIS were up to.$"
 
 Route119_WeatherInstitute_1F_Text_TakeRestInBed:
 	.string "There's a bed…\n"

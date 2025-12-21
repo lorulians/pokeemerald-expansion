@@ -273,7 +273,7 @@ extern const u16 gBattleEnvironmentPalette_Kyogre[];
 extern const u16 gBattleEnvironmentPalette_Groudon[];
 extern const u16 gBattleEnvironmentPalette_BuildingGym[];
 extern const u16 gBattleEnvironmentPalette_BuildingLeader[];
-extern const u16 gBattleEnvironmentPalette_StadiumAqua[];
+extern const u16 gBattleEnvironmentPalette_StadiumTri[];
 extern const u16 gBattleEnvironmentPalette_StadiumMagma[];
 extern const u16 gBattleEnvironmentPalette_StadiumSidney[];
 extern const u16 gBattleEnvironmentPalette_StadiumPhoebe[];

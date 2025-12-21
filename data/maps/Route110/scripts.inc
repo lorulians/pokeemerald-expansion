@@ -27,16 +27,16 @@ Route110_EventScript_BeginCylcingRoadChallenge::
 	setvar VAR_CYCLING_CHALLENGE_STATE, 2
 	return
 
-Route110_EventScript_AquaGrunt1::
+Route110_EventScript_TriGrunt1::
 	lock
 	faceplayer
-	msgbox Route110_Text_WeCantTalkAboutAquaActivities, MSGBOX_DEFAULT
+	msgbox Route110_Text_WeCantTalkAboutTriActivities, MSGBOX_DEFAULT
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
 
-Route110_EventScript_AquaGrunt2::
+Route110_EventScript_TriGrunt2::
 	lock
 	faceplayer
 	msgbox Route110_Text_KickUpARuckus, MSGBOX_DEFAULT
@@ -45,19 +45,19 @@ Route110_EventScript_AquaGrunt2::
 	release
 	end
 
-Route110_EventScript_AquaGrunt3::
+Route110_EventScript_TriGrunt3::
 	lock
 	faceplayer
-	msgbox Route110_Text_MyFirstJobInAqua, MSGBOX_DEFAULT
+	msgbox Route110_Text_MyFirstJobInTri, MSGBOX_DEFAULT
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
 
-Route110_EventScript_AquaGrunt4::
+Route110_EventScript_TriGrunt4::
 	lock
 	faceplayer
-	msgbox Route110_Text_AquaActionsBringSmiles, MSGBOX_DEFAULT
+	msgbox Route110_Text_TriActionsBringSmiles, MSGBOX_DEFAULT
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
@@ -100,7 +100,7 @@ Route110_EventScript_CyclingRoadSign::
 	end
 
 Route110_EventScript_VandalizedSign::
-	msgbox Route110_Text_AquaWasHere, MSGBOX_SIGN
+	msgbox Route110_Text_TriWasHere, MSGBOX_SIGN
 	end
 
 Route110_EventScript_Route103Sign::
@@ -738,20 +738,20 @@ Route110_Movement_BirchExit4:
 	walk_up
 	step_end
 
-Route110_Text_WeCantTalkAboutAquaActivities:
-	.string "TEAM AQUA's activities…\n"
+Route110_Text_WeCantTalkAboutTriActivities:
+	.string "TEAM TRI's activities…\n"
 	.string "We can't talk about them yet.$"
 
 Route110_Text_KickUpARuckus:
 	.string "I want to get going to SLATEPORT and\n"
 	.string "kick up a ruckus!$"
 
-Route110_Text_MyFirstJobInAqua:
+Route110_Text_MyFirstJobInTri:
 	.string "This is my first job after joining\n"
-	.string "TEAM AQUA. It's a little scary.$"
+	.string "TEAM TRI. It's a little scary.$"
 
-Route110_Text_AquaActionsBringSmiles:
-	.string "TEAM AQUA's actions should bring\n"
+Route110_Text_TriActionsBringSmiles:
+	.string "TEAM TRI's actions should bring\n"
 	.string "smiles to people's faces!$"
 
 Route110_Text_MayLetsBattle:
@@ -915,8 +915,8 @@ Route110_Text_SlateportCitySign:
 Route110_Text_CyclingRoadSign:
 	.string "SEASIDE CYCLING ROAD$"
 
-Route110_Text_AquaWasHere:
-	.string "“TEAM AQUA was here!”\p"
+Route110_Text_TriWasHere:
+	.string "“TEAM TRI was here!”\p"
 	.string "Someone painted that onto this sign,\n"
 	.string "but then someone else painted over it.\p"
 	.string "“TEAM MAGMA rules!” is what it\n"

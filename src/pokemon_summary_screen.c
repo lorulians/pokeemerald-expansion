@@ -3655,7 +3655,7 @@ static void BufferMonTrainerMemo(void)
 
         if (sum->metLocation < MAPSEC_NONE)
         {
-            GetMapNameHandleAquaHideout(metLocationString, sum->metLocation);
+            GetMapNameHandleTriHideout(metLocationString, sum->metLocation);
             DynamicPlaceholderTextUtil_SetPlaceholderPtr(4, metLocationString);
         }
 

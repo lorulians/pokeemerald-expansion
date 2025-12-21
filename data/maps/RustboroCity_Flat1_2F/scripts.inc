@@ -1,176 +1,129 @@
 RustboroCity_Flat1_2F_MapScripts::
 	.byte 0
 
-RustboroCity_Flat1_2F_EventScript_WaldasDad::
-	lock
-	faceplayer
-	specialvar VAR_RESULT, TryBufferWaldaPhrase
-	goto_if_eq VAR_RESULT, FALSE, RustboroCity_Flat1_2F_EventScript_WaldasDadFirstPhrase
-	goto_if_eq VAR_RESULT, TRUE, RustboroCity_Flat1_2F_EventScript_WaldasDadNewPhrase
-
-RustboroCity_Flat1_2F_EventScript_GivePhrase::
-	special DoWaldaNamingScreen
-	waitstate
-	goto_if_eq VAR_0x8004, 1, RustboroCity_Flat1_2F_EventScript_CancelGivePhrase
-	goto_if_eq VAR_0x8004, 2, RustboroCity_Flat1_2F_EventScript_CancelGiveFirstPhrase
-	specialvar VAR_RESULT, TryGetWallpaperWithWaldaPhrase
-	goto_if_eq VAR_RESULT, TRUE, RustboroCity_Flat1_2F_EventScript_WaldaLikesPhrase
-	goto_if_eq VAR_RESULT, FALSE, RustboroCity_Flat1_2F_EventScript_WaldaDoesntLikePhrase
+RustboroCity_Flat1_2F_EventScript_JudeDad::
+	goto_if_unset FLAG_HIDE_TEPEK_APPT_RIVAL, RustboroCity_Flat1_2F_EventScript_JudeDadRoom
+	goto_if_set FLAG_HIDE_TEPEK_APPT_RIVAL, RustboroCity_Flat1_2F_EventScript_JudeDadOutside
 	end
 
-RustboroCity_Flat1_2F_EventScript_WaldasDadFirstPhrase::
-	msgbox RustboroCity_Flat1_2F_Text_HelloDoYouKnowFunnyPhrase, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, RustboroCity_Flat1_2F_EventScript_DeclineGivePhrase
-	msgbox RustboroCity_Flat1_2F_Text_WonderfulLetsHearSuggestion, MSGBOX_DEFAULT
-	goto RustboroCity_Flat1_2F_EventScript_GivePhrase
-
-RustboroCity_Flat1_2F_EventScript_WaldasDadNewPhrase::
-	msgbox RustboroCity_Flat1_2F_Text_BeenSayingXDoYouKnowBetterPhrase, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, RustboroCity_Flat1_2F_EventScript_DeclineGivePhrase
-	msgbox RustboroCity_Flat1_2F_Text_WonderfulLetsHearSuggestion, MSGBOX_DEFAULT
-	goto RustboroCity_Flat1_2F_EventScript_GivePhrase
-
-RustboroCity_Flat1_2F_EventScript_DeclineGivePhrase::
-	msgbox RustboroCity_Flat1_2F_Text_OhIsThatRight, MSGBOX_DEFAULT
-	release
+RustboroCity_Flat1_2F_EventScript_JudeDadRoom::
+	msgbox RustboroCity_Flat1_2F_Text_JudesInRoom, MSGBOX_NPC
 	end
 
-RustboroCity_Flat1_2F_EventScript_CancelGivePhrase::
-	msgbox RustboroCity_Flat1_2F_Text_OhYouDontKnowAny, MSGBOX_DEFAULT
-	release
+RustboroCity_Flat1_2F_EventScript_JudeDadOutside::
+	msgbox RustboroCity_Flat1_2F_Text_JudesOutisde, MSGBOX_NPC
 	end
 
-RustboroCity_Flat1_2F_EventScript_CancelGiveFirstPhrase::
-	msgbox RustboroCity_Flat1_2F_Text_ThinkOfMyOwnPhrase, MSGBOX_DEFAULT
-	call RustboroCity_Flat1_2F_EventScript_WaldasDadFaceWalda
-	msgbox RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll2, MSGBOX_DEFAULT
-	release
+RustboroCity_Flat1_2F_EventScript_JudeSister::
+	msgbox RustboroCity_Flat1_2F_Text_BeautifulWeather, MSGBOX_NPC
 	end
 
-RustboroCity_Flat1_2F_EventScript_WaldaLikesPhrase::
-	msgbox RustboroCity_Flat1_2F_Text_LetsGiveItATry2, MSGBOX_DEFAULT
-	call RustboroCity_Flat1_2F_EventScript_WaldasDadFaceWalda
-	msgbox RustboroCity_Flat1_2F_Text_OhShesLaughing, MSGBOX_DEFAULT
-	applymovement LOCALID_WALDAS_DAD, Common_Movement_FacePlayer
+RustboroCity_Flat1_2F_EventScript_Jude::
+	lockall
+	goto_if_eq VAR_RUSTBORO_CITY_STATE, 2, RustboroCity_Flat1_2F_EventScript_JudeWaiting
+	goto_if_eq VAR_RUSTBORO_CITY_STATE, 3, RustboroCity_Flat1_2F_EventScript_HeyPlayer
+	msgbox RustboroCity_Flat1_2F_Text_CheckingThings, MSGBOX_DEFAULT
+    delay 10
 	waitmovement 0
-	msgbox RustboroCity_Flat1_2F_Text_ThankYouIllGiveYouWallpaper, MSGBOX_DEFAULT
-	release
+	playse SE_PIN
+    applymovement LOCALID_TEPEKAPPT_RIVAL, Common_Movement_ExclamationMark
+    waitmovement 0
+    delay 10
+	faceplayer
+	msgbox RustboroCity_Flat1_2F_Text_WhoAreYou, MSGBOX_DEFAULT
+	msgbox RustboroCity_Flat1_2F_Text_DeliveryForMe, MSGBOX_DEFAULT
+	setvar VAR_0x8004, ITEM_PARCEL
+	call Common_EventScript_PlayerHandedOverTheItem
+	setflag FLAG_DELIVERED_JUDE_POKEBALL
+	msgbox RustboroCity_Flat1_2F_Text_WeShouldBattle, MSGBOX_DEFAULT
+	waitmessage
+    delay 5
+    applymovement LOCALID_TEPEKAPPT_RIVALDAD, RustboroCity_Flat1_2F_Movement_JudeDadToJude
+	waitmovement 0
+	msgbox RustboroCity_Flat1_2F_Text_NotInAppt, MSGBOX_NPC
+	waitmessage
+	applymovement LOCALID_TEPEKAPPT_RIVAL, Common_Movement_WalkInPlaceFasterLeft
+	msgbox RustboroCity_Flat1_2F_Text_SorryDad, MSGBOX_NPC
+	applymovement LOCALID_TEPEKAPPT_RIVALDAD, RustboroCity_Flat1_2F_Movement_JudeDadToTable
+	faceplayer
+	msgbox RustboroCity_Flat1_2F_Text_MeetMeOutside, MSGBOX_NPC
+	setflag FLAG_HIDE_TEPEK_APPT_RIVAL
+	setvar VAR_RUSTBORO_CITY_STATE, 2
+	releaseall
 	end
 
-RustboroCity_Flat1_2F_EventScript_WaldaDoesntLikePhrase::
-	msgbox RustboroCity_Flat1_2F_Text_LetsGiveItATry, MSGBOX_DEFAULT
-	call RustboroCity_Flat1_2F_EventScript_WaldasDadFaceWalda
-	msgbox RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll, MSGBOX_DEFAULT
-	release
+RustboroCity_Flat1_2F_EventScript_HeyPlayer::
+	faceplayer
+	msgbox RustboroCity_Flat1_2F_Text_HeyPlayer, MSGBOX_DEFAULT
+	releaseall
 	end
 
-RustboroCity_Flat1_2F_EventScript_WaldasDadFaceWalda::
-	turnobject LOCALID_WALDAS_DAD, DIR_EAST
-	return
-
-RustboroCity_Flat1_2F_EventScript_WaldasMom::
-	msgbox RustboroCity_Flat1_2F_Text_ComingUpWithMealsIsHard, MSGBOX_NPC
+RustboroCity_Flat1_2F_EventScript_JudeWaiting::
+	msgbox RustboroCity_Flat1_2F_Text_IllBeWaiting, MSGBOX_DEFAULT
+	releaseall
 	end
 
-RustboroCity_Flat1_2F_EventScript_PokeDoll::
-	msgbox RustboroCity_Flat1_2F_Text_ItsAPokemonPlushDoll, MSGBOX_SIGN
-	end
+RustboroCity_Flat1_2F_Text_HeyPlayer:
+	.string "Jude: Hey, {PLAYER}{KUN}!$"
 
-RustboroCity_Flat1_2F_Text_ComingUpWithMealsIsHard:
-	.string "Oh, it's so hard every day…\p"
-	.string "What's hard?\n"
-	.string "You need to ask?\p"
-	.string "It's trying to figure out what to\n"
-	.string "make for meals every day.\p"
-	.string "It really isn't easy coming up with\n"
-	.string "meals every day.$"
+RustboroCity_Flat1_2F_Text_IllBeWaiting:
+	.string "Jude: I'll be waiting!$"
 
-RustboroCity_Flat1_2F_Text_HelloDoYouKnowFunnyPhrase:
-	.string "Oh, hello!\n"
-	.string "Welcome to the PEPPER household.\p"
-	.string "I have a question for you.\n"
-	.string "Have you ever baby-sat?\p"
-	.string "You see, I'm a new father, so raising\n"
-	.string "a child is all new to me.\p"
-	.string "And I have a problem. My daughter\n"
-	.string "WALDA doesn't laugh enough.\p"
-	.string "I think she'd laugh for me if I told\n"
-	.string "her something funny.\p"
-	.string "Do you know of a funny word or\n"
-	.string "phrase you can tell me?$"
+RustboroCity_Flat1_2F_Movement_JudeDadToJude:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_in_place_right
+	step_end
 
-RustboroCity_Flat1_2F_Text_BeenSayingXDoYouKnowBetterPhrase:
-	.string "I've been saying “{STR_VAR_1}”\n"
-	.string "to amuse her lately.\p"
-	.string "Do you know of a better word or\n"
-	.string "a phrase that might work?$"
+RustboroCity_Flat1_2F_Movement_JudeDadToTable:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_in_place_right
+	step_end
 
-RustboroCity_Flat1_2F_Text_WonderfulLetsHearSuggestion:
-	.string "Oh, that's wonderful.\n"
-	.string "So, let's hear it, your suggestion.$"
+RustboroCity_Flat1_2F_Text_MeetMeOutside:
+	.string "Jude: Go outside, I'll meet you\n"
+	.string "there and we can battle!$"
 
-RustboroCity_Flat1_2F_Text_OhIsThatRight:
-	.string "Oh, is that right?\p"
-	.string "Well, if you come up with a good\n"
-	.string "suggestion, I'm all ears.$"
+RustboroCity_Flat1_2F_Text_SorryDad:
+	.string "Jude: Sorry, Dad…$"
 
-RustboroCity_Flat1_2F_Text_LetsGiveItATry2:
-	.string "Ah, I see.\n"
-	.string "Well, let's give it a try, shall we?$"
+RustboroCity_Flat1_2F_Text_NotInAppt:
+	.string "Not in the apartment! Go outside\n"
+	.string "if you want to battle!$"
 
-RustboroCity_Flat1_2F_Text_OhShesLaughing:
-	.string "{STR_VAR_1}.\n"
-	.string "{STR_VAR_1}.\p"
-	.string "Oh, yes! She's laughing!\n"
-	.string "Oh, I am as delighted as she!$"
+RustboroCity_Flat1_2F_Text_JudesInRoom:
+	.string "Jude? Oh, he's in the other room.$"
 
-RustboroCity_Flat1_2F_Text_LetsGiveItATry:
-	.string "Ah, I see.\n"
-	.string "Well, let's give it a try, shall we?$"
+RustboroCity_Flat1_2F_Text_JudesOutisde:
+	.string "Jude? Oh, he's outside waiting for\n"
+	.string "you.$"
 
-RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll:
-	.string "{STR_VAR_1}.\n"
-	.string "{STR_VAR_1}.\p"
-	.string "Hmmm… She's not smiling at all.\n"
-	.string "Maybe WALDA is one serious child…$"
+RustboroCity_Flat1_2F_Text_WhoAreYou:
+	.string "???: Who are you?\p"
+	.string "Oh, {PLAYER}{KUN}? Nice to meet you!\n"
+	.string "My name's Jude!$"
 
-RustboroCity_Flat1_2F_Text_ThinkOfMyOwnPhrase:
-	.string "Oh, so you don't know any good words.\n"
-	.string "I'd better think for myself, then.\p"
-	.string "Hmm…\n"
-	.string "How about “{STR_VAR_1}”?\l"
-	.string "Let's see if that will work.$"
+RustboroCity_Flat1_2F_Text_DeliveryForMe: 
+	.string "Jude: So what's up?\p"
+	.string "Oh, a delivery for me? That's gotta\n"
+	.string "be my Pokémon!$"
 
-RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll2:
-	.string "{STR_VAR_1}.\n"
-	.string "{STR_VAR_1}.\p"
-	.string "Hmmm… She's not smiling at all.\n"
-	.string "Maybe WALDA is one serious child…$"
+RustboroCity_Flat1_2F_Text_BeautifulWeather:
+	.string "The weather is so beautiful today!\n"
+	.string "So, why am I spending it inside?\p"
+	.string "I don't want to ruin my lovely skin\n"
+	.string "of course!$"
 
-RustboroCity_Flat1_2F_Text_OhYouDontKnowAny:
-	.string "Oh, so you don't know any good words.\n"
-	.string "I guess I'll try to amuse her with\l"
-	.string "the saying I used before.\p"
-	.string "Anyways, if you have a good suggestion,\n"
-	.string "don't hesitate in telling me, okay?$"
+RustboroCity_Flat1_2F_Text_WeShouldBattle:
+	.string "Jude: Wow! My own Pokémon!\p"
+	.string "I know, we should have a battle!$"
 
-RustboroCity_Flat1_2F_Text_ThankYouIllGiveYouWallpaper:
-	.string "Thank you!\p"
-	.string "Thanks to you, my darling WALDA\n"
-	.string "laughed for me!\p"
-	.string "Actually, I may not look all that\n"
-	.string "special, but I'm one of DEVON\l"
-	.string "CORPORATION's top researchers.\p"
-	.string "So, how about I do something in return\n"
-	.string "for you?\p"
-	.string "I know, I'll add some new wallpaper\n"
-	.string "patterns for the BOXES in the PC\l"
-	.string "POKéMON Storage System.\p"
-	.string "In the wallpaper pattern menu,\n"
-	.string "select “FRIENDS.”\p"
-	.string "That will give you access to the new\n"
-	.string "wallpaper patterns.$"
-
-RustboroCity_Flat1_2F_Text_ItsAPokemonPlushDoll:
-	.string "It's a POKéMON plush DOLL!$"
-
+RustboroCity_Flat1_2F_Text_CheckingThings:
+	.string "???: Okay, I have my Bag ready…$"

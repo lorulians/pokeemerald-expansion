@@ -36,7 +36,7 @@ MagmaHideout_2F_2R_Text_Grunt15PostBattle:
 
 MagmaHideout_2F_2R_Text_Grunt6Intro:
 	.string "I can't stand heat. Maybe I should've\n"
-	.string "joined TEAM AQUA instead…$"
+	.string "joined TEAM TRI instead…$"
 
 MagmaHideout_2F_2R_Text_Grunt6Defeat:
 	.string "Yeah, I really may not be right for\n"

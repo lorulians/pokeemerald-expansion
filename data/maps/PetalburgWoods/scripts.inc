@@ -8,12 +8,12 @@ PetalburgWoods_EventScript_DevonResearcherLeft::
 	waitmovement 0
 	msgbox PetalburgWoods_Text_HaveYouSeenShroomish, MSGBOX_DEFAULT
 	closemessage
-	playbgm MUS_ENCOUNTER_AQUA, FALSE
-	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaEntrance
+	playbgm MUS_ENCOUNTER_TRI, FALSE
+	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_TriEntrance
 	waitmovement 0
 	msgbox PetalburgWoods_Text_IWasGoingToAmbushYou, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaApproachResearcherLeft
+	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_TriApproachResearcherLeft
 	waitmovement 0
 	applymovement LOCALID_PETALBURG_WOODS_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
@@ -23,11 +23,10 @@ PetalburgWoods_EventScript_DevonResearcherLeft::
 	waitmovement 0
 	msgbox PetalburgWoods_Text_YouHaveToHelpMe, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaApproachPlayer
+	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_TriApproachPlayer
 	waitmovement 0
-	msgbox PetalburgWoods_Text_NoOneCrossesTeamAqua, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_GRUNT_PETALBURG_WOODS, PetalburgWoods_Text_YoureKiddingMe
-	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaBackOff
+	msgbox PetalburgWoods_Text_NoOneCrossesTeamTri, MSGBOX_DEFAULT
+	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_TriBackOff
 	waitmovement 0
 	call PetalburgWoods_EventScript_DevonResearcherPostBattle
 	applymovement LOCALID_PLAYER, PetalburgWoods_Movement_WatchResearcherLeave
@@ -45,12 +44,12 @@ PetalburgWoods_EventScript_DevonResearcherRight::
 	waitmovement 0
 	msgbox PetalburgWoods_Text_HaveYouSeenShroomish, MSGBOX_DEFAULT
 	closemessage
-	playbgm MUS_ENCOUNTER_AQUA, FALSE
-	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaEntrance
+	playbgm MUS_ENCOUNTER_TRI, FALSE
+	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_TriEntrance
 	waitmovement 0
 	msgbox PetalburgWoods_Text_IWasGoingToAmbushYou, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaApproachResearcherRight
+	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_TriApproachResearcherRight
 	waitmovement 0
 	applymovement LOCALID_PETALBURG_WOODS_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
@@ -61,9 +60,8 @@ PetalburgWoods_EventScript_DevonResearcherRight::
 	msgbox PetalburgWoods_Text_YouHaveToHelpMe, MSGBOX_DEFAULT
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
-	msgbox PetalburgWoods_Text_NoOneCrossesTeamAqua, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_GRUNT_PETALBURG_WOODS, PetalburgWoods_Text_YoureKiddingMe
-	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaBackOff
+	msgbox PetalburgWoods_Text_NoOneCrossesTeamTri, MSGBOX_DEFAULT
+	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_TriBackOff
 	waitmovement 0
 	call PetalburgWoods_EventScript_DevonResearcherPostBattle
 	applymovement LOCALID_PLAYER, PetalburgWoods_Movement_WatchResearcherLeave
@@ -82,7 +80,7 @@ PetalburgWoods_EventScript_DevonResearcherIntro::
 PetalburgWoods_EventScript_DevonResearcherPostBattle::
 	msgbox PetalburgWoods_Text_YouveGotSomeNerve, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaRunAway
+	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_TriRunAway
 	waitmovement 0
 	removeobject LOCALID_PETALBURG_WOODS_GRUNT
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
@@ -99,7 +97,7 @@ PetalburgWoods_EventScript_BagFull::
 	end
 
 PetalburgWoods_EventScript_DevonResearcherFinish::
-	msgbox PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro, MSGBOX_DEFAULT
+	msgbox PetalburgWoods_Text_TeamTriAfterSomethingInRustboro, MSGBOX_DEFAULT
 	applymovement LOCALID_PETALBURG_WOODS_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherStartExit
 	waitmovement 0
 	msgbox PetalburgWoods_Text_ICantBeWastingTime, MSGBOX_DEFAULT
@@ -199,18 +197,18 @@ PetalburgWoods_Movement_DevonResearcherStartExit:
 	face_up
 	step_end
 
-PetalburgWoods_Movement_AquaApproachResearcherLeft:
+PetalburgWoods_Movement_TriApproachResearcherLeft:
 	walk_fast_down
 	walk_fast_down
 	step_end
 
-PetalburgWoods_Movement_AquaBackOff:
+PetalburgWoods_Movement_TriBackOff:
 	lock_facing_direction
 	walk_up
 	unlock_facing_direction
 	step_end
 
-PetalburgWoods_Movement_AquaRunAway:
+PetalburgWoods_Movement_TriRunAway:
 	walk_fast_up
 	walk_fast_up
 	walk_fast_up
@@ -220,20 +218,20 @@ PetalburgWoods_Movement_AquaRunAway:
 	delay_16
 	step_end
 
-PetalburgWoods_Movement_AquaApproachResearcherRight:
+PetalburgWoods_Movement_TriApproachResearcherRight:
 	walk_fast_down
 	walk_fast_down
 	walk_fast_down
 	step_end
 
-PetalburgWoods_Movement_AquaEntrance:
+PetalburgWoods_Movement_TriEntrance:
 	walk_down
 	walk_down
 	delay_16
 	delay_16
 	step_end
 
-PetalburgWoods_Movement_AquaApproachPlayer:
+PetalburgWoods_Movement_TriApproachPlayer:
 	walk_down
 	step_end
 
@@ -339,10 +337,10 @@ PetalburgWoods_Text_YouHaveToHelpMe:
 	.string "You're a POKéMON TRAINER, aren't you?\n"
 	.string "You've got to help me, please!$"
 
-PetalburgWoods_Text_NoOneCrossesTeamAqua:
+PetalburgWoods_Text_NoOneCrossesTeamTri:
 	.string "Hunh? What do you think you're doing?\n"
 	.string "What, you're going to protect him?\p"
-	.string "No one who crosses TEAM AQUA\n"
+	.string "No one who crosses TEAM TRI\n"
 	.string "gets any mercy, not even a kid!\p"
 	.string "Come on and battle me!$"
 
@@ -351,11 +349,11 @@ PetalburgWoods_Text_YoureKiddingMe:
 
 PetalburgWoods_Text_YouveGotSomeNerve:
 	.string "Grrr… You've got some nerve\n"
-	.string "meddling with TEAM AQUA!\l"
+	.string "meddling with TEAM TRI!\l"
 	.string "Come on and battle me again!\p"
 	.string "I wish I could say that, but I'm out of\n"
 	.string "POKéMON…\p"
-	.string "And, hey, we of TEAM AQUA are also\n"
+	.string "And, hey, we of TEAM TRI are also\n"
 	.string "after something in RUSTBORO.\p"
 	.string "I'll let you go today!$"
 
@@ -367,8 +365,8 @@ PetalburgWoods_Text_ThatWasAwfullyClose:
 	.string "I know, I'll give you a GREAT BALL as\n"
 	.string "my thanks!$"
 
-PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro:
-	.string "Didn't that TEAM AQUA thug say\n"
+PetalburgWoods_Text_TeamTriAfterSomethingInRustboro:
+	.string "Didn't that TEAM TRI thug say\n"
 	.string "they were after something in\l"
 	.string "RUSTBORO, too?$"
 

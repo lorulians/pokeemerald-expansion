@@ -11,26 +11,26 @@ MtPyre_Summit_EventScript_SetArchieMaxiePositions::
 	setobjectxyperm LOCALID_MT_PYRE_SUMMIT_ARCHIE, 22, 6
 	end
 
-MtPyre_Summit_EventScript_TeamAquaTrigger0::
+MtPyre_Summit_EventScript_TeamTriTrigger0::
 	lockall
 	setvar VAR_0x8008, 0
-	goto MtPyre_Summit_EventScript_TeamAquaExits
+	goto MtPyre_Summit_EventScript_TeamTriExits
 	end
 
-MtPyre_Summit_EventScript_TeamAquaTrigger1::
+MtPyre_Summit_EventScript_TeamTriTrigger1::
 	lockall
 	setvar VAR_0x8008, 1
-	goto MtPyre_Summit_EventScript_TeamAquaExits
+	goto MtPyre_Summit_EventScript_TeamTriExits
 	end
 
-MtPyre_Summit_EventScript_TeamAquaTrigger2::
+MtPyre_Summit_EventScript_TeamTriTrigger2::
 	lockall
 	setvar VAR_0x8008, 2
-	goto MtPyre_Summit_EventScript_TeamAquaExits
+	goto MtPyre_Summit_EventScript_TeamTriExits
 	end
 
-MtPyre_Summit_EventScript_TeamAquaExits::
-	playbgm MUS_ENCOUNTER_AQUA, FALSE
+MtPyre_Summit_EventScript_TeamTriExits::
+	playbgm MUS_ENCOUNTER_TRI, FALSE
 	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
 	applymovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, Common_Movement_WalkInPlaceFasterDown
@@ -48,7 +48,7 @@ MtPyre_Summit_EventScript_TeamAquaExits::
 	removeobject LOCALID_MT_PYRE_SUMMIT_GRUNT_3
 	removeobject LOCALID_MT_PYRE_SUMMIT_GRUNT_4
 	setflag FLAG_HIDE_MT_PYRE_SUMMIT_ARCHIE
-	setflag FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA
+	setflag FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_TRI
 	fadedefaultbgm
 	fadescreenswapbuffers FADE_FROM_BLACK
 	delay 20
@@ -471,10 +471,10 @@ MtPyre_Summit_Text_Grunt4Intro:
 	.string "You tried to join TEAM MAGMA,\l"
 	.string "but they wouldn't have you!\p"
 	.string "Well, don't think that we'll let you\n"
-	.string "join our TEAM AQUA!$"
+	.string "join our TEAM TRI!$"
 
 MtPyre_Summit_Text_Grunt4Defeat:
-	.string "If you want to join TEAM AQUA that\n"
+	.string "If you want to join TEAM TRI that\n"
 	.string "badly, we can consider it…$"
 
 MtPyre_Summit_Text_Grunt4PostBattle:

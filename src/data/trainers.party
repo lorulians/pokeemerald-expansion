@@ -94,12 +94,12 @@ Geodude
 Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_1 ===
+=== TRAINER_GRUNT_TRI_HIDEOUT_1 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Class: Team Tri
+Pic: Tri Grunt M
 Gender: Male
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -107,12 +107,12 @@ Poochyena
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_2 ===
+=== TRAINER_GRUNT_TRI_HIDEOUT_2 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Class: Team Tri
+Pic: Tri Grunt M
 Gender: Male
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -124,12 +124,12 @@ Carvanha
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_3 ===
+=== TRAINER_GRUNT_TRI_HIDEOUT_3 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Class: Team Tri
+Pic: Tri Grunt M
 Gender: Male
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -137,12 +137,12 @@ Zubat
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
+=== TRAINER_GRUNT_TRI_HIDEOUT_4 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Class: Team Tri
+Pic: Tri Grunt M
 Gender: Male
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -152,10 +152,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Class: Team Tri
+Pic: Tri Grunt M
 Gender: Male
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -165,10 +165,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Class: Team Tri
+Pic: Tri Grunt M
 Gender: Male
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -178,10 +178,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_3 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Class: Team Tri
+Pic: Tri Grunt M
 Gender: Male
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -222,12 +222,12 @@ Taillow
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_PETALBURG_WOODS ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
+=== TRAINER_GRUNT_ROUTE_232 ===
+Name: Grunt
+Class: Team Tri
+Pic: Tri Grunt F
+Gender: Female
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -289,10 +289,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_4 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt F
+Class: Team Tri
+Pic: Tri Grunt F
 Gender: Female
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -315,10 +315,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_RUSTURF_TUNNEL ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Class: Team Tri
+Pic: Tri Grunt M
 Gender: Male
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -328,10 +328,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_WEATHER_INST_1 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Class: Team Tri
+Pic: Tri Grunt M
 Gender: Male
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -345,10 +345,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_WEATHER_INST_2 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Class: Team Tri
+Pic: Tri Grunt M
 Gender: Male
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -362,10 +362,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_WEATHER_INST_3 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Class: Team Tri
+Pic: Tri Grunt M
 Gender: Male
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -383,10 +383,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MUSEUM_1 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Class: Team Tri
+Pic: Tri Grunt M
 Gender: Male
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -396,10 +396,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MUSEUM_2 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Class: Team Tri
+Pic: Tri Grunt M
 Gender: Male
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -426,10 +426,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_PYRE_1 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Class: Team Tri
+Pic: Tri Grunt M
 Gender: Male
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -439,10 +439,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_PYRE_2 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Class: Team Tri
+Pic: Tri Grunt M
 Gender: Male
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -452,10 +452,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_PYRE_3 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Class: Team Tri
+Pic: Tri Grunt M
 Gender: Male
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -469,10 +469,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_WEATHER_INST_4 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt F
+Class: Team Tri
+Pic: Tri Grunt F
 Gender: Female
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -480,12 +480,12 @@ Carvanha
 Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_5 ===
+=== TRAINER_GRUNT_TRI_HIDEOUT_5 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt F
+Class: Team Tri
+Pic: Tri Grunt F
 Gender: Female
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -493,12 +493,12 @@ Carvanha
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_6 ===
+=== TRAINER_GRUNT_TRI_HIDEOUT_6 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt F
+Class: Team Tri
+Pic: Tri Grunt F
 Gender: Female
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -525,10 +525,10 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MATT ===
 Name: MATT
-Class: Aqua Admin
-Pic: Aqua Admin M
+Class: Tri Admin
+Pic: Tri Admin M
 Gender: Male
-Music: Aqua
+Music: Tri
 Items: Super Potion
 Double Battle: No
 AI: Basic Trainer
@@ -556,10 +556,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SHELLY_WEATHER_INSTITUTE ===
 Name: SHELLY
-Class: Aqua Admin
-Pic: Aqua Admin F
+Class: Tri Admin
+Pic: Tri Admin F
 Gender: Female
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Basic Trainer
 
@@ -573,10 +573,10 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_SHELLY_SEAFLOOR_CAVERN ===
 Name: SHELLY
-Class: Aqua Admin
-Pic: Aqua Admin F
+Class: Tri Admin
+Pic: Tri Admin F
 Gender: Female
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Basic Trainer
 
@@ -590,10 +590,10 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ARCHIE ===
 Name: ARCHIE
-Class: Aqua Leader
-Pic: Aqua Leader Archie
+Class: Tri Leader
+Pic: Tri Leader Archie
 Gender: Male
-Music: Aqua
+Music: Tri
 Items: Super Potion / Super Potion
 Double Battle: No
 AI: Basic Trainer
@@ -3378,12 +3378,12 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Shock Wave
 - Screech
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_7 ===
+=== TRAINER_GRUNT_TRI_HIDEOUT_7 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt F
+Class: Team Tri
+Pic: Tri Grunt F
 Gender: Female
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -3395,12 +3395,12 @@ Zubat
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_8 ===
+=== TRAINER_GRUNT_TRI_HIDEOUT_8 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Class: Team Tri
+Pic: Tri Grunt M
 Gender: Male
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -5940,16 +5940,16 @@ Hariyama
 Level: 39
 IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 
-=== TRAINER_CALVIN_1 ===
-Name: CALVIN
-Class: Youngster
-Pic: Youngster
-Gender: Male
-Music: Male
+=== TRAINER_CLARISSA_1 ===
+Name: Clarissa
+Class: Picnicker
+Pic: Picnicker
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
+Taillow
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6117,75 +6117,79 @@ Aron
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CALVIN_2 ===
-Name: CALVIN
-Class: Youngster
-Pic: Youngster
-Gender: Male
-Music: Male
+=== TRAINER_CLARISSA_2 ===
+Name: Clarissa
+Class: Picnicker
+Pic: Picnicker
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Mightyena
+Swellow
 Level: 27
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_CALVIN_3 ===
-Name: CALVIN
-Class: Youngster
-Pic: Youngster
-Gender: Male
-Music: Male
+Beautifly
+Level: 25
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+=== TRAINER_CLARISSA_3 ===
+Name: Clarissa
+Class: Picnicker
+Pic: Picnicker
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Swellow
+Beautifly
 Level: 28
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Mightyena
+Swellow
 Level: 30
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_CALVIN_4 ===
-Name: CALVIN
-Class: Youngster
-Pic: Youngster
-Gender: Male
-Music: Male
+=== TRAINER_CLARISSA_4 ===
+Name: Clarissa
+Class: Picnicker
+Pic: Picnicker
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Swellow
+Beautifly
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Linoone
+Greedent
 Level: 29
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Mightyena
+Swellow
 Level: 33
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_CALVIN_5 ===
-Name: CALVIN
-Class: Youngster
-Pic: Youngster
-Gender: Male
-Music: Male
+=== TRAINER_CLARISSA_5 ===
+Name: Clarissa
+Class: Picnicker
+Pic: Picnicker
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Swellow
+Beautifly
 Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Linoone
+Greedent
 Level: 32
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Mightyena
+Swellow
 Level: 36
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -6206,21 +6210,21 @@ Zigzagoon
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ALLEN ===
-Name: ALLEN
-Class: Youngster
-Pic: Youngster
-Gender: Male
-Music: Male
+=== TRAINER_SHANA ===
+Name: Shana
+Class: School Kid
+Pic: School Kid F
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
-Level: 4
+Lillipup
+Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Taillow
-Level: 3
+Hoothoot
+Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TIMMY ===
@@ -7985,8 +7989,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Magnitude
 - Sunny Day
 
-=== TRAINER_CLARISSA ===
-Name: CLARISSA
+=== TRAINER_HEATHER ===
+Name: HEATHER
 Class: Parasol Lady
 Pic: Parasol Lady
 Gender: Female
@@ -9666,16 +9670,16 @@ Marshtomp
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_MAY_ROUTE_103_MUDKIP ===
-Name: MAY
+=== TRAINER_JUDE_TEPEK_CITY_SQUIRTLE ===
+Name: Jude
 Class: Rival
-Pic: May
-Gender: Female
-Music: Female
+Pic: Brendan
+Gender: Male
+Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Treecko
+Snivy
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9721,16 +9725,16 @@ Grovyle
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_MAY_ROUTE_103_TREECKO ===
-Name: MAY
+=== TRAINER_JUDE_TEPEK_CITY_SNIVY ===
+Name: Jude
 Class: Rival
-Pic: May
-Gender: Female
-Music: Female
+Pic: Brendan
+Gender: Male
+Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Torchic
+Scorbunny
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9776,16 +9780,16 @@ Combusken
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_MAY_ROUTE_103_TORCHIC ===
-Name: MAY
+=== TRAINER_JUDE_TEPEK_CITY_SCORBUNNY ===
+Name: Jude
 Class: Rival
-Pic: May
-Gender: Female
-Music: Female
+Pic: Brendan
+Gender: Male
+Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Mudkip
+Squirtle
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10485,10 +10489,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_5 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Class: Team Tri
+Pic: Tri Grunt M
 Gender: Male
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -10503,9 +10507,9 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 === TRAINER_GRUNT_UNUSED ===
 Name: GRUNT
 Class: Team Magma
-Pic: Aqua Grunt F
+Pic: Tri Grunt F
 Gender: Female
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -10519,10 +10523,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_PYRE_4 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt F
+Class: Team Tri
+Pic: Tri Grunt F
 Gender: Female
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -10908,10 +10912,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_WEATHER_INST_5 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt F
+Class: Team Tri
+Pic: Tri Grunt F
 Gender: Female
-Music: Aqua
+Music: Tri
 Double Battle: No
 AI: Check Bad Move
 
@@ -11044,21 +11048,21 @@ Camerupt
 Level: 25
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_TIANA ===
-Name: TIANA
-Class: Lass
-Pic: Lass
-Gender: Female
-Music: Female
+=== TRAINER_ERIC ===
+Name: Eric
+Class: Engineer
+Pic: Engineer
+Gender: Male
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
+Magnemite
 Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Shroomish
-Level: 4
+Pikachu
+Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HALEY_1 ===
@@ -11248,18 +11252,14 @@ Wailmer
 Level: 39
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_RICK ===
-Name: RICK
-Class: Bug Catcher
-Pic: Bug Catcher
+=== TRAINER_MICK ===
+Name: Mick
+Class: Camper
+Pic: Camper
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
-
-Wurmple
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Wurmple
 Level: 4
@@ -11553,8 +11553,8 @@ Geodude
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ERIC ===
-Name: ERIC
+=== TRAINER_GIBSON ===
+Name: GIBSON
 Class: Hiker
 Pic: Hiker
 Gender: Male

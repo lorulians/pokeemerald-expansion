@@ -1,109 +1,95 @@
 Route102_MapScripts::
 	.byte 0
 
-Route102_EventScript_LittleBoy::
-	msgbox Route102_Text_ImNotVeryTall, MSGBOX_NPC
+Route102_EventScript_Girl::
+	msgbox Route102_Text_Ledges, MSGBOX_NPC
 	end
 
 Route102_EventScript_RouteSignOldale::
 	msgbox Route102_Text_RouteSignOldale, MSGBOX_SIGN
 	end
 
-Route102_EventScript_RouteSignPetalburg::
-	msgbox Route102_Text_RouteSignPetalburg, MSGBOX_SIGN
-	end
-
 Route102_EventScript_Boy::
 	msgbox Route102_Text_CatchWholeBunchOfPokemon, MSGBOX_NPC
 	end
 
-Route102_EventScript_Calvin::
-	trainerbattle_single TRAINER_CALVIN_1, Route102_Text_CalvinIntro, Route102_Text_CalvinDefeated, Route102_EventScript_CalvinRegisterMatchCallAfterBattle
+Route102_EventScript_Shana::
+	trainerbattle_single TRAINER_SHANA, Route102_Text_ShanaIntro, Route102_Text_ShanaDefeated
+	msgbox Route102_Text_ShanaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route102_EventScript_Clarissa::
+	trainerbattle_single TRAINER_CLARISSA_1, Route102_Text_ClarissaIntro, Route102_Text_ClarissaDefeated, Route102_EventScript_ClarissaRegisterMatchCallAfterBattle
 	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route102_EventScript_CalvinRematch
-	setvar VAR_0x8004, TRAINER_CALVIN_1
+	goto_if_eq VAR_RESULT, TRUE, Route102_EventScript_ClarissaRematch
+	setvar VAR_0x8004, TRAINER_CLARISSA_1
 	specialvar VAR_RESULT, IsTrainerRegistered
-	goto_if_eq VAR_RESULT, FALSE, Route102_EventScript_CalvinTryRegister
-	msgbox Route102_Text_CalvinPostBattle, MSGBOX_DEFAULT
+	goto_if_eq VAR_RESULT, FALSE, Route102_EventScript_ClarissaTryRegister
+	msgbox Route102_Text_ClarissaPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
-Route102_EventScript_CalvinRegisterMatchCallAfterBattle::
+Route102_EventScript_ClarissaRegisterMatchCallAfterBattle::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
-	goto_if_set FLAG_HAS_MATCH_CALL, Route102_EventScript_CalvinRegisterMatchCall
+	goto_if_set FLAG_HAS_MATCH_CALL, Route102_EventScript_ClarissaRegisterMatchCall
 	release
 	end
 
-Route102_EventScript_CalvinRegisterMatchCall::
-	msgbox Route102_Text_CalvinRegisterShort, MSGBOX_DEFAULT
-	register_matchcall TRAINER_CALVIN_1
+Route102_EventScript_ClarissaRegisterMatchCall::
+	msgbox Route102_Text_ClarissaRegisterShort, MSGBOX_DEFAULT
+	register_matchcall TRAINER_CLARISSA_1
 	release
 	end
 
-Route102_EventScript_CalvinTryRegister::
-	goto_if_set FLAG_HAS_MATCH_CALL, Route102_EventScript_CalvinRegister
-	msgbox Route102_Text_CalvinPostBattle, MSGBOX_DEFAULT
+Route102_EventScript_ClarissaTryRegister::
+	goto_if_set FLAG_HAS_MATCH_CALL, Route102_EventScript_ClarissaRegister
+	msgbox Route102_Text_ClarissaPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
-Route102_EventScript_CalvinRegister::
-	msgbox Route102_Text_CalvinRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_CALVIN_1
+Route102_EventScript_ClarissaRegister::
+	msgbox Route102_Text_ClarissaRegister, MSGBOX_DEFAULT
+	register_matchcall TRAINER_CLARISSA_1
 	release
 	end
 
-Route102_EventScript_CalvinRematch::
-	trainerbattle_rematch TRAINER_CALVIN_1, Route102_Text_CalvinRematchIntro, Route102_Text_CalvinRematchDefeated
-	msgbox Route102_Text_CalvinRematchPostBattle, MSGBOX_AUTOCLOSE
+Route102_EventScript_ClarissaRematch::
+	trainerbattle_rematch TRAINER_CLARISSA_1, Route102_Text_ClarissaRematchIntro, Route102_Text_ClarissaRematchDefeated
+	msgbox Route102_Text_ClarissaRematchPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route102_EventScript_Rick::
-	trainerbattle_single TRAINER_RICK, Route102_Text_RickIntro, Route102_Text_RickDefeated
-	msgbox Route102_Text_RickPostBattle, MSGBOX_AUTOCLOSE
+Route102_EventScript_Mick::
+	trainerbattle_single TRAINER_MICK, Route102_Text_MickIntro, Route102_Text_MickDefeated
+	msgbox Route102_Text_MickPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route102_EventScript_Tiana::
-	trainerbattle_single TRAINER_TIANA, Route102_Text_TianaIntro, Route102_Text_TianaDefeated
-	msgbox Route102_Text_TianaPostBattle, MSGBOX_AUTOCLOSE
+Route102_EventScript_Eric::
+	trainerbattle_single TRAINER_ERIC, Route102_Text_EricIntro, Route102_Text_EricDefeated
+	msgbox Route102_Text_EricPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route102_EventScript_Allen::
-	trainerbattle_single TRAINER_ALLEN, Route102_Text_AllenIntro, Route102_Text_AllenDefeated
-	msgbox Route102_Text_AllenPostBattle, MSGBOX_AUTOCLOSE
+Route102_EventScript_TriGruntF::
+	trainerbattle_single TRAINER_GRUNT_ROUTE_232, Route232_Text_TriGruntFIntro, Route232_Text_TriGruntFDefeated
+	msgbox Route232_Text_TriGruntFPostBattle, MSGBOX_AUTOCLOSE
+	goto_if_unset FLAG_HIDE_ROUTE_232_TRIGRUNT, Route102_EventScript_HideGrunt
 	end
 
-Route102_Text_WatchMeCatchPokemon:
-	.string "WALLY: {PLAYER}…\n"
-	.string "POKéMON hide in tall grass like this,\l"
-	.string "don't they?\p"
-	.string "Please watch me and see if I can\n"
-	.string "catch one properly.\p"
-	.string "…Whoa!$"
+Route102_EventScript_HideGrunt::
+	setflag FLAG_HIDE_ROUTE_232_TRIGRUNT
+	end
 
-Route102_Text_WallyIDidIt:
-	.string "WALLY: I did it… It's my…\n"
-	.string "My POKéMON!$"
-
-Route102_Text_LetsGoBack:
-	.string "{PLAYER}, thank you!\n"
-	.string "Let's go back to the GYM!$"
-
-Route102_Text_ImNotVeryTall:
-	.string "I'm…not very tall, so I sink right\n"
-	.string "into tall grass.\p"
-	.string "The grass goes up my nose and…\n"
-	.string "Fwafwafwafwafwa…\p"
-	.string "Fwatchoo!$"
+Route102_Text_Ledges:
+	.string "You can jump down ledges to get to\n"
+	.string "places quicker!\p"
+	.string "Watch out, though. Ledges are a\n"
+	.string "one-way trip.$"
 
 Route102_Text_CatchWholeBunchOfPokemon:
-	.string "I'm going to catch a whole bunch of\n"
-	.string "POKéMON!$"
+	.string "I'm going to catch every Pokémon\n"
+	.string "in the whole region, watch me!$"
 
 Route102_Text_RouteSignOldale:
-	.string "ROUTE 102\n"
-	.string "{RIGHT_ARROW} OLDALE TOWN$"
-
-Route102_Text_RouteSignPetalburg:
-	.string "ROUTE 102\n"
-	.string "{LEFT_ARROW} PETALBURG CITY$"
+	.string "Route 232\n"
+	.string "{LEFT_ARROW} Tepek City\l"
+	.string "{RIGHT_ARROW} Power Plant$"

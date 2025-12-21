@@ -12,7 +12,7 @@ LilycoveCity_OnTransition:
 	end
 
 LilycoveCity_OnLoad:
-	call_if_unset FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_SetWailmerMetatiles
+	call_if_unset FLAG_TEAM_TRI_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_SetWailmerMetatiles
 	end
 
 LilycoveCity_EventScript_SetWailmerMetatiles::
@@ -57,12 +57,12 @@ LilycoveCity_EventScript_Man3::
 LilycoveCity_EventScript_Girl::
 	lock
 	faceplayer
-	goto_if_set FLAG_BADGE07_GET, LilycoveCity_EventScript_GirlAquaGone
+	goto_if_set FLAG_BADGE07_GET, LilycoveCity_EventScript_GirlTriGone
 	msgbox LilycoveCity_Text_StrangeCaveInCove, MSGBOX_DEFAULT
 	release
 	end
 
-LilycoveCity_EventScript_GirlAquaGone::
+LilycoveCity_EventScript_GirlTriGone::
 	msgbox LilycoveCity_Text_GoingToMoveDeleterForHMs, MSGBOX_DEFAULT
 	release
 	end
@@ -74,25 +74,25 @@ LilycoveCity_EventScript_RichBoy::
 LilycoveCity_EventScript_Sailor2::
 	lock
 	faceplayer
-	goto_if_set FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_Sailor2AquaGone
-	msgbox LilycoveCity_Text_TeamAquaBeenTrainingWailmer, MSGBOX_DEFAULT
+	goto_if_set FLAG_TEAM_TRI_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_Sailor2TriGone
+	msgbox LilycoveCity_Text_TeamTriBeenTrainingWailmer, MSGBOX_DEFAULT
 	release
 	end
 
-LilycoveCity_EventScript_Sailor2AquaGone::
-	msgbox LilycoveCity_Text_SomeonePuntedTeamAquaOut, MSGBOX_DEFAULT
+LilycoveCity_EventScript_Sailor2TriGone::
+	msgbox LilycoveCity_Text_SomeonePuntedTeamTriOut, MSGBOX_DEFAULT
 	release
 	end
 
 LilycoveCity_EventScript_Woman2::
 	lock
 	faceplayer
-	goto_if_set FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_Woman2AquaGone
+	goto_if_set FLAG_TEAM_TRI_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_Woman2TriGone
 	msgbox LilycoveCity_Text_SomeoneStoleMyPokemon, MSGBOX_DEFAULT
 	release
 	end
 
-LilycoveCity_EventScript_Woman2AquaGone::
+LilycoveCity_EventScript_Woman2TriGone::
 	msgbox LilycoveCity_Text_MissingPokemonCameBack, MSGBOX_DEFAULT
 	release
 	end
@@ -112,13 +112,13 @@ LilycoveCity_EventScript_ExpertF::
 LilycoveCity_EventScript_ExpertM2::
 	lock
 	faceplayer
-	goto_if_set FLAG_BADGE07_GET, LilycoveCity_EventScript_ExpertM2AquaGone
-	msgbox LilycoveCity_Text_TeamAquaRenovatedCavern, MSGBOX_DEFAULT
+	goto_if_set FLAG_BADGE07_GET, LilycoveCity_EventScript_ExpertM2TriGone
+	msgbox LilycoveCity_Text_TeamTriRenovatedCavern, MSGBOX_DEFAULT
 	release
 	end
 
-LilycoveCity_EventScript_ExpertM2AquaGone::
-	msgbox LilycoveCity_Text_TeamAquaLotGoneForGood, MSGBOX_DEFAULT
+LilycoveCity_EventScript_ExpertM2TriGone::
+	msgbox LilycoveCity_Text_TeamTriLotGoneForGood, MSGBOX_DEFAULT
 	release
 	end
 
@@ -210,19 +210,19 @@ LilycoveCity_EventScript_MetWailmerTrainer::
 	releaseall
 	end
 
-LilycoveCity_EventScript_AquaGrunt1::
+LilycoveCity_EventScript_TriGrunt1::
 	msgbox LilycoveCity_Text_MovedLootIntoHideoutToday, MSGBOX_NPC
 	end
 
-LilycoveCity_EventScript_AquaGrunt2::
+LilycoveCity_EventScript_TriGrunt2::
 	msgbox LilycoveCity_Text_ChanceToDoBigThings, MSGBOX_NPC
 	end
 
-LilycoveCity_EventScript_AquaGrunt3::
+LilycoveCity_EventScript_TriGrunt3::
 	msgbox LilycoveCity_Text_DontGoNearCaveInCove, MSGBOX_NPC
 	end
 
-LilycoveCity_EventScript_AquaGrunt4::
+LilycoveCity_EventScript_TriGrunt4::
 	msgbox LilycoveCity_Text_IfWorldBecomesOurs, MSGBOX_NPC
 	end
 
@@ -552,7 +552,7 @@ LilycoveCity_Text_MovedLootIntoHideoutToday:
 LilycoveCity_Text_ChanceToDoBigThings:
 	.string "I'm just a GRUNT, so I don't know what\n"
 	.string "the BOSS is thinking…\p"
-	.string "But being on TEAM AQUA, I know I'll get\n"
+	.string "But being on TEAM TRI, I know I'll get\n"
 	.string "the chance to do big things!\p"
 	.string "Wh-who are you?!\n"
 	.string "I was just talking to myself!$"
@@ -565,7 +565,7 @@ LilycoveCity_Text_DontGoNearCaveInCove:
 
 LilycoveCity_Text_IfWorldBecomesOurs:
 	.string "If this whole wide world becomes ours,\n"
-	.string "TEAM AQUA's, it will be a happier\l"
+	.string "TEAM TRI's, it will be a happier\l"
 	.string "place for POKéMON, too.$"
 
 LilycoveCity_Text_WailmerLeapOutOfWater:
@@ -602,15 +602,15 @@ LilycoveCity_Text_ImFromKanto:
 	.string "Could there be rare POKéMON that live\n"
 	.string "only in this area?$"
 
-LilycoveCity_Text_TeamAquaBeenTrainingWailmer:
-	.string "TEAM AQUA's been training their\n"
+LilycoveCity_Text_TeamTriBeenTrainingWailmer:
+	.string "TEAM TRI's been training their\n"
 	.string "WAILMER in the cove.\p"
 	.string "We SAILORS can't get our boats out\n"
 	.string "to sea with them in the way!$"
 
-LilycoveCity_Text_SomeonePuntedTeamAquaOut:
+LilycoveCity_Text_SomeonePuntedTeamTriOut:
 	.string "Ahoy, did you know?\p"
-	.string "Someone punted TEAM AQUA out of\n"
+	.string "Someone punted TEAM TRI out of\n"
 	.string "the way for us!\p"
 	.string "That got the WAILMER out of the cove,\n"
 	.string "so we can get our boats out again.$"
@@ -620,7 +620,7 @@ LilycoveCity_Text_SomeoneStoleMyPokemon:
 	.string "seaside inn to the sound of waves…\p"
 	.string "When someone stole my POKéMON!\p"
 	.string "Who's the abductor?\n"
-	.string "TEAM AQUA? Is it TEAM AQUA?$"
+	.string "TEAM TRI? Is it TEAM TRI?$"
 
 LilycoveCity_Text_MissingPokemonCameBack:
 	.string "My missing POKéMON…\n"
@@ -645,22 +645,22 @@ LilycoveCity_Text_SixtyYearsAgoHusbandProposed:
 	.string "The sea remains as beautiful as ever.\p"
 	.string "Mufufufu mufufufufufu…$"
 
-LilycoveCity_Text_TeamAquaRenovatedCavern:
+LilycoveCity_Text_TeamTriRenovatedCavern:
 	.string "Hm, you know of the peculiar cavern\n"
 	.string "in this cove?\p"
 	.string "That had been a natural formation,\n"
-	.string "but then that TEAM AQUA lot came\l"
+	.string "but then that TEAM TRI lot came\l"
 	.string "along and made their renovations.\p"
 	.string "They call themselves\n"
-	.string "the “nature-loving TEAM AQUA”!\p"
+	.string "the “nature-loving TEAM TRI”!\p"
 	.string "But what they do and what they say\n"
 	.string "don't match at all!$"
 
-LilycoveCity_Text_TeamAquaLotGoneForGood:
+LilycoveCity_Text_TeamTriLotGoneForGood:
 	.string "That cave in the cove…\p"
 	.string "I didn't notice it right away,\n"
 	.string "but it's completely empty now.\p"
-	.string "That TEAM AQUA lot, they must\n"
+	.string "That TEAM TRI lot, they must\n"
 	.string "have gone away for good.$"
 
 LilycoveCity_Text_CitySign:

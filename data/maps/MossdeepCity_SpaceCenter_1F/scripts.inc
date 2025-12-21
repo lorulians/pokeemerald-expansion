@@ -153,7 +153,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_WomanNormal::
 	end
 
 MossdeepCity_SpaceCenter_1F_EventScript_WomanMagma::
-	msgbox MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma, MSGBOX_DEFAULT
+	msgbox MossdeepCity_SpaceCenter_1F_Text_TriShouldBeatMagma, MSGBOX_DEFAULT
 	release
 	end
 
@@ -331,10 +331,10 @@ MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace:
 	.string "Some people claim that POKéMON came\n"
 	.string "from space. Could it be true?$"
 
-MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma:
-	.string "TEAM AQUA should take care of\n"
+MossdeepCity_SpaceCenter_1F_Text_TriShouldBeatMagma:
+	.string "TEAM TRI should take care of\n"
 	.string "TEAM MAGMA!\p"
-	.string "But if they did that, TEAM AQUA will\n"
+	.string "But if they did that, TEAM TRI will\n"
 	.string "become bold and brazen, won't they?$"
 
 MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind:

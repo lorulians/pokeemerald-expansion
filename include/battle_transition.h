@@ -36,7 +36,7 @@ enum BattleTransition
     B_TRANSITION_GRID_SQUARES,
     B_TRANSITION_ANGLED_WIPES,
     B_TRANSITION_MUGSHOT,
-    B_TRANSITION_AQUA, // Here below added in Emerald
+    B_TRANSITION_TRI, // Here below added in Emerald
     B_TRANSITION_MAGMA,
     B_TRANSITION_REGICE,
     B_TRANSITION_REGISTEEL,

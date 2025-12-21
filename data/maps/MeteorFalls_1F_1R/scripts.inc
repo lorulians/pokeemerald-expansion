@@ -42,17 +42,17 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene::
 	applymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_2, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	addobject LOCALID_METEOR_FALLS_ARCHIE
-	addobject LOCALID_METEOR_FALLS_AQUA_GRUNT_1
-	addobject LOCALID_METEOR_FALLS_AQUA_GRUNT_2
-	playbgm MUS_ENCOUNTER_AQUA, FALSE
+	addobject LOCALID_METEOR_FALLS_TRI_GRUNT_1
+	addobject LOCALID_METEOR_FALLS_TRI_GRUNT_2
+	playbgm MUS_ENCOUNTER_TRI, FALSE
 	applymovement LOCALID_METEOR_FALLS_ARCHIE, MeteorFalls_1F_1R_Movement_ArchieArrive
-	applymovement LOCALID_METEOR_FALLS_AQUA_GRUNT_1, MeteorFalls_1F_1R_Movement_AquaGrunt1Arrive
-	applymovement LOCALID_METEOR_FALLS_AQUA_GRUNT_2, MeteorFalls_1F_1R_Movement_AquaGrunt2Arrive
+	applymovement LOCALID_METEOR_FALLS_TRI_GRUNT_1, MeteorFalls_1F_1R_Movement_TriGrunt1Arrive
+	applymovement LOCALID_METEOR_FALLS_TRI_GRUNT_2, MeteorFalls_1F_1R_Movement_TriGrunt2Arrive
 	waitmovement 0
 	applymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceFasterLeft
 	applymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_2, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
-	msgbox MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua, MSGBOX_DEFAULT
+	msgbox MeteorFalls_1F_1R_Text_BeSeeingYouTeamTri, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_PLAYER, MeteorFalls_1F_1R_Movement_PushPlayerOutOfWay
 	applymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, MeteorFalls_1F_1R_Movement_MagmaGrunt1Exit
@@ -64,8 +64,8 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene::
 	waitmovement 0
 	msgbox MeteorFalls_1F_1R_Text_ArchieSeenYouBefore, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_METEOR_FALLS_AQUA_GRUNT_1, MeteorFalls_1F_1R_Movement_AquaGrunt1ApproachArchie
-	applymovement LOCALID_METEOR_FALLS_AQUA_GRUNT_2, MeteorFalls_1F_1R_Movement_AquaGrunt2ApproachArchie
+	applymovement LOCALID_METEOR_FALLS_TRI_GRUNT_1, MeteorFalls_1F_1R_Movement_TriGrunt1ApproachArchie
+	applymovement LOCALID_METEOR_FALLS_TRI_GRUNT_2, MeteorFalls_1F_1R_Movement_TriGrunt2ApproachArchie
 	waitmovement 0
 	msgbox MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma, MSGBOX_DEFAULT
 	applymovement LOCALID_METEOR_FALLS_ARCHIE, Common_Movement_WalkInPlaceFasterDown
@@ -76,13 +76,13 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene::
 	msgbox MeteorFalls_1F_1R_Text_ArchieFarewell, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_METEOR_FALLS_ARCHIE, MeteorFalls_1F_1R_Movement_ArchieExit
-	applymovement LOCALID_METEOR_FALLS_AQUA_GRUNT_1, MeteorFalls_1F_1R_Movement_AquaGrunt1Exit
-	applymovement LOCALID_METEOR_FALLS_AQUA_GRUNT_2, MeteorFalls_1F_1R_Movement_AquaGrunt2Exit
+	applymovement LOCALID_METEOR_FALLS_TRI_GRUNT_1, MeteorFalls_1F_1R_Movement_TriGrunt1Exit
+	applymovement LOCALID_METEOR_FALLS_TRI_GRUNT_2, MeteorFalls_1F_1R_Movement_TriGrunt2Exit
 	waitmovement 0
 	fadedefaultbgm
 	removeobject LOCALID_METEOR_FALLS_ARCHIE
-	removeobject LOCALID_METEOR_FALLS_AQUA_GRUNT_1
-	removeobject LOCALID_METEOR_FALLS_AQUA_GRUNT_2
+	removeobject LOCALID_METEOR_FALLS_TRI_GRUNT_1
+	removeobject LOCALID_METEOR_FALLS_TRI_GRUNT_2
 	setflag FLAG_HIDE_ROUTE_112_TEAM_MAGMA
 	setflag FLAG_MET_ARCHIE_METEOR_FALLS
 	setflag FLAG_HIDE_FALLARBOR_TOWN_BATTLE_TENT_SCOTT
@@ -130,7 +130,7 @@ MeteorFalls_1F_1R_Movement_ArchieArrive:
 	walk_right
 	step_end
 
-MeteorFalls_1F_1R_Movement_AquaGrunt1Arrive:
+MeteorFalls_1F_1R_Movement_TriGrunt1Arrive:
 	delay_16
 	delay_16
 	walk_right
@@ -140,7 +140,7 @@ MeteorFalls_1F_1R_Movement_AquaGrunt1Arrive:
 	walk_right
 	step_end
 
-MeteorFalls_1F_1R_Movement_AquaGrunt2Arrive:
+MeteorFalls_1F_1R_Movement_TriGrunt2Arrive:
 	delay_16
 	delay_16
 	walk_right
@@ -168,7 +168,7 @@ MeteorFalls_1F_1R_Movement_ArchieApproachPlayer:
 	walk_in_place_faster_left
 	step_end
 
-MeteorFalls_1F_1R_Movement_AquaGrunt1Exit:
+MeteorFalls_1F_1R_Movement_TriGrunt1Exit:
 	walk_up
 	walk_up
 	walk_right
@@ -180,14 +180,14 @@ MeteorFalls_1F_1R_Movement_AquaGrunt1Exit:
 	walk_right
 	step_end
 
-MeteorFalls_1F_1R_Movement_AquaGrunt1ApproachArchie:
+MeteorFalls_1F_1R_Movement_TriGrunt1ApproachArchie:
 	walk_right
 	walk_right
 	walk_right
 	walk_in_place_faster_up
 	step_end
 
-MeteorFalls_1F_1R_Movement_AquaGrunt2Exit:
+MeteorFalls_1F_1R_Movement_TriGrunt2Exit:
 	walk_up
 	walk_up
 	walk_up
@@ -200,7 +200,7 @@ MeteorFalls_1F_1R_Movement_AquaGrunt2Exit:
 	walk_right
 	step_end
 
-MeteorFalls_1F_1R_Movement_AquaGrunt2ApproachArchie:
+MeteorFalls_1F_1R_Movement_TriGrunt2ApproachArchie:
 	walk_right
 	walk_right
 	walk_right
@@ -247,16 +247,16 @@ MeteorFalls_1F_1R_Text_HoldItRightThereMagma:
 	.string "You're badly mistaken if you think you\n"
 	.string "can have your way with the world!$"
 
-MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua:
+MeteorFalls_1F_1R_Text_BeSeeingYouTeamTri:
 	.string "Hehehe!\n"
-	.string "Even TEAM AQUA joins us!\p"
+	.string "Even TEAM TRI joins us!\p"
 	.string "But it's too much trouble to deal with\n"
 	.string "you all…\p"
 	.string "Heh, it doesn't matter!\p"
 	.string "We've got the METEORITE, so off to\n"
 	.string "MT. CHIMNEY we go!\p"
 	.string "Hehehe! Be seeing you, you TEAM\n"
-	.string "AQUA dingbats!$"
+	.string "TRI dingbats!$"
 
 MeteorFalls_1F_1R_Text_ArchieSeenYouBefore:
 	.string "ARCHIE: Didn't I see you before?\n"
@@ -271,7 +271,7 @@ MeteorFalls_1F_1R_Text_ArchieSeenYouBefore:
 	.string "They engage in destruction, claiming\n"
 	.string "to expand the land mass.\p"
 	.string "They are the rivals to us,\n"
-	.string "the sea-loving TEAM AQUA!$"
+	.string "the sea-loving TEAM TRI!$"
 
 MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma:
 	.string "BOSS, we should give chase to\n"
@@ -296,7 +296,7 @@ MeteorFalls_1F_1R_Text_MeetProfCozmo:
 	.string "But they tricked me.\n"
 	.string "They even took my METEORITE away…\p"
 	.string "And then another similar bunch,\n"
-	.string "TEAM AQUA showed up.\p"
+	.string "TEAM TRI showed up.\p"
 	.string "After that…\n"
 	.string "I don't understand any of it.\p"
 	.string "But that TEAM MAGMA…\p"

@@ -2672,7 +2672,7 @@ MatchCall_Text_Scott4::
 	.string "SCOTT: Hi, {PLAYER}{KUN}!\p"
 	.string "I've been hearing about these odd\n"
 	.string "gangs being a nuisance.\p"
-	.string "TEAM MAGMA and TEAM AQUA,\n"
+	.string "TEAM MAGMA and TEAM ,\n"
 	.string "I think they were.\p"
 	.string "I would think there'd be some\n"
 	.string "skilled TRAINERS among them.\p"
@@ -2850,105 +2850,3 @@ MatchCall_Text_UnusedProfBirch:
 	.string "PROF. BIRCH: When one has both\n"
 	.string "the POKéDEX and POKéNAV, studying\l"
 	.string "POKéMON becomes more fun, eh?$"
-
-MatchCall_Text_MrStone1::
-	.string "MR. STONE: Oh? {PLAYER}{KUN}!\p"
-	.string "Since you called me, the POKéNAV\n"
-	.string "must be working properly!\p"
-	.string "Other people will be registered,\n"
-	.string "so try calling them up, too!\p"
-	.string "Good! Good!\n"
-	.string "You seem to be quite happy!\p"
-	.string "Hm…\n"
-	.string "How could I know that?\p"
-	.string "It's because I'm looking down at\n"
-	.string "you from my office window!\p"
-	.string "Wahahaha!\n"
-	.string "See you again!$"
-
-MatchCall_Text_MrStone2::
-	.string "MR. STONE: Oh? {PLAYER}{KUN}!\p"
-	.string "What's wrong? Have you forgotten\n"
-	.string "about that little errand of mine?\p"
-	.string "I need you to deliver my letter\n"
-	.string "to STEVEN in DEWFORD.\p"
-	.string "After that, deliver our parcel to\n"
-	.string "CAPT. STERN in SLATEPORT.\p"
-	.string "You remember, don't you?\p"
-	.string "Now, since I am a busy PRESIDENT,\n"
-	.string "I have to go! Bye-bye!$"
-
-MatchCall_Text_MrStone3::
-	.string "MR. STONE: Oh! {PLAYER}{KUN}!\p"
-	.string "Ah, so you've met STEVEN!\n"
-	.string "I'd better reward you, then!\p"
-	.string "When you visit RUSTBORO again,\n"
-	.string "come see me at my office.\p"
-	.string "I'll be waiting for you!$"
-
-MatchCall_Text_MrStone4::
-	.string "MR. STONE: Oh! {PLAYER}{KUN}!\p"
-	.string "Did you know that DEVON was\n"
-	.string "digging the RUSTURF TUNNEL?\p"
-	.string "But we shut down the operation to\n"
-	.string "protect the POKéMON in the area.\p"
-	.string "It's a no-brainer, really.\p"
-	.string "It's more important to let POKéMON\n"
-	.string "live in peace than worry about our\l"
-	.string "own convenience.$"
-
-MatchCall_Text_MrStone5::
-	.string "MR. STONE: Hello, hello, {PLAYER}{KUN}!\p"
-	.string "I heard from someone in PETALBURG\n"
-	.string "that you're NORMAN's child!\p"
-	.string "No wonder you're such a capable\n"
-	.string "being!$"
-
-MatchCall_Text_MrStone6::
-	.string "MR. STONE: What's that?\p"
-	.string "You battled your own father and\n"
-	.string "defeated him?\p"
-	.string "That's astounding!\p"
-	.string "I had no idea that I befriended\n"
-	.string "someone so special! Wahaha!$"
-
-MatchCall_Text_MrStone7::
-	.string "Hello!\n"
-	.string "This is DEVON CORPORATI…\l"
-	.string "Oh, hello, {PLAYER}!\p"
-	.string "Our PRESIDENT was here a little\n"
-	.string "while ago, but he's gone out.\p"
-	.string "Our PRESIDENT is busy, but you\n"
-	.string "seem to be just as busy, {PLAYER}.$"
-
-MatchCall_Text_MrStone8::
-	.string "…Huh? …What's that?\p"
-	.string "GROU… Yes? …DON?\p"
-	.string "You're breaking up…\n"
-	.string "…can't hear…\p"
-	.string "BZZZZ…$"
-
-MatchCall_Text_MrStone9::
-	.string "…Huh? …What's that?\p"
-	.string "Seaflo… Yes? …Caver…?\p"
-	.string "You're breaking up…\n"
-	.string "…can't hear…\p"
-	.string "BZZZZ…$"
-
-MatchCall_Text_MrStone10::
-	.string "MR. STONE: {PLAYER}{KUN}! It's me!\p"
-	.string "You were apparently involved in all\n"
-	.string "sorts of things, but I, being busy,\l"
-	.string "haven't a clue exactly what!\p"
-	.string "However, I urge you to take\n"
-	.string "the road you believe in and walk it.\p"
-	.string "I'll always be in your corner!\n"
-	.string "Take care!$"
-
-MatchCall_Text_MrStone11::
-	.string "MR. STONE: … … … … … …\n"
-	.string "Is this maybe {PLAYER}{KUN}?\p"
-	.string "Your voice is so full of confidence,\n"
-	.string "I didn't recognize you right off!\p"
-	.string "Hm! You must come visit us at DEVON\n"
-	.string "sometime!$"

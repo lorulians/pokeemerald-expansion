@@ -2967,7 +2967,7 @@ bool8 ScrCmd_trywondercardscript(struct ScriptContext *ctx)
 }
 
 // This warp is only used by the Union Room.
-// For the warp used by the Aqua Hideout, see DoTeleportTileWarp
+// For the warp used by the Tri Hideout, see DoTeleportTileWarp
 bool8 ScrCmd_warpspinenter(struct ScriptContext *ctx)
 {
     u8 mapGroup = ScriptReadByte(ctx);

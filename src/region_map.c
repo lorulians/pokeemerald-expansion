@@ -94,7 +94,7 @@ static u8 GetMapsecType(mapsec_u16_t mapSecId);
 static mapsec_u16_t CorrectSpecialMapSecId_Internal(mapsec_u16_t mapSecId);
 static mapsec_u16_t GetTerraOrMarineCaveMapSecId(void);
 static void GetMarineCaveCoords(u16 *x, u16 *y);
-static bool32 IsPlayerInAquaHideout(mapsec_u8_t mapSecId);
+static bool32 IsPlayerInTriHideout(mapsec_u8_t mapSecId);
 static void GetPositionOfCursorWithinMapSec(void);
 static bool8 RegionMap_IsMapSecIdInNextRow(u16 y);
 static void SpriteCB_CursorMapFull(struct Sprite *sprite);
@@ -145,8 +145,8 @@ static const mapsec_u16_t sRegionMap_SpecialPlaceLocations[][2] =
     {MAPSEC_UNDERWATER_129,             MAPSEC_ROUTE_129},
     {MAPSEC_UNDERWATER_SOOTOPOLIS,      MAPSEC_SOOTOPOLIS_CITY},
     {MAPSEC_UNDERWATER_SEAFLOOR_CAVERN, MAPSEC_ROUTE_128},
-    {MAPSEC_AQUA_HIDEOUT,               MAPSEC_LILYCOVE_CITY},
-    {MAPSEC_AQUA_HIDEOUT_OLD,           MAPSEC_LILYCOVE_CITY},
+    {MAPSEC_TRI_HIDEOUT,               MAPSEC_LILYCOVE_CITY},
+    {MAPSEC_TRI_HIDEOUT_OLD,           MAPSEC_LILYCOVE_CITY},
     {MAPSEC_MAGMA_HIDEOUT,              MAPSEC_ROUTE_112},
     {MAPSEC_UNDERWATER_SEALED_CHAMBER,  MAPSEC_ROUTE_134},
     {MAPSEC_PETALBURG_WOODS,            MAPSEC_ROUTE_104},
@@ -203,9 +203,9 @@ static const struct UCoords16 sMarineCaveLocationCoords[MARINE_CAVE_LOCATIONS] =
     [MARINE_CAVE_COORD(ROUTE_129_EAST)]  = {24, 10}
 };
 
-static const mapsec_u8_t sMapSecAquaHideoutOld[] =
+static const mapsec_u8_t sMapSecTriHideoutOld[] =
 {
-    MAPSEC_AQUA_HIDEOUT_OLD
+    MAPSEC_TRI_HIDEOUT_OLD
 };
 
 static const struct OamData sRegionMapCursorOam =
@@ -1055,7 +1055,7 @@ static void InitMapBasedOnPlayerLocation(void)
             sRegionMap->mapSecId = mapHeader->regionMapSectionId;
         }
 
-        if (IsPlayerInAquaHideout(sRegionMap->mapSecId))
+        if (IsPlayerInTriHideout(sRegionMap->mapSecId))
             sRegionMap->playerIsInCave = TRUE;
         else
             sRegionMap->playerIsInCave = FALSE;
@@ -1282,13 +1282,13 @@ static void GetMarineCaveCoords(u16 *x, u16 *y)
 
 // Probably meant to be an "IsPlayerInIndoorDungeon" function, but in practice it only has the one mapsec
 // Additionally, because the mapsec doesnt exist in Emerald, this function always returns FALSE
-static bool32 IsPlayerInAquaHideout(mapsec_u8_t mapSecId)
+static bool32 IsPlayerInTriHideout(mapsec_u8_t mapSecId)
 {
     u32 i;
 
-    for (i = 0; i < ARRAY_COUNT(sMapSecAquaHideoutOld); i++)
+    for (i = 0; i < ARRAY_COUNT(sMapSecTriHideoutOld); i++)
     {
-        if (sMapSecAquaHideoutOld[i] == mapSecId)
+        if (sMapSecTriHideoutOld[i] == mapSecId)
             return TRUE;
     }
     return FALSE;
@@ -1619,9 +1619,9 @@ u8 *GetMapNameGeneric(u8 *dest, mapsec_u16_t mapSecId)
     }
 }
 
-u8 *GetMapNameHandleAquaHideout(u8 *dest, mapsec_u16_t mapSecId)
+u8 *GetMapNameHandleTriHideout(u8 *dest, mapsec_u16_t mapSecId)
 {
-    if (mapSecId == MAPSEC_AQUA_HIDEOUT_OLD)
+    if (mapSecId == MAPSEC_TRI_HIDEOUT_OLD)
         return StringCopy(dest, gText_Hideout);
     else
         return GetMapNameGeneric(dest, mapSecId);

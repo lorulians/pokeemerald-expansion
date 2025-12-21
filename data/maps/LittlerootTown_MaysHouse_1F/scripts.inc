@@ -21,4 +21,4 @@ LittlerootTown_NPCHouse1_Text_NothingGoodOnTV:
 	.string "on TV, anymore.$"
 
 LittlerootTown_NPCHouse1_Text_Skitty:
-	.string "TIPTOE: Nyaa, nyaa!$"
+	.string "Tiptoe: Nyaa, nyaa!$"

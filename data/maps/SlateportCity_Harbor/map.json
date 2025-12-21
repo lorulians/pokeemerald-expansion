@@ -83,7 +83,7 @@
     },
     {
       "local_id": "LOCALID_SLATEPORT_HARBOR_GRUNT",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_TRI_MEMBER_M",
       "x": 7,
       "y": 10,
       "elevation": 3,
@@ -93,7 +93,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_SLATEPORT_CITY_HARBOR_AQUA_GRUNT"
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_HARBOR_TRI_GRUNT"
     },
     {
       "local_id": "LOCALID_SLATEPORT_HARBOR_ARCHIE",
@@ -162,7 +162,7 @@
       "elevation": 3,
       "var": "VAR_SLATEPORT_HARBOR_STATE",
       "var_value": "1",
-      "script": "SlateportCity_Harbor_EventScript_AquaEscapeTrigger0"
+      "script": "SlateportCity_Harbor_EventScript_EscapeTrigger0"
     },
     {
       "type": "trigger",
@@ -171,7 +171,7 @@
       "elevation": 3,
       "var": "VAR_SLATEPORT_HARBOR_STATE",
       "var_value": "1",
-      "script": "SlateportCity_Harbor_EventScript_AquaEscapeTrigger1"
+      "script": "SlateportCity_Harbor_EventScript_EscapeTrigger1"
     },
     {
       "type": "trigger",
@@ -180,7 +180,7 @@
       "elevation": 3,
       "var": "VAR_SLATEPORT_HARBOR_STATE",
       "var_value": "1",
-      "script": "SlateportCity_Harbor_EventScript_AquaEscapeTrigger2"
+      "script": "SlateportCity_Harbor_EventScript_EscapeTrigger2"
     },
     {
       "type": "trigger",
@@ -189,7 +189,7 @@
       "elevation": 3,
       "var": "VAR_SLATEPORT_HARBOR_STATE",
       "var_value": "1",
-      "script": "SlateportCity_Harbor_EventScript_AquaEscapeTrigger3"
+      "script": "SlateportCity_Harbor_EventScript_EscapeTrigger3"
     }
   ],
   "bg_events": []

@@ -1285,7 +1285,7 @@ SootopolisCity_EventScript_Wallace::
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 4, SootopolisCity_EventScript_GoToSkyPillar
 	goto_if_set FLAG_RECEIVED_HM_WATERFALL, SootopolisCity_EventScript_GoToGym
 	goto_if_set FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, SootopolisCity_EventScript_GiveWaterfall
-	msgbox SootopolisCity_Text_AquaMagmaDidntMeanHarm, MSGBOX_DEFAULT
+	msgbox SootopolisCity_Text_MagmaDidntMeanHarm, MSGBOX_DEFAULT
 	release
 	end
 
@@ -1674,9 +1674,9 @@ SootopolisCity_Text_HaventYouScaledSkyPillar:
 	.string "I'm sure that you can make it to\n"
 	.string "the top of the SKY PILLAR…$"
 
-SootopolisCity_Text_AquaMagmaDidntMeanHarm:
+SootopolisCity_Text_MagmaDidntMeanHarm:
 	.string "WALLACE: {PLAYER}{KUN}…\p"
-	.string "The leaders of TEAM MAGMA and AQUA,\n"
+	.string "The leaders of TEAM MAGMA and ,\n"
 	.string "I don't think they meant harm.\p"
 	.string "It wouldn't hurt to hear what they\n"
 	.string "have to say for themselves.$"

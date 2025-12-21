@@ -1,37 +1,45 @@
 RustboroCity_Flat2_2F_MapScripts::
 	.byte 0
 
-RustboroCity_Flat2_2F_EventScript_OldMan::
-	msgbox RustboroCity_Flat2_2F_Text_DevonWasTinyInOldDays, MSGBOX_NPC
+RustboroCity_Flat2_2F_EventScript_Girl::
+	msgbox RustboroCity_Flat2_2F_Text_TaillowBetter, MSGBOX_NPC
 	end
 
-RustboroCity_Flat2_2F_EventScript_NinjaBoy::
+RustboroCity_Flat2_2F_EventScript_Boy::
+	msgbox RustboroCity_Flat2_2F_Text_MurkrowBetter, MSGBOX_NPC
+	end
+
+RustboroCity_Flat2_2F_EventScript_Taillow::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_PREMIER_BALL_RUSTBORO, RustboroCity_Flat2_2F_EventScript_GavePremierBall
-	msgbox RustboroCity_Flat2_2F_Text_MyDaddyMadeThisYouCanHaveIt, MSGBOX_DEFAULT
-	giveitem ITEM_PREMIER_BALL
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_PREMIER_BALL_RUSTBORO
+	waitse
+	playmoncry SPECIES_TAILLOW, CRY_MODE_NORMAL
+	msgbox RustboroCity_Flat2_2F_Text_Taillow, MSGBOX_NPC
+	waitmoncry
 	release
 	end
 
-RustboroCity_Flat2_2F_EventScript_GavePremierBall::
-	msgbox RustboroCity_Flat2_2F_Text_GoingToWorkAtDevonToo, MSGBOX_DEFAULT
+RustboroCity_Flat2_2F_EventScript_Murkrow::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MURKROW, CRY_MODE_NORMAL
+	msgbox RustboroCity_Flat2_2F_Text_Murkrow, MSGBOX_NPC
+	waitmoncry
 	release
 	end
 
-RustboroCity_Flat2_2F_Text_DevonWasTinyInOldDays:
-	.string "Way back in the old days, DEVON was just\n"
-	.string "a teeny, tiny company.$"
+RustboroCity_Flat2_2F_Text_MurkrowBetter:
+	.string "Murkrow is better! It's little\n"
+	.string "hat and tail are so cute!$"
 
-RustboroCity_Flat2_2F_Text_MyDaddyMadeThisYouCanHaveIt:
-	.string "My daddy's working at the CORPORATION.\p"
-	.string "My daddy made this!\n"
-	.string "But I can't use it, so you can have it.$"
+RustboroCity_Flat2_2F_Text_TaillowBetter:
+	.string "Taillow is better! Don't you\n"
+	.string "see how cute it is when you\p"
+	.string "see its little mouth?!$"
 
-RustboroCity_Flat2_2F_Text_GoingToWorkAtDevonToo:
-	.string "My daddy's working at the CORPORATION.\p"
-	.string "When I grow up, I'm going to work for\n"
-	.string "DEVON, too.$"
+RustboroCity_Flat2_2F_Text_Murkrow:
+	.string "Lefty: Kaw kaw!$"
 
+RustboroCity_Flat2_2F_Text_Taillow:
+	.string "Gusty: Cheepy cheep!$"

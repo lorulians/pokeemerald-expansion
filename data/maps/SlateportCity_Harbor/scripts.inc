@@ -5,7 +5,7 @@ SlateportCity_Harbor_MapScripts::
 SlateportCity_Harbor_OnTransition:
 	setescapewarp MAP_SLATEPORT_CITY, 28, 13
 	setvar VAR_TEMP_1, 0
-	call_if_eq VAR_SLATEPORT_HARBOR_STATE, 1, SlateportCity_Harbor_EventScript_ReadyAquaEscapeScene
+	call_if_eq VAR_SLATEPORT_HARBOR_STATE, 1, SlateportCity_Harbor_EventScript_ReadyEscapeScene
 	call_if_set FLAG_SYS_GAME_CLEAR, SlateportCity_Harbor_EventScript_ShowSSTidal
 	end
 
@@ -13,40 +13,40 @@ SlateportCity_Harbor_EventScript_ShowSSTidal::
 	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_SS_TIDAL
 	return
 
-SlateportCity_Harbor_EventScript_ReadyAquaEscapeScene::
-	savebgm MUS_ENCOUNTER_AQUA
+SlateportCity_Harbor_EventScript_ReadyEscapeScene::
+	savebgm MUS_ENCOUNTER_TRI
 	setobjectxyperm LOCALID_SLATEPORT_HARBOR_CAPT_STERN, 12, 13
 	setobjectmovementtype LOCALID_SLATEPORT_HARBOR_CAPT_STERN, MOVEMENT_TYPE_FACE_LEFT
 	setflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_PATRONS
 	return
 
-SlateportCity_Harbor_EventScript_AquaEscapeTrigger0::
+SlateportCity_Harbor_EventScript_EscapeTrigger0::
 	lockall
 	setvar VAR_0x8008, 0
-	goto SlateportCity_Harbor_EventScript_AquaEscapeScene
+	goto SlateportCity_Harbor_EventScript_EscapeScene
 	end
 
-SlateportCity_Harbor_EventScript_AquaEscapeTrigger1::
+SlateportCity_Harbor_EventScript_EscapeTrigger1::
 	lockall
 	setvar VAR_0x8008, 1
-	goto SlateportCity_Harbor_EventScript_AquaEscapeScene
+	goto SlateportCity_Harbor_EventScript_EscapeScene
 	end
 
-SlateportCity_Harbor_EventScript_AquaEscapeTrigger2::
+SlateportCity_Harbor_EventScript_EscapeTrigger2::
 	lockall
 	setvar VAR_0x8008, 2
-	goto SlateportCity_Harbor_EventScript_AquaEscapeScene
+	goto SlateportCity_Harbor_EventScript_EscapeScene
 	end
 
-SlateportCity_Harbor_EventScript_AquaEscapeTrigger3::
+SlateportCity_Harbor_EventScript_EscapeTrigger3::
 	lockall
 	setvar VAR_0x8008, 3
 	applymovement LOCALID_PLAYER, SlateportCity_Harbor_Movement_PlayerWalkUp
 	waitmovement 0
-	goto SlateportCity_Harbor_EventScript_AquaEscapeScene
+	goto SlateportCity_Harbor_EventScript_EscapeScene
 	end
 
-SlateportCity_Harbor_EventScript_AquaEscapeScene::
+SlateportCity_Harbor_EventScript_EscapeScene::
 	applymovement LOCALID_SLATEPORT_HARBOR_ARCHIE, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	applymovement LOCALID_SLATEPORT_HARBOR_GRUNT, Common_Movement_WalkInPlaceFasterDown
@@ -54,15 +54,15 @@ SlateportCity_Harbor_EventScript_AquaEscapeScene::
 	waitmovement 0
 	msgbox SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SLATEPORT_HARBOR_GRUNT, SlateportCity_Harbor_Movement_AquaBoardSub
-	applymovement LOCALID_SLATEPORT_HARBOR_ARCHIE, SlateportCity_Harbor_Movement_AquaBoardSub
+	applymovement LOCALID_SLATEPORT_HARBOR_GRUNT, SlateportCity_Harbor_Movement_BoardSub
+	applymovement LOCALID_SLATEPORT_HARBOR_ARCHIE, SlateportCity_Harbor_Movement_BoardSub
 	applymovement LOCALID_SLATEPORT_HARBOR_SUBMARINE, SlateportCity_Harbor_Movement_SubmarineExit
 	waitmovement 0
 	removeobject LOCALID_SLATEPORT_HARBOR_GRUNT
 	removeobject LOCALID_SLATEPORT_HARBOR_ARCHIE
 	removeobject LOCALID_SLATEPORT_HARBOR_SUBMARINE
 	setvar VAR_SLATEPORT_HARBOR_STATE, 2
-	setflag FLAG_MET_TEAM_AQUA_HARBOR
+	setflag FLAG_MET_TEAM_TRI_HARBOR
 	setflag FLAG_HIDE_LILYCOVE_MOTEL_SCOTT
 	call_if_eq VAR_0x8008, 0, SlateportCity_Harbor_EventScript_SternApproachPlayer0
 	call_if_eq VAR_0x8008, 1, SlateportCity_Harbor_EventScript_SternApproachPlayer1
@@ -70,8 +70,8 @@ SlateportCity_Harbor_EventScript_AquaEscapeScene::
 	call_if_eq VAR_0x8008, 3, SlateportCity_Harbor_EventScript_SternApproachPlayer
 	msgbox SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine, MSGBOX_DEFAULT
 	closemessage
-	setflag FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNT_1_BLOCKING_ENTRANCE
-	setflag FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNT_2_BLOCKING_ENTRANCE
+	setflag FLAG_HIDE_TRI_HIDEOUT_1F_GRUNT_1_BLOCKING_ENTRANCE
+	setflag FLAG_HIDE_TRI_HIDEOUT_1F_GRUNT_2_BLOCKING_ENTRANCE
 	copyobjectxytoperm LOCALID_SLATEPORT_HARBOR_CAPT_STERN
 	setobjectmovementtype LOCALID_SLATEPORT_HARBOR_CAPT_STERN, MOVEMENT_TYPE_FACE_RIGHT
 	releaseall
@@ -98,7 +98,7 @@ SlateportCity_Harbor_EventScript_SternApproachPlayer::
 	waitmovement 0
 	return
 
-SlateportCity_Harbor_Movement_AquaBoardSub:
+SlateportCity_Harbor_Movement_BoardSub:
 	delay_16
 	delay_16
 	jump_up
@@ -287,7 +287,7 @@ SlateportCity_Harbor_EventScript_CaptStern::
 	faceplayer
 	goto_if_set FLAG_BADGE07_GET, SlateportCity_Harbor_EventScript_CaptSternFerryOrScannerComment
 	goto_if_set FLAG_EVIL_TEAM_ESCAPED_STERN_SPOKE, SlateportCity_Harbor_EventScript_NeedDive
-	goto_if_set FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, SlateportCity_Harbor_EventScript_TeamAquaLeftNeedDive
+	goto_if_set FLAG_TEAM_TRI_ESCAPED_IN_SUBMARINE, SlateportCity_Harbor_EventScript_TeamLeftNeedDive
 	goto_if_eq VAR_SLATEPORT_HARBOR_STATE, 2, SlateportCity_Harbor_EventScript_WhyStealSubmarine
 	msgbox SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum, MSGBOX_DEFAULT
 	closemessage
@@ -301,9 +301,9 @@ SlateportCity_Harbor_EventScript_WhyStealSubmarine::
 	release
 	end
 
-SlateportCity_Harbor_EventScript_TeamAquaLeftNeedDive::
+SlateportCity_Harbor_EventScript_TeamLeftNeedDive::
 	setflag FLAG_EVIL_TEAM_ESCAPED_STERN_SPOKE
-	msgbox SlateportCity_Harbor_Text_TeamAquaLeftNeedDive, MSGBOX_DEFAULT
+	msgbox SlateportCity_Harbor_Text_TeamLeftNeedDive, MSGBOX_DEFAULT
 	release
 	end
 
@@ -458,16 +458,16 @@ SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove:
 
 SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine:
 	.string "CAPT. STERN: Why…\p"
-	.string "Why would TEAM AQUA steal my\n"
+	.string "Why would TEAM  steal my\n"
 	.string "SUBMARINE EXPLORER 1?\p"
 	.string "They can't be after the slumbering\n"
 	.string "POKéMON at the bottom of the sea…\p"
 	.string "But even if I were to chase them,\n"
 	.string "I don't stand a chance against them…$"
 
-SlateportCity_Harbor_Text_TeamAquaLeftNeedDive:
+SlateportCity_Harbor_Text_TeamLeftNeedDive:
 	.string "CAPT. STERN: Oh, {PLAYER}{KUN}…\p"
-	.string "Okay… So TEAM AQUA left before you\n"
+	.string "Okay… So TEAM  left before you\n"
 	.string "could stop them…\p"
 	.string "Oh, no, don't blame yourself.\n"
 	.string "You're not responsible for this.\p"

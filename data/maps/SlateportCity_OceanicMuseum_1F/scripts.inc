@@ -64,7 +64,7 @@ SlateportCity_OceanicMuseum_1F_Movement_PushPlayerBackFromCounter:
 	step_end
 
 SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt1::
-	msgbox SlateportCity_OceanicMuseum_1F_Text_AquaExistForGoodOfAll, MSGBOX_NPC
+	msgbox SlateportCity_OceanicMuseum_1F_Text_ExistForGoodOfAll, MSGBOX_NPC
 	end
 
 SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt2::
@@ -181,7 +181,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitWestEast::
 	end
 
 SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExited::
-	setflag FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_FAMILIAR_AQUA_GRUNT
+	setflag FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_FAMILIAR_TRI_GRUNT
 	playse SE_EXIT
 	removeobject LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT
 	release
@@ -240,8 +240,8 @@ SlateportCity_OceanicMuseum_1F_Text_CatchUpWithYourGroup:
 	.string "You're the only one who's late.\n"
 	.string "You'd better go catch up to them!$"
 
-SlateportCity_OceanicMuseum_1F_Text_AquaExistForGoodOfAll:
-	.string "We, TEAM AQUA, exist for the good\n"
+SlateportCity_OceanicMuseum_1F_Text_ExistForGoodOfAll:
+	.string "We, TEAM , exist for the good\n"
 	.string "of all!$"
 
 SlateportCity_OceanicMuseum_1F_Text_OurBossIsntHere:
@@ -289,7 +289,7 @@ SlateportCity_OceanicMuseum_1F_Text_WantSeaPokemon:
 SlateportCity_OceanicMuseum_1F_Text_RememberMeTakeThis:
 	.string "Aiyeeeh!\n"
 	.string "What are you doing here?\p"
-	.string "Me? I'm the TEAM AQUA member\n"
+	.string "Me? I'm the TEAM  member\n"
 	.string "you thumped before, remember?\l"
 	.string "Back in RUSTURF TUNNEL?\p"
 	.string "Here, take this!\n"

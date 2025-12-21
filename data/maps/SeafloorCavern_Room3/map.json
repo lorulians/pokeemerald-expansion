@@ -106,7 +106,7 @@
       "flag": "FLAG_TEMP_19"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "graphics_id": "OBJ_EVENT_GFX_TRI_MEMBER_F",
       "x": 9,
       "y": 5,
       "elevation": 3,
@@ -116,10 +116,10 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "6",
       "script": "SeafloorCavern_Room3_EventScript_Shelly",
-      "flag": "FLAG_HIDE_SEAFLOOR_CAVERN_AQUA_GRUNTS"
+      "flag": "FLAG_HIDE_SEAFLOOR_CAVERN_TRI_GRUNTS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_TRI_MEMBER_M",
       "x": 5,
       "y": 5,
       "elevation": 3,
@@ -129,7 +129,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "SeafloorCavern_Room3_EventScript_Grunt5",
-      "flag": "FLAG_HIDE_SEAFLOOR_CAVERN_AQUA_GRUNTS"
+      "flag": "FLAG_HIDE_SEAFLOOR_CAVERN_TRI_GRUNTS"
     }
   ],
   "warp_events": [

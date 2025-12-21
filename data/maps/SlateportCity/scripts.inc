@@ -56,7 +56,7 @@ SlateportCity_EventScript_ScottScene::
 	applymovement LOCALID_PLAYER, SlateportCity_Movement_PlayerFaceScott
 	applymovement LOCALID_SLATEPORT_SCOTT, SlateportCity_Movement_ScottApproachPlayer
 	waitmovement 0
-	msgbox SlateportCity_Text_YouDroveTeamAquaAway, MSGBOX_DEFAULT
+	msgbox SlateportCity_Text_YouDroveTeamAway, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_SLATEPORT_SCOTT, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
@@ -244,12 +244,12 @@ SlateportCity_EventScript_Man1SternInterview::
 SlateportCity_EventScript_Woman1::
 	lock
 	faceplayer
-	goto_if_set FLAG_DOCK_REJECTED_DEVON_GOODS, SlateportCity_EventScript_Woman1AquaGone
+	goto_if_set FLAG_DOCK_REJECTED_DEVON_GOODS, SlateportCity_EventScript_Woman1Gone
 	msgbox SlateportCity_Text_WhatsLongLineOverThere, MSGBOX_DEFAULT
 	release
 	end
 
-SlateportCity_EventScript_Woman1AquaGone::
+SlateportCity_EventScript_Woman1Gone::
 	msgbox SlateportCity_Text_VisitedMuseumOften, MSGBOX_DEFAULT
 	release
 	end
@@ -342,7 +342,7 @@ SlateportCity_EventScript_Man2::
 	msgbox SlateportCity_Text_BattleTentBuiltRecently, MSGBOX_NPC
 	end
 
-SlateportCity_EventScript_AquaGrunt1::
+SlateportCity_EventScript_TriGrunt1::
 	lock
 	faceplayer
 	msgbox SlateportCity_Text_QuitPushing, MSGBOX_DEFAULT
@@ -352,17 +352,17 @@ SlateportCity_EventScript_AquaGrunt1::
 	release
 	end
 
-SlateportCity_EventScript_AquaGrunt2::
+SlateportCity_EventScript_TriGrunt2::
 	lock
 	faceplayer
-	msgbox SlateportCity_Text_AquaHasPolicy, MSGBOX_DEFAULT
+	msgbox SlateportCity_Text_HasPolicy, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_SLATEPORT_GRUNT_2, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
 
-SlateportCity_EventScript_AquaGrunt3::
+SlateportCity_EventScript_TriGrunt3::
 	lock
 	faceplayer
 	msgbox SlateportCity_Text_BossIsBrilliant, MSGBOX_DEFAULT
@@ -372,7 +372,7 @@ SlateportCity_EventScript_AquaGrunt3::
 	release
 	end
 
-SlateportCity_EventScript_AquaGrunt4::
+SlateportCity_EventScript_TriGrunt4::
 	lock
 	faceplayer
 	msgbox SlateportCity_Text_WhatsNewSchemeIWonder, MSGBOX_DEFAULT
@@ -382,7 +382,7 @@ SlateportCity_EventScript_AquaGrunt4::
 	release
 	end
 
-SlateportCity_EventScript_AquaGrunt5::
+SlateportCity_EventScript_TriGrunt5::
 	lock
 	faceplayer
 	msgbox SlateportCity_Text_ShouldTakeItAll, MSGBOX_DEFAULT
@@ -392,7 +392,7 @@ SlateportCity_EventScript_AquaGrunt5::
 	release
 	end
 
-SlateportCity_EventScript_AquaGrunt6::
+SlateportCity_EventScript_TriGrunt6::
 	lock
 	faceplayer
 	msgbox SlateportCity_Text_DontButtIn, MSGBOX_DEFAULT
@@ -402,7 +402,7 @@ SlateportCity_EventScript_AquaGrunt6::
 	release
 	end
 
-SlateportCity_EventScript_AquaGrunt7::
+SlateportCity_EventScript_TriGrunt7::
 	lock
 	faceplayer
 	msgbox SlateportCity_Text_RemindsMeOfLongLineForGames, MSGBOX_DEFAULT
@@ -412,7 +412,7 @@ SlateportCity_EventScript_AquaGrunt7::
 	release
 	end
 
-SlateportCity_EventScript_AquaGrunt8::
+SlateportCity_EventScript_TriGrunt8::
 	lock
 	faceplayer
 	msgbox SlateportCity_Text_WhyAreWeLiningUp, MSGBOX_DEFAULT
@@ -422,7 +422,7 @@ SlateportCity_EventScript_AquaGrunt8::
 	release
 	end
 
-SlateportCity_EventScript_AquaGrunt9::
+SlateportCity_EventScript_TriGrunt9::
 	lock
 	faceplayer
 	playse SE_PIN
@@ -434,7 +434,7 @@ SlateportCity_EventScript_AquaGrunt9::
 	closemessage
 	applymovement LOCALID_SLATEPORT_GRUNT_9, Common_Movement_FaceOriginalDirection
 	waitmovement 0
-	applymovement LOCALID_SLATEPORT_GRUNT_9, SlateportCity_Movement_DelayAquaGrunt
+	applymovement LOCALID_SLATEPORT_GRUNT_9, SlateportCity_Movement_DelayGrunt
 	waitmovement 0
 	applymovement LOCALID_SLATEPORT_GRUNT_9, Common_Movement_FacePlayer
 	waitmovement 0
@@ -442,29 +442,29 @@ SlateportCity_EventScript_AquaGrunt9::
 	closemessage
 	applymovement LOCALID_SLATEPORT_GRUNT_9, Common_Movement_FaceOriginalDirection
 	waitmovement 0
-	applymovement LOCALID_SLATEPORT_GRUNT_9, SlateportCity_Movement_DelayAquaGrunt
+	applymovement LOCALID_SLATEPORT_GRUNT_9, SlateportCity_Movement_DelayGrunt
 	waitmovement 0
 	msgbox SlateportCity_Text_SaysSomethingLikeSeaIsEndless, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_SLATEPORT_GRUNT_9, Common_Movement_FacePlayer
 	waitmovement 0
-	applymovement LOCALID_SLATEPORT_GRUNT_9, SlateportCity_Movement_DelayAquaGrunt
+	applymovement LOCALID_SLATEPORT_GRUNT_9, SlateportCity_Movement_DelayGrunt
 	waitmovement 0
 	applymovement LOCALID_SLATEPORT_GRUNT_9, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
 
-SlateportCity_Movement_DelayAquaGrunt:
+SlateportCity_Movement_DelayGrunt:
 	delay_16
 	delay_16
 	step_end
 
-SlateportCity_EventScript_AquaGrunt10::
+SlateportCity_EventScript_TriGrunt10::
 	msgbox SlateportCity_Text_ShouldveBroughtMyGameBoy, MSGBOX_SIGN
 	end
 
-SlateportCity_EventScript_AquaGrunt11::
+SlateportCity_EventScript_TriGrunt11::
 	lock
 	faceplayer
 	msgbox SlateportCity_Text_HotSpringsAfterOperation, MSGBOX_DEFAULT
@@ -541,7 +541,7 @@ SlateportCity_Pokemart_PowerTMs:
 	.2byte ITEM_TM_SECRET_POWER
 	pokemartlistend
 
-@ Scene with Capt Sterns interview and Team Aqua announcing plans to steal Submarine
+@ Scene with Capt Sterns interview and Team  announcing plans to steal Submarine
 SlateportCity_EventScript_CaptStern::
 	lockall
 	msgbox SlateportCity_Text_SternMoveAheadWithExploration, MSGBOX_DEFAULT
@@ -564,8 +564,8 @@ SlateportCity_EventScript_CaptStern::
 	applymovement LOCALID_SLATEPORT_CAPT_STERN, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox SlateportCity_Text_OhPlayerWeMadeDiscovery, MSGBOX_DEFAULT
-	playbgm MUS_ENCOUNTER_AQUA, FALSE
-	msgbox SlateportCity_Text_AquaWillAssumeControlOfSubmarine, MSGBOX_DEFAULT
+	playbgm MUS_ENCOUNTER_TRI, FALSE
+	msgbox SlateportCity_Text_WillAssumeControlOfSubmarine, MSGBOX_DEFAULT
 	applymovement LOCALID_SLATEPORT_COOK, Common_Movement_WalkInPlaceFasterLeft
 	applymovement LOCALID_SLATEPORT_FAT_MAN, Common_Movement_WalkInPlaceFasterLeft
 	applymovement LOCALID_SLATEPORT_OLD_WOMAN, SlateportCity_Movement_OldWomanConcern
@@ -591,7 +591,7 @@ SlateportCity_EventScript_CaptStern::
 	removeobject LOCALID_SLATEPORT_CAPT_STERN
 	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_CAPTAIN_STERN
 	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_SUBMARINE_SHADOW
-	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_AQUA_GRUNT
+	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_TRI_GRUNT
 	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_ARCHIE
 	setvar VAR_SLATEPORT_CITY_STATE, 2
 	warp MAP_SLATEPORT_CITY_HARBOR, 11, 14
@@ -1013,8 +1013,8 @@ SlateportCity_Text_QuitPushing:
 	.string "Hey, there! Quit pushing!\n"
 	.string "This is the line, can't you see?$"
 
-SlateportCity_Text_AquaHasPolicy:
-	.string "TEAM AQUA has a policy of\n"
+SlateportCity_Text_HasPolicy:
+	.string "TEAM  has a policy of\n"
 	.string "assembling and dispersing at\l"
 	.string "the operation site.$"
 
@@ -1171,16 +1171,16 @@ SlateportCity_Text_OhPlayerWeMadeDiscovery:
 	.string "We think it's the habitat of a POKéMON\n"
 	.string "that's said to have been long extinct.$"
 
-SlateportCity_Text_AquaWillAssumeControlOfSubmarine:
+SlateportCity_Text_WillAssumeControlOfSubmarine:
 	.string "Fufufu…\n"
 	.string "CAPT. STERN, I presume.\p"
-	.string "We of TEAM AQUA will assume\n"
+	.string "We of TEAM  will assume\n"
 	.string "control of your submarine!\p"
 	.string "Your objections are meaningless!\n"
 	.string "We expect your total cooperation!\p"
 	.string "Fufufu…\n"
 	.string "Just watch and learn what TEAM\l"
-	.string "AQUA has planned!$"
+	.string " has planned!$"
 
 SlateportCity_Text_SternWhatWasAllThat:
 	.string "CAPT. STERN: What was that all about?\p"
@@ -1310,12 +1310,12 @@ SlateportCity_Text_ComeBackToTradeBerryPowder:
 	.string "I'm always running a bazaar here.\p"
 	.string "Did you know?$"
 
-SlateportCity_Text_YouDroveTeamAquaAway:
+SlateportCity_Text_YouDroveTeamAway:
 	.string "SCOTT: Huh?\n"
 	.string "I'm sure I met you somewhere before.\p"
 	.string "Have I introduced myself to you?\n"
 	.string "If not, my name's SCOTT.\p"
-	.string "I just saw TEAM AQUA run away from\n"
+	.string "I just saw TEAM  run away from\n"
 	.string "here like they were stung.\p"
 	.string "Let me guess--you drove them away?$"
 

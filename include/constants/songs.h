@@ -349,18 +349,18 @@
 #define MUS_ENCOUNTER_INTENSE       416 // MUS_HAGESHII
 #define MUS_ENCOUNTER_COOL          417 // MUS_KAKKOII
 #define MUS_ROUTE113                418 // MUS_KAZANBAI
-#define MUS_ENCOUNTER_AQUA          419 // MUS_AQA_0
+#define MUS_ENCOUNTER_TRI          419 // MUS_AQA_0
 #define MUS_FOLLOW_ME               420 // MUS_TSURETEK
 #define MUS_ENCOUNTER_BRENDAN       421 // MUS_BOY_SUP
 #define MUS_EVER_GRANDE             422 // MUS_RAINBOW          // Also used in link rooms.
 #define MUS_ENCOUNTER_SUSPICIOUS    423 // MUS_AYASII
-#define MUS_VICTORY_AQUA_MAGMA      424 // MUS_KACHI4
+#define MUS_VICTORY_TRI_MAGMA      424 // MUS_KACHI4
 #define MUS_CABLE_CAR               425 // MUS_ROPEWAY
 #define MUS_GAME_CORNER             426 // MUS_CASINO
 #define MUS_DEWFORD                 427 // MUS_HIGHTOWN         // Also used in Route 109's Seashore house.
 #define MUS_SAFARI_ZONE             428 // MUS_SAFARI
 #define MUS_VICTORY_ROAD            429 // MUS_C_ROAD           // Also used in Pokémon League's E4/Champion rooms and halls.
-#define MUS_AQUA_MAGMA_HIDEOUT      430 // MUS_AJITO
+#define MUS_TRI_MAGMA_HIDEOUT      430 // MUS_AJITO
 #define MUS_SAILING                 431 // MUS_M_BOAT
 #define MUS_MT_PYRE                 432 // MUS_M_DUNGON         // Also used in New Mauville and Shoal Cave.
 #define MUS_SLATEPORT               433 // MUS_FINECITY         // Also used in Cycling Road's entrances.
@@ -405,7 +405,7 @@
 #define MUS_VS_MEW                  472 // MUS_VS_MEW
 #define MUS_B_DOME_LOBBY            473 // MUS_B_DOME1
 #define MUS_VS_WILD                 474 // MUS_BATTLE27
-#define MUS_VS_AQUA_MAGMA           475 // MUS_BATTLE31
+#define MUS_VS_TRI_MAGMA           475 // MUS_BATTLE31
 #define MUS_VS_TRAINER              476 // MUS_BATTLE20
 #define MUS_VS_GYM_LEADER           477 // MUS_BATTLE32
 #define MUS_VS_CHAMPION             478 // MUS_BATTLE33
@@ -413,7 +413,7 @@
 #define MUS_VS_KYOGRE_GROUDON       480 // MUS_BATTLE34
 #define MUS_VS_RIVAL                481 // MUS_BATTLE35
 #define MUS_VS_ELITE_FOUR           482 // MUS_BATTLE38
-#define MUS_VS_AQUA_MAGMA_LEADER    483 // MUS_BATTLE30
+#define MUS_VS_TRI_MAGMA_LEADER    483 // MUS_BATTLE30
 // FRLG Music
 #define MUS_RG_FOLLOW_ME            484 // MUS_RG_ANNAI
 #define MUS_RG_GAME_CORNER          485 // MUS_RG_SLOT

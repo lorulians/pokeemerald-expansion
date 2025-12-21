@@ -220,7 +220,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         },
     },
 
-    [BATTLE_ENVIRONMENT_AQUA] =
+    [BATTLE_ENVIRONMENT_TRI] =
     {
         .background =
         {
@@ -228,7 +228,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
             .tilemap = gBattleEnvironmentTilemap_Stadium,
             .entryTileset = gBattleEnvironmentAnimTiles_Building,
             .entryTilemap = gBattleEnvironmentAnimTilemap_Building,
-            .palette = gBattleEnvironmentPalette_StadiumAqua,
+            .palette = gBattleEnvironmentPalette_StadiumTri,
         },
     },
 
@@ -425,7 +425,7 @@ static const struct {
 } sMapBattleSceneMapping[] = {
     {MAP_BATTLE_SCENE_GYM,      BATTLE_ENVIRONMENT_GYM},
     {MAP_BATTLE_SCENE_MAGMA,    BATTLE_ENVIRONMENT_MAGMA},
-    {MAP_BATTLE_SCENE_AQUA,     BATTLE_ENVIRONMENT_AQUA},
+    {MAP_BATTLE_SCENE_TRI,      BATTLE_ENVIRONMENT_TRI},
     {MAP_BATTLE_SCENE_SIDNEY,   BATTLE_ENVIRONMENT_SIDNEY},
     {MAP_BATTLE_SCENE_PHOEBE,   BATTLE_ENVIRONMENT_PHOEBE},
     {MAP_BATTLE_SCENE_GLACIA,   BATTLE_ENVIRONMENT_GLACIA},

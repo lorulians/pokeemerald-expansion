@@ -87,7 +87,7 @@
     },
     {
       "local_id": "LOCALID_SLATEPORT_GRUNT_1",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "graphics_id": "OBJ_EVENT_GFX_TRI_MEMBER_F",
       "x": 31,
       "y": 27,
       "elevation": 3,
@@ -96,8 +96,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SlateportCity_EventScript_AquaGrunt1",
-      "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA"
+      "script": "SlateportCity_EventScript_TriGrunt1",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_TRI"
     },
     {
       "local_id": "LOCALID_SLATEPORT_COOK",
@@ -263,7 +263,7 @@
     },
     {
       "local_id": "LOCALID_SLATEPORT_GRUNT_2",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_TRI_MEMBER_M",
       "x": 30,
       "y": 27,
       "elevation": 3,
@@ -272,12 +272,12 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SlateportCity_EventScript_AquaGrunt2",
-      "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA"
+      "script": "SlateportCity_EventScript_TriGrunt2",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_TRI"
     },
     {
       "local_id": "LOCALID_SLATEPORT_GRUNT_3",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_TRI_MEMBER_M",
       "x": 29,
       "y": 27,
       "elevation": 3,
@@ -286,8 +286,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SlateportCity_EventScript_AquaGrunt3",
-      "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA"
+      "script": "SlateportCity_EventScript_TriGrunt3",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_TRI"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
@@ -370,7 +370,7 @@
     },
     {
       "local_id": "LOCALID_SLATEPORT_GRUNT_4",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_TRI_MEMBER_M",
       "x": 22,
       "y": 27,
       "elevation": 3,
@@ -379,12 +379,12 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SlateportCity_EventScript_AquaGrunt4",
-      "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA"
+      "script": "SlateportCity_EventScript_TriGrunt4",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_TRI"
     },
     {
       "local_id": "LOCALID_SLATEPORT_GRUNT_5",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_TRI_MEMBER_M",
       "x": 23,
       "y": 27,
       "elevation": 3,
@@ -393,12 +393,12 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SlateportCity_EventScript_AquaGrunt5",
-      "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA"
+      "script": "SlateportCity_EventScript_TriGrunt5",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_TRI"
     },
     {
       "local_id": "LOCALID_SLATEPORT_GRUNT_6",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_TRI_MEMBER_M",
       "x": 24,
       "y": 27,
       "elevation": 3,
@@ -407,12 +407,12 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SlateportCity_EventScript_AquaGrunt6",
-      "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA"
+      "script": "SlateportCity_EventScript_TriGrunt6",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_TRI"
     },
     {
       "local_id": "LOCALID_SLATEPORT_GRUNT_7",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_TRI_MEMBER_M",
       "x": 21,
       "y": 26,
       "elevation": 3,
@@ -421,12 +421,12 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SlateportCity_EventScript_AquaGrunt7",
-      "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA"
+      "script": "SlateportCity_EventScript_TriGrunt7",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_TRI"
     },
     {
       "local_id": "LOCALID_SLATEPORT_GRUNT_8",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_TRI_MEMBER_M",
       "x": 20,
       "y": 26,
       "elevation": 3,
@@ -435,12 +435,12 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SlateportCity_EventScript_AquaGrunt8",
-      "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA"
+      "script": "SlateportCity_EventScript_TriGrunt8",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_TRI"
     },
     {
       "local_id": "LOCALID_SLATEPORT_GRUNT_9",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_TRI_MEMBER_M",
       "x": 26,
       "y": 27,
       "elevation": 3,
@@ -449,11 +449,11 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SlateportCity_EventScript_AquaGrunt9",
-      "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA"
+      "script": "SlateportCity_EventScript_TriGrunt9",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_TRI"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_TRI_MEMBER_M",
       "x": 28,
       "y": 27,
       "elevation": 3,
@@ -462,12 +462,12 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SlateportCity_EventScript_AquaGrunt10",
-      "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA"
+      "script": "SlateportCity_EventScript_TriGrunt10",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_TRI"
     },
     {
       "local_id": "LOCALID_SLATEPORT_GRUNT_11",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_TRI_MEMBER_M",
       "x": 25,
       "y": 27,
       "elevation": 3,
@@ -476,8 +476,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SlateportCity_EventScript_AquaGrunt11",
-      "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA"
+      "script": "SlateportCity_EventScript_TriGrunt11",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_TRI"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKEFAN_F",

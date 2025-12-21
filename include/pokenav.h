@@ -187,7 +187,6 @@ enum
 
 enum
 {
-    MC_HEADER_MR_STONE,
     MC_HEADER_PROF_BIRCH,
     MC_HEADER_BRENDAN,
     MC_HEADER_MAY,

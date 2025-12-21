@@ -313,7 +313,7 @@
       "flag": "FLAG_ITEM_ROUTE_119_HYPER_POTION_1"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_TRI_MEMBER_M",
       "x": 13,
       "y": 33,
       "elevation": 4,
@@ -322,11 +322,11 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route119_EventScript_BridgeAquaGrunt1",
-      "flag": "FLAG_HIDE_ROUTE_119_TEAM_AQUA"
+      "script": "Route119_EventScript_BridgeTriGrunt1",
+      "flag": "FLAG_HIDE_ROUTE_119_TEAM_TRI"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_TRI_MEMBER_M",
       "x": 13,
       "y": 34,
       "elevation": 4,
@@ -335,8 +335,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route119_EventScript_BridgeAquaGrunt2",
-      "flag": "FLAG_HIDE_ROUTE_119_TEAM_AQUA"
+      "script": "Route119_EventScript_BridgeTriGrunt2",
+      "flag": "FLAG_HIDE_ROUTE_119_TEAM_TRI"
     },
     {
       "local_id": "LOCALID_ROUTE119_RIVAL_ON_BIKE",

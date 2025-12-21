@@ -1,24 +1,11 @@
 RustboroCity_Flat2_1F_MapScripts::
 	.byte 0
 
-RustboroCity_Flat2_1F_EventScript_OldWoman::
-	msgbox RustboroCity_Flat2_1F_Text_DevonWorkersLiveHere, MSGBOX_NPC
+RustboroCity_Flat2_1F_EventScript_OldMan::
+	msgbox RustboroCity_Flat2_1F_Text_OldMan, MSGBOX_NPC
 	end
 
-RustboroCity_Flat2_1F_EventScript_Skitty::
-	lock
-	faceplayer
-	waitse
-	playmoncry SPECIES_SKITTY, CRY_MODE_NORMAL
-	msgbox RustboroCity_Flat2_1F_Text_Skitty, MSGBOX_DEFAULT
-	waitmoncry
-	release
-	end
-
-RustboroCity_Flat2_1F_Text_DevonWorkersLiveHere:
-	.string "DEVON CORPORATION's workers live in\n"
-	.string "this building.$"
-
-RustboroCity_Flat2_1F_Text_Skitty:
-	.string "SKITTY: Gyaaaah!$"
-
+RustboroCity_Flat2_1F_Text_OldMan:
+	.string "Don't worry, youngster, I'm\n"
+	.string "still spry enough to climb\p"
+	.string "those stairs!$"

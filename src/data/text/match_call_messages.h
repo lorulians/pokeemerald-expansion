@@ -168,10 +168,10 @@ const u8 gText_MatchCallExpert_Shelby_Pokemon[] = _("The FIGHTING type.");
 const u8 gText_MatchCallExpert_Shelby_Intro1[] = _("Being old, I have my own");
 const u8 gText_MatchCallExpert_Shelby_Intro2[] = _("style of battling.");
 
-const u8 gText_MatchCallYoungster_Calvin_Strategy[] = _("I do what I can.");
-const u8 gText_MatchCallYoungster_Calvin_Pokemon[] = _("I use different types.");
-const u8 gText_MatchCallYoungster_Calvin_Intro1[] = _("I'm going to keep working");
-const u8 gText_MatchCallYoungster_Calvin_Intro2[] = _("until I beat a GYM LEADER.");
+const u8 gText_MatchCallPicnicker_Clarissa_Strategy[] = _("Prepared for anything!");
+const u8 gText_MatchCallPicnicker_Clarissa_Pokemon[] = _("I use different types!");
+const u8 gText_MatchCallPicnicker_Clarissa_Intro1[] = _("I'm going to keep training");
+const u8 gText_MatchCallPicnicker_Clarissa_Intro2[] = _("until I'm really strong!");
 
 const u8 gText_MatchCallFisherman_Elliot_Strategy[] = _("I battle patiently.");
 const u8 gText_MatchCallFisherman_Elliot_Pokemon[] = _("WATER POKéMON to battle!");
@@ -424,7 +424,7 @@ const u8 *const gMatchCallFlavorTexts[REMATCH_TABLE_ENTRIES][CHECK_PAGE_ENTRY_CO
     [REMATCH_MIGUEL] = MCFLAVOR(Pokefan_Miguel),
     [REMATCH_TIMOTHY] = MCFLAVOR(Expert_Timothy),
     [REMATCH_SHELBY] = MCFLAVOR(Expert_Shelby),
-    [REMATCH_CALVIN] = MCFLAVOR(Youngster_Calvin),
+    [REMATCH_CLARISSA] = MCFLAVOR(Picnicker_Clarissa),
     [REMATCH_ELLIOT] = MCFLAVOR(Fisherman_Elliot),
     [REMATCH_ISAIAH] = MCFLAVOR(Triathlete_Isaiah),
     [REMATCH_MARIA] = MCFLAVOR(Triathlete_Maria),

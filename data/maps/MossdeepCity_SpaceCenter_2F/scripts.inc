@@ -254,7 +254,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_DoStevenMultiBattle::
 	waitstate
 
 MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha::
-	msgbox MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided, MSGBOX_DEFAULT
+	msgbox MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsTriAlsoMisguided, MSGBOX_DEFAULT
 	closemessage
 	delay 20
 	applymovement LOCALID_SPACE_CENTER_MAXIE, Common_Movement_WalkInPlaceFasterLeft
@@ -460,7 +460,7 @@ MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand:
 MossdeepCity_SpaceCenter_Text_TabithaDefeat:
 	.string "I'm with our leader…$"
 
-MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided:
+MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsTriAlsoMisguided:
 	.string "MAXIE: We failed to make the volcano\n"
 	.string "erupt…\p"
 	.string "We failed to control GROUDON after\n"
@@ -472,7 +472,7 @@ MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided:
 	.string "If…\n"
 	.string "If we, TEAM MAGMA, are wrong…\l"
 	.string "… … … … … …\p"
-	.string "Then might TEAM AQUA's goal to expand\n"
+	.string "Then might TEAM TRI's goal to expand\n"
 	.string "the sea also be equally misguided?$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieWeWillGiveUp:

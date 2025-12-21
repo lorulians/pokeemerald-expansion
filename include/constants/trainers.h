@@ -16,19 +16,19 @@
 #define TRAINER_UNION_ROOM                  3072
 
 #define TRAINER_PIC_HIKER                  0
-#define TRAINER_PIC_AQUA_GRUNT_M           1
+#define TRAINER_PIC_TRI_GRUNT_M           1
 #define TRAINER_PIC_POKEMON_BREEDER_F      2
 #define TRAINER_PIC_COOLTRAINER_M          3
 #define TRAINER_PIC_BIRD_KEEPER            4
 #define TRAINER_PIC_COLLECTOR              5
-#define TRAINER_PIC_AQUA_GRUNT_F           6
+#define TRAINER_PIC_TRI_GRUNT_F           6
 #define TRAINER_PIC_SWIMMER_M              7
 #define TRAINER_PIC_MAGMA_GRUNT_M          8
 #define TRAINER_PIC_EXPERT_M               9
-#define TRAINER_PIC_AQUA_ADMIN_M          10
+#define TRAINER_PIC_TRI_ADMIN_M          10
 #define TRAINER_PIC_BLACK_BELT            11
-#define TRAINER_PIC_AQUA_ADMIN_F          12
-#define TRAINER_PIC_AQUA_LEADER_ARCHIE    13
+#define TRAINER_PIC_TRI_ADMIN_F          12
+#define TRAINER_PIC_TRI_LEADER_ARCHIE    13
 #define TRAINER_PIC_HEX_MANIAC            14
 #define TRAINER_PIC_AROMA_LADY            15
 #define TRAINER_PIC_RUIN_MANIAC           16
@@ -108,7 +108,8 @@
 #define TRAINER_PIC_LEAF                  90
 #define TRAINER_PIC_RS_BRENDAN            91
 #define TRAINER_PIC_RS_MAY                92
-#define TRAINER_PIC_COUNT                 93
+#define TRAINER_PIC_ENGINEER              93
+#define TRAINER_PIC_COUNT                 94
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -121,17 +122,17 @@
 #define TRAINER_BACK_PIC_STEVEN                 7
 
 #define FACILITY_CLASS_HIKER                 0x0
-#define FACILITY_CLASS_AQUA_GRUNT_M          0x1
+#define FACILITY_CLASS_TRI_GRUNT_M          0x1
 #define FACILITY_CLASS_PKMN_BREEDER_F        0x2
 #define FACILITY_CLASS_COOLTRAINER_M         0x3
 #define FACILITY_CLASS_BIRD_KEEPER           0x4
 #define FACILITY_CLASS_COLLECTOR             0x5
-#define FACILITY_CLASS_AQUA_GRUNT_F          0x6
+#define FACILITY_CLASS_TRI_GRUNT_F          0x6
 #define FACILITY_CLASS_SWIMMER_M             0x7
 #define FACILITY_CLASS_MAGMA_GRUNT_M         0x8
 #define FACILITY_CLASS_EXPERT_M              0x9
 #define FACILITY_CLASS_BLACK_BELT            0xa
-#define FACILITY_CLASS_AQUA_LEADER_ARCHIE    0xb
+#define FACILITY_CLASS_TRI_LEADER_ARCHIE    0xb
 #define FACILITY_CLASS_HEX_MANIAC            0xc
 #define FACILITY_CLASS_AROMA_LADY            0xd
 #define FACILITY_CLASS_RUIN_MANIAC           0xe
@@ -205,9 +206,9 @@
 
 #define FACILITY_CLASSES_COUNT               0x52
 
-#define RS_FACILITY_CLASS_AQUA_LEADER_ARCHIE    0x0
-#define RS_FACILITY_CLASS_AQUA_GRUNT_M          0x1
-#define RS_FACILITY_CLASS_AQUA_GRUNT_F          0x2
+#define RS_FACILITY_CLASS_TRI_LEADER_ARCHIE    0x0
+#define RS_FACILITY_CLASS_TRI_GRUNT_M          0x1
+#define RS_FACILITY_CLASS_TRI_GRUNT_F          0x2
 #define RS_FACILITY_CLASS_AROMA_LADY            0x3
 #define RS_FACILITY_CLASS_RUIN_MANIAC           0x4
 #define RS_FACILITY_CLASS_INTERVIEWER           0x5
@@ -290,7 +291,7 @@ enum TrainerClassID
     TRAINER_CLASS_PKMN_TRAINER_1, // Unused
     TRAINER_CLASS_PKMN_TRAINER_2, // Unused
     TRAINER_CLASS_HIKER,
-    TRAINER_CLASS_TEAM_AQUA,
+    TRAINER_CLASS_TEAM_TRI,
     TRAINER_CLASS_PKMN_BREEDER,
     TRAINER_CLASS_COOLTRAINER,
     TRAINER_CLASS_BIRD_KEEPER,
@@ -298,9 +299,9 @@ enum TrainerClassID
     TRAINER_CLASS_SWIMMER_M,
     TRAINER_CLASS_TEAM_MAGMA,
     TRAINER_CLASS_EXPERT,
-    TRAINER_CLASS_AQUA_ADMIN,
+    TRAINER_CLASS_TRI_ADMIN,
     TRAINER_CLASS_BLACK_BELT,
-    TRAINER_CLASS_AQUA_LEADER,
+    TRAINER_CLASS_TRI_LEADER,
     TRAINER_CLASS_HEX_MANIAC,
     TRAINER_CLASS_AROMA_LADY,
     TRAINER_CLASS_RUIN_MANIAC,
@@ -353,6 +354,7 @@ enum TrainerClassID
     TRAINER_CLASS_PIKE_QUEEN,
     TRAINER_CLASS_PYRAMID_KING,
     TRAINER_CLASS_RS_PROTAG,
+    TRAINER_CLASS_ENGINEER,
     TRAINER_CLASS_COUNT,
 };
 
@@ -362,7 +364,7 @@ enum TrainerClassID
 #define TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS   3
 #define TRAINER_ENCOUNTER_MUSIC_INTENSE      4
 #define TRAINER_ENCOUNTER_MUSIC_COOL         5
-#define TRAINER_ENCOUNTER_MUSIC_AQUA         6
+#define TRAINER_ENCOUNTER_MUSIC_TRI         6
 #define TRAINER_ENCOUNTER_MUSIC_MAGMA        7
 #define TRAINER_ENCOUNTER_MUSIC_SWIMMER      8
 #define TRAINER_ENCOUNTER_MUSIC_TWINS        9 // used for other trainer classes too

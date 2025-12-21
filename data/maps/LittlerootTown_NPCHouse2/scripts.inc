@@ -61,7 +61,7 @@ LittlerootTown_NPCHouse2_Event_ChatotCopy2::
 	end
 
 LittlerootTown_NPCHouse2_Text_MeetMyChatot:
-	.string "This is my CHATOT. He copies whatever\n"
+	.string "This is my Chatot. He copies whatever\n"
 	.string "I say.$"
 
 LittlerootTown_NPCHouse2_Text_KidsAreHandful:
@@ -69,13 +69,14 @@ LittlerootTown_NPCHouse2_Text_KidsAreHandful:
 	.string "when you're older.$"
 
 LittlerootTown_NPCHouse2_Text_IsntHeSilly:
-	.string "See? Isn't he funny?.$"
+	.string "See? Isn't he funny?$"
 
 LittlerootTown_Text_Chatot:
-	.string "CHATTERBOX: La la la!$"
+	.string "Chatterbox: La la la!$"
 
 LittlerootTown_Text_ChatotCopy1:
-	.string "CHATTERBOX: He copies whatever I say!$"
+	.string "Chatterbox: He copies whatever I\n"
+	.string "say! La la la!$"
 
 LittlerootTown_Text_ChatotCopy2:
-	.string "CHATTERBOX: Isn't he funny! La la la!$"
+	.string "Chatterbox: Isn't he funny! La la la!$"

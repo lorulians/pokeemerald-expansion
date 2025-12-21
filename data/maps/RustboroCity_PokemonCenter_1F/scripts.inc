@@ -5,7 +5,7 @@ RustboroCity_PokemonCenter_1F_MapScripts::
 
 RustboroCity_PokemonCenter_1F_OnTransition:
 	setrespawn HEAL_LOCATION_RUSTBORO_CITY
-	call Common_EventScript_UpdateBrineyLocation
+	// call Common_EventScript_UpdateBrineyLocation
 	end
 
 RustboroCity_PokemonCenter_1F_EventScript_Nurse::
@@ -17,31 +17,43 @@ RustboroCity_PokemonCenter_1F_EventScript_Nurse::
 	end
 
 RustboroCity_PokemonCenter_1F_EventScript_Man::
-	msgbox RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities, MSGBOX_NPC
+	msgbox RustboroCity_PokemonCenter_1F_Text_PokemonHaveValues, MSGBOX_NPC
 	end
 
 RustboroCity_PokemonCenter_1F_EventScript_Boy::
-	msgbox RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon, MSGBOX_NPC
+	msgbox RustboroCity_PokemonCenter_1F_Text_DifferentPokemonTimes, MSGBOX_NPC
+	end
+
+RustboroCity_PokemonCenter_1F_EventScript_Hoothoot::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_HOOTHOOT, CRY_MODE_NORMAL
+	msgbox RustboroCity_Text_Hoothoot, MSGBOX_NPC
+	waitmoncry
+	release
 	end
 
 RustboroCity_PokemonCenter_1F_EventScript_Girl::
-	msgbox RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor, MSGBOX_NPC
+	msgbox RustboroCity_PokemonCenter_1F_Text_HMCut, MSGBOX_NPC
 	end
 
-RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities:
-	.string "My POKéMON has a NAIVE nature, and my\n"
-	.string "friend's has a JOLLY nature.\p"
-	.string "It's fascinating how POKéMON have\n"
-	.string "personalities!$"
+RustboroCity_Text_Hoothoot:
+	.string "Cedric: Hoohoo!$"
 
-RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon:
-	.string "Just like people, there are male and\n"
-	.string "female POKéMON.\p"
-	.string "But no one seems to have any idea how\n"
-	.string "they're different.$"
+RustboroCity_PokemonCenter_1F_Text_PokemonHaveValues:
+	.string "Pokémon have special values that\n"
+	.string "dictate how powerful they are.\p"
+	.string "You can check these values while\n"
+	.string "looking at a Pokémon's Summary!$"
 
-RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor:
-	.string "The man next door gave me an HM!\p"
-	.string "I used it to teach my POKéMON how to\n"
-	.string "CUT down skinny trees.$"
+RustboroCity_PokemonCenter_1F_Text_DifferentPokemonTimes:
+	.string "Some Pokémon appear at different\n"
+	.string "times of the day!\p"
+	.string "My Hoothoot is a nighttime encounter!$"
+
+RustboroCity_PokemonCenter_1F_Text_HMCut:
+	.string "You'll need Cut to get through to\n"
+	.string "Eadich Town. Hideaway Woods is\p"
+	.string "filled with thick brush.$"
 

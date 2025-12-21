@@ -329,9 +329,9 @@ Route120_EventScript_Chip::
 	msgbox Route120_Text_ChipPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route120_EventScript_Clarissa::
-	trainerbattle_single TRAINER_CLARISSA, Route120_Text_ClarissaIntro, Route120_Text_ClarissaDefeat
-	msgbox Route120_Text_ClarissaPostBattle, MSGBOX_AUTOCLOSE
+Route120_EventScript_Heather::
+	trainerbattle_single TRAINER_HEATHER, Route120_Text_HeatherIntro, Route120_Text_HeatherDefeat
+	msgbox Route120_Text_HeatherPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route120_EventScript_Angelica::
