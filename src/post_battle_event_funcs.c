@@ -35,7 +35,7 @@ int GameClear(void)
 
     SetContinueGameWarpStatus();
 
-    SetContinueGameWarpToHealLocation(HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F);
+    SetContinueGameWarpToHealLocation(HEAL_LOCATION_REDGE_TOWN_PLAYERS_HOUSE_2F);
     ribbonGet = FALSE;
 
     for (i = 0; i < PARTY_SIZE; i++)

@@ -266,9 +266,9 @@ static u8 sActiveList[32];
 extern u8 *gFieldEffectScriptPointers[];
 extern const struct SpriteTemplate *const gFieldEffectObjectTemplatePointers[];
 
-static const u32 sNewGameBirch_Gfx[] = INCBIN_U32("graphics/birch_speech/birch.4bpp");
-static const u32 sUnusedBirchBeauty[] = INCBIN_U32("graphics/birch_speech/unused_beauty.4bpp");
-static const u16 sNewGameBirch_Pal[16] = INCBIN_U16("graphics/birch_speech/birch.gbapal");
+static const u32 sNewGameCedar_Gfx[] = INCBIN_U32("graphics/cedar_speech/cedar.4bpp");
+static const u32 sUnusedCedarBeauty[] = INCBIN_U32("graphics/cedar_speech/unused_beauty.4bpp");
+static const u16 sNewGameCedar_Pal[16] = INCBIN_U16("graphics/cedar_speech/cedar.gbapal");
 
 static const u32 sPokeballGlow_Gfx[] = INCBIN_U32("graphics/field_effects/pics/pokeball_glow.4bpp");
 static const u16 sPokeballGlow_Pal[16] = INCBIN_U16("graphics/field_effects/palettes/pokeball_glow.gbapal");
@@ -349,35 +349,35 @@ static const struct OamData sOam_16x16 =
     .paletteNum = 0,
 };
 
-static const struct SpriteFrameImage sPicTable_NewGameBirch[] =
+static const struct SpriteFrameImage sPicTable_NewGameCedar[] =
 {
-    obj_frame_tiles(sNewGameBirch_Gfx)
+    obj_frame_tiles(sNewGameCedar_Gfx)
 };
 
-static const struct SpritePalette sSpritePalette_NewGameBirch =
+static const struct SpritePalette sSpritePalette_NewGameCedar =
 {
-    .data = sNewGameBirch_Pal,
+    .data = sNewGameCedar_Pal,
     .tag = 0x1006
 };
 
-static const union AnimCmd sAnim_NewGameBirch[] =
+static const union AnimCmd sAnim_NewGameCedar[] =
 {
     ANIMCMD_FRAME(.imageValue = 0, .duration = 1),
     ANIMCMD_END
 };
 
-static const union AnimCmd *const sAnimTable_NewGameBirch[] =
+static const union AnimCmd *const sAnimTable_NewGameCedar[] =
 {
-    sAnim_NewGameBirch
+    sAnim_NewGameCedar
 };
 
-static const struct SpriteTemplate sSpriteTemplate_NewGameBirch =
+static const struct SpriteTemplate sSpriteTemplate_NewGameCedar =
 {
     .tileTag = TAG_NONE,
     .paletteTag = 0x1006,
     .oam = &sOam_64x64,
-    .anims = sAnimTable_NewGameBirch,
-    .images = sPicTable_NewGameBirch,
+    .anims = sAnimTable_NewGameCedar,
+    .images = sPicTable_NewGameCedar,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCallbackDummy
 };
@@ -946,10 +946,10 @@ static void UNUSED LoadTrainerGfx_TrainerCard(u8 gender, u16 palOffset, u8 *dest
     LoadPalette(gTrainerSprites[gender].palette.data, palOffset, PLTT_SIZE_4BPP);
 }
 
-u8 AddNewGameBirchObject(s16 x, s16 y, u8 subpriority)
+u8 AddNewGameCedarObject(s16 x, s16 y, u8 subpriority)
 {
-    LoadSpritePalette(&sSpritePalette_NewGameBirch);
-    return CreateSprite(&sSpriteTemplate_NewGameBirch, x, y, subpriority);
+    LoadSpritePalette(&sSpritePalette_NewGameCedar);
+    return CreateSprite(&sSpriteTemplate_NewGameCedar, x, y, subpriority);
 }
 
 u8 CreateMonSprite_PicBox(u16 species, s16 x, s16 y, u8 subpriority)

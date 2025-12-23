@@ -1,69 +1,69 @@
-Route102_Text_ClarissaIntro:
+Route232_Text_ClarissaIntro:
 	.string "Rangers-in-Training should always be\n"
 	.string "prepared for anything!\l"
 	.string "And that includes battles!$"
 
-Route102_Text_ClarissaDefeated:
+Route232_Text_ClarissaDefeated:
 	.string "Rangers-in-Training should also be\n"
 	.string "prepared to lose…$"
 
-Route102_Text_ClarissaPostBattle:
+Route232_Text_ClarissaPostBattle:
 	.string "You're a tough trainer! You should\n"
 	.string "become a Ranger!$"
 
-Route102_Text_ClarissaRegister:
+Route232_Text_ClarissaRegister:
 	.string "Say, would you like to exchange\n"
 	.string "PokéNav numbers?\p"
 	.string "That way we can battle each other"
 	.string "again!$"
 
-Route102_Text_ClarissaRegisterShort:
+Route232_Text_ClarissaRegisterShort:
 	.string "Say, would you like to exchange\n"
 	.string "PokéNav numbers?$"
 
-Route102_Text_ClarissaRematchIntro:
+Route232_Text_ClarissaRematchIntro:
 	.string "I'm tougher than I was last time,\n"
 	.string "just you wait and see!$"
 
-Route102_Text_ClarissaRematchDefeated:
+Route232_Text_ClarissaRematchDefeated:
 	.string "I lost again! You really are\n"
 	.string "one tough trainer!"
 
-Route102_Text_ClarissaRematchPostBattle:
+Route232_Text_ClarissaRematchPostBattle:
 	.string "I'm going to keep on training so\n"
 	.string "one day I can beat you!$"
 
-Route102_Text_ShanaIntro:
+Route232_Text_ShanaIntro:
 	.string "Think you can take me on? Let's\n"
 	.string "go! Pokémon, GO!$"
 
-Route102_Text_ShanaDefeated:
+Route232_Text_ShanaDefeated:
 	.string "Pokémon, RETREAT!$"
 
-Route102_Text_ShanaPostBattle:
+Route232_Text_ShanaPostBattle:
 	.string "I'm not very good at this whole\n"
 	.string "battling thing…$"
 
-Route102_Text_MickIntro:
+Route232_Text_MickIntro:
 	.string "I'm trying to get my badge in\n"
 	.string "Pokémon battles!$"
 
-Route102_Text_MickDefeated:
+Route232_Text_MickDefeated:
 	.string "It only counts if I win…$"
 
-Route102_Text_MickPostBattle:
+Route232_Text_MickPostBattle:
 	.string "I wonder if there's a badge for\n"
 	.string "losing Pokémon battles…$"
 
-Route102_Text_EricIntro:
+Route232_Text_EricIntro:
 	.string "Huh? I'm on lunch. What do you\n"
 	.string "want, kid?$"
 
-Route102_Text_EricDefeated:
+Route232_Text_EricDefeated:
 	.string "Grumble, grumble… Dropped my\n"
 	.string "sandwich…$"
 
-Route102_Text_EricPostBattle:
+Route232_Text_EricPostBattle:
 	.string "I always walk to the Mart on my\n"
 	.string "break and grab a bite to eat.\p"
 	.string "Engineering is hungry work!$"

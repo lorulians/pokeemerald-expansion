@@ -32,14 +32,14 @@
       "blockdata_filepath": "data/layouts/MauvilleCity/map.bin"
     },
     {
-      "id": "LAYOUT_RUSTBORO_CITY",
-      "name": "RustboroCity_Layout",
+      "id": "LAYOUT_TEPEK_CITY",
+      "name": "TepekCity_Layout",
       "width": 43,
       "height": 46,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
-      "border_filepath": "data/layouts/RustboroCity/border.bin",
-      "blockdata_filepath": "data/layouts/RustboroCity/map.bin"
+      "secondary_tileset": "gTileset_Tepek",
+      "border_filepath": "data/layouts/TepekCity/border.bin",
+      "blockdata_filepath": "data/layouts/TepekCity/map.bin"
     },
     {
       "id": "LAYOUT_FORTREE_CITY",
@@ -92,14 +92,14 @@
       "blockdata_filepath": "data/layouts/EverGrandeCity/map.bin"
     },
     {
-      "id": "LAYOUT_LITTLEROOT_TOWN",
-      "name": "LittlerootTown_Layout",
+      "id": "LAYOUT_REDGE_TOWN",
+      "name": "RedgeTown_Layout",
       "width": 24,
       "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/LittlerootTown/border.bin",
-      "blockdata_filepath": "data/layouts/LittlerootTown/map.bin"
+      "border_filepath": "data/layouts/RedgeTown/border.bin",
+      "blockdata_filepath": "data/layouts/RedgeTown/map.bin"
     },
     {
       "id": "LAYOUT_OLDALE_TOWN",
@@ -162,24 +162,24 @@
       "blockdata_filepath": "data/layouts/PacifidlogTown/map.bin"
     },
     {
-      "id": "LAYOUT_ROUTE101",
-      "name": "Route101_Layout",
+      "id": "LAYOUT_ROUTE231",
+      "name": "Route231_Layout",
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/Route101/border.bin",
-      "blockdata_filepath": "data/layouts/Route101/map.bin"
+      "border_filepath": "data/layouts/Route231/border.bin",
+      "blockdata_filepath": "data/layouts/Route231/map.bin"
     },
     {
-      "id": "LAYOUT_ROUTE102",
-      "name": "Route102_Layout",
+      "id": "LAYOUT_ROUTE232",
+      "name": "Route232_Layout",
       "width": 49,
       "height": 22,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
-      "border_filepath": "data/layouts/Route102/border.bin",
-      "blockdata_filepath": "data/layouts/Route102/map.bin"
+      "secondary_tileset": "gTileset_Tepek",
+      "border_filepath": "data/layouts/Route232/border.bin",
+      "blockdata_filepath": "data/layouts/Route232/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE103",
@@ -197,7 +197,7 @@
       "width": 40,
       "height": 80,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
+      "secondary_tileset": "gTileset_Tepek",
       "border_filepath": "data/layouts/Route104/border.bin",
       "blockdata_filepath": "data/layouts/Route104/map.bin"
     },
@@ -317,7 +317,7 @@
       "width": 100,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
+      "secondary_tileset": "gTileset_Tepek",
       "border_filepath": "data/layouts/Route116/border.bin",
       "blockdata_filepath": "data/layouts/Route116/map.bin"
     },
@@ -532,54 +532,44 @@
       "blockdata_filepath": "data/layouts/Underwater_Route128/map.bin"
     },
     {
-      "id": "LAYOUT_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F",
-      "name": "LittlerootTown_BrendansHouse_1F_Layout",
+      "id": "LAYOUT_REDGE_TOWN_PLAYERS_HOUSE_1F",
+      "name": "RedgeTown_PlayersHouse_1F_Layout",
       "width": 11,
       "height": 9,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_BrendansMaysHouse",
-      "border_filepath": "data/layouts/LittlerootTown_BrendansHouse_1F/border.bin",
-      "blockdata_filepath": "data/layouts/LittlerootTown_BrendansHouse_1F/map.bin"
+      "border_filepath": "data/layouts/RedgeTown_PlayersHouse_1F/border.bin",
+      "blockdata_filepath": "data/layouts/RedgeTown_PlayersHouse_1F/map.bin"
     },
     {
-      "id": "LAYOUT_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F",
-      "name": "LittlerootTown_BrendansHouse_2F_Layout",
+      "id": "LAYOUT_REDGE_TOWN_PLAYERS_HOUSE_2F",
+      "name": "RedgeTown_PlayersHouse_2F_Layout",
       "width": 9,
       "height": 8,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_BrendansMaysHouse",
-      "border_filepath": "data/layouts/LittlerootTown_BrendansHouse_2F/border.bin",
-      "blockdata_filepath": "data/layouts/LittlerootTown_BrendansHouse_2F/map.bin"
+      "border_filepath": "data/layouts/RedgeTown_PlayersHouse_2F/border.bin",
+      "blockdata_filepath": "data/layouts/RedgeTown_PlayersHouse_2F/map.bin"
     },
     {
-      "id": "LAYOUT_LITTLEROOT_TOWN_MAYS_HOUSE_1F",
-      "name": "LittlerootTown_MaysHouse_1F_Layout",
+      "id": "LAYOUT_REDGE_TOWN_NPC_HOUSE1",
+      "name": "RedgeTown_NPCHouse1_Layout",
       "width": 10,
       "height": 8,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/LittlerootTown_MaysHouse_1F/border.bin",
-      "blockdata_filepath": "data/layouts/LittlerootTown_MaysHouse_1F/map.bin"
+      "border_filepath": "data/layouts/RedgeTown_NPCHouse1/border.bin",
+      "blockdata_filepath": "data/layouts/RedgeTown_NPCHouse1/map.bin"
     },
     {
-      "id": "LAYOUT_LITTLEROOT_TOWN_MAYS_HOUSE_2F",
-      "name": "LittlerootTown_MaysHouse_2F_Layout",
-      "width": 9,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BrendansMaysHouse",
-      "border_filepath": "data/layouts/LittlerootTown_MaysHouse_2F/border.bin",
-      "blockdata_filepath": "data/layouts/LittlerootTown_MaysHouse_2F/map.bin"
-    },
-    {
-      "id": "LAYOUT_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB",
-      "name": "LittlerootTown_ProfessorBirchsLab_Layout",
+      "id": "LAYOUT_REDGE_TOWN_PROFESSOR_CEDARS_LAB",
+      "name": "RedgeTown_ProfessorCedarsLab_Layout",
       "width": 13,
       "height": 11,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_Lab",
-      "border_filepath": "data/layouts/LittlerootTown_ProfessorBirchsLab/border.bin",
-      "blockdata_filepath": "data/layouts/LittlerootTown_ProfessorBirchsLab/map.bin"
+      "border_filepath": "data/layouts/RedgeTown_ProfessorCedarsLab/border.bin",
+      "blockdata_filepath": "data/layouts/RedgeTown_ProfessorCedarsLab/map.bin"
     },
     {
       "id": "LAYOUT_HOUSE1",
@@ -912,74 +902,34 @@
       "blockdata_filepath": "data/layouts/MauvilleCity_GameCorner/map.bin"
     },
     {
-      "id": "LAYOUT_RUSTBORO_CITY_DEVON_CORP_1F",
-      "name": "RustboroCity_DevonCorp_1F_Layout",
-      "width": 19,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/RustboroCity_DevonCorp_1F/border.bin",
-      "blockdata_filepath": "data/layouts/RustboroCity_DevonCorp_1F/map.bin"
-    },
-    {
-      "id": "LAYOUT_RUSTBORO_CITY_DEVON_CORP_2F",
-      "name": "RustboroCity_DevonCorp_2F_Layout",
-      "width": 19,
-      "height": 9,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/RustboroCity_DevonCorp_2F/border.bin",
-      "blockdata_filepath": "data/layouts/RustboroCity_DevonCorp_2F/map.bin"
-    },
-    {
-      "id": "LAYOUT_RUSTBORO_CITY_GYM",
-      "name": "RustboroCity_Gym_Layout",
+      "id": "LAYOUT_TEPEK_CITY_GYM",
+      "name": "TepekCity_Gym_Layout",
       "width": 11,
       "height": 20,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_RustboroGym",
-      "border_filepath": "data/layouts/RustboroCity_Gym/border.bin",
-      "blockdata_filepath": "data/layouts/RustboroCity_Gym/map.bin"
+      "secondary_tileset": "gTileset_TepekGym",
+      "border_filepath": "data/layouts/TepekCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/TepekCity_Gym/map.bin"
     },
     {
-      "id": "LAYOUT_RUSTBORO_CITY_POKEMON_SCHOOL",
-      "name": "RustboroCity_PokemonSchool_Layout",
-      "width": 12,
-      "height": 11,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonSchool",
-      "border_filepath": "data/layouts/RustboroCity_PokemonSchool/border.bin",
-      "blockdata_filepath": "data/layouts/RustboroCity_PokemonSchool/map.bin"
-    },
-    {
-      "id": "LAYOUT_RUSTBORO_CITY_HOUSE",
-      "name": "RustboroCity_House_Layout",
+      "id": "LAYOUT_TEPEK_CITY_HOUSE",
+      "name": "TepekCity_House_Layout",
       "width": 10,
       "height": 9,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/RustboroCity_House/border.bin",
-      "blockdata_filepath": "data/layouts/RustboroCity_House/map.bin"
+      "border_filepath": "data/layouts/TepekCity_House/border.bin",
+      "blockdata_filepath": "data/layouts/TepekCity_House/map.bin"
     },
     {
-      "id": "LAYOUT_RUSTBORO_CITY_HOUSE1",
-      "name": "RustboroCity_House1_Layout",
+      "id": "LAYOUT_TEPEK_CITY_APPT_1F",
+      "name": "TepekCity_Appt_1F_Layout",
       "width": 13,
       "height": 7,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/RustboroCity_House1/border.bin",
-      "blockdata_filepath": "data/layouts/RustboroCity_House1/map.bin"
-    },
-    {
-      "id": "LAYOUT_RUSTBORO_CITY_CUTTERS_HOUSE",
-      "name": "RustboroCity_CuttersHouse_Layout",
-      "width": 11,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/RustboroCity_CuttersHouse/border.bin",
-      "blockdata_filepath": "data/layouts/RustboroCity_CuttersHouse/map.bin"
+      "border_filepath": "data/layouts/TepekCity_Appt_1F/border.bin",
+      "blockdata_filepath": "data/layouts/TepekCity_Appt_1F/map.bin"
     },
     {
       "id": "LAYOUT_FORTREE_CITY_HOUSE1",
@@ -1347,7 +1297,7 @@
       "width": 48,
       "height": 44,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
+      "secondary_tileset": "gTileset_Tepek",
       "border_filepath": "data/layouts/PetalburgWoods/border.bin",
       "blockdata_filepath": "data/layouts/PetalburgWoods/map.bin"
     },
@@ -2682,16 +2632,6 @@
       "blockdata_filepath": "data/layouts/BattleFrontier_BattleTowerBattleRoom/map.bin"
     },
     {
-      "id": "LAYOUT_RUSTBORO_CITY_DEVON_CORP_3F",
-      "name": "RustboroCity_DevonCorp_3F_Layout",
-      "width": 19,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/RustboroCity_DevonCorp_3F/border.bin",
-      "blockdata_filepath": "data/layouts/RustboroCity_DevonCorp_3F/map.bin"
-    },
-    {
       "id": "LAYOUT_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F",
       "name": "EverGrandeCity_PokemonLeague_1F_Layout",
       "width": 19,
@@ -2867,7 +2807,7 @@
       "width": 1,
       "height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
+      "secondary_tileset": "gTileset_Tepek",
       "border_filepath": "data/layouts/Route104_Prototype/border.bin",
       "blockdata_filepath": "data/layouts/Route104_Prototype/map.bin"
     },
@@ -2897,7 +2837,7 @@
       "width": 33,
       "height": 30,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
+      "secondary_tileset": "gTileset_Tepek",
       "border_filepath": "data/layouts/SouthernIsland_Exterior/border.bin",
       "blockdata_filepath": "data/layouts/SouthernIsland_Exterior/map.bin"
     },
@@ -2907,7 +2847,7 @@
       "width": 27,
       "height": 24,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
+      "secondary_tileset": "gTileset_Tepek",
       "border_filepath": "data/layouts/SouthernIsland_Interior/border.bin",
       "blockdata_filepath": "data/layouts/SouthernIsland_Interior/map.bin"
     },
@@ -2932,34 +2872,24 @@
       "blockdata_filepath": "data/layouts/FieryPath/map.bin"
     },
     {
-      "id": "LAYOUT_RUSTBORO_CITY_FLAT2_1F",
-      "name": "RustboroCity_Flat2_1F_Layout",
+      "id": "LAYOUT_TEPEK_CITY_APPT_2F",
+      "name": "TepekCity_Appt_2F_Layout",
       "width": 14,
       "height": 6,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/RustboroCity_Flat2_1F/border.bin",
-      "blockdata_filepath": "data/layouts/RustboroCity_Flat2_1F/map.bin"
+      "border_filepath": "data/layouts/TepekCity_Appt_2F/border.bin",
+      "blockdata_filepath": "data/layouts/TepekCity_Appt_2F/map.bin"
     },
     {
-      "id": "LAYOUT_RUSTBORO_CITY_FLAT2_2F",
-      "name": "RustboroCity_Flat2_2F_Layout",
+      "id": "LAYOUT_TEPEK_CITY_APPT_3F",
+      "name": "TepekCity_Appt_3F_Layout",
       "width": 14,
       "height": 6,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/RustboroCity_Flat2_2F/border.bin",
-      "blockdata_filepath": "data/layouts/RustboroCity_Flat2_2F/map.bin"
-    },
-    {
-      "id": "LAYOUT_RUSTBORO_CITY_FLAT2_3F",
-      "name": "RustboroCity_Flat2_3F_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/RustboroCity_Flat2_3F/border.bin",
-      "blockdata_filepath": "data/layouts/RustboroCity_Flat2_3F/map.bin"
+      "border_filepath": "data/layouts/TepekCity_Appt_3F/border.bin",
+      "blockdata_filepath": "data/layouts/TepekCity_Appt_3F/map.bin"
     },
     {
       "id": "LAYOUT_SOOTOPOLIS_CITY_LOTAD_AND_SEEDOT_HOUSE",
@@ -3120,26 +3050,6 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/CaveOfOrigin_Unused_B4F_Lava/border.bin",
       "blockdata_filepath": "data/layouts/CaveOfOrigin_Unused_B4F_Lava/map.bin"
-    },
-    {
-      "id": "LAYOUT_RUSTBORO_CITY_FLAT1_1F",
-      "name": "RustboroCity_Flat1_1F_Layout",
-      "width": 14,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/RustboroCity_Flat1_1F/border.bin",
-      "blockdata_filepath": "data/layouts/RustboroCity_Flat1_1F/map.bin"
-    },
-    {
-      "id": "LAYOUT_RUSTBORO_CITY_FLAT1_2F",
-      "name": "RustboroCity_Flat1_2F_Layout",
-      "width": 14,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/RustboroCity_Flat1_2F/border.bin",
-      "blockdata_filepath": "data/layouts/RustboroCity_Flat1_2F/map.bin"
     },
     {
       "id": "LAYOUT_EVER_GRANDE_CITY_HALL4",
@@ -4017,7 +3927,7 @@
       "width": 34,
       "height": 46,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
+      "secondary_tileset": "gTileset_Tepek",
       "border_filepath": "data/layouts/FarawayIsland_Entrance/border.bin",
       "blockdata_filepath": "data/layouts/FarawayIsland_Entrance/map.bin"
     },
@@ -4204,10 +4114,10 @@
     {
       "id": "LAYOUT_NAVEL_ROCK_EXTERIOR",
       "name": "NavelRock_Exterior_Layout",
-      "width": 28,
-      "height": 24,
+      "width": 48,
+      "height": 38,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
+      "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/NavelRock_Exterior/border.bin",
       "blockdata_filepath": "data/layouts/NavelRock_Exterior/map.bin"
     },
@@ -4312,16 +4222,6 @@
       "blockdata_filepath": "data/layouts/MeteorFalls_StevensCave/map.bin"
     },
     {
-      "id": "LAYOUT_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB_WITH_TABLE",
-      "name": "LittlerootTown_ProfessorBirchsLabWithTable_Layout",
-      "width": 13,
-      "height": 13,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Lab",
-      "border_filepath": "data/layouts/LittlerootTown_ProfessorBirchsLabWithTable/border.bin",
-      "blockdata_filepath": "data/layouts/LittlerootTown_ProfessorBirchsLabWithTable/map.bin"
-    },
-    {
       "id": "LAYOUT_SKY_PILLAR_1F_CLEAN",
       "name": "SkyPillar_1F_Clean_Layout",
       "width": 14,
@@ -4412,34 +4312,34 @@
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
     },
     {
-      "id": "LAYOUT_LITTLEROOT_TOWN_NPCHOUSE2",
-      "name": "LittlerootTown_NPCHouse2_Layout",
+      "id": "LAYOUT_REDGE_TOWN_NPC_HOUSE2",
+      "name": "RedgeTown_NPCHouse2_Layout",
       "width": 10,
       "height": 8,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/LittlerootTown_NPCHouse2/border.bin",
-      "blockdata_filepath": "data/layouts/LittlerootTown_NPCHouse2/map.bin"
+      "border_filepath": "data/layouts/RedgeTown_NPCHouse2/border.bin",
+      "blockdata_filepath": "data/layouts/RedgeTown_NPCHouse2/map.bin"
     },
     {
-      "id": "LAYOUT_RUSTBORO_CITY_APARTMENT_ROOM",
-      "name": "RustboroCity_ApartmentRoom",
+      "id": "LAYOUT_TEPEK_CITY_APARTMENT_ROOM",
+      "name": "TepekCity_ApartmentRoom",
       "width": 10,
       "height": 11,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/RustboroCity_ApartmentRoom/border.bin",
-      "blockdata_filepath": "data/layouts/RustboroCity_ApartmentRoom/map.bin"
+      "border_filepath": "data/layouts/TepekCity_ApartmentRoom/border.bin",
+      "blockdata_filepath": "data/layouts/TepekCity_ApartmentRoom/map.bin"
     },
     {
-      "id": "LAYOUT_RUSTBORO_CITY_APARTMENT_ROOM_2",
-      "name": "RustboroCity_ApartmentRoom_2",
+      "id": "LAYOUT_TEPEK_CITY_APARTMENT_ROOM_2",
+      "name": "TepekCity_ApartmentRoom_2",
       "width": 10,
       "height": 11,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/RustboroCity_ApartmentRoom_2/border.bin",
-      "blockdata_filepath": "data/layouts/RustboroCity_ApartmentRoom_2/map.bin"
+      "border_filepath": "data/layouts/TepekCity_ApartmentRoom_2/border.bin",
+      "blockdata_filepath": "data/layouts/TepekCity_ApartmentRoom_2/map.bin"
     }
   ]
 }

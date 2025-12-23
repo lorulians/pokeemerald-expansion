@@ -1,9 +1,9 @@
 static const struct CityMapEntry sPokenavCityMaps[NUM_CITY_MAPS] =
 {
     {
-        .mapSecId = MAPSEC_LITTLEROOT_TOWN,
+        .mapSecId = MAPSEC_REDGE_TOWN,
         .index = 0,
-        .tilemap = gPokenavCityMap_Littleroot_0,
+        .tilemap = gPokenavCityMap_Redge_0,
     },
     {
         .mapSecId = MAPSEC_OLDALE_TOWN,
@@ -61,14 +61,14 @@ static const struct CityMapEntry sPokenavCityMaps[NUM_CITY_MAPS] =
         .tilemap = gPokenavCityMap_Mauville_1,
     },
     {
-        .mapSecId = MAPSEC_RUSTBORO_CITY,
+        .mapSecId = MAPSEC_TEPEK_CITY,
         .index = 0,
-        .tilemap = gPokenavCityMap_Rustboro_0,
+        .tilemap = gPokenavCityMap_Tepek_0,
     },
     {
-        .mapSecId = MAPSEC_RUSTBORO_CITY,
+        .mapSecId = MAPSEC_TEPEK_CITY,
         .index = 1,
-        .tilemap = gPokenavCityMap_Rustboro_1,
+        .tilemap = gPokenavCityMap_Tepek_1,
     },
     {
         .mapSecId = MAPSEC_FORTREE_CITY,

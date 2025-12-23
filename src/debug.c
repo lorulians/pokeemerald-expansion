@@ -973,7 +973,7 @@ static void DebugNativeStep_CloseDebugWindow(u8 taskId)
 
 static const u16 sLocationFlags[] =
 {
-    FLAG_VISITED_LITTLEROOT_TOWN,
+    FLAG_VISITED_REDGE_TOWN,
     FLAG_VISITED_OLDALE_TOWN,
     FLAG_VISITED_DEWFORD_TOWN,
     FLAG_VISITED_LAVARIDGE_TOWN,
@@ -983,7 +983,7 @@ static const u16 sLocationFlags[] =
     FLAG_VISITED_PETALBURG_CITY,
     FLAG_VISITED_SLATEPORT_CITY,
     FLAG_VISITED_MAUVILLE_CITY,
-    FLAG_VISITED_RUSTBORO_CITY,
+    FLAG_VISITED_TEPEK_CITY,
     FLAG_VISITED_FORTREE_CITY,
     FLAG_VISITED_LILYCOVE_CITY,
     FLAG_VISITED_MOSSDEEP_CITY,
@@ -3440,7 +3440,7 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
 
 
 #define SOUND_LIST_BGM              \
-    X(MUS_LITTLEROOT_TEST)          \
+    X(MUS_REDGE_TEST)          \
     X(MUS_GSC_ROUTE38)              \
     X(MUS_CAUGHT)                   \
     X(MUS_VICTORY_WILD)             \
@@ -3473,7 +3473,7 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_ENCOUNTER_MALE)           \
     X(MUS_ABANDONED_SHIP)           \
     X(MUS_FORTREE)                  \
-    X(MUS_BIRCH_LAB)                \
+    X(MUS_CEDAR_LAB)                \
     X(MUS_B_TOWER_RS)               \
     X(MUS_ENCOUNTER_SWIMMER)        \
     X(MUS_CAVE_OF_ORIGIN)           \
@@ -3489,13 +3489,13 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_LINK_CONTEST_P4)          \
     X(MUS_ENCOUNTER_RICH)           \
     X(MUS_VERDANTURF)               \
-    X(MUS_RUSTBORO)                 \
+    X(MUS_TEPEK)                 \
     X(MUS_POKE_CENTER)              \
     X(MUS_ROUTE104)                 \
     X(MUS_ROUTE119)                 \
     X(MUS_CYCLING)                  \
     X(MUS_POKE_MART)                \
-    X(MUS_LITTLEROOT)               \
+    X(MUS_REDGE)               \
     X(MUS_MT_CHIMNEY)               \
     X(MUS_ENCOUNTER_FEMALE)         \
     X(MUS_LILYCOVE)                 \

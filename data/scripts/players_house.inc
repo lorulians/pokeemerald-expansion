@@ -1,5 +1,5 @@
 PlayersHouse_2F_EventScript_BlockStairsUntilClockIsSet::
-	setvar VAR_LITTLEROOT_INTRO_STATE, 5
+	setvar VAR_REDGE_INTRO_STATE, 5
 	return
 
 PlayersHouse_1F_EventScript_EnterHouseMovingIn::
@@ -23,7 +23,7 @@ PlayersHouse_1F_Movement_PlayerWalkIn:
 	walk_up
 	step_end
 
-LittlerootTown_BrendansHouse_2F_EventScript_WallClock::
+RedgeTown_PlayersHouse_2F_EventScript_WallClock::
 	lockall
 	setvar VAR_0x8004, MALE
 	goto PlayersHouse_2F_EventScript_WallClock
@@ -33,7 +33,7 @@ PlayersHouse_2F_EventScript_WallClock::
 	goto_if_set FLAG_SET_WALL_CLOCK, PlayersHouse_2F_EventScript_CheckWallClock
 	msgbox PlayersHouse_2F_Text_ClockIsStopped, MSGBOX_DEFAULT
 	call PlayersHouse_2F_EventScript_SetWallClock
-	setvar VAR_LITTLEROOT_INTRO_STATE, 6
+	setvar VAR_REDGE_INTRO_STATE, 6
 	setflag FLAG_SET_WALL_CLOCK
 	end
 
@@ -50,7 +50,7 @@ PlayersHouse_2F_EventScript_MomComesUpstairs::
 	waitmovement 0
 	playse SE_EXIT
 	removeobject VAR_0x8008
-	setvar VAR_LITTLEROOT_INTRO_STATE, 4
+	setvar VAR_REDGE_INTRO_STATE, 4
 	releaseall
 	end
 
@@ -94,12 +94,12 @@ PlayersHouse_1F_Movement_MomApproachPlayerFemale:
 PlayersHouse_1F_EventScript_Mom::
 	lock
 	faceplayer
-	goto_if_eq VAR_LITTLEROOT_HOUSES_STATE_MAY, 4, PlayersHouse_1F_EventScript_DontPushYourselfTooHard
-	goto_if_eq VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 4, PlayersHouse_1F_EventScript_DontPushYourselfTooHard
+	goto_if_eq VAR_REDGE_HOUSES_STATE_MAY, 4, PlayersHouse_1F_EventScript_DontPushYourselfTooHard
+	goto_if_eq VAR_REDGE_HOUSES_STATE_BRENDAN, 4, PlayersHouse_1F_EventScript_DontPushYourselfTooHard
 	goto_if_set FLAG_HAS_MATCH_CALL, PlayersHouse_1F_EventScript_TryRegisterMom
-	goto_if_set FLAG_RESCUED_BIRCH, PlayersHouse_1F_EventScript_MomHealsParty
+	goto_if_set FLAG_SYS_POKEMON_GET, PlayersHouse_1F_EventScript_MomHealsParty
 	goto_if_eq VAR_TEMP_1, 1, PlayersHouse_1F_EventScript_SeeYouHoney
-	goto_if_eq VAR_LITTLEROOT_INTRO_STATE, 7, PlayersHouse_1F_EventScript_DidYouSeeCedar
+	goto_if_eq VAR_REDGE_INTRO_STATE, 7, PlayersHouse_1F_EventScript_DidYouSeeCedar
 	release
 	end
 

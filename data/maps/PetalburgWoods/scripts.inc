@@ -97,7 +97,7 @@ PetalburgWoods_EventScript_BagFull::
 	end
 
 PetalburgWoods_EventScript_DevonResearcherFinish::
-	msgbox PetalburgWoods_Text_TeamTriAfterSomethingInRustboro, MSGBOX_DEFAULT
+	msgbox PetalburgWoods_Text_TeamTriAfterSomethingInTepek, MSGBOX_DEFAULT
 	applymovement LOCALID_PETALBURG_WOODS_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherStartExit
 	waitmovement 0
 	msgbox PetalburgWoods_Text_ICantBeWastingTime, MSGBOX_DEFAULT
@@ -354,7 +354,7 @@ PetalburgWoods_Text_YouveGotSomeNerve:
 	.string "I wish I could say that, but I'm out of\n"
 	.string "POKéMON…\p"
 	.string "And, hey, we of TEAM TRI are also\n"
-	.string "after something in RUSTBORO.\p"
+	.string "after something in TEPEK.\p"
 	.string "I'll let you go today!$"
 
 PetalburgWoods_Text_ThatWasAwfullyClose:
@@ -365,10 +365,10 @@ PetalburgWoods_Text_ThatWasAwfullyClose:
 	.string "I know, I'll give you a GREAT BALL as\n"
 	.string "my thanks!$"
 
-PetalburgWoods_Text_TeamTriAfterSomethingInRustboro:
+PetalburgWoods_Text_TeamTriAfterSomethingInTepek:
 	.string "Didn't that TEAM TRI thug say\n"
 	.string "they were after something in\l"
-	.string "RUSTBORO, too?$"
+	.string "TEPEK, too?$"
 
 PetalburgWoods_Text_ICantBeWastingTime:
 	.string "Uh-oh! It's a crisis!\n"
@@ -439,7 +439,7 @@ PetalburgWoods_Text_HiddenItemsExplanation:
 
 PetalburgWoods_Text_TryUsingThisItem:
 	.string "Oh, neat!\n"
-	.string "That's the BADGE from RUSTBORO GYM!\p"
+	.string "That's the BADGE from TEPEK GYM!\p"
 	.string "You must be a TRAINER.\n"
 	.string "You should try using this item.$"
 

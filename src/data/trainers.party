@@ -10846,7 +10846,7 @@ Natu
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_RUSTBORO_TREECKO ===
+=== TRAINER_BRENDAN_TEPEK_TREECKO ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -10863,7 +10863,7 @@ Torchic
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_BRENDAN_RUSTBORO_MUDKIP ===
+=== TRAINER_BRENDAN_TEPEK_MUDKIP ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -10970,7 +10970,7 @@ Loudred
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_RUSTBORO_TORCHIC ===
+=== TRAINER_BRENDAN_TEPEK_TORCHIC ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -10987,7 +10987,7 @@ Mudkip
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_MAY_RUSTBORO_MUDKIP ===
+=== TRAINER_MAY_TEPEK_MUDKIP ===
 Name: MAY
 Class: Rival
 Pic: May
@@ -14119,7 +14119,7 @@ Vigoroth
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MAY_RUSTBORO_TREECKO ===
+=== TRAINER_MAY_TEPEK_TREECKO ===
 Name: MAY
 Class: Rival
 Pic: May
@@ -14136,7 +14136,7 @@ Torchic
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_MAY_RUSTBORO_TORCHIC ===
+=== TRAINER_MAY_TEPEK_TORCHIC ===
 Name: MAY
 Class: Rival
 Pic: May

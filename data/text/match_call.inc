@@ -2059,11 +2059,11 @@ MatchCall_Text_Roxanne2::
 MatchCall_Text_Roxanne3::
 	.string "ROXANNE: {PLAYER}!\n"
 	.string "My GYM is ready!\p"
-	.string "Please visit RUSTBORO whenever\n"
+	.string "Please visit TEPEK whenever\n"
 	.string "you can!$"
 
 MatchCall_Text_Roxanne4::
-	.string "ROXANNE: At the RUSTBORO GYM,\n"
+	.string "ROXANNE: At the TEPEK GYM,\n"
 	.string "the fact that we battled, {PLAYER},\l"
 	.string "is a matter of pride.$"
 
@@ -2354,7 +2354,7 @@ MatchCall_Text_May2::
 MatchCall_Text_May3::
 	.string "MAY: Hi, {PLAYER}{KUN}!\p"
 	.string "Do you remember a man named\n"
-	.string "the CUTTER in RUSTBORO?\l"
+	.string "the CUTTER in TEPEK?\l"
 	.string "He had a house there, remember?\p"
 	.string "Well, I found out his younger\n"
 	.string "brother lives in MAUVILLE.\p"
@@ -2367,7 +2367,7 @@ MatchCall_Text_May4::
 	.string "MAY: {PLAYER}{KUN}?\p"
 	.string "RUSTURF TUNNEL…\n"
 	.string "They named it that because it\l"
-	.string "joins RUSTBORO and VERDANTURF.$"
+	.string "joins TEPEK and VERDANTURF.$"
 
 MatchCall_Text_May5::
 	.string "MAY: {PLAYER}{KUN}, how are you?\p"
@@ -2480,7 +2480,7 @@ MatchCall_Text_Brendan2::
 MatchCall_Text_Brendan3::
 	.string "BRENDAN: Yo, {PLAYER}!\p"
 	.string "Do you remember a guy named\n"
-	.string "the CUTTER in RUSTBORO?\l"
+	.string "the CUTTER in TEPEK?\l"
 	.string "He had a house there, right?\p"
 	.string "Well, it turns out his little\n"
 	.string "brother lives in MAUVILLE.\p"
@@ -2492,7 +2492,7 @@ MatchCall_Text_Brendan3::
 MatchCall_Text_Brendan4::
 	.string "BRENDAN: This voice… {PLAYER}?\p"
 	.string "They gave RUSTURF TUNNEL its name\n"
-	.string "because it joins RUSTBORO and\l"
+	.string "because it joins TEPEK and\l"
 	.string "VERDANTURF.\p"
 	.string "Did you know that?$"
 
@@ -2710,7 +2710,7 @@ MatchCall_Text_Scott7::
 	.string "the POKéNAV's service area…$"
 
 MatchCall_Text_Norman1::
-	.string "DAD: In RUSTBORO, there's a man\n"
+	.string "DAD: In TEPEK, there's a man\n"
 	.string "that goes by the odd name of\l"
 	.string "the CUTTER.\p"
 	.string "If you're in the area, you should\n"
@@ -2831,22 +2831,15 @@ MatchCall_Text_Steven7::
 	.string "I hope we can meet again\n"
 	.string "somewhere!$"
 
-MatchCall_Text_BirchRegisterCall:
-	.string "PROF. BIRCH: Oh, {PLAYER}{KUN}!\n"
-	.string "I've already heard about you!\p"
-	.string "It seems your POKéNAV's been\n"
-	.string "upgraded with MATCH CALL.\p"
-	.string "Well, I should register, too!\p"
+MatchCall_Text_CedarRegisterCall:
+	.string "Prof. Cedar: Oh, {PLAYER}{KUN}!\n"
+	.string "Looks like you've got a PokéNav.\p"
+	.string "I know, let me give you my number.\p"
 	.string "That way, I'd be able to examine\n"
 	.string "your POKéDEX even while you're\l"
 	.string "out in the field.\p"
 	.string "… … … … … …$"
 
-MatchCall_Text_RegisteredBirch:
-	.string "Registered PROF. BIRCH\n"
-	.string "in the POKéNAV.$"
-
-MatchCall_Text_UnusedProfBirch:
-	.string "PROF. BIRCH: When one has both\n"
-	.string "the POKéDEX and POKéNAV, studying\l"
-	.string "POKéMON becomes more fun, eh?$"
+MatchCall_Text_RegisteredCedar:
+	.string "Registered Prof. Cedar\n"
+	.string "in the PokéNav.$"

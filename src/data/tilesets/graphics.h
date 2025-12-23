@@ -20,26 +20,26 @@ const u16 gTilesetPalettes_Petalburg[][16] =
     INCBIN_U16("data/tilesets/secondary/petalburg/palettes/15.gbapal"),
 };
 
-const u32 gTilesetTiles_Rustboro[] = INCBIN_U32("data/tilesets/secondary/rustboro/tiles.4bpp.fastSmol");
+const u32 gTilesetTiles_Tepek[] = INCBIN_U32("data/tilesets/secondary/tepek/tiles.4bpp.fastSmol");
 
-const u16 gTilesetPalettes_Rustboro[][16] =
+const u16 gTilesetPalettes_Tepek[][16] =
 {
-    INCBIN_U16("data/tilesets/secondary/rustboro/palettes/00.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro/palettes/01.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro/palettes/02.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro/palettes/03.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro/palettes/04.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro/palettes/05.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro/palettes/06.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro/palettes/07.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro/palettes/08.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro/palettes/09.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro/palettes/10.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro/palettes/11.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro/palettes/12.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro/palettes/13.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro/palettes/14.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro/palettes/15.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek/palettes/15.gbapal"),
 };
 
 const u32 gTilesetTiles_Dewford[] = INCBIN_U32("data/tilesets/secondary/dewford/tiles.4bpp.fastSmol");
@@ -1018,26 +1018,26 @@ const u16 gTilesetPalettes_Unused2[][16] =
     INCBIN_U16("data/tilesets/secondary/unused_2/palettes/15.gbapal"),
 };
 
-const u32 gTilesetTiles_RustboroGym[] = INCBIN_U32("data/tilesets/secondary/rustboro_gym/tiles.4bpp.fastSmol");
+const u32 gTilesetTiles_TepekGym[] = INCBIN_U32("data/tilesets/secondary/tepek_gym/tiles.4bpp.fastSmol");
 
-const u16 gTilesetPalettes_RustboroGym[][16] =
+const u16 gTilesetPalettes_TepekGym[][16] =
 {
-    INCBIN_U16("data/tilesets/secondary/rustboro_gym/palettes/00.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro_gym/palettes/01.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro_gym/palettes/02.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro_gym/palettes/03.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro_gym/palettes/04.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro_gym/palettes/05.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro_gym/palettes/06.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro_gym/palettes/07.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro_gym/palettes/08.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro_gym/palettes/09.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro_gym/palettes/10.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro_gym/palettes/11.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro_gym/palettes/12.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro_gym/palettes/13.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro_gym/palettes/14.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/rustboro_gym/palettes/15.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek_gym/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek_gym/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek_gym/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek_gym/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek_gym/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek_gym/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek_gym/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek_gym/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek_gym/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek_gym/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek_gym/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek_gym/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek_gym/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek_gym/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek_gym/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tepek_gym/palettes/15.gbapal"),
 };
 
 const u32 gTilesetTiles_DewfordGym[] = INCBIN_U32("data/tilesets/secondary/dewford_gym/tiles.4bpp.fastSmol");

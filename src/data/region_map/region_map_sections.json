@@ -1,8 +1,8 @@
 {
   "map_sections": [
     {
-      "id": "MAPSEC_LITTLEROOT_TOWN",
-      "name": "REDGE TOWN",
+      "id": "MAPSEC_REDGE_TOWN",
+      "name": "Redge Town",
       "x": 4,
       "y": 11,
       "width": 1,
@@ -81,8 +81,8 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_RUSTBORO_CITY",
-      "name": "TEPEK CITY",
+      "id": "MAPSEC_TEPEK_CITY",
+      "name": "Tepek City",
       "x": 0,
       "y": 5,
       "width": 1,
@@ -129,16 +129,16 @@
       "height": 2
     },
     {
-      "id": "MAPSEC_ROUTE_101",
-      "name": "ROUTE 231",
+      "id": "MAPSEC_ROUTE_231",
+      "name": "Route 231",
       "x": 4,
       "y": 10,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_ROUTE_102",
-      "name": "ROUTE 102",
+      "id": "MAPSEC_ROUTE_232",
+      "name": "Route 232",
       "x": 2,
       "y": 9,
       "width": 2,
@@ -1221,7 +1221,7 @@
     },
     {
       "id": "MAPSEC_NAVEL_ROCK",
-      "name": "NAVEL ROCK"
+      "name": "Power Plant"
     },
     {
       "id": "MAPSEC_TRAINER_HILL",

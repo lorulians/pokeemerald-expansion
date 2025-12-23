@@ -66,7 +66,7 @@ void HandleLinkBattleSetup(void)
     }
 }
 
-void SetUpBattleVarsAndBirchZigzagoon(void)
+void SetUpBattleVarsAndCedarZigzagoon(void)
 {
     s32 i;
 

@@ -1,7 +1,8 @@
 {
   "group_order": [
     "gMapGroup_TownsAndRoutes",
-    "gMapGroup_IndoorLittleroot",
+    "gMapGroup_IndoorRedge",
+    "gMapGroup_IndoorTepek",
     "gMapGroup_IndoorOldale",
     "gMapGroup_IndoorDewford",
     "gMapGroup_IndoorLavaridge",
@@ -11,7 +12,6 @@
     "gMapGroup_IndoorPetalburg",
     "gMapGroup_IndoorSlateport",
     "gMapGroup_IndoorMauville",
-    "gMapGroup_IndoorRustboro",
     "gMapGroup_IndoorFortree",
     "gMapGroup_IndoorLilycove",
     "gMapGroup_IndoorMossdeep",
@@ -36,24 +36,24 @@
     "gMapGroup_IndoorRoute124"
   ],
   "gMapGroup_TownsAndRoutes": [
+    "RedgeTown",
+    "TepekCity",
     "PetalburgCity",
     "SlateportCity",
     "MauvilleCity",
-    "RustboroCity",
     "FortreeCity",
     "LilycoveCity",
     "MossdeepCity",
     "SootopolisCity",
     "EverGrandeCity",
-    "LittlerootTown",
     "OldaleTown",
     "DewfordTown",
     "LavaridgeTown",
     "FallarborTown",
     "VerdanturfTown",
     "PacifidlogTown",
-    "Route101",
-    "Route102",
+    "Route231",
+    "Route232",
     "Route103",
     "Route104",
     "Route105",
@@ -94,13 +94,27 @@
     "Underwater_Route105",
     "Underwater_Route125"
   ],
-  "gMapGroup_IndoorLittleroot": [
-    "LittlerootTown_BrendansHouse_1F",
-    "LittlerootTown_BrendansHouse_2F",
-    "LittlerootTown_MaysHouse_1F",
-    "LittlerootTown_MaysHouse_2F",
-    "LittlerootTown_ProfessorBirchsLab",
-    "LittlerootTown_NPCHouse2"
+  "gMapGroup_IndoorRedge": [
+    "RedgeTown_PlayersHouse_1F",
+    "RedgeTown_PlayersHouse_2F",
+    "RedgeTown_NPCHouse1",
+    "RedgeTown_NPCHouse2",
+    "RedgeTown_ProfessorCedarsLab"
+  ],
+  "gMapGroup_IndoorTepek": [
+    "TepekCity_House",
+    "TepekCity_Appt_1F",
+    "TepekCity_Appt_2F",
+    "TepekCity_Appt_2F_1",
+    "TepekCity_Appt_2F_2",
+    "TepekCity_Appt_2F_3",
+    "TepekCity_Appt_3F",
+    "TepekCity_Appt_3F_1",
+    "TepekCity_Appt_3F_2",
+    "TepekCity_Gym",
+    "TepekCity_PokemonCenter_1F",
+    "TepekCity_PokemonCenter_2F",
+    "TepekCity_Mart"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",
@@ -190,25 +204,6 @@
     "MauvilleCity_PokemonCenter_1F",
     "MauvilleCity_PokemonCenter_2F",
     "MauvilleCity_Mart"
-  ],
-  "gMapGroup_IndoorRustboro": [
-    "RustboroCity_DevonCorp_1F",
-    "RustboroCity_DevonCorp_2F",
-    "RustboroCity_DevonCorp_3F",
-    "RustboroCity_Gym",
-    "RustboroCity_PokemonSchool",
-    "RustboroCity_PokemonCenter_1F",
-    "RustboroCity_PokemonCenter_2F",
-    "RustboroCity_Mart",
-    "RustboroCity_Flat1_1F",
-    "RustboroCity_Flat1_2F",
-    "RustboroCity_House1",
-    "RustboroCity_CuttersHouse",
-    "RustboroCity_House2",
-    "RustboroCity_Flat2_1F",
-    "RustboroCity_Flat2_2F",
-    "RustboroCity_Flat2_3F",
-    "RustboroCity_House3"
   ],
   "gMapGroup_IndoorFortree": [
     "FortreeCity_House1",
