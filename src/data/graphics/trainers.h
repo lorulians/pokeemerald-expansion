@@ -7,6 +7,9 @@ const u16 gTrainerPalette_Hiker[] = INCBIN_U16("graphics/trainers/front_pics/hik
 const u32 gTrainerFrontPic_TriGruntM[] = INCBIN_U32("graphics/trainers/front_pics/tri_grunt_m.4bpp.smol");
 const u16 gTrainerPalette_TriGruntM[] = INCBIN_U16("graphics/trainers/front_pics/tri_grunt_m.gbapal");
 
+const u32 gTrainerFrontPic_TriGruntMF[] = INCBIN_U32("graphics/trainers/front_pics/tri_grunt_mf.4bpp.smol");
+const u16 gTrainerPalette_TriGruntMF[] = INCBIN_U16("graphics/trainers/front_pics/tri_grunt_mf.gbapal");
+
 const u32 gTrainerFrontPic_PokemonBreederF[] = INCBIN_U32("graphics/trainers/front_pics/pokemon_breeder_f.4bpp.smol");
 const u16 gTrainerPalette_PokemonBreederF[] = INCBIN_U16("graphics/trainers/front_pics/pokemon_breeder_f.gbapal");
 
@@ -313,6 +316,7 @@ const struct TrainerSprite gTrainerSprites[] =
 {
     TRAINER_SPRITE(TRAINER_PIC_HIKER, gTrainerFrontPic_Hiker, gTrainerPalette_Hiker),
     TRAINER_SPRITE(TRAINER_PIC_TRI_GRUNT_M, gTrainerFrontPic_TriGruntM, gTrainerPalette_TriGruntM),
+    TRAINER_SPRITE(TRAINER_PIC_TRI_GRUNT_MF, gTrainerFrontPic_TriGruntMF, gTrainerPalette_TriGruntMF),
     TRAINER_SPRITE(TRAINER_PIC_POKEMON_BREEDER_F, gTrainerFrontPic_PokemonBreederF, gTrainerPalette_PokemonBreederF),
     TRAINER_SPRITE(TRAINER_PIC_COOLTRAINER_M, gTrainerFrontPic_CoolTrainerM, gTrainerPalette_CoolTrainerM),
     TRAINER_SPRITE(TRAINER_PIC_BIRD_KEEPER, gTrainerFrontPic_BirdKeeper, gTrainerPalette_BirdKeeper),

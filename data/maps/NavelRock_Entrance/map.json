@@ -3,7 +3,7 @@
   "name": "NavelRock_Entrance",
   "layout": "LAYOUT_NAVEL_ROCK_ENTRANCE",
   "music": "MUS_RG_SEVII_CAVE",
-  "region_map_section": "MAPSEC_NAVEL_ROCK",
+  "region_map_section": "MAPSEC_TEPEK_POWER_PLANT",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",
@@ -26,7 +26,7 @@
       "x": 10,
       "y": 26,
       "elevation": 3,
-      "dest_map": "MAP_NAVEL_ROCK_EXTERIOR",
+      "dest_map": "MAP_POWER_PLANT_EXTERIOR",
       "dest_warp_id": "1"
     }
   ],

@@ -16,19 +16,19 @@
 #define TRAINER_UNION_ROOM                  3072
 
 #define TRAINER_PIC_HIKER                  0
-#define TRAINER_PIC_TRI_GRUNT_M           1
+#define TRAINER_PIC_TRI_GRUNT_M            1
 #define TRAINER_PIC_POKEMON_BREEDER_F      2
 #define TRAINER_PIC_COOLTRAINER_M          3
 #define TRAINER_PIC_BIRD_KEEPER            4
 #define TRAINER_PIC_COLLECTOR              5
-#define TRAINER_PIC_TRI_GRUNT_F           6
+#define TRAINER_PIC_TRI_GRUNT_F            6
 #define TRAINER_PIC_SWIMMER_M              7
 #define TRAINER_PIC_MAGMA_GRUNT_M          8
 #define TRAINER_PIC_EXPERT_M               9
-#define TRAINER_PIC_TRI_ADMIN_M          10
+#define TRAINER_PIC_TRI_ADMIN_M           10
 #define TRAINER_PIC_BLACK_BELT            11
-#define TRAINER_PIC_TRI_ADMIN_F          12
-#define TRAINER_PIC_TRI_LEADER_ARCHIE    13
+#define TRAINER_PIC_TRI_ADMIN_F           12
+#define TRAINER_PIC_TRI_LEADER_ARCHIE     13
 #define TRAINER_PIC_HEX_MANIAC            14
 #define TRAINER_PIC_AROMA_LADY            15
 #define TRAINER_PIC_RUIN_MANIAC           16
@@ -109,7 +109,8 @@
 #define TRAINER_PIC_RS_BRENDAN            91
 #define TRAINER_PIC_RS_MAY                92
 #define TRAINER_PIC_ENGINEER              93
-#define TRAINER_PIC_COUNT                 94
+#define TRAINER_PIC_TRI_GRUNT_MF          94
+#define TRAINER_PIC_COUNT                 95
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0

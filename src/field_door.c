@@ -132,6 +132,8 @@ static const u8 sDoorAnimTiles_TrainerHillLobbyElevator[] = INCBIN_U8("graphics/
 static const u16 sDoorNullPalette48[16] = {};
 static const u8 sDoorAnimTiles_TrainerHillRoofElevator[] = INCBIN_U8("graphics/door_anims/trainer_hill_roof_elevator.4bpp");
 static const u16 sDoorNullPalette49[16] = {};
+static const u8 sDoorAnimTiles_PowerPlantLeft[] = INCBIN_U8("graphics/door_anims/power_plant_left.4bpp");
+static const u8 sDoorAnimTiles_PowerPlantRight[] = INCBIN_U8("graphics/door_anims/power_plant_right.4bpp");
 
 static const struct DoorAnimFrame sDoorOpenAnimFrames[] =
 {
@@ -221,6 +223,8 @@ static const u8 sDoorAnimPalettes_BattleDomePreBattleRoom[] = {9, 9, 7, 7, 7, 7,
 static const u8 sDoorAnimPalettes_BattleTentInterior[] = {9, 9, 9, 9, 9, 9, 9, 9};
 static const u8 sDoorAnimPalettes_TrainerHillLobbyElevator[] = {7, 7, 7, 7, 7, 7, 7, 7};
 static const u8 sDoorAnimPalettes_TrainerHillRoofElevator[] = {9, 9, 7, 7, 7, 7, 7, 7};
+static const u8 sDoorAnimPalettes_PowerPlantLeft[] = {3, 3, 3, 3, 3, 3, 3, 3};
+static const u8 sDoorAnimPalettes_PowerPlantRight[] = {3, 3, 3, 3, 3, 3, 3, 3};
 
 static const struct DoorGraphics sDoorAnimGraphicsTable[] =
 {
@@ -240,6 +244,8 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_Slateport_Door,                               DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Slateport, sDoorAnimPalettes_Slateport},
     {METATILE_Dewford_Door,                                 DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Dewford, sDoorAnimPalettes_Dewford},
     {METATILE_General_Door_Contest,                         DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_Contest, sDoorAnimPalettes_Contest},
+    {METATILE_Petalburg_Door_PowerPlantLeft,                         DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_PowerPlantLeft, sDoorAnimPalettes_PowerPlantLeft},
+    {METATILE_Petalburg_Door_PowerPlantRight,                        DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_PowerPlantRight, sDoorAnimPalettes_PowerPlantRight},
     {METATILE_Lilycove_Door,                                DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Lilycove, sDoorAnimPalettes_Lilycove},
     {METATILE_Lilycove_Door_Wooden,                         DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_LilycoveWooden, sDoorAnimPalettes_LilycoveWooden},
     {METATILE_Mossdeep_Door,                                DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Mossdeep, sDoorAnimPalettes_Mossdeep},

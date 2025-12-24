@@ -390,10 +390,11 @@
 #define METATILE_Pacifidlog_SubmergedLogs_VerticalTop          0x25A
 
 // gTileset_Petalburg
-#define METATILE_Petalburg_Door_CedarsLab   0x249
-#define METATILE_Petalburg_Door_Redge  0x248
-#define METATILE_Petalburg_Door_Oldale      0x287
-#define METATILE_Petalburg_Door_PowerPlant  0x2CF
+#define METATILE_Petalburg_Door_CedarsLab        0x249
+#define METATILE_Petalburg_Door_Oldale           0x287
+#define METATILE_Petalburg_Door_PowerPlantLeft   0x320
+#define METATILE_Petalburg_Door_PowerPlantRight  0x2CF
+#define METATILE_Petalburg_Door_Redge            0x248
 
 // gTileset_PetalburgGym
 #define METATILE_PetalburgGym_Door                0x224
@@ -432,11 +433,6 @@
 #define METATILE_PokemonCenter_Floor_Plain_Alt           0x2E4
 #define METATILE_PokemonCenter_Floor_ShadowTop           0x21E
 #define METATILE_PokemonCenter_Floor_ShadowTop_Alt       0x2DC
-
-// gTileset_Tepek
-#define METATILE_Tepek_Door_Apartment  0x295
-#define METATILE_Tepek_Door_Gray       0x2B4
-#define METATILE_Tepek_Door_Tan        0x242
 
 // gTileset_SecretBase
 #define METATILE_SecretBase_AttractMat_BottomLeft       0x313
@@ -732,6 +728,11 @@
 #define METATILE_SootopolisGym_Ice_Broken   0x206
 #define METATILE_SootopolisGym_Ice_Cracked  0x20E
 #define METATILE_SootopolisGym_Stairs       0x207
+
+// gTileset_Tepek
+#define METATILE_Tepek_Door_Apartment  0x295
+#define METATILE_Tepek_Door_Gray       0x2B4
+#define METATILE_Tepek_Door_Tan        0x242
 
 // gTileset_TrainerHill
 #define METATILE_TrainerHill_CounterDoor          0x334

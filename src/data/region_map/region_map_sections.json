@@ -1036,8 +1036,8 @@
       "name": "SEVII ISLE 24"
     },
     {
-      "id": "MAPSEC_NAVEL_ROCK_FRLG",
-      "name": "NAVEL ROCK"
+      "id": "MAPSEC_POWER_PLANT_FRLG",
+      "name": "POWER PLANT"
     },
     {
       "id": "MAPSEC_MT_EMBER",
@@ -1220,7 +1220,7 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_NAVEL_ROCK",
+      "id": "MAPSEC_TEPEK_POWER_PLANT",
       "name": "Power Plant"
     },
     {
