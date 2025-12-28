@@ -22,7 +22,7 @@
 .include "sound/voicegroups/petalburg.inc"
 .include "sound/voicegroups/drumsets/petalburg.inc"
 .include "sound/voicegroups/surf.inc"
-.include "sound/voicegroups/petalburg_woods.inc"
+.include "sound/voicegroups/hideaway_woods.inc"
 .include "sound/voicegroups/oldale.inc"
 .include "sound/voicegroups/lilycove_museum.inc"
 .include "sound/voicegroups/route122.inc"

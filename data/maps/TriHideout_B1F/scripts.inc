@@ -74,23 +74,6 @@ TriHideout_B1F_EventScript_DefeatedElectrode2::
 	goto Common_EventScript_RemoveStaticPokemon
 	end
 
-TriHideout_B1F_EventScript_Grunt2::
-	trainerbattle_single TRAINER_GRUNT_TRI_HIDEOUT_2, TriHideout_B1F_Text_Grunt2Intro, TriHideout_B1F_Text_Grunt2Defeat, TriHideout_B1F_EventScript_Grunt2Defeated
-	msgbox TriHideout_B1F_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
-	end
-
-TriHideout_B1F_EventScript_Grunt2Defeated::
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox TriHideout_B1F_Text_Grunt2PostBattle, MSGBOX_DEFAULT
-	release
-	end
-
-TriHideout_B1F_EventScript_Grunt3::
-	trainerbattle_single TRAINER_GRUNT_TRI_HIDEOUT_3, TriHideout_B1F_Text_Grunt3Intro, TriHideout_B1F_Text_Grunt3Defeat, TriHideout_B1F_EventScript_Grunt3Defeated
-	msgbox TriHideout_B1F_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
-	end
-
 TriHideout_B1F_EventScript_Grunt3Defeated::
 	msgbox TriHideout_B1F_Text_Grunt3PostBattle, MSGBOX_DEFAULT
 	release

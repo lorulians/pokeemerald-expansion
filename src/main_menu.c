@@ -264,12 +264,12 @@ static const u8 gText_BatteryRunDry[] = _("The internal battery has run dry.\nTh
 static const u8 gText_MainMenuNewGame[] = _("New Game");
 static const u8 gText_MainMenuContinue[] = _("Continue");
 static const u8 gText_MainMenuOption[] = _("Options");
-static const u8 gText_MainMenuMysteryGift[] = _("MYSTERY GIFT");
-static const u8 gText_MainMenuMysteryGift2[] = _("MYSTERY GIFT");
-static const u8 gText_MainMenuMysteryEvents[] = _("MYSTERY EVENTS");
+static const u8 gText_MainMenuMysteryGift[] = _("Mystery Gift");
+static const u8 gText_MainMenuMysteryGift2[] = _("Mystery Gift");
+static const u8 gText_MainMenuMysteryEvents[] = _("Mystery Events");
 static const u8 gText_WirelessNotConnected[] = _("The Wireless Adapter is not\nconnected.");
-static const u8 gText_MysteryGiftCantUse[] = _("MYSTERY GIFT can't be used while\nthe Wireless Adapter is attached.");
-static const u8 gText_MysteryEventsCantUse[] = _("MYSTERY EVENTS can't be used while\nthe Wireless Adapter is attached.");
+static const u8 gText_MysteryGiftCantUse[] = _("Mystery Gift can't be used while\nthe Wireless Adapter is attached.");
+static const u8 gText_MysteryEventsCantUse[] = _("Mystery Events can't be used while\nthe Wireless Adapter is attached.");
 
 static const u8 gText_ContinueMenuPlayer[] = _("Player");
 static const u8 gText_ContinueMenuTime[] = _("Time");
@@ -307,7 +307,7 @@ static const u8 gText_ContinueMenuBadges[] = _("Badges");
 static const struct WindowTemplate sWindowTemplates_MainMenu[] =
 {
     // No saved game
-    // NEW GAME
+    // New Game
     {
         .bg = 0,
         .tilemapLeft = MENU_LEFT,
@@ -317,7 +317,7 @@ static const struct WindowTemplate sWindowTemplates_MainMenu[] =
         .paletteNum = 15,
         .baseBlock = 1
     },
-    // OPTIONS
+    // Options
     {
         .bg = 0,
         .tilemapLeft = MENU_LEFT,
@@ -328,7 +328,7 @@ static const struct WindowTemplate sWindowTemplates_MainMenu[] =
         .baseBlock = 0x35
     },
     // Has saved game
-    // CONTINUE
+    // Continue
     {
         .bg = 0,
         .tilemapLeft = MENU_LEFT,
@@ -338,7 +338,7 @@ static const struct WindowTemplate sWindowTemplates_MainMenu[] =
         .paletteNum = 15,
         .baseBlock = 1
     },
-    // NEW GAME
+    // New Game
     {
         .bg = 0,
         .tilemapLeft = MENU_LEFT,
@@ -348,7 +348,7 @@ static const struct WindowTemplate sWindowTemplates_MainMenu[] =
         .paletteNum = 15,
         .baseBlock = 0x9D
     },
-    // OPTION / MYSTERY GIFT
+    // Options / Mystery Gift
     {
         .bg = 0,
         .tilemapLeft = MENU_LEFT,
@@ -358,7 +358,7 @@ static const struct WindowTemplate sWindowTemplates_MainMenu[] =
         .paletteNum = 15,
         .baseBlock = 0xD1
     },
-    // OPTION / MYSTERY EVENTS
+    // Options / Mystery Events
     {
         .bg = 0,
         .tilemapLeft = MENU_LEFT,
@@ -368,7 +368,7 @@ static const struct WindowTemplate sWindowTemplates_MainMenu[] =
         .paletteNum = 15,
         .baseBlock = 0x105
     },
-    // OPTION
+    // Options
     {
         .bg = 0,
         .tilemapLeft = MENU_LEFT,
@@ -501,10 +501,10 @@ static const u8 *const sFemalePresetNames[] = {
 
 enum
 {
-    HAS_NO_SAVED_GAME,  //NEW GAME, OPTION
-    HAS_SAVED_GAME,     //CONTINUE, NEW GAME, OPTION
-    HAS_MYSTERY_GIFT,   //CONTINUE, NEW GAME, MYSTERY GIFT, OPTION
-    HAS_MYSTERY_EVENTS, //CONTINUE, NEW GAME, MYSTERY GIFT, MYSTERY EVENTS, OPTION
+    HAS_NO_SAVED_GAME,  //New Game, Options
+    HAS_SAVED_GAME,     //Continue, New Game, Options
+    HAS_MYSTERY_GIFT,   //Continue, New Game, Mystery Gift, Options
+    HAS_MYSTERY_EVENTS, //Continue, New Game, Mystery Gift, Mystery Events, Options
 };
 
 enum
@@ -663,7 +663,7 @@ static void Task_MainMenuCheckSaveFile(u8 taskId)
         }
         if (sCurrItemAndOptionMenuCheck & OPTION_MENU_FLAG)   // are we returning from the options menu?
         {
-            switch (tMenuType)  // if so, highlight the OPTIONS item
+            switch (tMenuType)  // if so, highlight the Options item
             {
                 case HAS_NO_SAVED_GAME:
                 case HAS_SAVED_GAME:

@@ -393,7 +393,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_VISE_GRIP] =
     {
-        .name = COMPOUND_STRING("Vise Grip"),
+        .name = COMPOUND_STRING("Vice Grip"),
         .description = COMPOUND_STRING(
             "Grips the foe with large and\n"
             "powerful pincers."),

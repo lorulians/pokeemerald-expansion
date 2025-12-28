@@ -129,7 +129,7 @@
 #define OBJ_EVENT_GFX_PHOEBE                     122
 #define OBJ_EVENT_GFX_GLACIA                     123
 #define OBJ_EVENT_GFX_DRAKE                      124
-#define OBJ_EVENT_GFX_ROXANNE                    125
+#define OBJ_EVENT_GFX_CIELLUS                    125
 #define OBJ_EVENT_GFX_BRAWLY                     126
 #define OBJ_EVENT_GFX_WATTSON                    127
 #define OBJ_EVENT_GFX_FLANNERY                   128

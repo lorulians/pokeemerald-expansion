@@ -35,7 +35,7 @@
       "id": "LAYOUT_TEPEK_CITY",
       "name": "TepekCity_Layout",
       "width": 43,
-      "height": 46,
+      "height": 54,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Tepek",
       "border_filepath": "data/layouts/TepekCity/border.bin",
@@ -184,10 +184,10 @@
     {
       "id": "LAYOUT_ROUTE103",
       "name": "Route103_Layout",
-      "width": 80,
-      "height": 22,
+      "width": 38,
+      "height": 26,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Tepek",
       "border_filepath": "data/layouts/Route103/border.bin",
       "blockdata_filepath": "data/layouts/Route103/map.bin"
     },
@@ -905,7 +905,7 @@
       "id": "LAYOUT_TEPEK_CITY_GYM",
       "name": "TepekCity_Gym_Layout",
       "width": 11,
-      "height": 20,
+      "height": 21,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_TepekGym",
       "border_filepath": "data/layouts/TepekCity_Gym/border.bin",
@@ -1292,14 +1292,14 @@
       "blockdata_filepath": "data/layouts/GraniteCave_B2F/map.bin"
     },
     {
-      "id": "LAYOUT_PETALBURG_WOODS",
-      "name": "PetalburgWoods_Layout",
+      "id": "LAYOUT_HIDEAWAY_WOODS",
+      "name": "HideawayWoods_Layout",
       "width": 48,
-      "height": 44,
+      "height": 55,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Tepek",
-      "border_filepath": "data/layouts/PetalburgWoods/border.bin",
-      "blockdata_filepath": "data/layouts/PetalburgWoods/map.bin"
+      "border_filepath": "data/layouts/HideawayWoods/border.bin",
+      "blockdata_filepath": "data/layouts/HideawayWoods/map.bin"
     },
     {
       "id": "LAYOUT_MT_CHIMNEY",
@@ -3952,12 +3952,12 @@
       "blockdata_filepath": "data/layouts/BirthIsland_Exterior/map.bin"
     },
     {
-      "id": "LAYOUT_ISLAND_HARBOR",
+      "id": "LAYOUT_POWER_PLANT_INTERIOR",
       "name": "IslandHarbor_Layout",
-      "width": 17,
-      "height": 13,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_IslandHarbor",
+      "width": 28,
+      "height": 23,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/IslandHarbor/border.bin",
       "blockdata_filepath": "data/layouts/IslandHarbor/map.bin"
     },
@@ -4114,7 +4114,7 @@
     {
       "id": "LAYOUT_POWER_PLANT_EXTERIOR",
       "name": "PowerPlant_Exterior_Layout",
-      "width": 38,
+      "width": 40,
       "height": 38,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",

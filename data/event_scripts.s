@@ -260,6 +260,7 @@ gStdScripts_End::
 	.include "data/maps/TepekCity_Appt_3F_2/scripts.inc"
 	.include "data/maps/TepekCity_House/scripts.inc"
 	.include "data/maps/PowerPlant_Exterior/scripts.inc"
+	.include "data/maps/PowerPlant_Interior/scripts.inc"
 	.include "data/maps/FortreeCity_House1/scripts.inc"
 	.include "data/maps/FortreeCity_Gym/scripts.inc"
 	.include "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc"
@@ -359,7 +360,7 @@ gStdScripts_End::
 	.include "data/maps/GraniteCave_B1F/scripts.inc"
 	.include "data/maps/GraniteCave_B2F/scripts.inc"
 	.include "data/maps/GraniteCave_StevensRoom/scripts.inc"
-	.include "data/maps/PetalburgWoods/scripts.inc"
+	.include "data/maps/HideawayWoods/scripts.inc"
 	.include "data/maps/MtChimney/scripts.inc"
 	.include "data/maps/JaggedPass/scripts.inc"
 	.include "data/maps/FieryPath/scripts.inc"
@@ -534,7 +535,6 @@ gStdScripts_End::
 	.include "data/maps/TrainerHill_3F/scripts.inc"
 	.include "data/maps/TrainerHill_4F/scripts.inc"
 	.include "data/maps/TrainerHill_Roof/scripts.inc"
-	.include "data/maps/NavelRock_Harbor/scripts.inc"
 	.include "data/maps/NavelRock_Entrance/scripts.inc"
 	.include "data/maps/NavelRock_B1F/scripts.inc"
 	.include "data/maps/NavelRock_Fork/scripts.inc"
@@ -596,7 +596,7 @@ EventScript_AfterWhiteOutHeal::
 	lockall
 	msgbox gText_FirstShouldRestoreMonsHealth
 	call EventScript_PkmnCenterNurse_TakeAndHealPkmn
-	call_if_unset FLAG_DEFEATED_TEPEK_GYM, EventScript_AfterWhiteOutHealMsgPreRoxanne
+	call_if_unset FLAG_DEFEATED_TEPEK_GYM, EventScript_AfterWhiteOutHealMsgPreCiellus
 	call_if_set FLAG_DEFEATED_TEPEK_GYM, EventScript_AfterWhiteOutHealMsg
 	applymovement VAR_LAST_TALKED, Movement_PkmnCenterNurse_Bow
 	waitmovement 0
@@ -604,7 +604,7 @@ EventScript_AfterWhiteOutHeal::
 	releaseall
 	end
 
-EventScript_AfterWhiteOutHealMsgPreRoxanne::
+EventScript_AfterWhiteOutHealMsgPreCiellus::
 	msgbox gText_MonsHealedShouldBuyPotions
 	return
 
@@ -974,7 +974,7 @@ gText_MomExplainHPGetPotions::
 
 gText_RegisteredTrainerinPokeNav::
 	.string "Registered {STR_VAR_1} {STR_VAR_2}\n"
-	.string "in the POKéNAV.$"
+	.string "in the PokéNav.$"
 
 gText_ComeBackWithSecretPower::
 	.string "Do you know the TM SECRET POWER?\p"

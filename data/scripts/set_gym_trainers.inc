@@ -11,9 +11,9 @@ Common_EventScript_SetGymTrainers::
 	end
 
 TepekCity_Gym_SetGymTrainers::
-	settrainerflag TRAINER_JOSH
-	settrainerflag TRAINER_TOMMY
-	settrainerflag TRAINER_MARC
+	settrainerflag TRAINER_KENNETH
+	settrainerflag TRAINER_FORD
+	settrainerflag TRAINER_LAZ
 	return
 
 DewfordTown_Gym_SetGymTrainers::

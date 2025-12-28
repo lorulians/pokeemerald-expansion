@@ -448,9 +448,9 @@ bool32 ShouldDoScottBattleFrontierCall(void)
     return TRUE;
 }
 
-bool32 ShouldDoRoxanneCall(void)
+bool32 ShouldDoCiellusCall(void)
 {
-    if (FlagGet(FLAG_ENABLE_ROXANNE_FIRST_CALL))
+    if (FlagGet(FLAG_ENABLE_CIELLUS_FIRST_CALL))
     {
         switch (gMapHeader.mapType)
         {
@@ -458,7 +458,7 @@ bool32 ShouldDoRoxanneCall(void)
         case MAP_TYPE_CITY:
         case MAP_TYPE_ROUTE:
         case MAP_TYPE_OCEAN_ROUTE:
-            if (++(*GetVarPointer(VAR_ROXANNE_CALL_STEP_COUNTER)) < 250)
+            if (++(*GetVarPointer(VAR_CIELLUS_CALL_STEP_COUNTER)) < 250)
                 return FALSE;
             break;
         default:

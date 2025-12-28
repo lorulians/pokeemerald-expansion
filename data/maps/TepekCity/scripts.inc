@@ -331,7 +331,7 @@ TepekCity_EventScript_FatMan::
 	faceplayer
 	goto_if_le VAR_TEPEK_CITY_STATE, 3, TepekCity_EventScript_TepekFatManBrownOuts
 	goto_if_eq VAR_TEPEK_CITY_STATE, 5, TepekCity_EventScript_TepekFatManSomeoneRanBy
-	goto_if_eq VAR_TEPEK_CITY_STATE, 6, TepekCity_EventScript_TepekFatManPowerBack
+	goto_if_ge VAR_TEPEK_CITY_STATE, 6, TepekCity_EventScript_TepekFatManPowerBack
 	release
 	end
 
@@ -355,11 +355,11 @@ TepekCity_EventScript_TepekGuideGoInside::
 	msgbox TepekCity_Text_TepekGuidePowerBack, MSGBOX_NPC
 	waitmessage
 	applymovement LOCALID_TEPEK_GYM_GUIDE, Common_Movement_WalkInPlaceFasterUp
-	opendoor 8, 31
+	opendoor 7, 31
 	waitdooranim
 	applymovement LOCALID_TEPEK_GYM_GUIDE, TepekCity_Movement_TepekGuideEnterDoor
 	waitmovement 0
-	closedoor 8, 31
+	closedoor 7, 31
 	waitdooranim
 	removeobject LOCALID_TEPEK_GYM_GUIDE
 	release

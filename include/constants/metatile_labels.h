@@ -730,9 +730,8 @@
 #define METATILE_SootopolisGym_Stairs       0x207
 
 // gTileset_Tepek
-#define METATILE_Tepek_Door_Apartment  0x295
-#define METATILE_Tepek_Door_Gray       0x2B4
-#define METATILE_Tepek_Door_Tan        0x242
+#define METATILE_Tepek_Door_Gray  0x2B4
+#define METATILE_Tepek_Door_Tan   0x242
 
 // gTileset_TrainerHill
 #define METATILE_TrainerHill_CounterDoor          0x334

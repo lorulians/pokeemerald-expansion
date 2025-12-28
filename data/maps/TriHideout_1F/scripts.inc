@@ -40,16 +40,6 @@ TriHideout_1F_EventScript_SlateportHint2::
 	release
 	end
 
-TriHideout_1F_EventScript_Grunt1::
-	trainerbattle_single TRAINER_GRUNT_TRI_HIDEOUT_1, TriHideout_1F_Text_Grunt1Intro, TriHideout_1F_Text_Grunt1Defeat, TriHideout_1F_EventScript_Grunt1Defeated
-	msgbox TriHideout_1F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
-	end
-
-TriHideout_1F_EventScript_Grunt1Defeated::
-	msgbox TriHideout_1F_Text_Grunt1PostBattle, MSGBOX_DEFAULT
-	release
-	end
-
 TriHideout_1F_Text_OurBossIsSnatchingSomething:
 	.string "What? What? What do you want with \n"
 	.string "TEAM TRI?\p"
@@ -104,16 +94,4 @@ TriHideout_1F_Text_BossIsInSlateportCity:
 	.string "Why did he go?\p"
 	.string "Wahaha! Do you really think I'd tell\n"
 	.string "you something that crucial?$"
-
-TriHideout_1F_Text_Grunt1Intro:
-	.string "Ayiyiyi!\n"
-	.string "Suspicious character spotted!$"
-
-TriHideout_1F_Text_Grunt1Defeat:
-	.string "Grrrrr…\n"
-	.string "I lost it!$"
-
-TriHideout_1F_Text_Grunt1PostBattle:
-	.string "I took the loss for the TEAM,\n"
-	.string "but I did my job…$"
 

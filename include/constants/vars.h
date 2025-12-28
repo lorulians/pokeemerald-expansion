@@ -169,7 +169,7 @@
 #define VAR_LILYCOVE_FAN_CLUB_STATE                      0x4095
 #define VAR_BRINEY_LOCATION                              0x4096
 #define VAR_INIT_SECRET_BASE                             0x4097
-#define VAR_PETALBURG_WOODS_STATE                        0x4098
+#define VAR_HIDEAWAY_WOODS_STATE                        0x4098
 #define VAR_LILYCOVE_CONTEST_LOBBY_STATE                 0x4099
 #define VAR_RUSTURF_TUNNEL_STATE                         0x409A
 #define VAR_UNUSED_0x409B                                0x409B // Unused Var
@@ -261,7 +261,7 @@
 #define VAR_DAILY_BP                                     0x40F1
 #define VAR_WALLY_CALL_STEP_COUNTER                      0x40F2
 #define VAR_SCOTT_FORTREE_CALL_STEP_COUNTER              0x40F3
-#define VAR_ROXANNE_CALL_STEP_COUNTER                    0x40F4
+#define VAR_CIELLUS_CALL_STEP_COUNTER                    0x40F4
 #define VAR_SCOTT_BF_CALL_STEP_COUNTER                   0x40F5
 #define VAR_RIVAL_RAYQUAZA_CALL_STEP_COUNTER             0x40F6
 #define VAR_UNUSED_0x40F7                                0x40F7 // Unused Var

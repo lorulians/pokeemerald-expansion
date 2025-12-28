@@ -372,7 +372,7 @@ gSongTable::
 	song mus_oldale, MUSIC_PLAYER_BGM, 0
 	song mus_gym, MUSIC_PLAYER_BGM, 0
 	song mus_surf, MUSIC_PLAYER_BGM, 0
-	song mus_petalburg_woods, MUSIC_PLAYER_BGM, 0
+	song mus_hideaway_woods, MUSIC_PLAYER_BGM, 0
 	song mus_level_up, MUSIC_PLAYER_SE2, 2
 	song mus_heal, MUSIC_PLAYER_SE2, 2
 	song mus_obtain_badge, MUSIC_PLAYER_SE2, 2

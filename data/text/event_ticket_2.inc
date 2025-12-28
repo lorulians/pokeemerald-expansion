@@ -53,12 +53,6 @@ EventTicket_Text_OddTicketsWhereTo:
 	.string "Get on board, youngster!\n"
 	.string "Where shall we sail first?$"
 
-NavelRock_Harbor_Text_SailorReturn:
-	.string "Did… Did you hear that?\n"
-	.string "That low growling from deep in there.\p"
-	.string "Are you sure it's safe?\n"
-	.string "Do you think we should leave?$"
-
 FarawayIsland_Entrance_Text_Sign:
 	.string "The writing is fading as if it was\n"
 	.string "written a long time ago…\p"

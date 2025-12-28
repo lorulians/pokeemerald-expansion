@@ -1,20 +1,31 @@
 TepekCity_Gym_MapScripts::
 	.byte 0
 
-TepekCity_Gym_EventScript_Roxanne::
-	trainerbattle_single TRAINER_ROXANNE_1, TepekCity_Gym_Text_RoxanneIntro, TepekCity_Gym_Text_RoxanneDefeat, TepekCity_Gym_EventScript_RoxanneDefeated, NO_MUSIC
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, TepekCity_Gym_EventScript_RoxanneRematch
-	goto_if_unset FLAG_RECEIVED_TM_ROCK_TOMB, TepekCity_Gym_EventScript_GiveRockTomb
-	msgbox TepekCity_Gym_Text_RoxannePostBattle, MSGBOX_DEFAULT
+TepekCity_Gym_EventScript_Ciellus::
+	trainerbattle_single TRAINER_CIELLUS, TepekCity_Gym_Text_CiellusIntro, TepekCity_Gym_Text_CiellusDefeat, TepekCity_Gym_EventScript_CiellusDefeated, NO_MUSIC
+	goto_if_unset FLAG_RECEIVED_DOUBLE_TEAM, TepekCity_Gym_EventScript_GiveDoubleTeam
+	msgbox TepekCity_Gym_Text_CiellusPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
-TepekCity_Gym_EventScript_RoxanneDefeated::
-	message TepekCity_Gym_Text_ReceivedStoneBadge
+TepekCity_Gym_EventScript_Swablu::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SWABLU, CRY_MODE_NORMAL
+	msgbox RedgeTown_Text_Swablu, MSGBOX_NPC
+	waitmoncry
+	release
+	end
+
+RedgeTown_Text_Swablu:
+	.string "Stormy: Chiirrp!$"
+
+TepekCity_Gym_EventScript_CiellusDefeated::
+	message TepekCity_Gym_Text_ReceivedFlyingBadge
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
-	msgbox TepekCity_Gym_Text_StoneBadgeInfoTakeThis, MSGBOX_DEFAULT
+	msgbox TepekCity_Gym_Text_FlyingBadgeInfoTakeThis, MSGBOX_DEFAULT
 	setflag FLAG_DEFEATED_TEPEK_GYM
 	setflag FLAG_BADGE01_GET
 	setvar VAR_TEPEK_CITY_STATE, 1
@@ -22,35 +33,31 @@ TepekCity_Gym_EventScript_RoxanneDefeated::
 	setvar VAR_0x8008, 1
 	call Common_EventScript_SetGymTrainers
 	call_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle
-	goto TepekCity_Gym_EventScript_GiveRockTomb
+	goto TepekCity_Gym_EventScript_GiveDoubleTeam
 	end
 
-TepekCity_Gym_EventScript_GiveRockTomb::
-	giveitem ITEM_TM_ROCK_TOMB
+TepekCity_Gym_EventScript_GiveDoubleTeam::
+	giveitem ITEM_TM_DOUBLE_TEAM
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_TM_ROCK_TOMB
-	msgbox TepekCity_Gym_Text_ExplainRockTomb, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_DOUBLE_TEAM
+	msgbox TepekCity_Gym_Text_ExplainDoubleTeam, MSGBOX_DEFAULT
+	setvar VAR_TEPEK_CITY_STATE, 7
 	release
 	end
 
-TepekCity_Gym_EventScript_RoxanneRematch::
-	trainerbattle_rematch_double TRAINER_ROXANNE_1, TepekCity_Gym_Text_RoxannePreRematch, TepekCity_Gym_Text_RoxanneRematchDefeat, TepekCity_Gym_Text_RoxanneRematchNeedTwoMons
-	msgbox TepekCity_Gym_Text_RoxannePostRematch, MSGBOX_AUTOCLOSE
+TepekCity_Gym_EventScript_Kenneth::
+	trainerbattle_single TRAINER_KENNETH, TepekCity_Gym_Text_KennethIntro, TepekCity_Gym_Text_KennethDefeat
+	msgbox TepekCity_Gym_Text_KennethPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-TepekCity_Gym_EventScript_Josh::
-	trainerbattle_single TRAINER_JOSH, TepekCity_Gym_Text_JoshIntro, TepekCity_Gym_Text_JoshDefeat
-	msgbox TepekCity_Gym_Text_JoshPostBattle, MSGBOX_AUTOCLOSE
+TepekCity_Gym_EventScript_Laz::
+	trainerbattle_single TRAINER_LAZ, TepekCity_Gym_Text_LazIntro, TepekCity_Gym_Text_LazDefeat
+	msgbox TepekCity_Gym_Text_LazPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-TepekCity_Gym_EventScript_Tommy::
-	trainerbattle_single TRAINER_TOMMY, TepekCity_Gym_Text_TommyIntro, TepekCity_Gym_Text_TommyDefeat
-	msgbox TepekCity_Gym_Text_TommyPostBattle, MSGBOX_AUTOCLOSE
-	end
-
-TepekCity_Gym_EventScript_Marc::
-	trainerbattle_single TRAINER_MARC, TepekCity_Gym_Text_MarcIntro, TepekCity_Gym_Text_MarcDefeat
-	msgbox TepekCity_Gym_Text_MarcPostBattle, MSGBOX_AUTOCLOSE
+TepekCity_Gym_EventScript_Ford::
+	trainerbattle_single TRAINER_FORD, TepekCity_Gym_Text_FordIntro, TepekCity_Gym_Text_FordDefeat
+	msgbox TepekCity_Gym_Text_FordPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 TepekCity_Gym_EventScript_GymGuide::
@@ -88,196 +95,139 @@ TepekCity_Gym_EventScript_GymStatue::
 	releaseall
 	end
 
-TepekCity_Gym_EventScript_RegisterRoxanne::
+TepekCity_Gym_EventScript_RegisterCiellus::
 	lockall
-	pokenavcall TepekCity_Gym_Text_RoxanneRegisterCall
+	pokenavcall TepekCity_Gym_Text_CiellusRegisterCall
 	waitmessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox TepekCity_Gym_Text_RegisteredRoxanne, MSGBOX_DEFAULT
+	msgbox TepekCity_Gym_Text_RegisteredCiellus, MSGBOX_DEFAULT
 	waitfanfare
 	closemessage
 	delay 30
-	setflag FLAG_ENABLE_ROXANNE_MATCH_CALL
-	clearflag FLAG_ENABLE_ROXANNE_FIRST_CALL
+	setflag FLAG_ENABLE_CIELLUS_MATCH_CALL
+	clearflag FLAG_ENABLE_CIELLUS_FIRST_CALL
 	releaseall
 	end
 
 TepekCity_Gym_Text_GymGuideAdvice:
-	.string "Yo, how's it going?\p"
-	.string "Listen, my friend!\n"
-	.string "Would you like to become the CHAMPION?\p"
-	.string "I'm no TRAINER, not me, but I can\n"
-	.string "sure give you winning advice.\p"
-	.string "That's settled, then! We'll aim for the\n"
-	.string "POKéMON CHAMPIONSHIP together!\p"
-	.string "It's your job as a TRAINER to collect\n"
-	.string "GYM BADGES, am I right?\p"
-	.string "But GYM LEADERS aren't pushovers!\p"
-	.string "And that's where I come in!\n"
-	.string "I'm here to provide expert advice!\p"
-	.string "ROXANNE, the GYM LEADER, is a user\n"
-	.string "of ROCK-type POKéMON.\p"
-	.string "The ROCK type is very durable, but\n"
-	.string "it can't stand WATER-type and\l"
-	.string "GRASS-type moves.\p"
-	.string "Come see me afterwards, if you beat\n"
-	.string "the GYM LEADER.\p"
-	.string "Well, go for it!$"
+	.string "Hey, future Champ, how's it going?\p"
+	.string "Thanks again for restoring power to\n"
+	.string "our city.\p"
+	.string "Let me give you some advice for your\n"
+	.string "Pokémon journey:\p"
+	.string "Ciellus uses Flying-type Pokémon.\p"
+	.string "The Flying type is grounded by Ice-,\n"
+	.string "Rock-, and Electric-type moves, but\l"
+	.string "Bug- and Ground- types will struggle!\p"
+	.string "Go for it, future Champ!$"
 
 TepekCity_Gym_Text_GymGuidePostVictory:
-	.string "Whoa! What a breathtaking victory!\n"
-	.string "My cheering must've worked!\p"
-	.string "Great!\n"
-	.string "Check your TRAINER CARD.\p"
-	.string "The STONE BADGE you got should be\n"
-	.string "properly recorded on it.\p"
-	.string "In other words…\p"
-	.string "You've climbed the first step on\n"
-	.string "the stairs to the CHAMPIONSHIP!\p"
-	.string "That's got to feel awesome!$"
+	.string "You pulled off that battle with\n"
+	.string "some spectacular moves!\p"
+	.string "Make sure you check out your new\n"
+	.string "Flight Badge in your Trainer Card!\p"
+	.string "Good luck, future Champ!$"
 
-TepekCity_Gym_Text_JoshIntro:
-	.string "Don't take us GYM TRAINERS lightly!\n"
-	.string "I'll show you why we're better!$"
+TepekCity_Gym_Text_KennethIntro:
+	.string "Don't let your guard down!\p"
+	.string "Gym Trainers are no pushovers!$"
 
-TepekCity_Gym_Text_JoshDefeat:
-	.string "You were too good for me…$"
+TepekCity_Gym_Text_KennethDefeat:
+	.string "I was no match for you…$"
 
-TepekCity_Gym_Text_JoshPostBattle:
-	.string "You haven't seen anything of the ROCK\n"
-	.string "type's terrifying power!$"
+TepekCity_Gym_Text_KennethPostBattle:
+	.string "Just wait until you face off against\n"
+	.string "our Gym Leader, Ciellus!$"
 
-TepekCity_Gym_Text_TommyIntro:
-	.string "If you can't beat me, you won't stand\n"
-	.string "a chance against ROXANNE!$"
+TepekCity_Gym_Text_LazIntro:
+	.string "Can you beat me? You'll have to if\n"
+	.string "you want to fight against Ciellus!$"
 
-TepekCity_Gym_Text_TommyDefeat:
-	.string "Wow! You've got some potential!$"
+TepekCity_Gym_Text_LazDefeat:
+	.string "Wow, you're pretty good!$"
 
-TepekCity_Gym_Text_TommyPostBattle:
-	.string "ROXANNE is stronger than me by\n"
-	.string "several times.\p"
-	.string "You'd better be on your guard!$"
+TepekCity_Gym_Text_LazPostBattle:
+	.string "I'm pretty strong, but Ciellus\n"
+	.string "is even stronger.$"
 
-TepekCity_Gym_Text_MarcIntro:
-	.string "We might be in the middle of town,\n"
-	.string "but so what?\p"
-	.string "My ROCK POKéMON need room to\n"
-	.string "rampage!$"
+TepekCity_Gym_Text_FordIntro:
+	.string "I need to let my Pokémon fly free!\n"
+	.string "Go, my bird Pokémon!$"
 
-TepekCity_Gym_Text_MarcDefeat:
-	.string "Oh, man oh man!\n"
-	.string "Our challenger is one feisty customer!$"
+TepekCity_Gym_Text_FordDefeat:
+	.string "Yeowch!\n"
+	.string "We've been grounded!$"
 
-TepekCity_Gym_Text_MarcPostBattle:
-	.string "I have to hand it to our LEADER.\p"
-	.string "It took smarts and sense for her to\n"
-	.string "pick the ROCK type at her young age.$"
+TepekCity_Gym_Text_FordPostBattle:
+	.string "I heard the first Gym in the Johto\n"
+	.string "region uses Flying-types too.$"
 
-TepekCity_Gym_Text_RoxanneIntro:
-	.string "Hello, I am ROXANNE, the TEPEK\n"
-	.string "POKéMON GYM LEADER.\p"
-	.string "I became a GYM LEADER so that I might\n"
-	.string "apply what I learned at the POKéMON\l"
-	.string "TRAINER'S SCHOOL in battle.\p"
-	.string "Would you kindly demonstrate how you\n"
-	.string "battle, and with which POKéMON?$"
+TepekCity_Gym_Text_CiellusIntro:
+	.string "Ciellus: Heya, I'm Ciellus, the Tepek\n"
+	.string "City Pokémon Gym Leader.\p"
+	.string "I wanted to be just like my Dad and\n"
+	.string "train with Flying-type Pokémon!\p"
+	.string "Let me show you how to properly take\n"
+	.string "flight with Pokémon!$"
 
-TepekCity_Gym_Text_RoxanneDefeat:
-	.string "So…\n"
-	.string "I lost…\p"
-	.string "It seems that I still have much more\n"
-	.string "to learn…\p"
-	.string "I understand.\p"
-	.string "The POKéMON LEAGUE's rules state\n"
-	.string "that TRAINERS are to be given this\l"
-	.string "if they defeat a GYM LEADER.\p"
-	.string "Please accept the official POKéMON\n"
-	.string "LEAGUE STONE BADGE.$"
+TepekCity_Gym_Text_CiellusDefeat:
+	.string "Hey, you're pretty good at this!\n"
+	.string "My Pokémon were no match for you!\p"
+	.string "Here, the Pokémon League's rules say\n"
+	.string "that I have to give you this Badge\l"
+	.string "for beating me!\p"
+	.string "Please accept the official Pokémon\n"
+	.string "League Flight Badge!$"
 
-TepekCity_Gym_Text_ReceivedStoneBadge:
-	.string "{PLAYER} received the STONE BADGE\n"
-	.string "from ROXANNE.$"
+TepekCity_Gym_Text_ReceivedFlyingBadge:
+	.string "{PLAYER} received the Flight Badge\n"
+	.string "from Ciellus.$"
 
-TepekCity_Gym_Text_StoneBadgeInfoTakeThis:
-	.string "The STONE BADGE heightens the ATTACK\n"
-	.string "power of your POKéMON.\p"
+TepekCity_Gym_Text_FlyingBadgeInfoTakeThis:
+	.string "The Flight Badge raises the Speed\n"
+	.string "power of your Pokémon.\p"
 	.string "It also enables them to use the HM move\n"
-	.string "CUT outside of battle.\p"
-	.string "Please take this with you, too.$"
+	.string "Cut outside of battle.\p"
+	.string "Please take this with you, too!$"
 
-TepekCity_Gym_Text_ExplainRockTomb:
-	.string "That TECHNICAL MACHINE, TM39,\n"
-	.string "contains ROCK TOMB.\p"
-	.string "It not only inflicts damage by dropping\n"
-	.string "rocks, it also lowers SPEED.\p"
+TepekCity_Gym_Text_ExplainDoubleTeam:
+	.string "That Technical Machine, TM32,\n"
+	.string "contains Double Team.\p"
+	.string "It raises your Pokémon's evasiveness,\n"
+	.string "meaning it'll be harder to hit in\l"
+	.string "battle!$"
 	.string "If you use a TM, it instantly teaches\n"
-	.string "the move to a POKéMON.\p"
-	.string "Remember, a TM can be used only once,\n"
-	.string "so think before you use it.$"
+	.string "the move to a Pokémon.\p"
+	.string "TMs can be used infinitely, so don't\n"
+	.string "worry about running out!$"
 
-TepekCity_Gym_Text_RoxannePostBattle:
+TepekCity_Gym_Text_CiellusPostBattle:
 	.string "Since you are so strong, you should\n"
-	.string "challenge other GYM LEADERS.\p"
-	.string "By battling many TRAINERS, you should\n"
-	.string "learn many things.$"
+	.string "challenge other Gym Leaders.\p"
+	.string "The next Gym is in Eadich Town through\n"
+	.string "Hideaway Woods. Good luck!$"
 
 TepekCity_Gym_Text_GymStatue:
-	.string "TEPEK CITY POKéMON GYM$"
+	.string "Tepek City Pokémon Gym$"
 
 TepekCity_Gym_Text_GymStatueCertified:
-	.string "TEPEK CITY POKéMON GYM\p"
-	.string "ROXANNE'S CERTIFIED TRAINERS:\n"
+	.string "Tepek City Pokémon Gym\p"
+	.string "Ciellus' Certified Trainers:\n"
 	.string "{PLAYER}$"
 
-TepekCity_Gym_Text_RoxanneRegisterCall:
+TepekCity_Gym_Text_CiellusRegisterCall:
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
-	.string "ROXANNE: Oh, hello, {PLAYER}?\n"
-	.string "This is ROXANNE of TEPEK CITY.\p"
-	.string "I heard from BRAWLY that you're\n"
-	.string "moving up through the ranks of\l"
-	.string "TRAINERS at an incredible clip.\p"
-	.string "Well, I'd rather not think that\n"
-	.string "I can't beat you.\p"
-	.string "I promise, I will shape up my GYM\n"
-	.string "so that you may challenge us again.\p"
-	.string "I hope you'll be looking forward to\n"
-	.string "that occasion as much as me!\p"
+	.string "Ciellus: Oh, hey, {PLAYER}?\n"
+	.string "This is Ciellus, remember me?\p"
+	.string "I'm working on training my team\n"
+	.string "so one day we can have another\l"
+	.string "battle!$"
+	.string "I'll beat you next time!\p"
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
 
-TepekCity_Gym_Text_RegisteredRoxanne:
-	.string "Registered GYM LEADER ROXANNE\n"
-	.string "in the POKéNAV.$"
-
-TepekCity_Gym_Text_RoxannePreRematch:
-	.string "ROXANNE: I'm so glad to see you again.\n"
-	.string "I'm ROXANNE, the GYM LEADER here.\p"
-	.string "I'm sure we've both experienced many\n"
-	.string "battles since we last met.\p"
-	.string "I would like to see how much better\n"
-	.string "we've become. Let us battle!$"
-
-TepekCity_Gym_Text_RoxanneRematchDefeat:
-	.string "Grr…\n"
-	.string "Again, I have lost…$"
-
-TepekCity_Gym_Text_RoxannePostRematch:
-	.string "ROXANNE: I still have much to learn\n"
-	.string "when it comes to battling POKéMON.\p"
-	.string "That awareness makes me love battling\n"
-	.string "all that much more!$"
-
-TepekCity_Gym_Text_RoxanneRematchNeedTwoMons:
-	.string "ROXANNE: I'm so glad to see you again.\n"
-	.string "I'm ROXANNE, the GYM LEADER here.\p"
-	.string "I'm sure we've both experienced many\n"
-	.string "battles since we last met.\p"
-	.string "I would like to see how much better\n"
-	.string "we've become…\p"
-	.string "Oh, no…\n"
-	.string "You only have one POKéMON with you?\p"
-	.string "Please return with at least one more\n"
-	.string "POKéMON.$"
+TepekCity_Gym_Text_RegisteredCiellus:
+	.string "Registered Gym Leader Ciellus\n"
+	.string "in the PokéNav.$"

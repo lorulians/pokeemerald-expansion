@@ -184,16 +184,15 @@ RedgeTown_ProfessorCedarsLab_EventScript_GoDeliverThat::
 RedgeTown_ProfessorCedarsLab_Text_GoDeliverThat:
 	.string "Prof. Cedar: Come back once you deliver\n"
 	.string "that, okay?  You'll be delivering that\p"
-	.string "to Jude.\p"
-	.string "His apartment complex is near the Mart,\n"
-	.string "so it shouldn't be too hard to find!$"
+	.string "to Jude. His apartment complex is near\n"
+	.string "the Mart, so it shouldn't be too hard\l"
+	.string "to find!$"
 
 RedgeTown_ProfessorCedarsLab_Text_GoDeliverThatReminder:
-	.string "Prof. Cedar: Come back once you deliver\n"
-	.string "that, okay?  You'll be delivering that\p"
-	.string "to Jude.\p"
-	.string "His apartment complex is near the Mart,\n"
-	.string "so it shouldn't be too hard to find!$"
+	.string "Prof. Cedar: You'll be delivering that\n"
+	.string "to Jude. His apartment complex is near\p"
+	.string "the Mart, so it shouldn't be too hard\l"
+	.string "to find!$"
 
 RedgeTown_ProfessorCedarsLab_EventScript_UpgradeToNationalDex::
 	lockall
@@ -396,8 +395,7 @@ RedgeTown_ProfessorCedarsLab_EventScript_Cedar::
 	goto_if_eq VAR_CEDAR_LAB_STATE, 1, RedgeTown_ProfessorCedarsLab_EventScript_HelloPlayer
 	goto_if_eq VAR_CEDAR_LAB_STATE, 4, RedgeTown_ProfessorCedarsLab_EventScript_DeliveredYet
 	goto_if_eq VAR_CEDAR_LAB_STATE, 5, RedgeTown_ProfessorCedarsLab_EventScript_PokeballDelivered
-	goto_if_unset FLAG_HAS_MATCH_CALL, RedgeTown_ProfessorCedarsLab_EventScript_TryRatePokedexOrRegister
-	goto_if_unset FLAG_ENABLE_PROF_CEDAR_MATCH_CALL, EventScript_RegisterProfCedar
+	goto_if_set FLAG_BADGE01_GET, RedgeTown_ProfessorCedarsLab_EventScript_GiveExpShare
 	goto RedgeTown_ProfessorCedarsLab_EventScript_TryRatePokedexOrRegister
 	end
 
@@ -405,6 +403,22 @@ RedgeTown_ProfessorCedarsLab_EventScript_DeliveredYet::
 	msgbox RedgeTown_ProfessorCedarsLab_Text_DeliveredYet, MSGBOX_DEFAULT
 	release
 	end
+
+RedgeTown_ProfessorCedarsLab_EventScript_GiveExpShare::
+	goto_if_le VAR_CEDAR_LAB_STATE, 6, RedgeTown_ProfessorCedarsLab_EventScript_TryRatePokedexOrRegister
+	goto_if_eq VAR_CEDAR_LAB_STATE, 8, RedgeTown_ProfessorCedarsLab_EventScript_TryRatePokedexOrRegister
+	msgbox RedgeTown_ProfessorCedarsLab_Text_GotABadge, MSGBOX_DEFAULT
+	giveitem ITEM_EXP_SHARE, 1
+	closemessage
+	setflag FLAG_SYS_EXPSHARE_GET
+	setvar VAR_CEDAR_LAB_STATE, 8
+	return
+
+RedgeTown_ProfessorCedarsLab_Text_GotABadge:
+	.string "Prof. Cedar: Hey, {PLAYER}{KUN}!\p"
+	.string "Looks like you got yourself a Badge!\n"
+	.string "Take this Exp. Share, it should help\p"
+	.string "you train your Pokémon faster!$"
 
 RedgeTown_ProfessorCedarsLab_EventScript_PokeballDelivered::
 	msgbox RedgeTown_ProfessorCedarsLab_Text_DeliveredYet, MSGBOX_DEFAULT
@@ -475,6 +489,7 @@ RedgeTown_ProfessorCedarsLab_Text_TepekDelivery:
 RedgeTown_ProfessorCedarsLab_EventScript_AgreeToDelivery::
 	msgbox RedgeTown_ProfessorCedarsLab_Text_AgreeToDelivery, MSGBOX_DEFAULT
 	giveitem ITEM_PARCEL, 1
+	closemessage
 	delay 30
 	applymovement LOCALID_CEDARS_LAB_CEDAR, Common_Movement_Delay48
 	waitmovement 0
@@ -576,6 +591,7 @@ RedgeTown_ProfessorCedarsLab_EventScript_GivePokeballs2::
 	lock
 	delay 5
 	applymovement LOCALID_CEDARLAB_AIDE, RedgeTown_ProfessorCedarsLab_Movement_AideToPlayer2
+	waitmovement 0
 	setvar VAR_0x8008, 5
 	goto RedgeTown_ProfessorCedarsLab_EventScript_GivePokeballs
 	end
@@ -584,9 +600,29 @@ RedgeTown_ProfessorCedarsLab_EventScript_GivePokeballs::
 	msgbox RedgeTown_ProfessorCedarsLab_Text_AideGivePokeballs, MSGBOX_NPC
 	closemessage
 	giveitem ITEM_POKE_BALL, 10
-	goto_if_eq VAR_0x8008, 3, RedgeTown_ProfessorCedarsLab_Movement_AideToOriginalLoc0
-	goto_if_eq VAR_0x8008, 4, RedgeTown_ProfessorCedarsLab_Movement_AideToOriginalLoc1
-	goto_if_eq VAR_0x8008, 5, RedgeTown_ProfessorCedarsLab_Movement_AideToOriginalLoc2
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	closemessage
+	goto_if_eq VAR_0x8008, 3, RedgeTown_ProfessorCedarsLab_EventScript_AideToOriginalLoc0
+	goto_if_eq VAR_0x8008, 4, RedgeTown_ProfessorCedarsLab_EventScript_AideToOriginalLoc1
+	goto_if_eq VAR_0x8008, 5, RedgeTown_ProfessorCedarsLab_EventScript_AideToOriginalLoc2
+
+RedgeTown_ProfessorCedarsLab_EventScript_AideToOriginalLoc0::
+	applymovement LOCALID_CEDARLAB_AIDE, RedgeTown_ProfessorCedarsLab_Movement_AideToOriginalLoc0
+	waitmovement 0
+	setvar VAR_CEDAR_LAB_STATE, 7
+	release
+	end
+
+RedgeTown_ProfessorCedarsLab_EventScript_AideToOriginalLoc1::
+	applymovement LOCALID_CEDARLAB_AIDE, RedgeTown_ProfessorCedarsLab_Movement_AideToOriginalLoc1
+	waitmovement 0
+	setvar VAR_CEDAR_LAB_STATE, 7
+	release
+	end
+
+RedgeTown_ProfessorCedarsLab_EventScript_AideToOriginalLoc2::
+	applymovement LOCALID_CEDARLAB_AIDE, RedgeTown_ProfessorCedarsLab_Movement_AideToOriginalLoc2
+	waitmovement 0
 	setvar VAR_CEDAR_LAB_STATE, 7
 	release
 	end
@@ -688,6 +724,9 @@ RedgeTown_ProfessorCedarsLab_Text_TakePokedex:
 
 RedgeTown_ProfessorCedarsLab_Text_ReceivedPokedex:
 	.string "{PLAYER} received the Pokédex!$"
+
+RedgeTown_ProfessorCedarsLab_Text_ReceivedExpShare:
+	.string "{PLAYER} received the Exp. Share!$"
 
 RedgeTown_ProfessorCedarsLab_Text_ExplainPokedex:
 	.string "Prof. Cedar: The Pokédex is a high-tech\n"

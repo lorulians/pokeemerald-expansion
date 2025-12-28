@@ -10,7 +10,7 @@ static s32 GetRematchIndex(u32 trainerIdx);
 #endif //FREE_MATCH_CALL
 
 static const u16 GymLeaderRematches_AfterNewMauville[] = {
-    REMATCH_ROXANNE,
+    REMATCH_CIELLUS,
     REMATCH_BRAWLY,
     REMATCH_WATTSON,
     REMATCH_FLANNERY,
@@ -21,7 +21,7 @@ static const u16 GymLeaderRematches_AfterNewMauville[] = {
 };
 
 static const u16 GymLeaderRematches_BeforeNewMauville[] = {
-    REMATCH_ROXANNE,
+    REMATCH_CIELLUS,
     REMATCH_BRAWLY,
     // Wattson isn't available at this time
     REMATCH_FLANNERY,

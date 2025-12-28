@@ -710,9 +710,9 @@ static bool8 TryStartStepCountScript(u16 metatileBehavior)
             ScriptContext_SetupScript(Route119_EventScript_ScottWonAtFortreeGymCall);
             return TRUE;
         }
-        if (ShouldDoRoxanneCall() == TRUE)
+        if (ShouldDoCiellusCall() == TRUE)
         {
-            ScriptContext_SetupScript(TepekCity_Gym_EventScript_RegisterRoxanne);
+            ScriptContext_SetupScript(TepekCity_Gym_EventScript_RegisterCiellus);
             return TRUE;
         }
         if (ShouldDoRivalRayquazaCall() == TRUE)

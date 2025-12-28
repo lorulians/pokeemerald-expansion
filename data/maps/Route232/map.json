@@ -72,9 +72,9 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ENGINEER",
       "x": 39,
-      "y": 8,
+      "y": 13,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -123,16 +123,16 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TRI_MEMBER_F",
-      "x": 45,
+      "x": 48,
       "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "5",
+      "trainer_sight_or_berry_tree_id": "3",
       "script": "Route232_EventScript_TriGruntF",
-      "flag": "FLAG_HIDE_ROUTE_232_TRIGRUNT"
+      "flag": "FLAG_HIDE_TRI_GRUNTS_POWERPLANT"
     }
   ],
   "warp_events": [],

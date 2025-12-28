@@ -3456,7 +3456,7 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_OLDALE)                   \
     X(MUS_GYM)                      \
     X(MUS_SURF)                     \
-    X(MUS_PETALBURG_WOODS)          \
+    X(MUS_HIDEAWAY_WOODS)          \
     X(MUS_LEVEL_UP)                 \
     X(MUS_HEAL)                     \
     X(MUS_OBTAIN_BADGE)             \

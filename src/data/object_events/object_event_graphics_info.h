@@ -2392,7 +2392,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Drake = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Roxanne = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ciellus = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
@@ -2407,7 +2407,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Roxanne = {
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_Roxanne,
+    .images = sPicTable_Ciellus,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 

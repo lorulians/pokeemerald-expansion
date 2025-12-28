@@ -227,13 +227,12 @@ RedgeTown_EventScript_OneMoreThingForYou::
 	waitfanfare
 	setflag FLAG_SYS_POKENAV_GET
 	setflag FLAG_RECEIVED_POKENAV
-	setflag FLAG_ADDED_MATCH_CALL_TO_POKENAV
-	setflag FLAG_HAS_MATCH_CALL
+	// setflag FLAG_ADDED_MATCH_CALL_TO_POKENAV
+	// setflag FLAG_HAS_MATCH_CALL
 	msgbox RedgeTown_Text_ExplainPokenav, MSGBOX_DEFAULT
-	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox PlayersHouse_1F_Text_RegisteredMom, MSGBOX_DEFAULT
-	waitfanfare
-	closemessage
+	// playfanfare MUS_REGISTER_MATCH_CALL
+	// msgbox PlayersHouse_1F_Text_RegisteredMom, MSGBOX_DEFAULT
+	// waitfanfare
 	delay 30
 	msgbox RedgeTown_Text_ComeHomeIfAnythingHappens, MSGBOX_DEFAULT
 	closemessage
@@ -366,9 +365,9 @@ RedgeTown_EventScript_GiveRunningShoes::
 	return
 
 RedgeTown_Text_StaySafeHoney:
-	.string "Mom: Stay safe, honey. If your\n"
-	.string "Pokemon need healing, you can\p"
-	.string "come home and rest up.$"
+	.string "Mom: Stay safe, honey. If your Pokémon\n"
+	.string "need healing, you can come home and\l"
+	.string "rest up."
 
 RedgeTown_EventScript_StarterMovement0::
 	applymovement LOCALID_FOLLOWING_POKEMON, RedgeTown_Movement_StarterApproachMom0
@@ -446,22 +445,19 @@ RedgeTown_EventScript_SquirtleCry::
 	return
 
 RedgeTown_Text_ExplainPokenav:
-	.string "Mom: Isn't it neat? You can use it\n"
-	.string "to view your map easily!\p"
-	.string "I'll even add my number so you can\n"
-	.string "call me without having to use a\l"
-	.string "payphone!$"
+	.string "Mom: Isn't it neat? You can use it to\n"
+	.string "view your map easily!$"
 
 RedgeTown_Text_ReceivedPokenav:
-	.string "{PLAYER} received a PokéNav.$"
+	.string "{PLAYER} received a PokéNav!$"
 
 RedgeTown_Text_OutOfBreath:
 	.string "Mom: Huff, huff… I need to dig those\n"
 	.string "exercise DVDs out of the attic… Huff…$"
 
 RedgeTown_Text_OneMoreThingForYou:
-	.string "Mom: I've got one more thing for\n"
-	.string "you to take on your journey.\p"
+	.string "Mom: I've got one more thing for you to\n"
+	.string "take on your journey.\p"
 	.string "It's a brand new PokéNav!$"
 
 RedgeTown_Text_HoldUpPlayer:
@@ -474,12 +470,12 @@ RedgeTown_Text_WaitPlayer:
 	.string "Mom: Wait, {PLAYER}!$"
 
 RedgeTown_Text_DidYouSeeCedar:
-	.string "Mom: {PLAYER}! {PLAYER}! Did you see what\n"
-	.string "Prof. Cedar had to say?$"
+	.string "Mom: {PLAYER}! {PLAYER}! Did you see\n"
+	.string "what Prof. Cedar had to say?$"
 
 RedgeTown_Text_CutePokemon:
-	.string "Mom: Oh, what a cute Pokémon!\n"
-	.string "Oh, Prof. Cedar gave it to you?\p"
+	.string "Mom: What a cute Pokémon!\p"
+	.string "Oh, Prof. Cedar gave it to you?\n"
 	.string "Well, it's adorable!$"
 
 RedgeTown_Text_WearTheseRunningShoes:
@@ -541,7 +537,7 @@ RedgeTown_Text_TownSign:
 	.string "“A quiet town for quiet people.”$"
 
 RedgeTown_Text_ProfCedarsLab:
-	.string "Prof. Cedar'S Pokémon Lab$"
+	.string "Prof. Cedar's Pokémon Lab$"
 
 RedgeTown_Text_PlayersHouse:
 	.string "{PLAYER}'s House$"

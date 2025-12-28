@@ -904,10 +904,10 @@ MatchCall_PersonalizedText24::
 MatchCall_PersonalizedText25::
 	.string "Snivel… It's… {STR_VAR_1}…\n"
 	.string "…Sob…\p"
-	.string "ROXANNE chewed me out in class\n"
+	.string "CIELLUS chewed me out in class\n"
 	.string "today.\p"
 	.string "But I don't dislike her or anything.\p"
-	.string "ROXANNE tells me exactly what\n"
+	.string "CIELLUS tells me exactly what\n"
 	.string "I did wrong so I can learn from it.\p"
 	.string "You bet I'll be going to\n"
 	.string "the TRAINER'S SCHOOL tomorrow!\p"
@@ -915,11 +915,11 @@ MatchCall_PersonalizedText25::
 
 MatchCall_PersonalizedText26::
 	.string "It's {STR_VAR_1}!\p"
-	.string "ROXANNE let me battle with her\n"
+	.string "CIELLUS let me battle with her\n"
 	.string "yesterday.\p"
 	.string "The results…\n"
 	.string "Terrible, like you needed to ask.\p"
-	.string "But I was delighted that ROXANNE\n"
+	.string "But I was delighted that CIELLUS\n"
 	.string "would even let me challenge her!\p"
 	.string "You wouldn't believe how much\n"
 	.string "more I admire her!\p"
@@ -998,19 +998,11 @@ MatchCall_PersonalizedText31::
 	.string "in your old age! Ohohoho…$"
 
 MatchCall_PersonalizedText32::
-	.string "Yay! This is {STR_VAR_1}!\n"
+	.string "Hey! This is {STR_VAR_1}!\n"
 	.string "What's up?\p"
-	.string "I might be imagining this, but when\n"
-	.string "I win battles, my shorts seem to\l"
-	.string "feel, like, better. Materially.\p"
-	.string "What do I mean by that?\n"
-	.string "It's kind of hard to explain, but…\l"
-	.string "How would I say this now…\l"
-	.string "My shorts feel silkier!\p"
-	.string "And when I battled you, {PLAYER}{KUN},\n"
-	.string "my shorts felt icky and coarse.\p"
-	.string "… … … … … …\n"
-	.string "You didn't really believe that?\l"
+	.string "Have you ever done laundry right\n"
+	.string "after a hard battle? I love the\l"
+	.string "way my clothes smell when clean!\p"
 	.string "Ehehehe, that's all! Bye now!$"
 
 MatchCall_PersonalizedText33::
@@ -2038,8 +2030,8 @@ MatchCall_Text_Mom3::
 	.string "Wear those RUNNING SHOES until\n"
 	.string "they fall apart, honey!$"
 
-MatchCall_Text_Roxanne1::
-	.string "ROXANNE: Oh, hello, {PLAYER}!\p"
+MatchCall_Text_Ciellus1::
+	.string "CIELLUS: Oh, hello, {PLAYER}!\p"
 	.string "I've been hard at work retraining\n"
 	.string "since we met.\p"
 	.string "I will still need some more time\n"
@@ -2047,8 +2039,8 @@ MatchCall_Text_Roxanne1::
 	.string "But when I do, please visit my GYM\n"
 	.string "for a rematch!$"
 
-MatchCall_Text_Roxanne2::
-	.string "ROXANNE: Is this {PLAYER}?\n"
+MatchCall_Text_Ciellus2::
+	.string "CIELLUS: Is this {PLAYER}?\n"
 	.string "Congratulations!\l"
 	.string "I've been hearing about you!\p"
 	.string "As for me, I need some more time\n"
@@ -2056,14 +2048,14 @@ MatchCall_Text_Roxanne2::
 	.string "But when I do, please visit my GYM\n"
 	.string "for a rematch!$"
 
-MatchCall_Text_Roxanne3::
-	.string "ROXANNE: {PLAYER}!\n"
+MatchCall_Text_Ciellus3::
+	.string "CIELLUS: {PLAYER}!\n"
 	.string "My GYM is ready!\p"
 	.string "Please visit TEPEK whenever\n"
 	.string "you can!$"
 
-MatchCall_Text_Roxanne4::
-	.string "ROXANNE: At the TEPEK GYM,\n"
+MatchCall_Text_Ciellus4::
+	.string "CIELLUS: At the TEPEK GYM,\n"
 	.string "the fact that we battled, {PLAYER},\l"
 	.string "is a matter of pride.$"
 
@@ -2836,7 +2828,7 @@ MatchCall_Text_CedarRegisterCall:
 	.string "Looks like you've got a PokéNav.\p"
 	.string "I know, let me give you my number.\p"
 	.string "That way, I'd be able to examine\n"
-	.string "your POKéDEX even while you're\l"
+	.string "your Pokédex even while you're\l"
 	.string "out in the field.\p"
 	.string "… … … … … …$"
 
