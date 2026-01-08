@@ -179,7 +179,6 @@ static const u8 sDoorAnimPalettes_Redge[] = {6, 6, 6, 6, 6, 6, 6, 6};
 static const u8 sDoorAnimPalettes_CedarsLab[] = {8, 8, 8, 8, 8, 8, 8, 8};
 static const u8 sDoorAnimPalettes_TepekTan[] = {11, 11, 11, 11, 11, 11, 11, 11};
 static const u8 sDoorAnimPalettes_TepekGray[] = {11, 11, 11, 11, 11, 11, 11, 11};
-static const u8 sDoorAnimPalettes_TepekApartment[] = {6, 6, 6, 6, 9, 9, 9, 9};
 static const u8 sDoorAnimPalettes_FallarborLightRoof[] = {7, 7, 7, 7, 7, 7, 7, 7};
 static const u8 sDoorAnimPalettes_Lilycove[] = {8, 8, 8, 8, 8, 8, 8, 8};
 static const u8 sDoorAnimPalettes_Oldale[] = {10, 10, 9, 9, 9, 9, 9, 9};
@@ -235,7 +234,6 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_Petalburg_Door_Redge,                    DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Redge, sDoorAnimPalettes_Redge},
     {METATILE_Petalburg_Door_CedarsLab,                     DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_CedarsLab, sDoorAnimPalettes_CedarsLab},
     {METATILE_Tepek_Door_Tan,                            DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_TepekTan, sDoorAnimPalettes_TepekTan},
-    {METATILE_Tepek_Door_Apartment,                      DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_TepekApartment, sDoorAnimPalettes_TepekApartment},
     {METATILE_Tepek_Door_Gray,                           DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_TepekGray, sDoorAnimPalettes_TepekGray},
     {METATILE_Fallarbor_Door_LightRoof,                     DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_FallarborLightRoof, sDoorAnimPalettes_FallarborLightRoof},
     {METATILE_Petalburg_Door_Oldale,                        DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Oldale, sDoorAnimPalettes_Oldale},

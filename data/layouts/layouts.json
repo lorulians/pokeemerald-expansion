@@ -182,22 +182,22 @@
       "blockdata_filepath": "data/layouts/Route232/map.bin"
     },
     {
-      "id": "LAYOUT_ROUTE103",
-      "name": "Route103_Layout",
-      "width": 38,
-      "height": 26,
+      "id": "LAYOUT_ROUTE234",
+      "name": "Route234_Layout",
+      "width": 68,
+      "height": 32,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Tepek",
-      "border_filepath": "data/layouts/Route103/border.bin",
-      "blockdata_filepath": "data/layouts/Route103/map.bin"
+      "border_filepath": "data/layouts/Route234/border.bin",
+      "blockdata_filepath": "data/layouts/Route234/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE104",
       "name": "Route104_Layout",
-      "width": 40,
-      "height": 80,
+      "width": 35,
+      "height": 39,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Tepek",
+      "secondary_tileset": "gTileset_Pacifidlog",
       "border_filepath": "data/layouts/Route104/border.bin",
       "blockdata_filepath": "data/layouts/Route104/map.bin"
     },

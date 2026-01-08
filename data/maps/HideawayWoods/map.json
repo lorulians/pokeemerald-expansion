@@ -94,8 +94,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_3",
-      "x": 29,
-      "y": 32,
+      "x": 30,
+      "y": 33,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
       "movement_range_x": 2,
@@ -230,14 +230,14 @@
       "y": 48,
       "elevation": 0,
       "dest_map": "MAP_ROUTE104",
-      "dest_warp_id": "4"
+      "dest_warp_id": "0"
     },
     {
       "x": 35,
       "y": 48,
       "elevation": 0,
       "dest_map": "MAP_ROUTE104",
-      "dest_warp_id": "5"
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],

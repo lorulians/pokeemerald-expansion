@@ -2,11 +2,17 @@ TepekCity_Appt_3F_MapScripts::
 	.byte 0
 
 TepekCity_Appt_3F_EventScript_Girl::
+	lock
+	faceplayer
 	msgbox TepekCity_Appt_3F_Text_TaillowBetter, MSGBOX_NPC
+	applymovement LOCALID_TAILLOWGIRL, Common_Movement_FaceOriginalDirection
 	end
 
 TepekCity_Appt_3F_EventScript_Boy::
-	msgbox TepekCity_Appt_3F_Text_MurkrowBetter, MSGBOX_NPC
+	lock
+	faceplayer
+	msgbox TepekCity_Appt_3F_Text_MurkrowBetter, MSGBOX_DEFAULT
+	applymovement LOCALID_MURKROWBOY, Common_Movement_FaceOriginalDirection
 	end
 
 TepekCity_Appt_3F_EventScript_Taillow::
@@ -16,6 +22,7 @@ TepekCity_Appt_3F_EventScript_Taillow::
 	playmoncry SPECIES_TAILLOW, CRY_MODE_NORMAL
 	msgbox TepekCity_Appt_3F_Text_Taillow, MSGBOX_NPC
 	waitmoncry
+	applymovement LOCALID_TAILLOW, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -26,6 +33,7 @@ TepekCity_Appt_3F_EventScript_Murkrow::
 	playmoncry SPECIES_MURKROW, CRY_MODE_NORMAL
 	msgbox TepekCity_Appt_3F_Text_Murkrow, MSGBOX_NPC
 	waitmoncry
+	applymovement LOCALID_MURKROW, Common_Movement_FaceOriginalDirection
 	release
 	end
 

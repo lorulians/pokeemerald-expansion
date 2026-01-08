@@ -153,11 +153,6 @@ const u8 gText_MatchCallPokefan_Isabel_Pokemon[] = _("I have no likes or dislike
 const u8 gText_MatchCallPokefan_Isabel_Intro1[] = _("While out shopping for");
 const u8 gText_MatchCallPokefan_Isabel_Intro2[] = _("supper, I battle too.");
 
-const u8 gText_MatchCallPokefan_Miguel_Strategy[] = _("I battle with love!");
-const u8 gText_MatchCallPokefan_Miguel_Pokemon[] = _("A POKéMON raised with love!");
-const u8 gText_MatchCallPokefan_Miguel_Intro1[] = _("It's important to build");
-const u8 gText_MatchCallPokefan_Miguel_Intro2[] = _("trust with your POKéMON.");
-
 const u8 gText_MatchCallExpert_Timothy_Strategy[] = _("I see through your moves!");
 const u8 gText_MatchCallExpert_Timothy_Pokemon[] = _("The essence of FIGHTING.");
 const u8 gText_MatchCallExpert_Timothy_Intro1[] = _("I'm not ready to give way");
@@ -421,7 +416,6 @@ const u8 *const gMatchCallFlavorTexts[REMATCH_TABLE_ENTRIES][CHECK_PAGE_ENTRY_CO
     [REMATCH_JERRY] = MCFLAVOR(SchoolKid_Jerry),
     [REMATCH_ANNA_AND_MEG] = MCFLAVOR(SrAndJr_AnnaAndMeg),
     [REMATCH_ISABEL] = MCFLAVOR(Pokefan_Isabel),
-    [REMATCH_MIGUEL] = MCFLAVOR(Pokefan_Miguel),
     [REMATCH_TIMOTHY] = MCFLAVOR(Expert_Timothy),
     [REMATCH_SHELBY] = MCFLAVOR(Expert_Shelby),
     [REMATCH_CLARISSA] = MCFLAVOR(Picnicker_Clarissa),
@@ -440,7 +434,6 @@ const u8 *const gMatchCallFlavorTexts[REMATCH_TABLE_ENTRIES][CHECK_PAGE_ENTRY_CO
     [REMATCH_MADELINE] = MCFLAVOR(ParasolLady_Madeline),
     [REMATCH_JENNY] = MCFLAVOR(Swimmer_Jenny),
     [REMATCH_DIANA] = MCFLAVOR(Picnicker_Diana),
-    [REMATCH_AMY_AND_LIV] = MCFLAVOR(Twins_AmyAndLiv),
     [REMATCH_ERNEST] = MCFLAVOR(Sailor_Ernest),
     [REMATCH_CORY] = MCFLAVOR(Sailor_Cory),
     [REMATCH_EDWIN] = MCFLAVOR(Collector_Edwin),

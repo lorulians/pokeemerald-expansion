@@ -76,9 +76,9 @@ The trainer's object needs to have a script that begins with a method to signify
 
 #### `trainerbattle`
 ```
-Route103_EventScript_Daisy::
-    trainerbattle_single TRAINER_DAISY, Route103_Text_DaisyIntro, Route103_Text_DaisyDefeated
-    msgbox Route103_Text_DaisyPostBattle, MSGBOX_AUTOCLOSE
+Route234_EventScript_Daisy::
+    trainerbattle_single TRAINER_DAISY, Route234_Text_DaisyIntro, Route234_Text_DaisyDefeated
+    msgbox Route234_Text_DaisyPostBattle, MSGBOX_AUTOCLOSE
     end
 ```
 

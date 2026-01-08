@@ -70,16 +70,17 @@ TepekCity_Appt_3F_1_Text_IllBeWaiting:
 	.string "Jude: I'll be waiting!$"
 
 TepekCity_Appt_3F_1_Movement_JudeDadToJude:
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
+	disable_jump_landing_ground_effect
+	jump_in_place_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_in_place_right
 	walk_in_place_right
 	step_end
 
 TepekCity_Appt_3F_1_Movement_JudeDadToTable:
-	walk_up
 	walk_up
 	walk_up
 	walk_up

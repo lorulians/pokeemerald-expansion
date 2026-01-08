@@ -27,7 +27,7 @@ PowerPlant_Exterior_EventScript_TriGruntTrigger::
 	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
 	msgbox PowerPlant_Exterior_Text_WhatsAKid, MSGBOX_DEFAULT
 	closemessage
-	trainerbattle_no_intro TRAINER_GRUNTS_POWER_PLANT, PowerPlant_Exterior_Text_TriGruntsDefeat
+	trainerbattle_two_trainers TRAINER_GRUNT2_POWER_PLANT, PowerPlant_Exterior_Text_TriGruntsDefeatM, TRAINER_GRUNT3_POWER_PLANT, PowerPlant_Exterior_Text_TriGruntsDefeatF
 	goto PowerPlant_Exterior_EventScript_TriGruntPostBattle
 
 PowerPlant_Exterior_EventScript_TriGruntPostBattle::
@@ -111,8 +111,11 @@ PowerPlant_Exterior_Text_TriGruntsStepAside2:
 	.string "There's still more of us inside.\n"
 	.string "Hope you're ready to fight.$"
 
-PowerPlant_Exterior_Text_TriGruntsDefeat:
+PowerPlant_Exterior_Text_TriGruntsDefeatM:
 	.string "Oh no!$"
+
+PowerPlant_Exterior_Text_TriGruntsDefeatF:
+	.string "You beat us good!$"
 
 PowerPlant_Exterior_Text_WhatsAKid:
 	.string "What's a kid doing here?\p"

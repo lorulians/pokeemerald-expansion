@@ -453,15 +453,6 @@ static const struct MatchCallTrainerTextInfo sMatchCallTrainers[] =
         .differentRouteMatchCallTextId = TEXT_ID(REQ_TOPIC_DIFF_ROUTE, 14),
     },
     {
-        .trainerId = TRAINER_MIGUEL_1,
-        .unused = 0,
-        .battleTopicTextIds = BATTLE_TEXT_IDS(11),
-        .generalTextId = TEXT_ID(GEN_TOPIC_PERSONAL, 28),
-        .battleFrontierRecordStreakTextIndex = 11,
-        .sameRouteMatchCallTextId = TEXT_ID(REQ_TOPIC_SAME_ROUTE, 11),
-        .differentRouteMatchCallTextId = TEXT_ID(REQ_TOPIC_DIFF_ROUTE, 11),
-    },
-    {
         .trainerId = TRAINER_TIMOTHY_1,
         .unused = 0,
         .battleTopicTextIds = BATTLE_TEXT_IDS(12),
@@ -611,15 +602,6 @@ static const struct MatchCallTrainerTextInfo sMatchCallTrainers[] =
         .battleTopicTextIds = BATTLE_TEXT_IDS(2),
         .generalTextId = TEXT_ID(GEN_TOPIC_PERSONAL, 47),
         .battleFrontierRecordStreakTextIndex = 2,
-        .sameRouteMatchCallTextId = TEXT_ID(REQ_TOPIC_SAME_ROUTE, 2),
-        .differentRouteMatchCallTextId = TEXT_ID(REQ_TOPIC_DIFF_ROUTE, 2),
-    },
-    {
-        .trainerId = TRAINER_AMY_AND_LIV_1,
-        .unused = 2,
-        .battleTopicTextIds = BATTLE_TEXT_IDS(2),
-        .generalTextId = TEXT_ID(GEN_TOPIC_PERSONAL, 48),
-        .battleFrontierRecordStreakTextIndex = 1,
         .sameRouteMatchCallTextId = TEXT_ID(REQ_TOPIC_SAME_ROUTE, 2),
         .differentRouteMatchCallTextId = TEXT_ID(REQ_TOPIC_DIFF_ROUTE, 2),
     },
@@ -1684,7 +1666,6 @@ static void PopulateMatchCallStringVar(int matchCallId, int funcId, u8 *destStr)
 static const struct MultiTrainerMatchCallText sMultiTrainerMatchCallTexts[] =
 {
     { .trainerId = TRAINER_KIRA_AND_DAN_1, .text = gText_Kira },
-    { .trainerId = TRAINER_AMY_AND_LIV_1,  .text = gText_Amy },
     { .trainerId = TRAINER_JOHN_AND_JAY_1, .text = gText_John },
     { .trainerId = TRAINER_LILA_AND_ROY_1, .text = gText_Roy },
     { .trainerId = TRAINER_GABBY_AND_TY_1, .text = gText_Gabby },

@@ -59,12 +59,6 @@ static const struct Landmark Landmark_AlteringCave = {COMPOUND_STRING("ALTERING 
 static const struct Landmark Landmark_DesertUnderpass = {COMPOUND_STRING("DESERT UNDERPASS"), FLAG_LANDMARK_DESERT_UNDERPASS};
 static const struct Landmark Landmark_TrainerHill = {COMPOUND_STRING("TRAINER HILL"), FLAG_LANDMARK_TRAINER_HILL};
 
-static const struct Landmark *const Landmarks_Route103_2[]  =
-{
-    &Landmark_AlteringCave,
-    NULL,
-};
-
 static const struct Landmark *const Landmarks_Route104_0[]  =
 {
     &Landmark_FlowerShop,
@@ -297,7 +291,6 @@ static const struct Landmark *const Landmarks_MtChimney_2[]  =
 
 static const struct LandmarkList sLandmarkLists[] =
 {
-    {MAPSEC_ROUTE_103, 2, Landmarks_Route103_2},
     {MAPSEC_ROUTE_104, 0, Landmarks_Route104_0},
     {MAPSEC_ROUTE_104, 1, Landmarks_Route104_1},
     {MAPSEC_ROUTE_105, 0, Landmarks_Route105_0},

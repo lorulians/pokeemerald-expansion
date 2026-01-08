@@ -565,6 +565,7 @@ RedgeTown_ProfessorCedarsLab_EventScript_GivePokedex::
 	// call_if_eq VAR_RESULT, FEMALE, RedgeTown_ProfessorCedarsLab_EventScript_BrendanGivePokeBalls
 	setvar VAR_CEDAR_LAB_STATE, 6
 	setflag FLAG_ADVENTURE_STARTED
+	clearflag FLAG_HIDE_ROUTE_234_TRAINERS
 	// setvar VAR_OLDALE_TOWN_STATE, 1
 	setvar VAR_REDGE_TOWN_STATE, 5,
 	setvar VAR_TEPEK_CITY_STATE, 4,

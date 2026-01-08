@@ -132,7 +132,7 @@ gStdScripts_End::
 	.include "data/maps/PacifidlogTown/scripts.inc"
 	.include "data/maps/Route231/scripts.inc"
 	.include "data/maps/Route232/scripts.inc"
-	.include "data/maps/Route103/scripts.inc"
+	.include "data/maps/Route234/scripts.inc"
 	.include "data/maps/Route104/scripts.inc"
 	.include "data/maps/Route105/scripts.inc"
 	.include "data/maps/Route106/scripts.inc"
