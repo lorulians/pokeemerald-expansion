@@ -305,7 +305,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
 {
     [TRAINER_CLASS_PKMN_TRAINER_1] = { _("{PKMN} Trainer") },
     [TRAINER_CLASS_PKMN_TRAINER_2] = { _("{PKMN} Trainer") },
-    [TRAINER_CLASS_HIKER] = { _("Hiker"), 10 },
+    [TRAINER_CLASS_HIKER] = { _("Hiker"), 10 }, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_ULTRA : BALL_POKE },
     [TRAINER_CLASS_TEAM_TRI] = { _("Team Tri") },
     [TRAINER_CLASS_PKMN_BREEDER] = { _("{PKMN} Breeder"), 10, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_HEAL : BALL_FRIEND },
     [TRAINER_CLASS_COOLTRAINER] = { _("Cooltrainer"), 12, BALL_ULTRA },
@@ -335,8 +335,9 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_PSYCHIC] = { _("PSYCHIC"), 6 },
     [TRAINER_CLASS_GENTLEMAN] = { _("GENTLEMAN"), 20, BALL_LUXURY },
     [TRAINER_CLASS_ELITE_FOUR] = { _("ELITE FOUR"), 25, BALL_ULTRA },
-    [TRAINER_CLASS_LEADER] = { _("Leader"), 25 },
     [TRAINER_CLASS_SCHOOL_KID] = { _("School Kid") },
+    [TRAINER_CLASS_LEADER] = { _("Leader"), 25, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_ULTRA : BALL_POKE },
+    [TRAINER_CLASS_SCHOOL_KID] = { _("SCHOOL KID") },
     [TRAINER_CLASS_SR_AND_JR] = { _("SR. AND JR."), 4 },
     [TRAINER_CLASS_WINSTRATE] = { _("WINSTRATE"), 10 },
     [TRAINER_CLASS_POKEFAN] = { _("POKéFAN"), 20 },
@@ -361,7 +362,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_YOUNG_COUPLE] = { _("YOUNG COUPLE"), 8 },
     [TRAINER_CLASS_OLD_COUPLE] = { _("OLD COUPLE"), 10 },
     [TRAINER_CLASS_SIS_AND_BRO] = { _("SIS AND BRO"), 3 },
-    [TRAINER_CLASS_SALON_MAIDEN] = { _("SALON MAIDEN") },
+    [TRAINER_CLASS_SALON_MAIDEN] = { _("SALON MAIDEN"), 0, BALL_ULTRA },
     [TRAINER_CLASS_DOME_ACE] = { _("DOME ACE") },
     [TRAINER_CLASS_PALACE_MAVEN] = { _("PALACE MAVEN") },
     [TRAINER_CLASS_ARENA_TYCOON] = { _("ARENA TYCOON") },
@@ -3010,7 +3011,7 @@ static void ClearSetBScriptingStruct(void)
         gBattleScripting.battleStyle = OPTIONS_BATTLE_STYLE_SET;
     else
         gBattleScripting.battleStyle = gSaveBlock2Ptr->optionsBattleStyle;
-    gBattleScripting.expOnCatch = (B_EXP_CATCH >= GEN_6);
+    gBattleScripting.expOnCatch = (GetConfig(CONFIG_EXP_CATCH) >= GEN_6);
     gBattleScripting.specialTrainerBattleType = specialBattleType;
 }
 
@@ -3285,10 +3286,10 @@ void SwitchInClearSetData(u32 battler, struct Volatiles *volatilesCopy)
     #if TESTING
     if (gTestRunnerEnabled)
     {
-        u32 side = GetBattlerSide(battler);
+        u32 array = (!IsPartnerMonFromSameTrainer(battler)) ? battler : GetBattlerSide(battler);
         u32 partyIndex = gBattlerPartyIndexes[battler];
-        if (TestRunner_Battle_GetForcedAbility(side, partyIndex))
-            gBattleMons[i].ability = TestRunner_Battle_GetForcedAbility(side, partyIndex);
+        if (TestRunner_Battle_GetForcedAbility(array, partyIndex))
+            gBattleMons[i].ability = TestRunner_Battle_GetForcedAbility(array, partyIndex);
     }
     #endif // TESTING
 
@@ -3496,10 +3497,10 @@ static void DoBattleIntro(void)
                 #if TESTING
                 if (gTestRunnerEnabled)
                 {
-                    u32 side = GetBattlerSide(battler);
+                    u32 array = (!IsPartnerMonFromSameTrainer(battler)) ? battler : GetBattlerSide(battler);
                     u32 partyIndex = gBattlerPartyIndexes[battler];
-                    if (TestRunner_Battle_GetForcedAbility(side, partyIndex))
-                        gBattleMons[battler].ability = TestRunner_Battle_GetForcedAbility(side, partyIndex);
+                    if (TestRunner_Battle_GetForcedAbility(array, partyIndex))
+                        gBattleMons[battler].ability = TestRunner_Battle_GetForcedAbility(array, partyIndex);
                 }
                 #endif
             }
@@ -3795,10 +3796,10 @@ static void TryDoEventsBeforeFirstTurn(void)
         {
             for (i = 0; i < gBattlersCount; ++i)
             {
-                u32 side = GetBattlerSide(i);
+                u32 array = (!IsPartnerMonFromSameTrainer(i)) ? i : GetBattlerSide(i);
                 u32 partyIndex = gBattlerPartyIndexes[i];
-                if (TestRunner_Battle_GetForcedAbility(side, partyIndex))
-                    gBattleMons[i].ability = TestRunner_Battle_GetForcedAbility(side, partyIndex);
+                if (TestRunner_Battle_GetForcedAbility(array, partyIndex))
+                    gBattleMons[i].ability = TestRunner_Battle_GetForcedAbility(array, partyIndex);
             }
         }
         #endif // TESTING
