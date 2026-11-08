@@ -72,15 +72,15 @@ RedgeTown_ProfessorCedarsLab_Movement_PlayerEnterLab:
 	// setobjectxyperm LOCALID_CEDARS_LAB_RIVAL, 5, 10
 	// end
 
-RedgeTown_ProfessorCedarsLab_EventScript_SnivyPokeball::
+RedgeTown_ProfessorCedarsLab_EventScript_BulbasaurPokeball::
 	goto_if_le VAR_CEDAR_LAB_STATE, 2, RedgeTown_ProfessorCedarsLab_EventScript_ItsAPokeball
 	goto_if_ge VAR_CEDAR_LAB_STATE, 3, RedgeTown_ProfessorCedarsLab_EventScript_AlreadyChoseStarter
 
-RedgeTown_ProfessorCedarsLab_EventScript_SquirtlePokeball::
+RedgeTown_ProfessorCedarsLab_EventScript_OshawottPokeball::
 	goto_if_le VAR_CEDAR_LAB_STATE, 2, RedgeTown_ProfessorCedarsLab_EventScript_ItsAPokeball
 	goto_if_ge VAR_CEDAR_LAB_STATE, 3, RedgeTown_ProfessorCedarsLab_EventScript_AlreadyChoseStarter
 
-RedgeTown_ProfessorCedarsLab_EventScript_ScorbunnyPokeball::
+RedgeTown_ProfessorCedarsLab_EventScript_ChimcharPokeball::
 	goto_if_le VAR_CEDAR_LAB_STATE, 2, RedgeTown_ProfessorCedarsLab_EventScript_ItsAPokeball
 	goto_if_ge VAR_CEDAR_LAB_STATE, 3, RedgeTown_ProfessorCedarsLab_EventScript_AlreadyChoseStarter
 
@@ -102,9 +102,9 @@ RedgeTown_ProfessorCedarsLab_OnWarp:
 	.2byte 0
 
 RedgeTown_ProfessorCedarsLab_EventScript_SetObjectPosForSansubaStarters::
-	setobjectxyperm LOCALID_SNIVY_POKEBALL, 7, 1
-	setobjectxyperm LOCALID_SQUIRTLE_POKEBALL, 8, 1
-	setobjectxyperm LOCALID_SCORBUNNY_POKEBALL, 9, 1
+	setobjectxyperm LOCALID_BULBASAUR_POKEBALL, 7, 1
+	setobjectxyperm LOCALID_OSHAWOTT_POKEBALL, 8, 1
+	setobjectxyperm LOCALID_CHIMCHAR_POKEBALL, 9, 1
 	end
 
 RedgeTown_ProfessorCedarsLab_EventScript_NoMoreSansubaStarters::
@@ -113,9 +113,9 @@ RedgeTown_ProfessorCedarsLab_EventScript_NoMoreSansubaStarters::
 	end
 
 RedgeTown_ProfessorCedarsLab_EventScript_HidePokeballs::
-	call_if_eq VAR_STARTER_MON, 0, RedgeTown_ProfessorCedarsLab_EventScript_HideSnivy
-	call_if_eq VAR_STARTER_MON, 1, RedgeTown_ProfessorCedarsLab_EventScript_HideScorbunny
-	call_if_eq VAR_STARTER_MON, 2, RedgeTown_ProfessorCedarsLab_EventScript_HideSquirtle
+	call_if_eq VAR_STARTER_MON, 0, RedgeTown_ProfessorCedarsLab_EventScript_HideBulbasaur
+	call_if_eq VAR_STARTER_MON, 1, RedgeTown_ProfessorCedarsLab_EventScript_HideChimchar
+	call_if_eq VAR_STARTER_MON, 2, RedgeTown_ProfessorCedarsLab_EventScript_HideOshawott
 	end
 
 RedgeTown_ProfessorCedarsLab_EventScript_SetObjectPosForDexUpgrade::
@@ -141,8 +141,6 @@ RedgeTown_ProfessorCedarsLab_OnFrame:
 	map_script_2 VAR_CEDAR_LAB_STATE, 5, RedgeTown_ProfessorCedarsLab_EventScript_MoveTrainer
 	.2byte 0
 
-@ The starter is technically given prior to this on Route 231 by special ChooseStarter
-@ This is just where the game tells you its yours and lets you nickname it
 RedgeTown_ProfessorCedarsLab_EventScript_GiveStarterEvent::
 	lockall
 	setflag FLAG_SYS_POKEMON_GET
@@ -156,16 +154,16 @@ RedgeTown_ProfessorCedarsLab_EventScript_GiveStarterEvent::
 	goto_if_eq VAR_RESULT, NO, RedgeTown_ProfessorCedarsLab_EventScript_GoDeliverThat
 	end
 
-RedgeTown_ProfessorCedarsLab_EventScript_HideSnivy::
-	setflag FLAG_HIDE_SNIVY_POKEBALL
+RedgeTown_ProfessorCedarsLab_EventScript_HideBulbasaur::
+	setflag FLAG_HIDE_BULBASAUR_POKEBALL
 	return
 
-RedgeTown_ProfessorCedarsLab_EventScript_HideScorbunny::
-	setflag FLAG_HIDE_SCORBUNNY_POKEBALL
+RedgeTown_ProfessorCedarsLab_EventScript_HideChimchar::
+	setflag FLAG_HIDE_CHIMCHAR_POKEBALL
 	return
 
-RedgeTown_ProfessorCedarsLab_EventScript_HideSquirtle::
-	setflag FLAG_HIDE_SQUIRTLE_POKEBALL
+RedgeTown_ProfessorCedarsLab_EventScript_HideOshawott::
+	setflag FLAG_HIDE_OSHAWOTT_POKEBALL
 	return
 
 RedgeTown_ProfessorCedarsLab_EventScript_NicknameStarter::

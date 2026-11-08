@@ -8,7 +8,7 @@
 #define MULTI_B_PRESSED  127
 
 // Multichoice Ids
-#define MULTI_BRINEY_ON_DEWFORD            0
+#define MULTI_UNUSED_0                     0
 #define MULTI_PC                           1 // Exit only, populated by CreatePCMultichoice
 #define MULTI_ENTERINFO                    2
 #define MULTI_CONTEST_INFO                 3
@@ -22,7 +22,7 @@
 #define MULTI_FRONTIER_PASS_INFO           11
 #define MULTI_BIKE                         12
 #define MULTI_STATUS_INFO                  13
-#define MULTI_BRINEY_OFF_DEWFORD           14
+#define MULTI_UNUSED_14           14
 #define MULTI_UNUSED_15                    15
 #define MULTI_VIEWED_PAINTINGS             16
 #define MULTI_YESNOINFO                    17

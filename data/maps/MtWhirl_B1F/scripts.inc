@@ -1,0 +1,49 @@
+MtWhirl_B1F_MapScripts::
+	.byte 0
+
+MtWhirl_B1F_EventScript_Alex::
+	trainerbattle_single TRAINER_ALEX, MtWhirl_B1F_Text_AlexIntro, MtWhirl_B1F_Text_AlexDefeated
+	msgbox MtWhirl_B1F_Text_AlexPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+MtWhirl_B1F_EventScript_George::
+	trainerbattle_single TRAINER_GEORGE, MtWhirl_B1F_Text_GeorgeIntro, MtWhirl_B1F_Text_GeorgeDefeated
+	msgbox MtWhirl_B1F_Text_GeorgePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+MtWhirl_B1F_EventScript_Hiroshi::
+	trainerbattle_single TRAINER_HIROSHI, MtWhirl_B1F_Text_HiroshiIntro, MtWhirl_B1F_Text_HiroshiDefeated
+	msgbox MtWhirl_B1F_Text_HiroshiPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+MtWhirl_B1F_EventScript_Asahi::
+	trainerbattle_single TRAINER_ASAHI, MtWhirl_B1F_Text_AsahiIntro, MtWhirl_B1F_Text_AsahiDefeated
+	msgbox MtWhirl_B1F_Text_AsahiPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+MtWhirl_B1F_EventScript_HikerResting::
+
+MtWhirl_B1F_Text_AlexIntro:
+
+MtWhirl_B1F_Text_GeorgeIntro:
+
+MtWhirl_B1F_Text_HiroshiIntro:
+
+MtWhirl_B1F_Text_AsahiIntro:
+
+MtWhirl_B1F_Text_AlexDefeated:
+
+MtWhirl_B1F_Text_GeorgeDefeated:
+
+MtWhirl_B1F_Text_HiroshiDefeated:
+
+MtWhirl_B1F_Text_AsahiDefeated:
+
+MtWhirl_B1F_Text_AlexPostBattle:
+
+MtWhirl_B1F_Text_GeorgePostBattle:
+
+MtWhirl_B1F_Text_HiroshiPostBattle:
+
+MtWhirl_B1F_Text_AsahiPostBattle:
+

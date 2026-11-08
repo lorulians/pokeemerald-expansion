@@ -127,8 +127,8 @@
       "flag": "0"
     },
     {
-      "local_id": "LOCALID_PP_INT_CHARJABUG",
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CHARJABUG)",
+      "local_id": "LOCALID_PP_INT_RAICHU",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RAICHU)",
       "x": 8,
       "y": 21,
       "elevation": 0,
@@ -137,7 +137,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PowerPlant_Interior_EventScript_Charjabug",
+      "script": "PowerPlant_Interior_EventScript_Raichu",
       "flag": "0"
     },
     {

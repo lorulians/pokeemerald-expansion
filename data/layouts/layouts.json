@@ -2,14 +2,14 @@
   "layouts_table_label": "gMapLayouts",
   "layouts": [
     {
-      "id": "LAYOUT_PETALBURG_CITY",
-      "name": "PetalburgCity_Layout",
-      "width": 30,
-      "height": 30,
+      "id": "LAYOUT_EADICH_TOWN",
+      "name": "EadichTown_Layout",
+      "width": 42,
+      "height": 47,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/PetalburgCity/border.bin",
-      "blockdata_filepath": "data/layouts/PetalburgCity/map.bin"
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/EadichTown/border.bin",
+      "blockdata_filepath": "data/layouts/EadichTown/map.bin"
     },
     {
       "id": "LAYOUT_SLATEPORT_CITY",
@@ -97,7 +97,7 @@
       "width": 24,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Eadich",
       "border_filepath": "data/layouts/RedgeTown/border.bin",
       "blockdata_filepath": "data/layouts/RedgeTown/map.bin"
     },
@@ -107,7 +107,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Eadich",
       "border_filepath": "data/layouts/OldaleTown/border.bin",
       "blockdata_filepath": "data/layouts/OldaleTown/map.bin"
     },
@@ -167,7 +167,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Eadich",
       "border_filepath": "data/layouts/Route231/border.bin",
       "blockdata_filepath": "data/layouts/Route231/map.bin"
     },
@@ -192,14 +192,14 @@
       "blockdata_filepath": "data/layouts/Route234/map.bin"
     },
     {
-      "id": "LAYOUT_ROUTE104",
-      "name": "Route104_Layout",
+      "id": "LAYOUT_ROUTE233",
+      "name": "Route233_Layout",
       "width": 35,
-      "height": 39,
+      "height": 50,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Pacifidlog",
-      "border_filepath": "data/layouts/Route104/border.bin",
-      "blockdata_filepath": "data/layouts/Route104/map.bin"
+      "border_filepath": "data/layouts/Route233/border.bin",
+      "blockdata_filepath": "data/layouts/Route233/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE105",
@@ -595,7 +595,7 @@
       "id": "LAYOUT_POKEMON_CENTER_1F",
       "name": "PokemonCenter_1F_Layout",
       "width": 14,
-      "height": 9,
+      "height": 14,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/PokemonCenter_1F/border.bin",
@@ -772,14 +772,14 @@
       "blockdata_filepath": "data/layouts/PacifidlogTown_House2/map.bin"
     },
     {
-      "id": "LAYOUT_PETALBURG_CITY_GYM",
-      "name": "PetalburgCity_Gym_Layout",
-      "width": 9,
-      "height": 112,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PetalburgGym",
-      "border_filepath": "data/layouts/PetalburgCity_Gym/border.bin",
-      "blockdata_filepath": "data/layouts/PetalburgCity_Gym/map.bin"
+      "id": "LAYOUT_EADICH_TOWN_GYM",
+      "name": "EadichTown_Gym_Layout",
+      "width": 52,
+      "height": 74,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_EadichGym",
+      "border_filepath": "data/layouts/EadichTown_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/EadichTown_Gym/map.bin"
     },
     {
       "id": "LAYOUT_HOUSE_WITH_BED",
@@ -962,16 +962,6 @@
       "blockdata_filepath": "data/layouts/FortreeCity_House2/map.bin"
     },
     {
-      "id": "LAYOUT_ROUTE104_MR_BRINEYS_HOUSE",
-      "name": "Route104_MrBrineysHouse_Layout",
-      "width": 12,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/Route104_MrBrineysHouse/border.bin",
-      "blockdata_filepath": "data/layouts/Route104_MrBrineysHouse/map.bin"
-    },
-    {
       "id": "LAYOUT_LILYCOVE_CITY_LILYCOVE_MUSEUM_1F",
       "name": "LilycoveCity_LilycoveMuseum_1F_Layout",
       "width": 21,
@@ -1110,16 +1100,6 @@
       "secondary_tileset": "gTileset_EliteFour",
       "border_filepath": "data/layouts/EverGrandeCity_ShortHall/border.bin",
       "blockdata_filepath": "data/layouts/EverGrandeCity_ShortHall/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE104_PRETTY_PETAL_FLOWER_SHOP",
-      "name": "Route104_PrettyPetalFlowerShop_Layout",
-      "width": 15,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PrettyPetalFlowerShop",
-      "border_filepath": "data/layouts/Route104_PrettyPetalFlowerShop/border.bin",
-      "blockdata_filepath": "data/layouts/Route104_PrettyPetalFlowerShop/map.bin"
     },
     {
       "id": "LAYOUT_CABLE_CAR_STATION",
@@ -1262,34 +1242,34 @@
       "blockdata_filepath": "data/layouts/DesertRuins/map.bin"
     },
     {
-      "id": "LAYOUT_GRANITE_CAVE_1F",
-      "name": "GraniteCave_1F_Layout",
-      "width": 42,
-      "height": 15,
+      "id": "LAYOUT_MT_WHIRL_1F",
+      "name": "MtWhirl_1F_Layout",
+      "width": 32,
+      "height": 29,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/GraniteCave_1F/border.bin",
-      "blockdata_filepath": "data/layouts/GraniteCave_1F/map.bin"
+      "border_filepath": "data/layouts/MtWhirl_1F/border.bin",
+      "blockdata_filepath": "data/layouts/MtWhirl_1F/map.bin"
     },
     {
-      "id": "LAYOUT_GRANITE_CAVE_B1F",
-      "name": "GraniteCave_B1F_Layout",
+      "id": "LAYOUT_MT_WHIRL_B1F",
+      "name": "MtWhirl_B1F_Layout",
+      "width": 34,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/MtWhirl_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/MtWhirl_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_WHIRL_2F",
+      "name": "MtWhirl_2F_Layout",
       "width": 32,
       "height": 26,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/GraniteCave_B1F/border.bin",
-      "blockdata_filepath": "data/layouts/GraniteCave_B1F/map.bin"
-    },
-    {
-      "id": "LAYOUT_GRANITE_CAVE_B2F",
-      "name": "GraniteCave_B2F_Layout",
-      "width": 32,
-      "height": 26,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/GraniteCave_B2F/border.bin",
-      "blockdata_filepath": "data/layouts/GraniteCave_B2F/map.bin"
+      "border_filepath": "data/layouts/MtWhirl_2F/border.bin",
+      "blockdata_filepath": "data/layouts/MtWhirl_2F/map.bin"
     },
     {
       "id": "LAYOUT_HIDEAWAY_WOODS",
@@ -2802,24 +2782,14 @@
       "blockdata_filepath": "data/layouts/VictoryRoad_B2F/map.bin"
     },
     {
-      "id": "LAYOUT_ROUTE104_PROTOTYPE",
-      "name": "Route104_Prototype_Layout",
-      "width": 1,
-      "height": 1,
+      "id": "LAYOUT_MT_WHIRL_1F_CLEARING",
+      "name": "MtWhirl_1F_Clearing_Layout",
+      "width": 22,
+      "height": 22,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Tepek",
-      "border_filepath": "data/layouts/Route104_Prototype/border.bin",
-      "blockdata_filepath": "data/layouts/Route104_Prototype/map.bin"
-    },
-    {
-      "id": "LAYOUT_GRANITE_CAVE_STEVENS_ROOM",
-      "name": "GraniteCave_StevensRoom_Layout",
-      "width": 15,
-      "height": 14,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/GraniteCave_StevensRoom/border.bin",
-      "blockdata_filepath": "data/layouts/GraniteCave_StevensRoom/map.bin"
+      "border_filepath": "data/layouts/MtWhirl_1F_Clearing/border.bin",
+      "blockdata_filepath": "data/layouts/MtWhirl_1F_Clearing/map.bin"
     },
     {
       "id": "LAYOUT_ABANDONED_SHIP_HIDDEN_FLOOR_CORRIDORS",
@@ -4117,7 +4087,7 @@
       "width": 40,
       "height": 38,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Eadich",
       "border_filepath": "data/layouts/PowerPlant_Exterior/border.bin",
       "blockdata_filepath": "data/layouts/PowerPlant_Exterior/map.bin"
     },
@@ -4340,6 +4310,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/TepekCity_ApartmentRoom_2/border.bin",
       "blockdata_filepath": "data/layouts/TepekCity_ApartmentRoom_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_WHIRL_B2F",
+      "name": "MtWhirl_B2F_Layout",
+      "width": 34,
+      "height": 19,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/MtWhirl_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/MtWhirl_B2F/map.bin"
     }
   ]
 }

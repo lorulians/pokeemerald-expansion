@@ -7,20 +7,6 @@ EventTicket_Text_OldSeaMapTooFar:
 	.string "Boy, this is quite a ways away.\n"
 	.string "I'm afraid I can't help you…$"
 
-EventTicket_Text_BrineyHoldOnASecond:
-	.string "BRINEY: Hold on a second!\p"
-	.string "What's the idea of turning down\n"
-	.string "someone that I owe so much to?$"
-
-EventTicket_Text_BrineyLetsSail:
-	.string "{PLAYER}{KUN}, I'm terribly sorry.\p"
-	.string "You came to me seeking my help,\n"
-	.string "and we almost turned you away.\p"
-	.string "Well, let me make things right.\p"
-	.string "We'll sail right away, of course!\p"
-	.string "Let's find this island on\n"
-	.string "this OLD SEA MAP!$"
-
 EventTicket_Text_OddTicketGetOnBoard:
 	.string "Is it you who brought that odd\n"
 	.string "ticket?\p"

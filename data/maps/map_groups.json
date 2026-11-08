@@ -3,13 +3,13 @@
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorRedge",
     "gMapGroup_IndoorTepek",
+    "gMapGroup_IndoorEadich",
     "gMapGroup_IndoorOldale",
     "gMapGroup_IndoorDewford",
     "gMapGroup_IndoorLavaridge",
     "gMapGroup_IndoorFallarbor",
     "gMapGroup_IndoorVerdanturf",
     "gMapGroup_IndoorPacifidlog",
-    "gMapGroup_IndoorPetalburg",
     "gMapGroup_IndoorSlateport",
     "gMapGroup_IndoorMauville",
     "gMapGroup_IndoorFortree",
@@ -17,8 +17,7 @@
     "gMapGroup_IndoorMossdeep",
     "gMapGroup_IndoorSootopolis",
     "gMapGroup_IndoorEverGrande",
-    "gMapGroup_IndoorRoute104",
-    "gMapGroup_IndoorRoute111",
+    "gMapGroup_IndoorRoute233",
     "gMapGroup_IndoorRoute112",
     "gMapGroup_IndoorRoute114",
     "gMapGroup_IndoorRoute116",
@@ -27,19 +26,17 @@
     "gMapGroup_Dungeons",
     "gMapGroup_IndoorDynamic",
     "gMapGroup_SpecialArea",
-    "gMapGroup_IndoorRoute104Prototype",
     "gMapGroup_IndoorRoute109",
     "gMapGroup_IndoorRoute110",
     "gMapGroup_IndoorRoute113",
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
-    "gMapGroup_IndoorRoute124",
-    "gMapGroup_IndoorPowerPlant"
+    "gMapGroup_IndoorRoute124"
   ],
   "gMapGroup_TownsAndRoutes": [
     "RedgeTown",
     "TepekCity",
-    "PetalburgCity",
+    "EadichTown",
     "SlateportCity",
     "MauvilleCity",
     "FortreeCity",
@@ -56,7 +53,7 @@
     "Route231",
     "Route232",
     "Route234",
-    "Route104",
+    "Route233",
     "Route105",
     "Route106",
     "Route107",
@@ -113,9 +110,14 @@
     "TepekCity_Appt_3F_1",
     "TepekCity_Appt_3F_2",
     "TepekCity_Gym",
-    "TepekCity_PokemonCenter_1F",
-    "TepekCity_PokemonCenter_2F",
+    "TepekCity_PokemonCenter",
     "TepekCity_Mart"
+  ],
+  "gMapGroup_IndoorEadich": [
+    "EadichTown_Gym",
+    "EadichTown_House1",
+    "EadichTown_House2",
+    "EadichTown_PokemonCenter"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",
@@ -170,15 +172,6 @@
     "PacifidlogTown_House3",
     "PacifidlogTown_House4",
     "PacifidlogTown_House5"
-  ],
-  "gMapGroup_IndoorPetalburg": [
-    "PetalburgCity_WallysHouse",
-    "PetalburgCity_Gym",
-    "PetalburgCity_House1",
-    "PetalburgCity_House2",
-    "PetalburgCity_PokemonCenter_1F",
-    "PetalburgCity_PokemonCenter_2F",
-    "PetalburgCity_Mart"
   ],
   "gMapGroup_IndoorSlateport": [
     "SlateportCity_SternsShipyard_1F",
@@ -292,12 +285,8 @@
     "EverGrandeCity_PokemonCenter_2F",
     "EverGrandeCity_PokemonLeague_2F"
   ],
-  "gMapGroup_IndoorRoute104": [
-    "Route104_MrBrineysHouse",
-    "Route104_PrettyPetalFlowerShop"
-  ],
-  "gMapGroup_IndoorRoute111": [
-    "Route111_WinstrateFamilysHouse",
+  "gMapGroup_IndoorRoute233": [
+    "Route233_MarwicksHouse",
     "Route111_OldLadysRestStop"
   ],
   "gMapGroup_IndoorRoute112": [
@@ -319,6 +308,13 @@
     "Route121_SafariZoneEntrance"
   ],
   "gMapGroup_Dungeons": [
+    "PowerPlant_Interior",
+    "HideawayWoods",
+    "MtWhirl_1F",
+    "MtWhirl_B1F",
+    "MtWhirl_B2F",
+    "MtWhirl_1F_Clearing",
+    "MtWhirl_2F",
     "MeteorFalls_1F_1R",
     "MeteorFalls_1F_2R",
     "MeteorFalls_B1F_1R",
@@ -326,11 +322,6 @@
     "RusturfTunnel",
     "Underwater_SootopolisCity",
     "DesertRuins",
-    "GraniteCave_1F",
-    "GraniteCave_B1F",
-    "GraniteCave_B2F",
-    "GraniteCave_StevensRoom",
-    "HideawayWoods",
     "MtChimney",
     "JaggedPass",
     "FieryPath",
@@ -492,6 +483,7 @@
     "UnionRoom"
   ],
   "gMapGroup_SpecialArea": [
+    "PowerPlant_Exterior",
     "SafariZone_Northwest",
     "SafariZone_North",
     "SafariZone_Southwest",
@@ -558,7 +550,6 @@
     "TrainerHill_3F",
     "TrainerHill_4F",
     "TrainerHill_Roof",
-    "PowerPlant_Exterior",
     "TrainerHill_Elevator",
     "NavelRock_Entrance",
     "NavelRock_B1F",
@@ -580,10 +571,6 @@
     "NavelRock_Down10",
     "NavelRock_Down11",
     "NavelRock_Bottom"
-  ],
-  "gMapGroup_IndoorRoute104Prototype": [
-    "Route104_Prototype",
-    "Route104_PrototypePrettyPetalFlowerShop"
   ],
   "gMapGroup_IndoorRoute109": [
     "Route109_SeashoreHouse"
@@ -616,8 +603,5 @@
   ],
   "gMapGroup_IndoorRoute124": [
     "Route124_DivingTreasureHuntersHouse"
-  ],
-  "gMapGroup_IndoorPowerPlant": [
-    "PowerPlant_Interior"
   ]
 }

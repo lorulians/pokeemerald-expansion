@@ -6,12 +6,12 @@ RedgeTown_NPCHouse1_EventScript_Woman::
 	release
 	end
 
-RedgeTown_NPCHouse1_EventScript_Skitty::
+RedgeTown_NPCHouse1_EventScript_Glameow::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_SKITTY, CRY_MODE_NORMAL
-	msgbox RedgeTown_NPCHouse1_Text_Skitty, MSGBOX_DEFAULT
+	playmoncry SPECIES_GLAMEOW, CRY_MODE_NORMAL
+	msgbox RedgeTown_NPCHouse1_Text_Glameow, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end
@@ -20,5 +20,5 @@ RedgeTown_NPCHouse1_Text_NothingGoodOnTV:
 	.string "Ugh, there's never anything good\n"
 	.string "on TV, anymore.$"
 
-RedgeTown_NPCHouse1_Text_Skitty:
-	.string "Tiptoe: Nyaa, nyaa!$"
+RedgeTown_NPCHouse1_Text_Glameow:
+	.string "Tiptoe: Mrrreow!$"

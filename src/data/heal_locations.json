@@ -11,14 +11,6 @@
       "respawn_y": 7
     },
     {
-      "id": "HEAL_LOCATION_PETALBURG_CITY",
-      "map": "MAP_PETALBURG_CITY",
-      "x": 20,
-      "y": 17,
-      "respawn_map": "MAP_PETALBURG_CITY_POKEMON_CENTER_1F",
-      "respawn_npc": "LOCALID_PETALBURG_NURSE"
-    },
-    {
       "id": "HEAL_LOCATION_SLATEPORT_CITY",
       "map": "MAP_SLATEPORT_CITY",
       "x": 19,
@@ -39,7 +31,7 @@
       "map": "MAP_TEPEK_CITY",
       "x": 11,
       "y": 33,
-      "respawn_map": "MAP_TEPEK_CITY_POKEMON_CENTER_1F",
+      "respawn_map": "MAP_TEPEK_CITY_POKEMON_CENTER",
       "respawn_npc": "LOCALID_TEPEK_NURSE"
     },
     {
@@ -166,6 +158,14 @@
       "y": 52,
       "respawn_map": "MAP_BATTLE_FRONTIER_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_FRONTIER_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_EADICH_TOWN",
+      "map": "MAP_EADICH_TOWN",
+      "x": 14,
+      "y": 20,
+      "respawn_map": "MAP_EADICH_TOWN_POKEMON_CENTER",
+      "respawn_npc": "LOCALID_EADICH_NURSE"
     }
   ]
 }

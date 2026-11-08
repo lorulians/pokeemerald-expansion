@@ -109,8 +109,8 @@ u16 GetNumFansOfPlayerInTrainerFanClub(void);
 
 static void RecordCyclingRoadResults(u32, u8);
 static void LoadLinkPartnerObjectEventSpritePalette(u16, u8, u8);
-static void Task_PetalburgGymSlideOpenRoomDoors(u8);
-static void PetalburgGymSetDoorMetatiles(u8, u16);
+static void Task_EadichGymSlideOpenRoomDoors(u8);
+static void EadichGymSetDoorMetatiles(u8, u16);
 static void Task_PCTurnOnEffect(u8);
 static void PCTurnOnEffect(struct Task *);
 static void PCTurnOnEffect_SetMetatile(s16, s8, s8);
@@ -434,31 +434,6 @@ bool32 ShouldDoScottBattleFrontierCall(void)
         case MAP_TYPE_ROUTE:
         case MAP_TYPE_OCEAN_ROUTE:
             if (++(*GetVarPointer(VAR_SCOTT_BF_CALL_STEP_COUNTER)) < 10)
-                return FALSE;
-            break;
-        default:
-            return FALSE;
-        }
-    }
-    else
-    {
-        return FALSE;
-    }
-
-    return TRUE;
-}
-
-bool32 ShouldDoCiellusCall(void)
-{
-    if (FlagGet(FLAG_ENABLE_CIELLUS_FIRST_CALL))
-    {
-        switch (gMapHeader.mapType)
-        {
-        case MAP_TYPE_TOWN:
-        case MAP_TYPE_CITY:
-        case MAP_TYPE_ROUTE:
-        case MAP_TYPE_OCEAN_ROUTE:
-            if (++(*GetVarPointer(VAR_CIELLUS_CALL_STEP_COUNTER)) < 250)
                 return FALSE;
             break;
         default:
@@ -806,29 +781,29 @@ void MauvilleGymDeactivatePuzzle(void)
 
 static const bool8 sSlidingDoorNextFrameDelay[] = {0, 1, 1, 1, 1};
 
-static const u16 sPetalburgGymSlidingDoorMetatiles[] = {
-    METATILE_PetalburgGym_SlidingDoor_Frame0,
-    METATILE_PetalburgGym_SlidingDoor_Frame1,
-    METATILE_PetalburgGym_SlidingDoor_Frame2,
-    METATILE_PetalburgGym_SlidingDoor_Frame3,
-    METATILE_PetalburgGym_SlidingDoor_Frame4,
+static const u16 sEadichGymSlidingDoorMetatiles[] = {
+    METATILE_EadichGym_SlidingDoor_Frame0,
+    METATILE_EadichGym_SlidingDoor_Frame1,
+    METATILE_EadichGym_SlidingDoor_Frame2,
+    METATILE_EadichGym_SlidingDoor_Frame3,
+    METATILE_EadichGym_SlidingDoor_Frame4,
 };
 
-void PetalburgGymSlideOpenRoomDoors(void)
+void EadichGymSlideOpenRoomDoors(void)
 {
     sSlidingDoorNextFrameCounter = 0;
     sSlidingDoorFrame = 0;
     PlaySE(SE_UNLOCK);
-    CreateTask(Task_PetalburgGymSlideOpenRoomDoors, 8);
+    CreateTask(Task_EadichGymSlideOpenRoomDoors, 8);
 }
 
-static void Task_PetalburgGymSlideOpenRoomDoors(u8 taskId)
+static void Task_EadichGymSlideOpenRoomDoors(u8 taskId)
 {
     if (sSlidingDoorNextFrameDelay[sSlidingDoorFrame] == sSlidingDoorNextFrameCounter)
     {
-        PetalburgGymSetDoorMetatiles(gSpecialVar_0x8004, sPetalburgGymSlidingDoorMetatiles[sSlidingDoorFrame]);
+        EadichGymSetDoorMetatiles(gSpecialVar_0x8004, sEadichGymSlidingDoorMetatiles[sSlidingDoorFrame]);
         sSlidingDoorNextFrameCounter = 0;
-        if ((++sSlidingDoorFrame) == ARRAY_COUNT(sPetalburgGymSlidingDoorMetatiles))
+        if ((++sSlidingDoorFrame) == ARRAY_COUNT(sEadichGymSlidingDoorMetatiles))
         {
             DestroyTask(taskId);
             ScriptContext_Enable();
@@ -840,7 +815,7 @@ static void Task_PetalburgGymSlideOpenRoomDoors(u8 taskId)
     }
 }
 
-static void PetalburgGymSetDoorMetatiles(u8 roomNumber, u16 metatileId)
+static void EadichGymSetDoorMetatiles(u8 roomNumber, u16 metatileId)
 {
     u16 doorCoordsX[4];
     u16 doorCoordsY[4];
@@ -905,9 +880,9 @@ static void PetalburgGymSetDoorMetatiles(u8 roomNumber, u16 metatileId)
     DrawWholeMapView();
 }
 
-void PetalburgGymUnlockRoomDoors(void)
+void EadichGymUnlockRoomDoors(void)
 {
-    PetalburgGymSetDoorMetatiles(gSpecialVar_0x8004, sPetalburgGymSlidingDoorMetatiles[4]);
+    EadichGymSetDoorMetatiles(gSpecialVar_0x8004, sEadichGymSlidingDoorMetatiles[4]);
 }
 
 void ShowFieldMessageStringVar4(void)
@@ -2052,10 +2027,10 @@ bool8 UsedPokemonCenterWarp(void)
         MAP_FALLARBOR_TOWN_POKEMON_CENTER_1F,
         MAP_VERDANTURF_TOWN_POKEMON_CENTER_1F,
         MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_1F,
-        MAP_PETALBURG_CITY_POKEMON_CENTER_1F,
+        MAP_EADICH_TOWN_POKEMON_CENTER,
         MAP_SLATEPORT_CITY_POKEMON_CENTER_1F,
         MAP_MAUVILLE_CITY_POKEMON_CENTER_1F,
-        MAP_TEPEK_CITY_POKEMON_CENTER_1F,
+        MAP_TEPEK_CITY_POKEMON_CENTER,
         MAP_FORTREE_CITY_POKEMON_CENTER_1F,
         MAP_LILYCOVE_CITY_POKEMON_CENTER_1F,
         MAP_MOSSDEEP_CITY_POKEMON_CENTER_1F,
@@ -3544,7 +3519,8 @@ u32 GetMartEmployeeObjectEventId(void)
         { MAP_GROUP(MAP_LAVARIDGE_TOWN_MART),  MAP_NUM(MAP_LAVARIDGE_TOWN_MART),  LOCALID_LAVARIDGE_MART_CLERK },
         { MAP_GROUP(MAP_FALLARBOR_TOWN_MART),  MAP_NUM(MAP_FALLARBOR_TOWN_MART),  LOCALID_FALLARBOR_MART_CLERK },
         { MAP_GROUP(MAP_VERDANTURF_TOWN_MART), MAP_NUM(MAP_VERDANTURF_TOWN_MART), LOCALID_VERDANTURF_MART_CLERK },
-        { MAP_GROUP(MAP_PETALBURG_CITY_MART),  MAP_NUM(MAP_PETALBURG_CITY_MART),  LOCALID_PETALBURG_MART_CLERK },
+        { MAP_GROUP(MAP_EADICH_TOWN),  MAP_NUM(MAP_EADICH_TOWN),  LOCALID_EADICH_TOWN_CLERK_1 },
+        { MAP_GROUP(MAP_EADICH_TOWN),  MAP_NUM(MAP_EADICH_TOWN),  LOCALID_EADICH_TOWN_CLERK_2 },
         { MAP_GROUP(MAP_SLATEPORT_CITY_MART),  MAP_NUM(MAP_SLATEPORT_CITY_MART),  LOCALID_SLATEPORT_MART_CLERK },
         { MAP_GROUP(MAP_MAUVILLE_CITY_MART),   MAP_NUM(MAP_MAUVILLE_CITY_MART),   LOCALID_MAUVILLE_MART_CLERK },
         { MAP_GROUP(MAP_TEPEK_CITY_MART),   MAP_NUM(MAP_TEPEK_CITY_MART),   LOCALID_TEPEK_MART_CLERK },
@@ -3829,11 +3805,11 @@ void GetBattlePyramidHint(void)
 }
 
 // Used to avoid a potential softlock if the player respawns on Dewford with no way off
-void ResetHealLocationFromDewford(void)
-{
-    if (gSaveBlock1Ptr->lastHealLocation.mapGroup == MAP_GROUP(MAP_DEWFORD_TOWN) && gSaveBlock1Ptr->lastHealLocation.mapNum == MAP_NUM(MAP_DEWFORD_TOWN))
-        SetLastHealLocationWarp(HEAL_LOCATION_PETALBURG_CITY);
-}
+// void ResetHealLocationFromDewford(void)
+// {
+    // if (gSaveBlock1Ptr->lastHealLocation.mapGroup == MAP_GROUP(MAP_DEWFORD_TOWN) && gSaveBlock1Ptr->lastHealLocation.mapNum == MAP_NUM(MAP_DEWFORD_TOWN))
+        // SetLastHealLocationWarp(HEAL_LOCATION_EADICH_TOWN);
+// }
 
 bool8 InPokemonCenter(void)
 {
@@ -3845,10 +3821,10 @@ bool8 InPokemonCenter(void)
         MAP_FALLARBOR_TOWN_POKEMON_CENTER_1F,
         MAP_VERDANTURF_TOWN_POKEMON_CENTER_1F,
         MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_1F,
-        MAP_PETALBURG_CITY_POKEMON_CENTER_1F,
+        MAP_EADICH_TOWN_POKEMON_CENTER,
         MAP_SLATEPORT_CITY_POKEMON_CENTER_1F,
         MAP_MAUVILLE_CITY_POKEMON_CENTER_1F,
-        MAP_TEPEK_CITY_POKEMON_CENTER_1F,
+        MAP_TEPEK_CITY_POKEMON_CENTER,
         MAP_FORTREE_CITY_POKEMON_CENTER_1F,
         MAP_LILYCOVE_CITY_POKEMON_CENTER_1F,
         MAP_MOSSDEEP_CITY_POKEMON_CENTER_1F,

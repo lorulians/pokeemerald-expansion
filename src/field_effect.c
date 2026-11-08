@@ -1056,7 +1056,7 @@ bool8 FldEff_PokecenterHeal(void)
     nPokemon = (OW_IGNORE_EGGS_ON_HEAL <= GEN_3) ? CalculatePlayerPartyCount() : CountPartyNonEggMons();
     task = &gTasks[CreateTask(Task_PokecenterHeal, 0xff)];
     task->tNumMons = nPokemon;
-    task->tFirstBallX = 93;
+    task->tFirstBallX = 77;
     task->tFirstBallY = 36;
     task->tMonitorX = 124;
     task->tMonitorY = 24;
@@ -1112,7 +1112,7 @@ bool8 FldEff_HallOfFameRecord(void)
     nPokemon = CalculatePlayerPartyCount();
     task = &gTasks[CreateTask(Task_HallOfFameRecord, 0xff)];
     task->tNumMons = nPokemon;
-    task->tFirstBallX = 117;
+    task->tFirstBallX = 120;
     task->tFirstBallY = 52;
     return FALSE;
 }

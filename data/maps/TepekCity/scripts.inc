@@ -257,12 +257,12 @@ TepekCity_EventScript_Herdier::
 	release
 	end
 
-TepekCity_EventScript_ParkSkwovet::
+TepekCity_EventScript_ParkPachi::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_SKWOVET, CRY_MODE_NORMAL
-	msgbox TepekCity_Text_ParkSkwovet, MSGBOX_NPC
+	playmoncry SPECIES_PACHIRISU, CRY_MODE_NORMAL
+	msgbox TepekCity_Text_ParkPachirisu, MSGBOX_NPC
 	waitmoncry
 	release
 	end
@@ -406,7 +406,7 @@ TepekCity_Text_TepekFatManPowerBack:
 TepekCity_EventScript_ParkGirl::
 	lock
 	faceplayer
-	msgbox TepekCity_Text_RacingMySkwovet, MSGBOX_NPC
+	msgbox TepekCity_Text_RacingMyPachirisu, MSGBOX_NPC
 	release
 	end
 
@@ -512,22 +512,22 @@ TepekCity_EventScript_JudeRivalBattle::
 	delay 10
 	msgbox TepekCity_Text_JudeLetsBattle, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
-	case 0, TepekCity_EventScript_StartJudeBattleSnivy
-	case 1, TepekCity_EventScript_StartJudeBattleScorbunny
-	case 2, TepekCity_EventScript_StartJudeBattleSquirtle
+	case 0, TepekCity_EventScript_StartJudeBattleBulbasaur
+	case 1, TepekCity_EventScript_StartJudeBattleChimchar
+	case 2, TepekCity_EventScript_StartJudeBattleOshawott
 
-TepekCity_EventScript_StartJudeBattleSnivy::
-	trainerbattle_no_intro TRAINER_JUDE_TEPEK_CITY_SNIVY, TepekCity_Text_JudeDefeated
+TepekCity_EventScript_StartJudeBattleBulbasaur::
+	trainerbattle_no_intro TRAINER_JUDE_TEPEK_CITY_BULBASAUR, TepekCity_Text_JudeDefeated
 	goto TepekCity_EventScript_AfterJudeBattle
 	end
 
-TepekCity_EventScript_StartJudeBattleScorbunny::
-	trainerbattle_no_intro TRAINER_JUDE_TEPEK_CITY_SCORBUNNY, TepekCity_Text_JudeDefeated
+TepekCity_EventScript_StartJudeBattleChimchar::
+	trainerbattle_no_intro TRAINER_JUDE_TEPEK_CITY_CHIMCHAR, TepekCity_Text_JudeDefeated
 	goto TepekCity_EventScript_AfterJudeBattle
 	end
 
-TepekCity_EventScript_StartJudeBattleSquirtle::
-	trainerbattle_no_intro TRAINER_JUDE_TEPEK_CITY_SQUIRTLE, TepekCity_Text_JudeDefeated
+TepekCity_EventScript_StartJudeBattleOshawott::
+	trainerbattle_no_intro TRAINER_JUDE_TEPEK_CITY_OSHAWOTT, TepekCity_Text_JudeDefeated
 	goto TepekCity_EventScript_AfterJudeBattle
 	end
 
@@ -884,13 +884,13 @@ TepekCity_Text_ParkPikachu:
 TepekCity_Text_Herdier:
 	.string "Bessie: Rrrrruff!!$"
 
-TepekCity_Text_RacingMySkwovet:
-	.string "Me and my Skwovet are having\n"
+TepekCity_Text_RacingMyPachirisu:
+	.string "Me and my Pachirisu are having\n"
 	.string "a race!\p"
 	.string "He's winning.$"
 
-TepekCity_Text_ParkSkwovet:
-	.string "Appi: Chchchcha!$"
+TepekCity_Text_ParkPachirisu:
+	.string "Appi: Pachi pa!$"
 
 TepekCity_Text_GameBoyKidLeft:
 	.string "Me and my friend are trading\n"

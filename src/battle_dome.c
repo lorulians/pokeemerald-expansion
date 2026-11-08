@@ -2520,8 +2520,6 @@ static u8 GetDomeTrainerMonIvs(u16 trainerId)
         fixedIv = 3;
     else if (trainerId <= FRONTIER_TRAINER_CHLOE)   // 100 - 119
         fixedIv = 6;
-    else if (trainerId <= FRONTIER_TRAINER_SOFIA)   // 120 - 139
-        fixedIv = 9;
     else if (trainerId <= FRONTIER_TRAINER_JAZLYN)  // 140 - 159
         fixedIv = 12;
     else if (trainerId <= FRONTIER_TRAINER_ALISON)  // 160 - 179

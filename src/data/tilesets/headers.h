@@ -14,15 +14,15 @@ const struct Tileset gTileset_General =
     .callback = InitTilesetAnim_General,
 };
 
-const struct Tileset gTileset_Petalburg =
+const struct Tileset gTileset_Eadich =
 {
     .isCompressed = TRUE,
     .isSecondary = TRUE,
-    .tiles = gTilesetTiles_Petalburg,
-    .palettes = gTilesetPalettes_Petalburg,
-    .metatiles = gMetatiles_Petalburg,
-    .metatileAttributes = gMetatileAttributes_Petalburg,
-    .callback = InitTilesetAnim_Petalburg,
+    .tiles = gTilesetTiles_Eadich,
+    .palettes = gTilesetPalettes_Eadich,
+    .metatiles = gMetatiles_Eadich,
+    .metatileAttributes = gMetatileAttributes_Eadich,
+    .callback = InitTilesetAnim_Eadich,
 };
 
 const struct Tileset gTileset_Tepek =
@@ -143,7 +143,7 @@ const struct Tileset gTileset_Pacifidlog =
     .palettes = gTilesetPalettes_Pacifidlog,
     .metatiles = gMetatiles_Pacifidlog,
     .metatileAttributes = gMetatileAttributes_Pacifidlog,
-    .callback = InitTilesetAnim_Pacifidlog,
+    .callback = InitTilesetAnim_Tepek,
 };
 
 const struct Tileset gTileset_Sootopolis =
@@ -498,14 +498,14 @@ const struct Tileset gTileset_Underwater =
     .callback = InitTilesetAnim_Underwater,
 };
 
-const struct Tileset gTileset_PetalburgGym =
+const struct Tileset gTileset_EadichGym =
 {
     .isCompressed = TRUE,
     .isSecondary = TRUE,
-    .tiles = gTilesetTiles_PetalburgGym,
-    .palettes = gTilesetPalettes_PetalburgGym,
-    .metatiles = gMetatiles_PetalburgGym,
-    .metatileAttributes = gMetatileAttributes_PetalburgGym,
+    .tiles = gTilesetTiles_EadichGym,
+    .palettes = gTilesetPalettes_EadichGym,
+    .metatiles = gMetatiles_EadichGym,
+    .metatileAttributes = gMetatileAttributes_EadichGym,
     .callback = NULL,
 };
 

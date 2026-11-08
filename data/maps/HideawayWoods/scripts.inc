@@ -34,7 +34,7 @@ HideawayWoods_EventScript_Sign2::
 	end
 
 HideawayWoods_EventScript_Bill::
-	trainerbattle_single TRAINER_BILL, HideawayWoods_Text_MyWurmple, HideawayWoods_Text_ICouldntWin
+	trainerbattle_single TRAINER_BILL, HideawayWoods_Text_MyWeedle, HideawayWoods_Text_ICouldntWin
 	msgbox HideawayWoods_Text_CatchALotOfPokemon, MSGBOX_AUTOCLOSE
 	end
 
@@ -111,11 +111,11 @@ HideawayWoods_Text_BugsMisunderstood:
 	.string "misunderstood. They don't want to\l"
 	.string "hurt anybody!$"
 
-HideawayWoods_Text_MyWurmple:
-	.string "Look at how many Wurmple I have!$"
+HideawayWoods_Text_MyWeedle:
+	.string "Look at how many Weedle I have!$"
 
 HideawayWoods_Text_ICouldntWin:
-	.string "My Wurmple couldn't win…$"
+	.string "My Weedle couldn't win…$"
 
 HideawayWoods_Text_CatchALotOfPokemon:
 	.string "If you catch a lot of Pokémon, then\n"
@@ -133,11 +133,11 @@ HideawayWoods_Text_AlolaForVacation:
 	.string "take us to Alola for Summer Vacation!$"
 
 HideawayWoods_Text_WatchYourStep:
-	.string "Watch your step! Wild Shroomish and\n"
-	.string "Morelull everywhere!$"
+	.string "Watch your step! Wild Paras\n"
+	.string "everywhere!$"
 
 HideawayWoods_Text_TrippedOverAShroom:
-	.string "I tripped over a Shroomish!$"
+	.string "I tripped over something!$"
 
 HideawayWoods_Text_ScrapedMyKnee:
 	.string "I think I scraped my knee…$"
@@ -192,7 +192,8 @@ HideawayWoods_Text_SharpBeakExplanation:
 HideawayWoods_Text_TrainerTipsExperience:
 	.string "TRAINER TIPS\p"
 	.string "The Exp. Share affects all Pokémon\n"
-	.string "present in the party once a battle ends.\p"
+	.string "present in the party once a battle\l"
+	.string "ends.\p"
 	.string "It can be disabled and reenabled in the\n"
 	.string "Key Items pocket.$"
 

@@ -61,8 +61,8 @@
       "flag": "0"
     },
     {
-      "local_id": "LOCALID_OLDWOMANS_SYLVEON",
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SYLVEON)",
+      "local_id": "LOCALID_OLDWOMANS_UMBREON",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(UMBREON)",
       "x": 20,
       "y": 15,
       "elevation": 0,
@@ -71,7 +71,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RedgeTown_EventScript_Sylveon",
+      "script": "RedgeTown_EventScript_Umbreon",
       "flag": "0"
     },
     {

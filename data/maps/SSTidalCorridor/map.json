@@ -42,32 +42,6 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
-      "x": 9,
-      "y": 2,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "SSTidalCorridor_EventScript_Briney",
-      "flag": "FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_WINGULL",
-      "x": 7,
-      "y": 2,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "SSTidalCorridor_EventScript_Peeko",
-      "flag": "FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY"
-    },
-    {
       "local_id": "LOCALID_SS_TIDAL_SCOTT",
       "graphics_id": "OBJ_EVENT_GFX_SCOTT",
       "x": 9,

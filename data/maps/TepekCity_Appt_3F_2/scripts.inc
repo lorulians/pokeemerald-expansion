@@ -30,7 +30,7 @@ TepekCity_Text_QuickEscape:
 	.string "quick escape!$"
 
 TepekCity_Appt_3F_2_Text_EscapeRopes:
-	.string "Tarountula silk is used to create\n"
+	.string "Bug-type silk is used to create\n"
 	.string "Escape Ropes! Here, have one on the\p"
 	.string "house. Don't be shy!$"
 

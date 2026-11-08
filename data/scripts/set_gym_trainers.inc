@@ -4,7 +4,7 @@ Common_EventScript_SetGymTrainers::
 	case 2, DewfordTown_Gym_SetGymTrainers
 	case 3, MauvilleCity_Gym_SetGymTrainers
 	case 4, LavaridgeTown_Gym_SetGymTrainers
-	case 5, PetalburgCity_Gym_SetGymTrainers
+	case 5, EadichTown_Gym_SetGymTrainers
 	case 6, FortreeCity_Gym_SetGymTrainers
 	case 7, MossdeepCity_Gym_SetGymTrainers
 	case 8, SootopolisCity_Gym_SetGymTrainers
@@ -44,7 +44,7 @@ LavaridgeTown_Gym_SetGymTrainers::
 	settrainerflag TRAINER_ELI
 	return
 
-PetalburgCity_Gym_SetGymTrainers::
+EadichTown_Gym_SetGymTrainers::
 	settrainerflag TRAINER_RANDALL
 	settrainerflag TRAINER_PARKER
 	settrainerflag TRAINER_GEORGE
@@ -66,7 +66,7 @@ FortreeCity_Gym_SetGymTrainers::
 MossdeepCity_Gym_SetGymTrainers::
 	settrainerflag TRAINER_PRESTON
 	settrainerflag TRAINER_VIRGIL
-	settrainerflag TRAINER_BLAKE
+	settrainerflag TRAINER_VIRGIL
 	settrainerflag TRAINER_HANNAH
 	settrainerflag TRAINER_SAMANTHA
 	settrainerflag TRAINER_MAURA

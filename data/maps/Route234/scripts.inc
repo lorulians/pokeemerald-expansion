@@ -1,10 +1,11 @@
 Route234_MapScripts::
-	// map_script MAP_SCRIPT_ON_TRANSITION, Route234_OnTransition
+	map_script MAP_SCRIPT_ON_TRANSITION, Route234_OnTransition
 	// map_script MAP_SCRIPT_ON_LOAD, Route234_OnLoad
 	.byte 0
 
-// Route234_OnTransition:
-	// end
+Route234_OnTransition:
+	call_if_set FLAG_BADGE02_GET, Route234_EventScript_HideRocks
+	end
 
 // Route234_OnLoad:
 	// call_if_set FLAG_SYS_GAME_CLEAR, Route234_EventScript_OpenAlteringCave
@@ -14,6 +15,11 @@ Route234_MapScripts::
 	// setmetatile 45, 5, METATILE_General_CaveEntrance_Top, TRUE
 	// setmetatile 45, 6, METATILE_General_CaveEntrance_Bottom, FALSE
 	// return
+
+Route234_EventScript_HideRocks::
+	setflag FLAG_HIDE_ROUTE_234_ROCKS
+	setflag FLAG_HIDE_ROUTE_234_ENGINEERS
+	end
 
 Route234_EventScript_Man::
 	msgbox Route234_Text_SnotopAndMonpas, MSGBOX_NPC
@@ -88,7 +94,7 @@ Route234_EventScript_FishingGuy::
 	end
 
 Route234_EventScript_GiveOldRod::
-	msgbox Route234_Text_TakeRod, MSGBOX_DEFAULT
+	msgbox Route234_Text_GiveOldRod, MSGBOX_DEFAULT
 	giveitem ITEM_OLD_ROD
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_OLD_ROD
@@ -152,7 +158,7 @@ Route234_Text_WantToFishToo:
 	.string "Hey, want to fish, too?\n"
 	.string "They're biting like mad!$"
 
-Route234_EventScript_GiveOldRod:
+Route234_Text_GiveOldRod:
 	.string "Great! Here, take one of\n"
 	.string "my Old Rods.\p"
 	.string "Don't worry, I got plenty!$"

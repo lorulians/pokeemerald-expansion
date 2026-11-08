@@ -438,11 +438,6 @@ Route111_EventScript_Heidi::
 	msgbox Route111_Text_HeidiPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route111_EventScript_Beau::
-	trainerbattle_single TRAINER_BEAU, Route111_Text_BeauIntro, Route111_Text_BeauDefeat
-	msgbox Route111_Text_BeauPostBattle, MSGBOX_AUTOCLOSE
-	end
-
 Route111_EventScript_Becky::
 	trainerbattle_single TRAINER_BECKY, Route111_Text_BeckyIntro, Route111_Text_BeckyDefeat
 	msgbox Route111_Text_BeckyPostBattle, MSGBOX_AUTOCLOSE

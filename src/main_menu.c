@@ -481,7 +481,7 @@ static const u8 *const sMalePresetNames[] = {
     COMPOUND_STRING("Archie"),
     COMPOUND_STRING("Kaz"),
     COMPOUND_STRING("Anthony"),
-    COMPOUND_STRING("DJ"),
+    COMPOUND_STRING("Tim"),
     COMPOUND_STRING("Miles"),
     COMPOUND_STRING("Norwood"),
 };

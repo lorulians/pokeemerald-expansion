@@ -111,12 +111,12 @@ RedgeTown_EventScript_OldWoman::
 	msgbox RedgeTown_Text_AdmiringScenery, MSGBOX_NPC
 	end
 
-RedgeTown_EventScript_Sylveon::
+RedgeTown_EventScript_Umbreon::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_SYLVEON, CRY_MODE_WEAK
-	msgbox RedgeTown_Text_Sylveon, MSGBOX_NPC
+	playmoncry SPECIES_UMBREON, CRY_MODE_WEAK
+	msgbox RedgeTown_Text_Umbreon, MSGBOX_NPC
 	waitmoncry
 	release
 	end
@@ -367,15 +367,15 @@ RedgeTown_EventScript_GiveRunningShoes::
 RedgeTown_Text_StaySafeHoney:
 	.string "Mom: Stay safe, honey. If your Pokémon\n"
 	.string "need healing, you can come home and\l"
-	.string "rest up."
+	.string "rest up.$"
 
 RedgeTown_EventScript_StarterMovement0::
 	applymovement LOCALID_FOLLOWING_POKEMON, RedgeTown_Movement_StarterApproachMom0
 	waitmovement
 	delay 5
-	call_if_eq VAR_STARTER_MON, 0, RedgeTown_EventScript_SnivyCry
-	call_if_eq VAR_STARTER_MON, 1, RedgeTown_EventScript_ScorbunnyCry
-	call_if_eq VAR_STARTER_MON, 2, RedgeTown_EventScript_SquirtleCry
+	call_if_eq VAR_STARTER_MON, 0, RedgeTown_EventScript_BulbasaurCry
+	call_if_eq VAR_STARTER_MON, 1, RedgeTown_EventScript_ChimcharCry
+	call_if_eq VAR_STARTER_MON, 2, RedgeTown_EventScript_OshawottCry
 	delay 48
 	applymovement LOCALID_REDGE_MOM, Common_Movement_FaceDown
 	waitmovement
@@ -391,9 +391,9 @@ RedgeTown_EventScript_StarterMovement1::
 	applymovement LOCALID_FOLLOWING_POKEMON, RedgeTown_Movement_StarterApproachMom1
 	waitmovement
 	delay 5
-	call_if_eq VAR_STARTER_MON, 0, RedgeTown_EventScript_SnivyCry
-	call_if_eq VAR_STARTER_MON, 1, RedgeTown_EventScript_ScorbunnyCry
-	call_if_eq VAR_STARTER_MON, 2, RedgeTown_EventScript_SquirtleCry
+	call_if_eq VAR_STARTER_MON, 0, RedgeTown_EventScript_BulbasaurCry
+	call_if_eq VAR_STARTER_MON, 1, RedgeTown_EventScript_ChimcharCry
+	call_if_eq VAR_STARTER_MON, 2, RedgeTown_EventScript_OshawottCry
 	delay 48
 	applymovement LOCALID_REDGE_MOM, Common_Movement_FaceUp
 	waitmovement
@@ -409,9 +409,9 @@ RedgeTown_EventScript_StarterMovement2::
 	applymovement LOCALID_FOLLOWING_POKEMON, RedgeTown_Movement_StarterApproachMom2
 	waitmovement
 	delay 5
-	call_if_eq VAR_STARTER_MON, 0, RedgeTown_EventScript_SnivyCry
-	call_if_eq VAR_STARTER_MON, 1, RedgeTown_EventScript_ScorbunnyCry
-	call_if_eq VAR_STARTER_MON, 2, RedgeTown_EventScript_SquirtleCry
+	call_if_eq VAR_STARTER_MON, 0, RedgeTown_EventScript_BulbasaurCry
+	call_if_eq VAR_STARTER_MON, 1, RedgeTown_EventScript_ChimcharCry
+	call_if_eq VAR_STARTER_MON, 2, RedgeTown_EventScript_OshawottCry
 	delay 48
 	applymovement LOCALID_REDGE_MOM, Common_Movement_FaceUp
 	waitmovement
@@ -424,24 +424,24 @@ RedgeTown_EventScript_StarterMovement2::
 	goto RedgeTown_EventScript_GiveRunningShoes
 
 RedgeTown_EventScript_StarterCry::
-	call_if_eq VAR_STARTER_MON, 0, RedgeTown_EventScript_SnivyCry
-	call_if_eq VAR_STARTER_MON, 1, RedgeTown_EventScript_ScorbunnyCry
-	call_if_eq VAR_STARTER_MON, 2, RedgeTown_EventScript_SquirtleCry
+	call_if_eq VAR_STARTER_MON, 0, RedgeTown_EventScript_BulbasaurCry
+	call_if_eq VAR_STARTER_MON, 1, RedgeTown_EventScript_ChimcharCry
+	call_if_eq VAR_STARTER_MON, 2, RedgeTown_EventScript_OshawottCry
 	return
 
-RedgeTown_EventScript_SnivyCry::
+RedgeTown_EventScript_BulbasaurCry::
 	waitse
-	playmoncry SPECIES_SNIVY, CRY_MODE_NORMAL
+	playmoncry SPECIES_BULBASAUR, CRY_MODE_NORMAL
 	return
 
-RedgeTown_EventScript_ScorbunnyCry::
+RedgeTown_EventScript_ChimcharCry::
 	waitse
-	playmoncry SPECIES_SCORBUNNY, CRY_MODE_NORMAL
+	playmoncry SPECIES_CHIMCHAR, CRY_MODE_NORMAL
 	return
 
-RedgeTown_EventScript_SquirtleCry::
+RedgeTown_EventScript_OshawottCry::
 	waitse
-	playmoncry SPECIES_SQUIRTLE, CRY_MODE_NORMAL
+	playmoncry SPECIES_OSHAWOTT, CRY_MODE_NORMAL
 	return
 
 RedgeTown_Text_ExplainPokenav:
@@ -463,7 +463,7 @@ RedgeTown_Text_OneMoreThingForYou:
 RedgeTown_Text_HoldUpPlayer:
 	.string "Mom: Hold on, {PLAYER}!$"
 
-RedgeTown_Text_Sylveon:
+RedgeTown_Text_Umbreon:
 	.string "Silly: Zzz… zzz…$"
 
 RedgeTown_Text_WaitPlayer:

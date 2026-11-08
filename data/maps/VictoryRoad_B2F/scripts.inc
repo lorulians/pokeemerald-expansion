@@ -54,8 +54,7 @@ VictoryRoad_B2F_Text_OwenDefeat:
 	.string "The little shrimp is tough!$"
 
 VictoryRoad_B2F_Text_OwenPostBattle:
-	.string "The rumors I heard, that tough little\n"
-	.string "kid is from PETALBURG CITY.$"
+	.string "kid is from CITY.$"
 
 VictoryRoad_B2F_Text_CarolineIntro:
 	.string "You must be getting a little tired.$"

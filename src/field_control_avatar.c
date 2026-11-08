@@ -712,11 +712,6 @@ static bool8 TryStartStepCountScript(u16 metatileBehavior)
             ScriptContext_SetupScript(Route119_EventScript_ScottWonAtFortreeGymCall);
             return TRUE;
         }
-        if (ShouldDoCiellusCall() == TRUE)
-        {
-            ScriptContext_SetupScript(TepekCity_Gym_EventScript_RegisterCiellus);
-            return TRUE;
-        }
         if (ShouldDoRivalRayquazaCall() == TRUE)
         {
             ScriptContext_SetupScript(MossdeepCity_SpaceCenter_2F_EventScript_RivalRayquazaCall);

@@ -8,18 +8,18 @@ TepekCity_Gym_EventScript_Ciellus::
 	release
 	end
 
-TepekCity_Gym_EventScript_Swablu::
+TepekCity_Gym_EventScript_Pidove::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_SWABLU, CRY_MODE_NORMAL
-	msgbox RedgeTown_Text_Swablu, MSGBOX_NPC
+	playmoncry SPECIES_PIDOVE, CRY_MODE_NORMAL
+	msgbox TepekCity_Text_Pidove, MSGBOX_NPC
 	waitmoncry
 	release
 	end
 
-RedgeTown_Text_Swablu:
-	.string "Stormy: Chiirrp!$"
+TepekCity_Text_Pidove:
+	.string "Stormy: Coo-oo!$"
 
 TepekCity_Gym_EventScript_CiellusDefeated::
 	message TepekCity_Gym_Text_ReceivedFlyingBadge
@@ -29,10 +29,8 @@ TepekCity_Gym_EventScript_CiellusDefeated::
 	setflag FLAG_DEFEATED_TEPEK_GYM
 	setflag FLAG_BADGE01_GET
 	setvar VAR_TEPEK_CITY_STATE, 1
-	addvar VAR_PETALBURG_GYM_STATE, 1
 	setvar VAR_0x8008, 1
 	call Common_EventScript_SetGymTrainers
-	call_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle
 	goto TepekCity_Gym_EventScript_GiveDoubleTeam
 	end
 
@@ -75,12 +73,14 @@ TepekCity_Gym_EventScript_GymGuidePostVictory::
 
 TepekCity_Gym_EventScript_LeftGymStatue::
 	lockall
+	goto_if_set FLAG_BADGE02_GET, TepekCity_Gym_EventScript_GymStatueCertified_2
 	goto_if_set FLAG_BADGE01_GET, TepekCity_Gym_EventScript_GymStatueCertified
 	goto TepekCity_Gym_EventScript_GymStatue
 	end
 
 TepekCity_Gym_EventScript_RightGymStatue::
 	lockall
+	goto_if_set FLAG_BADGE02_GET, TepekCity_Gym_EventScript_GymStatueCertified_2
 	goto_if_set FLAG_BADGE01_GET, TepekCity_Gym_EventScript_GymStatueCertified
 	goto TepekCity_Gym_EventScript_GymStatue
 	end
@@ -90,23 +90,13 @@ TepekCity_Gym_EventScript_GymStatueCertified::
 	releaseall
 	end
 
-TepekCity_Gym_EventScript_GymStatue::
-	msgbox TepekCity_Gym_Text_GymStatue, MSGBOX_DEFAULT
+TepekCity_Gym_EventScript_GymStatueCertified_2::
+	msgbox TepekCity_Gym_Text_GymStatueCertified_2, MSGBOX_DEFAULT
 	releaseall
 	end
 
-TepekCity_Gym_EventScript_RegisterCiellus::
-	lockall
-	pokenavcall TepekCity_Gym_Text_CiellusRegisterCall
-	waitmessage
-	delay 30
-	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox TepekCity_Gym_Text_RegisteredCiellus, MSGBOX_DEFAULT
-	waitfanfare
-	closemessage
-	delay 30
-	setflag FLAG_ENABLE_CIELLUS_MATCH_CALL
-	clearflag FLAG_ENABLE_CIELLUS_FIRST_CALL
+TepekCity_Gym_EventScript_GymStatue::
+	msgbox TepekCity_Gym_Text_GymStatue, MSGBOX_DEFAULT
 	releaseall
 	end
 
@@ -216,18 +206,7 @@ TepekCity_Gym_Text_GymStatueCertified:
 	.string "Ciellus' Certified Trainers:\n"
 	.string "{PLAYER}$"
 
-TepekCity_Gym_Text_CiellusRegisterCall:
-	.string "… … … … … …\n"
-	.string "… … … … … Beep!\p"
-	.string "Ciellus: Oh, hey, {PLAYER}?\n"
-	.string "This is Ciellus, remember me?\p"
-	.string "I'm working on training my team\n"
-	.string "so one day we can have another\l"
-	.string "battle!$"
-	.string "I'll beat you next time!\p"
-	.string "… … … … … …\n"
-	.string "… … … … … Click!$"
-
-TepekCity_Gym_Text_RegisteredCiellus:
-	.string "Registered Gym Leader Ciellus\n"
-	.string "in the PokéNav.$"
+TepekCity_Gym_Text_GymStatueCertified_2:
+	.string "Tepek City Pokémon Gym\p"
+	.string "Ciellus' Certified Trainers:\n"
+	.string "{PLAYER}$"

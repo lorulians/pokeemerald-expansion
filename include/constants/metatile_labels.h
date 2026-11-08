@@ -143,6 +143,23 @@
 #define METATILE_Dewford_Door              0x225
 #define METATILE_Dewford_Door_BattleTower  0x25D
 
+// gTileset_Eadich
+#define METATILE_Eadich_Door_CedarsLab        0x249
+#define METATILE_Eadich_Door_Oldale           0x287
+#define METATILE_Eadich_Door_PowerPlantLeft   0x320
+#define METATILE_Eadich_Door_PowerPlantRight  0x2CF
+#define METATILE_Eadich_Door_Redge            0x248
+
+// gTileset_EadichGym
+#define METATILE_EadichGym_Door                0x224
+#define METATILE_EadichGym_RoomEntrance_Left   0x210
+#define METATILE_EadichGym_RoomEntrance_Right  0x211
+#define METATILE_EadichGym_SlidingDoor_Frame0  0x218
+#define METATILE_EadichGym_SlidingDoor_Frame1  0x219
+#define METATILE_EadichGym_SlidingDoor_Frame2  0x21A
+#define METATILE_EadichGym_SlidingDoor_Frame3  0x21B
+#define METATILE_EadichGym_SlidingDoor_Frame4  0x21C
+
 // gTileset_EliteFour
 #define METATILE_EliteFour_EntryDoor_ClosedBottom    0x20E
 #define METATILE_EliteFour_EntryDoor_ClosedTop       0x206
@@ -386,23 +403,6 @@
 #define METATILE_Pacifidlog_SubmergedLogs_HorizontalRight      0x255
 #define METATILE_Pacifidlog_SubmergedLogs_VerticalBottom       0x262
 #define METATILE_Pacifidlog_SubmergedLogs_VerticalTop          0x25A
-
-// gTileset_Petalburg
-#define METATILE_Petalburg_Door_CedarsLab        0x249
-#define METATILE_Petalburg_Door_Oldale           0x287
-#define METATILE_Petalburg_Door_PowerPlantLeft   0x320
-#define METATILE_Petalburg_Door_PowerPlantRight  0x2CF
-#define METATILE_Petalburg_Door_Redge            0x248
-
-// gTileset_PetalburgGym
-#define METATILE_PetalburgGym_Door                0x224
-#define METATILE_PetalburgGym_RoomEntrance_Left   0x210
-#define METATILE_PetalburgGym_RoomEntrance_Right  0x211
-#define METATILE_PetalburgGym_SlidingDoor_Frame0  0x218
-#define METATILE_PetalburgGym_SlidingDoor_Frame1  0x219
-#define METATILE_PetalburgGym_SlidingDoor_Frame2  0x21A
-#define METATILE_PetalburgGym_SlidingDoor_Frame3  0x21B
-#define METATILE_PetalburgGym_SlidingDoor_Frame4  0x21C
 
 // gTileset_PokemonCenter
 #define METATILE_PokemonCenter_CounterBarrier            0x25D

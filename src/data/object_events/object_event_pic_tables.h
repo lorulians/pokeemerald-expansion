@@ -197,6 +197,30 @@ static const struct SpriteFrameImage sPicTable_Engineer[] = {
     overworld_frame(gObjectEventPic_Engineer, 2, 4, 8),
 };
 
+static const struct SpriteFrameImage sPicTable_Farmer[] = {
+    overworld_frame(gObjectEventPic_Farmer, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Farmer, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Farmer, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Farmer, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Farmer, 2, 4, 4),
+    overworld_frame(gObjectEventPic_Farmer, 2, 4, 5),
+    overworld_frame(gObjectEventPic_Farmer, 2, 4, 6),
+    overworld_frame(gObjectEventPic_Farmer, 2, 4, 7),
+    overworld_frame(gObjectEventPic_Farmer, 2, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_FarmerF[] = {
+    overworld_frame(gObjectEventPic_FarmerF, 2, 4, 0),
+    overworld_frame(gObjectEventPic_FarmerF, 2, 4, 1),
+    overworld_frame(gObjectEventPic_FarmerF, 2, 4, 2),
+    overworld_frame(gObjectEventPic_FarmerF, 2, 4, 3),
+    overworld_frame(gObjectEventPic_FarmerF, 2, 4, 4),
+    overworld_frame(gObjectEventPic_FarmerF, 2, 4, 5),
+    overworld_frame(gObjectEventPic_FarmerF, 2, 4, 6),
+    overworld_frame(gObjectEventPic_FarmerF, 2, 4, 7),
+    overworld_frame(gObjectEventPic_FarmerF, 2, 4, 8),
+};
+
 static const struct SpriteFrameImage sPicTable_BugCatcher[] = {
     overworld_ascending_frames(gObjectEventPic_BugCatcher, 2, 4),
 };

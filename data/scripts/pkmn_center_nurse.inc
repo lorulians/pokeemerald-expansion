@@ -9,6 +9,15 @@ Common_EventScript_PkmnCenterNurse::
 	goto_if_eq VAR_RESULT, NO, EventScript_PkmnCenterNurse_Goodbye
 	end
 
+Common_EventScript_PkmnCenterAudino::
+	lock
+	waitse
+	playmoncry SPECIES_AUDINO, CRY_MODE_NORMAL
+	msgbox gText_PkmnCenterAudino, MSGBOX_NPC
+	waitmoncry
+	release
+	end
+
 EventScript_PkmnCenterNurse_Goodbye::
 	message gText_WeHopeToSeeYouAgain
 	return
@@ -34,7 +43,9 @@ EventScript_PkmnCenterNurse_IllTakeYourPkmn2::
 
 EventScript_PkmnCenterNurse_TakeAndHealPkmn::
 	hidefollower 0
-	applymovement VAR_0x800B, Movement_PkmnCenterNurse_Turn
+	applymovement VAR_0x800B, Movement_PkmnCenterNurse_Turn_Left
+	waitmovement 0
+	applymovement VAR_0x800A, Movement_PkmnCenterAudino_Turn_Left
 	waitmovement 0
 	dofieldeffect FLDEFF_POKECENTER_HEAL
 .if OW_UNION_DISABLE_CHECK == FALSE && OW_FLAG_MOVE_UNION_ROOM_CHECK != 0
@@ -43,6 +54,11 @@ EventScript_PkmnCenterNurse_TakeAndHealPkmn::
 	clearflag OW_FLAG_MOVE_UNION_ROOM_CHECK
 .endif
 	waitfieldeffect FLDEFF_POKECENTER_HEAL
+	applymovement VAR_0x800A, Movement_PkmnCenterAudino_Turn_Right
+	waitmovement 0
+	applymovement VAR_0x800B, Movement_PkmnCenterNurse_Turn_Left_2
+	waitmovement 0
+	applymovement VAR_0x800A, Common_Movement_WalkInPlaceFasterDown
 	applymovement VAR_0x800B, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	special HealPlayerParty
@@ -128,6 +144,30 @@ Movement_PkmnCenterNurse_Bow:
 	delay_4
 	step_end
 
-Movement_PkmnCenterNurse_Turn:
+Movement_PkmnCenterNurse_Turn_Left:
 	walk_in_place_faster_left
+	delay_16
+	step_end
+
+Movement_PkmnCenterAudino_Turn_Left:
+	walk_in_place_faster_right
+	delay_16
+	walk_in_place_faster_down
+	delay_16
+	walk_in_place_faster_left
+	delay_16
+	step_end
+
+Movement_PkmnCenterAudino_Turn_Right:
+	walk_in_place_faster_left
+	delay_16
+	walk_in_place_faster_down
+	delay_16
+	walk_in_place_faster_right
+	delay_16
+	step_end
+
+Movement_PkmnCenterNurse_Turn_Left_2:
+	walk_in_place_faster_left
+	delay_16
 	step_end

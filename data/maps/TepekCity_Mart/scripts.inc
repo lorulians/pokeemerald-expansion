@@ -61,9 +61,9 @@ TepekCity_Mart_EventScript_Camper::
 
 TepekCity_Mart_Text_LetsRecoup:
 	.string "Alright, so we have the Antidotes\n"
-	.string "in case of Shroomish, the Paralyze\p"
-	.string "Heals in case of Shroomish…\n"
-	.string "Do we need anything else$"
+	.string "in case of Paras, the Paralyze\p"
+	.string "Heals in case of Paras…\n"
+	.string "Do we need anything else?$"
 
 TepekCity_Mart_Text_MartsChangeStock:
 	.string "Different Marts have different\n"
@@ -72,5 +72,5 @@ TepekCity_Mart_Text_MartsChangeStock:
 
 TepekCity_Mart_Text_IThinkWereGood:
 	.string "What about Repels? You know, in\n"
-	.string "case of Shroomish?$"
+	.string "case of Paras?$"
 

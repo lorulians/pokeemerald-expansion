@@ -83,7 +83,7 @@
       "flag": "0"
     },
     {
-      "local_id": "LOCALID_SNIVY_POKEBALL",
+      "local_id": "LOCALID_BULBASAUR_POKEBALL",
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
       "x": 7,
       "y": 1,
@@ -93,11 +93,11 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RedgeTown_ProfessorCedarsLab_EventScript_SnivyPokeball",
-      "flag": "FLAG_HIDE_SNIVY_POKEBALL"
+      "script": "RedgeTown_ProfessorCedarsLab_EventScript_BulbasaurPokeball",
+      "flag": "FLAG_HIDE_BULBASAUR_POKEBALL"
     },
     {
-      "local_id": "LOCALID_SQUIRTLE_POKEBALL",
+      "local_id": "LOCALID_OSHAWOTT_POKEBALL",
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
       "x": 9,
       "y": 1,
@@ -107,11 +107,11 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RedgeTown_ProfessorCedarsLab_EventScript_SquirtlePokeball",
-      "flag": "FLAG_HIDE_SQUIRTLE_POKEBALL"
+      "script": "RedgeTown_ProfessorCedarsLab_EventScript_OshawottPokeball",
+      "flag": "FLAG_HIDE_OSHAWOTT_POKEBALL"
     },
     {
-      "local_id": "LOCALID_SCORBUNNY_POKEBALL",
+      "local_id": "LOCALID_CHIMCHAR_POKEBALL",
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
       "x": 8,
       "y": 1,
@@ -121,8 +121,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RedgeTown_ProfessorCedarsLab_EventScript_ScorbunnyPokeball",
-      "flag": "FLAG_HIDE_SCORBUNNY_POKEBALL"
+      "script": "RedgeTown_ProfessorCedarsLab_EventScript_ChimcharPokeball",
+      "flag": "FLAG_HIDE_CHIMCHAR_POKEBALL"
     }
   ],
   "warp_events": [

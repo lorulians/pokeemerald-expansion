@@ -31,24 +31,24 @@ PowerPlant_Interior_EventScript_TriGruntF2::
 	msgbox PowerPlant_Interior_Text_TriGruntF2Battle, MSGBOX_AUTOCLOSE
 	end
 
-PowerPlant_Interior_EventScript_Charjabug::
+PowerPlant_Interior_EventScript_Raichu::
 	lock
 	faceplayer
-	call_if_eq VAR_POWER_PLANT_RESTORED, 2, PowerPlant_Interior_EventScript_CharjabugRestored
-	call_if_le VAR_POWER_PLANT_RESTORED, 1, PowerPlant_Interior_EventScript_CharjabugStuck
+	call_if_eq VAR_POWER_PLANT_RESTORED, 2, PowerPlant_Interior_EventScript_RaichuRestored
+	call_if_le VAR_POWER_PLANT_RESTORED, 1, PowerPlant_Interior_EventScript_RaichuStuck
 
-PowerPlant_Interior_EventScript_CharjabugRestored::
+PowerPlant_Interior_EventScript_RaichuRestored::
 	waitse
-	playmoncry SPECIES_CHARJABUG, CRY_MODE_NORMAL
-	msgbox PowerPlant_Interior_Text_CharjabugRestored, MSGBOX_NPC
+	playmoncry SPECIES_RAICHU, CRY_MODE_NORMAL
+	msgbox PowerPlant_Interior_Text_RaichuRestored, MSGBOX_NPC
 	waitmoncry
 	release
 	end
 
-PowerPlant_Interior_EventScript_CharjabugStuck::
+PowerPlant_Interior_EventScript_RaichuStuck::
 	waitse
-	playmoncry SPECIES_CHARJABUG, CRY_MODE_WEAK
-	msgbox PowerPlant_Interior_Text_CharjabugStuck, MSGBOX_NPC
+	playmoncry SPECIES_RAICHU, CRY_MODE_WEAK
+	msgbox PowerPlant_Interior_Text_RaichuStuck, MSGBOX_NPC
 	waitmoncry
 	release
 	end
@@ -198,9 +198,12 @@ PowerPlant_Interior_EventScript_EncounterGunter0::
     applymovement LOCALID_POWERPLANT_GUNTER_JOLTEON, PowerPlant_Interior_Movement_WalkToPlayer0
 	waitmovement
 	msgbox PowerPlant_Interior_Text_TeamTrisGoal, MSGBOX_DEFAULT
-	waitmessage
-    applymovement LOCALID_PP_INT_ADMIN_GUNTER, Common_Movement_WalkInPlaceRight
+	closemessage
+	trainerbattle_single TRAINER_GUNTER_POWER_PLANT_INT, PowerPlant_Interior_Text_GunterIntro, PowerPlant_Exterior_Text_GunterDefeat, PowerPlant_Interior_EventScript_GunterPostBattle0
+
+PowerPlant_Interior_EventScript_GunterPostBattle0:
 	msgbox PowerPlant_Interior_Text_TakeHMCut, MSGBOX_DEFAULT
+	waitmessage
 	giveitem ITEM_HM_CUT
 	setflag FLAG_RECEIVED_HM_CUT
 	msgbox PowerPlant_Interior_Text_ExplainCut, MSGBOX_DEFAULT
@@ -403,14 +406,16 @@ PowerPlant_Interior_EventScript_EncounterGunter1::
     applymovement LOCALID_POWERPLANT_GUNTER_JOLTEON, PowerPlant_Interior_Movement_WalkToPlayer1
 	waitmovement
 	msgbox PowerPlant_Interior_Text_TeamTrisGoal, MSGBOX_DEFAULT
-	waitmessage
-    applymovement LOCALID_PP_INT_ADMIN_GUNTER, Common_Movement_WalkInPlaceRight
+	closemessage
+	trainerbattle_single TRAINER_GUNTER_POWER_PLANT_INT, PowerPlant_Interior_Text_GunterIntro, PowerPlant_Exterior_Text_GunterDefeat, PowerPlant_Interior_EventScript_GunterPostBattle1
+
+PowerPlant_Interior_EventScript_GunterPostBattle1::
 	msgbox PowerPlant_Interior_Text_TakeHMCut, MSGBOX_DEFAULT
+	waitmessage
 	giveitem ITEM_HM_CUT
 	setflag FLAG_RECEIVED_HM_CUT
 	msgbox PowerPlant_Interior_Text_ExplainCut, MSGBOX_DEFAULT
 	msgbox PowerPlant_Interior_Text_NotWorthTheTime, MSGBOX_DEFAULT
-	closemessage
     applymovement LOCALID_PP_INT_ADMIN_GUNTER, PowerPlant_Interior_Movement_LeaveGunter1
     applymovement LOCALID_POWERPLANT_GUNTER_JOLTEON, PowerPlant_Interior_Movement_LeaveJolteon1
 	waitmovement
@@ -447,9 +452,15 @@ PowerPlant_Interior_EventScript_EncounterGunter2::
     applymovement LOCALID_POWERPLANT_GUNTER_JOLTEON, PowerPlant_Interior_Movement_WalkToPlayer2
 	waitmovement
 	msgbox PowerPlant_Interior_Text_TeamTrisGoal, MSGBOX_DEFAULT
-	waitmessage
-    applymovement LOCALID_PP_INT_ADMIN_GUNTER, Common_Movement_WalkInPlaceRight
+	closemessage
+	trainerbattle_single TRAINER_GUNTER_POWER_PLANT_INT, PowerPlant_Interior_Text_GunterIntro, PowerPlant_Exterior_Text_GunterDefeat, PowerPlant_Interior_EventScript_GunterPostBattle2
+
+PowerPlant_Exterior_Text_GunterDefeat:
+	.string "You've got some nerve…$"
+
+PowerPlant_Interior_EventScript_GunterPostBattle2::
 	msgbox PowerPlant_Interior_Text_TakeHMCut, MSGBOX_DEFAULT
+	waitmessage
 	giveitem ITEM_HM_CUT
 	setflag FLAG_RECEIVED_HM_CUT
 	msgbox PowerPlant_Interior_Text_ExplainCut, MSGBOX_DEFAULT
@@ -481,9 +492,12 @@ PowerPlant_Interior_EventScript_EncounterGunter3::
     applymovement LOCALID_POWERPLANT_GUNTER_JOLTEON, PowerPlant_Interior_Movement_WalkToPlayer3
 	waitmovement
 	msgbox PowerPlant_Interior_Text_TeamTrisGoal, MSGBOX_DEFAULT
-	waitmessage
-    applymovement LOCALID_PP_INT_ADMIN_GUNTER, Common_Movement_WalkInPlaceRight
+	closemessage
+	trainerbattle_single TRAINER_GUNTER_POWER_PLANT_INT, PowerPlant_Interior_Text_GunterIntro, PowerPlant_Exterior_Text_GunterDefeat, PowerPlant_Interior_EventScript_GunterPostBattle3
+
+PowerPlant_Interior_EventScript_GunterPostBattle3::
 	msgbox PowerPlant_Interior_Text_TakeHMCut, MSGBOX_DEFAULT
+	waitmessage
 	giveitem ITEM_HM_CUT
 	setflag FLAG_RECEIVED_HM_CUT
 	msgbox PowerPlant_Interior_Text_ExplainCut, MSGBOX_DEFAULT
@@ -536,9 +550,12 @@ PowerPlant_Interior_Text_KidInHere:
 PowerPlant_Interior_Text_TeamTrisGoal:
 	.string "Gunter: Team Tri's goal is simple:\p"
 	.string "If we control the power, we control\n"
-	.string "the entire Sansuba region.\p"
-	.string "The Power Plant was just the start,\n"
-	.string "you'll see.$"
+	.string "the entire Sansuba region.$"
+
+PowerPlant_Interior_Text_GunterIntro:
+	.string "The Power Plant is just the start,\n"
+	.string "you'll see… Or maybe you won't,\p"
+	.string "not if I stop you here!$"
 
 PowerPlant_Interior_Text_NotWorthTheTime:
 	.string "Whatever. A kid like you isn't\n"
@@ -557,7 +574,7 @@ PowerPlant_Interior_EventScript_HideTeamTri::
 	setflag FLAG_HIDE_TRI_GRUNTS_POWERPLANT
 	setvar VAR_POWER_PLANT_RESTORED, 2
 	setvar VAR_TEPEK_CITY_STATE, 6
-	setobjectmovementtype LOCALID_PP_INT_CHARJABUG, MOVEMENT_TYPE_JOG_IN_PLACE_RIGHT
+	setobjectmovementtype LOCALID_PP_INT_RAICHU, MOVEMENT_TYPE_JOG_IN_PLACE_RIGHT
 	setobjectmovementtype LOCALID_PP_INT_MAGNEMITE, MOVEMENT_TYPE_JOG_IN_PLACE_DOWN
 	delay 5
 	callnative UpdateFollowingPokemon
@@ -573,8 +590,8 @@ PowerPlant_Interior_EventScript_HideTeamTri::
 PowerPlant_Interior_EventScript_RestorePlant::
 	setobjectxyperm LOCALID_PP_INT_SCIENTIST1, 4, 6
 	setobjectmovementtype LOCALID_PP_INT_SCIENTIST1, MOVEMENT_TYPE_FACE_UP
-	setobjectxyperm LOCALID_PP_INT_CHARJABUG, 3, 6
-	setobjectmovementtype LOCALID_PP_INT_CHARJABUG, MOVEMENT_TYPE_JOG_IN_PLACE_UP
+	setobjectxyperm LOCALID_PP_INT_RAICHU, 3, 6
+	setobjectmovementtype LOCALID_PP_INT_RAICHU, MOVEMENT_TYPE_JOG_IN_PLACE_UP
 	setobjectxyperm LOCALID_PP_INT_SCIENTIST2, 19, 21
 	setobjectmovementtype LOCALID_PP_INT_SCIENTIST2, MOVEMENT_TYPE_FACE_UP
 	setobjectxyperm LOCALID_PP_INT_ENGINEER, 11, 3
@@ -596,11 +613,11 @@ PowerPlant_Interior_Text_MachinesDangerous:
 	.string "if you aren't properly trained to\p"
 	.string "handle them.$"
 
-PowerPlant_Interior_Text_CharjabugStuck:
-	.string "AAA: Zzzt, zzt, zzt…$"
+PowerPlant_Interior_Text_RaichuStuck:
+	.string "Squeakers: Chu…$"
 
-PowerPlant_Interior_Text_CharjabugRestored:
-	.string "AAA: Zzzt, zzzt!!$"
+PowerPlant_Interior_Text_RaichuRestored:
+	.string "Squeakers: Rai, rai!$"
 
 PowerPlant_Interior_Text_MagnemiteStuck:
 	.string "Tungsten: Bzzrt…$"

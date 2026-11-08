@@ -3,7 +3,8 @@ gText_Cedar_Welcome::
 	.string "Welcome to the world of Pokémon.\p"
 	.string "You are receiving this letter from\n"
 	.string "Foster Cedar, the Professor of the\l"
-	.string "the Sansuba region.$"
+	.string "the Sansuba region.\p"
+	.string "$"
 
 gText_Cedar_Pokemon::
 	.string "Enclosed is a photo of what we call a\n"
@@ -21,9 +22,8 @@ gText_Cedar_MainSpeech::
 	.string "battle others like us.\p"
 	.string "Despite this, we do not know everything\n"
 	.string "about Pokémon.\p"
-	.string "This is where I come in. As a Pokémon\n"
-	.string "Professor, it is my job to study\l"
-	.string "Pokémon.\p"
+	.string "As a Pokémon Professor, it is my job\n"
+	.string "to study Pokémon.\p"
 	.string "$"
 
 gText_Cedar_AndYouAre::

@@ -17,12 +17,12 @@ TepekCity_Appt_2F_1_EventScript_Kid::
 	release
 	end
 
-TepekCity_Appt_2F_1_EventScript_Nickit::
+TepekCity_Appt_2F_1_EventScript_Purrloin::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_NICKIT, CRY_MODE_NORMAL
-	msgbox TepekCity_Appt_2F_1_Text_Nickit, MSGBOX_NPC
+	playmoncry SPECIES_PURRLOIN, CRY_MODE_NORMAL
+	msgbox TepekCity_Appt_2F_1_Text_Purrloin, MSGBOX_NPC
 	waitmoncry
 	release
 	end
@@ -39,5 +39,5 @@ TepekCity_Appt_2F_1_Text_RunToMart:
 TepekCity_Appt_2F_1_Text_CheckingCalendar:
 	.string "I'm checking my calendar!$"
 
-TepekCity_Appt_2F_1_Text_Nickit:
-	.string "Swiper: Awwwraaa raaa.$"
+TepekCity_Appt_2F_1_Text_Purrloin:
+	.string "Swiper: Nyehehe, purr.$"

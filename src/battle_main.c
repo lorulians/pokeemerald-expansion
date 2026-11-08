@@ -305,7 +305,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
 {
     [TRAINER_CLASS_PKMN_TRAINER_1] = { _("{PKMN} Trainer") },
     [TRAINER_CLASS_PKMN_TRAINER_2] = { _("{PKMN} Trainer") },
-    [TRAINER_CLASS_HIKER] = { _("Hiker"), 10 }, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_ULTRA : BALL_POKE },
+    [TRAINER_CLASS_HIKER] = { _("Hiker"), 10, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_HEAL : BALL_POKE },
     [TRAINER_CLASS_TEAM_TRI] = { _("Team Tri") },
     [TRAINER_CLASS_PKMN_BREEDER] = { _("{PKMN} Breeder"), 10, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_HEAL : BALL_FRIEND },
     [TRAINER_CLASS_COOLTRAINER] = { _("Cooltrainer"), 12, BALL_ULTRA },
@@ -325,7 +325,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_TUBER_M] = { _("TUBER"), 1 },
     [TRAINER_CLASS_LADY] = { _("Lady"), 50 },
     [TRAINER_CLASS_BEAUTY] = { _("BEAUTY"), 20 },
-    [TRAINER_CLASS_RICH_BOY] = { _("RICH BOY"), 50 },
+    [TRAINER_CLASS_RICH_BOY] = { _("Rich Boy"), 50 },
     [TRAINER_CLASS_POKEMANIAC] = { _("POKéMANIAC"), 15 },
     [TRAINER_CLASS_GUITARIST] = { _("GUITARIST"), 8 },
     [TRAINER_CLASS_KINDLER] = { _("KINDLER"), 8 },
@@ -337,7 +337,6 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_ELITE_FOUR] = { _("ELITE FOUR"), 25, BALL_ULTRA },
     [TRAINER_CLASS_SCHOOL_KID] = { _("School Kid") },
     [TRAINER_CLASS_LEADER] = { _("Leader"), 25, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_ULTRA : BALL_POKE },
-    [TRAINER_CLASS_SCHOOL_KID] = { _("SCHOOL KID") },
     [TRAINER_CLASS_SR_AND_JR] = { _("SR. AND JR."), 4 },
     [TRAINER_CLASS_WINSTRATE] = { _("WINSTRATE"), 10 },
     [TRAINER_CLASS_POKEFAN] = { _("POKéFAN"), 20 },
@@ -371,6 +370,8 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_PYRAMID_KING] = { _("PYRAMID KING") },
     [TRAINER_CLASS_RS_PROTAG] = { _("{PKMN} Trainer") },
     [TRAINER_CLASS_ENGINEER] = { _("Engineer"), 8 },
+    [TRAINER_CLASS_FARMER] = { _("Farmer"), 4, BALL_NEST },
+    [TRAINER_CLASS_FARMER_F] = { _("Farmer"), 4, BALL_NEST },
 };
 
 static void (*const sTurnActionsFuncsTable[])(void) =
